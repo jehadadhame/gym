@@ -1,0 +1,1857 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 14,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateProductsTable",
+          "startLine": 7,
+          "endLine": 44,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateProductsTable",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('product_code', 50)->unique(\"product_id\")->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('product_code', 50)->unique",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('product_name', 50)->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text('product_details', 65535)->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('amount')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger('updated_by')->nullable",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_products_mst_users_1')\r\n                ->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_products_mst_users_1')\r\n                ->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_products_mst_users_1')\r\n                ->references('id')->on",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_products_mst_users_1')->references",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_products_mst_users_2')\r\n                ->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_products_mst_users_2')\r\n                ->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_products_mst_users_2')\r\n                ->references('id')->on",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_products_mst_users_2')->references",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 14,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 48,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreatePurchasesTable",
+          "startLine": 7,
+          "endLine": 52,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreatePurchasesTable",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('member_id')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('product_id')->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index('FK_purchases_trn_invoice')->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_purchases_mst_users_1')\r\n                ->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_purchases_mst_users_1')\r\n                ->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_purchases_mst_users_1')\r\n                ->references('id')->on",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_purchases_mst_users_1')->references",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_purchases_mst_users_2')\r\n                ->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_purchases_mst_users_2')\r\n                ->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_purchases_mst_users_2')\r\n                ->references('id')->on",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_purchases_mst_users_2')->references",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_purchases_mst_member')\r\n                ->references('id')->on('mst_members')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_purchases_mst_member')\r\n                ->references('id')->on('mst_members')->onUpdate",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_purchases_mst_member')\r\n                ->references('id')->on",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_purchases_mst_member')->references",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('product_id', 'FK_purchases_product')\r\n                ->references('id')->on('products')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('product_id', 'FK_purchases_product')\r\n                ->references('id')->on('products')->onUpdate",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('product_id', 'FK_purchases_product')\r\n                ->references('id')->on",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('product_id', 'FK_purchases_product')->references",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_purchases_mst_invoice')\r\n                ->references('id')->on('trn_invoice')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_purchases_mst_invoice')\r\n                ->references('id')->on('trn_invoice')->onUpdate",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_purchases_mst_invoice')\r\n                ->references('id')->on",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_purchases_mst_invoice')->references",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 37
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "database/seeds/DatabaseSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "startLine": 6,
+          "endLine": 27,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DatabaseSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "Model::unguard",
+          "lineNumber": 15
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 17
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 18
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 19
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 20
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 21
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 22
+        },
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 23
+        },
+        {
+          "caller": "run",
+          "callee": "Model::reguard",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "gulpfile.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/.htaccess",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/img/gym/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/js/core.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 197,
+      "nonEmptyLines": 181,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/enquiry.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 155,
+      "nonEmptyLines": 154,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/event.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/expense.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/expenseCategory.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/followup.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/gymie.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 698,
+      "nonEmptyLines": 594,
+      "callGraph": [
+        {
+          "caller": "cb",
+          "callee": "$('.gymie-daterangepicker span').html",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "$",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "moment(start).format",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "moment",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "moment(end).format",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "moment",
+          "lineNumber": 170
+        },
+        {
+          "caller": "cb",
+          "callee": "$('#drp_start').val",
+          "lineNumber": 171
+        },
+        {
+          "caller": "cb",
+          "callee": "$",
+          "lineNumber": 171
+        },
+        {
+          "caller": "cb",
+          "callee": "moment(start).format",
+          "lineNumber": 171
+        },
+        {
+          "caller": "cb",
+          "callee": "moment",
+          "lineNumber": 171
+        },
+        {
+          "caller": "cb",
+          "callee": "$('#drp_end').val",
+          "lineNumber": 172
+        },
+        {
+          "caller": "cb",
+          "callee": "$",
+          "lineNumber": 172
+        },
+        {
+          "caller": "cb",
+          "callee": "moment(end).format",
+          "lineNumber": 172
+        },
+        {
+          "caller": "cb",
+          "callee": "moment",
+          "lineNumber": 172
+        },
+        {
+          "caller": "markAs",
+          "callee": "swal",
+          "lineNumber": 209
+        },
+        {
+          "caller": "markAs",
+          "callee": "$.ajax({\r\n\t\t\t\t\t\turl: gotoUrl,\r\n\t\t\t\t\t\ttype: \"POST\"\r\n\t\t\t\t\t})\r\n\t\t\t\t\t\t.done(function (data) {\r\n\t\t\t\t\t\t\tswal({\r\n\t\t\t\t\t\t\t\ttitle: \"Done\",\r\n\t\t\t\t\t\t\t\ttype: \"success\"\r\n\t\t\t\t\t\t\t}, function () {\r\n\t\t\t\t\t\t\t\tlocation.reload();\r\n\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t.error",
+          "lineNumber": 218
+        },
+        {
+          "caller": "markAs",
+          "callee": "$.ajax({\r\n\t\t\t\t\t\turl: gotoUrl,\r\n\t\t\t\t\t\ttype: \"POST\"\r\n\t\t\t\t\t})\r\n\t\t\t\t\t\t.done",
+          "lineNumber": 218
+        },
+        {
+          "caller": "markAs",
+          "callee": "$.ajax",
+          "lineNumber": 218
+        },
+        {
+          "caller": "markAs",
+          "callee": "swal",
+          "lineNumber": 223
+        },
+        {
+          "caller": "markAs",
+          "callee": "location.reload",
+          "lineNumber": 227
+        },
+        {
+          "caller": "markAs",
+          "callee": "swal",
+          "lineNumber": 231
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "swal",
+          "lineNumber": 259
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "swal",
+          "lineNumber": 262
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "$.ajax({\r\n\t\t\t\t\t\t\turl: deleteUrl,\r\n\t\t\t\t\t\t\ttype: \"POST\"\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t\t.done(function (data) {\r\n\t\t\t\t\t\t\t\tswal({\r\n\t\t\t\t\t\t\t\t\ttitle: \"Deleted\",\r\n\t\t\t\t\t\t\t\t\ttext: \"Record has been successfully deleted\",\r\n\t\t\t\t\t\t\t\t\ttype: \"success\"\r\n\t\t\t\t\t\t\t\t}, function () {\r\n\t\t\t\t\t\t\t\t\tlocation.reload();\r\n\t\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t\t})\r\n\t\t\t\t\t\t\t.error",
+          "lineNumber": 272
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "$.ajax({\r\n\t\t\t\t\t\t\turl: deleteUrl,\r\n\t\t\t\t\t\t\ttype: \"POST\"\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t\t.done",
+          "lineNumber": 272
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "$.ajax",
+          "lineNumber": 272
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "swal",
+          "lineNumber": 277
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "location.reload",
+          "lineNumber": 282
+        },
+        {
+          "caller": "recordDelete",
+          "callee": "swal",
+          "lineNumber": 286
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 300
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 300
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 300
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 301
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 301
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 301
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 301
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 303
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 306
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_percent\").val",
+          "lineNumber": 306
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 306
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 307
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 307
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 307
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 307
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 308
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 308
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 311
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 311
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 311
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 315
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 315
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 315
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 316
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 316
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 316
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 316
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 318
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 321
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 321
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 322
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 324
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 324
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 324
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$('.plan-id select#plan_' + rowId + ' option:selected').data",
+          "lineNumber": 347
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$",
+          "lineNumber": 347
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$('.plan-start-date input#start_date_' + rowId).val",
+          "lineNumber": 348
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$",
+          "lineNumber": 348
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "moment(subscription_start_date, \"YYYY-MM-DD\").add(plan_days, 'days').format",
+          "lineNumber": 349
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "moment(subscription_start_date, \"YYYY-MM-DD\").add",
+          "lineNumber": 349
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "moment",
+          "lineNumber": 349
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$('.plan-end-date input#end_date_' + rowId).val",
+          "lineNumber": 351
+        },
+        {
+          "caller": "getEndDate",
+          "callee": "$",
+          "lineNumber": 351
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(\".plan-id select option:selected\").each",
+          "lineNumber": 356
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 356
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(this).data",
+          "lineNumber": 357
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 357
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$('.plan-price input#price_' + $(this).data('row-id')).val",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(this).data",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(this).data",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 358
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(\"#subscription_amount\").val(sum).trigger",
+          "lineNumber": 360
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 360
+        },
+        {
+          "caller": "getPlanAmount",
+          "callee": "$",
+          "lineNumber": 360
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "parseInt",
+          "lineNumber": 364
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 364
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 364
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 365
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "parseInt",
+          "lineNumber": 365
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 365
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 365
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "Math.round",
+          "lineNumber": 367
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#taxes_amount\").val",
+          "lineNumber": 369
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 369
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 373
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 373
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 373
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 374
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 374
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 374
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 374
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 376
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 379
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_percent\").val",
+          "lineNumber": 379
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 379
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 380
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 380
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 380
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 380
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 381
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 381
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 385
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 385
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 385
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$('#payment_amount').data",
+          "lineNumber": 386
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 386
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$('#payment_amount').val",
+          "lineNumber": 386
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 386
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 390
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#subscription_amount\").val",
+          "lineNumber": 390
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 390
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 391
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 391
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 391
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 391
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 393
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 396
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 396
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 397
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 400
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 400
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 400
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$('#payment_amount').data",
+          "lineNumber": 401
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 401
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$('#payment_amount').val",
+          "lineNumber": 401
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 401
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(\".product-id select option:selected\").each",
+          "lineNumber": 525
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 525
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(this).data",
+          "lineNumber": 526
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 526
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$('.product-price input#price_' + $(this).data('row-id')).val",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(this).data",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(this).data",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 527
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(\"#purchase_amount\").val(sum).trigger",
+          "lineNumber": 529
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$(\"#purchase_amount\").val",
+          "lineNumber": 529
+        },
+        {
+          "caller": "getProductAmount",
+          "callee": "$",
+          "lineNumber": 529
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "parseInt",
+          "lineNumber": 533
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#purchase_amount\").val",
+          "lineNumber": 533
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 533
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 534
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "parseInt",
+          "lineNumber": 534
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 534
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 534
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "Math.round",
+          "lineNumber": 536
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$(\"#taxes_amount\").val",
+          "lineNumber": 538
+        },
+        {
+          "caller": "getTaxAmount",
+          "callee": "$",
+          "lineNumber": 538
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 542
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#purchase_amount\").val",
+          "lineNumber": 542
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 542
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 543
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 543
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 543
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 543
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 545
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 548
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_percent\").val",
+          "lineNumber": 548
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 548
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 549
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 549
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 549
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 549
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 550
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 550
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 554
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 554
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 554
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$('#payment_amount').data",
+          "lineNumber": 555
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 555
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$('#payment_amount').val",
+          "lineNumber": 555
+        },
+        {
+          "caller": "getDiscountAmount",
+          "callee": "$",
+          "lineNumber": 555
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 559
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#purchase_amount\").val",
+          "lineNumber": 559
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 559
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 560
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "parseInt",
+          "lineNumber": 560
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#additional_fees\").val",
+          "lineNumber": 560
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 560
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 562
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#discount_amount\").val",
+          "lineNumber": 565
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 565
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "isNaN",
+          "lineNumber": 566
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 569
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 569
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "Math.round",
+          "lineNumber": 569
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$('#payment_amount').data",
+          "lineNumber": 570
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 570
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$('#payment_amount').val",
+          "lineNumber": 570
+        },
+        {
+          "caller": "getCustomDiscountAmount",
+          "callee": "$",
+          "lineNumber": 570
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "parseInt",
+          "lineNumber": 677
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 677
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$",
+          "lineNumber": 677
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "parseInt",
+          "lineNumber": 678
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$(\"#previous_payment\").val",
+          "lineNumber": 678
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$",
+          "lineNumber": 678
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$(\"#payment_amount\").val",
+          "lineNumber": 680
+        },
+        {
+          "caller": "getAmountToPay",
+          "callee": "$",
+          "lineNumber": 680
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/login.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/member.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 255,
+      "nonEmptyLines": 252,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/payment.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 34,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/plan.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 68,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/product.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 57,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/purchases.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/send.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/setting.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/subscription.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/subscriptionChange.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/trigger.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

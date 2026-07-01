@@ -1,0 +1,222 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/media/244/profile_188.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 90,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/245/profile_189.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 100,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/246/proof_189.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 349,
+      "nonEmptyLines": 344,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/247/profile_4.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 136,
+      "nonEmptyLines": 131,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/248/profile_190.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 118,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/249/profile_191.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 78,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/251/profile_192.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 96,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/252/proof_192.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 416,
+      "nonEmptyLines": 410,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/253/profile_195.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 331,
+      "nonEmptyLines": 325,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/254/proof_195.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 323,
+      "nonEmptyLines": 317,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/255/profile_196.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 511,
+      "nonEmptyLines": 505,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/256/profile_197.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 345,
+      "nonEmptyLines": 341,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/257/profile_198.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 264,
+      "nonEmptyLines": 261,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/258/proof_198.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 350,
+      "nonEmptyLines": 346,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/259/profile_199.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 348,
+      "nonEmptyLines": 344,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/260/profile_200.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 356,
+      "nonEmptyLines": 352,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/261/profile_201.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 382,
+      "nonEmptyLines": 378,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/262/proof_202.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 678,
+      "nonEmptyLines": 673,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/263/profile_202.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 442,
+      "nonEmptyLines": 438,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/302/staff_7jpg",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 182,
+      "nonEmptyLines": 178,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/media.rar",
+      "language": "rar",
+      "fileCategory": "code",
+      "totalLines": 583194,
+      "nonEmptyLines": 580714,
+      "metrics": {}
+    },
+    {
+      "path": "public/robots.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "resources/lang/en/pagination.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/lang/en/passwords.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/lang/en/validation.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 100,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

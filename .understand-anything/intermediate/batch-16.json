@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_animated.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_animated.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_animated.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_bordered-pulled.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_bordered-pulled.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_bordered-pulled.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_core.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_core.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_core.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_fixed-width.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_fixed-width.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_fixed-width.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_icons.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_icons.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_icons.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_larger.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_larger.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_larger.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_list.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_list.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_list.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_mixins.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_mixins.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_mixins.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_path.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_path.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_path.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_rotated-flipped.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_rotated-flipped.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_rotated-flipped.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_stacked.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_stacked.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_stacked.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/_variables.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/_variables.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/_variables.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/scss/font-awesome.scss",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/scss/font-awesome.scss",
+      "summary": "public/assets/plugins/font-awesome/scss/font-awesome.scss",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

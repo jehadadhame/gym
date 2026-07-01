@@ -1,0 +1,151 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 18,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ckeditor/samples/ajax.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 82,
+      "nonEmptyLines": 75,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/api.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 207,
+      "nonEmptyLines": 182,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/appendto.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 56,
+      "nonEmptyLines": 53,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/datafiltering.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 401,
+      "nonEmptyLines": 377,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/divreplace.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 141,
+      "nonEmptyLines": 127,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 128,
+      "nonEmptyLines": 101,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/inlineall.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 311,
+      "nonEmptyLines": 282,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/inlinebycode.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 121,
+      "nonEmptyLines": 103,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/inlinetextarea.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 110,
+      "nonEmptyLines": 101,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/jquery.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 100,
+      "nonEmptyLines": 85,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/readonly.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 73,
+      "nonEmptyLines": 67,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/replacebyclass.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 57,
+      "nonEmptyLines": 57,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/replacebycode.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 56,
+      "nonEmptyLines": 52,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/sample.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 365,
+      "nonEmptyLines": 310,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/tabindex.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 75,
+      "nonEmptyLines": 69,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/uicolor.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 69,
+      "nonEmptyLines": 67,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/uilanguages.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 119,
+      "nonEmptyLines": 108,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/xhtmlstyle.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 231,
+      "nonEmptyLines": 212,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/_all.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 590,
+      "nonEmptyLines": 551,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/aero.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/blue.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/green.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/grey.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/orange.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/pink.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/purple.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/red.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/square.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/iCheck/skins/square/yellow.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 59,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    }
+  ]
+}

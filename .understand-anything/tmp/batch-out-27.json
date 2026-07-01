@@ -1,0 +1,3482 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_cheque_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 32,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnChequeDetailsTable",
+          "startLine": 6,
+          "endLine": 36,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnChequeDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('payment_id')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_enquiry_followups_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 33,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnEnquiryFollowupsTable",
+          "startLine": 6,
+          "endLine": 37,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnEnquiryFollowupsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('enquiry_id')->unsigned()->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('enquiry_id')->unsigned",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 24
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_expenses_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnExpensesTable",
+          "startLine": 6,
+          "endLine": 39,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnExpensesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('name', 50)->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('category_id')->index('FK_trn_expenses_mst_expenses_categories_1')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('category_id')->index",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('amount')->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date('due_date')->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('repeat')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('paid')->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->nullable()->index",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->nullable",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_invoice_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnInvoiceDetailsTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnInvoiceDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index('FK_trn_invoice_details_trn_invoice_1')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('item_amount')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('plan_id')->default(1)->index",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('plan_id')->default",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_invoice_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 39,
+          "endLine": 42,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnInvoiceTable",
+          "startLine": 6,
+          "endLine": 43,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnInvoiceTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('member_id')->index('FK_trn_invoice_mst_members_1')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('member_id')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('total')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('pending_amount')->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text('note', 65535)->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('invoice_number', 50)->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('additional_fees')->nullable",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_payment_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 32,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnPaymentDetailsTable",
+          "startLine": 6,
+          "endLine": 36,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnPaymentDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index('FK_trn_payment_details_1')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('payment_amount')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('mode', 50)->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('note', 50)->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_settings_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnSettingsTable",
+          "startLine": 6,
+          "endLine": 32,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnSettingsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('key', 50)->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 19
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_sms_log_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnSmsLogTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnSmsLogTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('status', 200)->default",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_subscriptions_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnSubscriptionsTable",
+          "startLine": 6,
+          "endLine": 39,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnSubscriptionsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('member_id')->index('FK_trn_subscriptions_mst_members_1')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('member_id')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index('FK_trn_subscriptions_trn_invoice')->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('invoice_id')->index",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('plan_id')->index('FK_trn_subscriptions_mst_plans_2')->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('plan_id')->index",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date('start_date')->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date('end_date')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('is_renewal')->comment",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_enquiries_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstEnquiriesTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstEnquiriesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_enquiries_mst_staff_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_enquiries_mst_staff_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_enquiries_mst_staff_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_enquiries_mst_staff_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_enquiries_mst_staff_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_enquiries_mst_staff_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_enquiries_mst_staff_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_enquiries_mst_staff_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_expenses_categories_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstExpensesCategoriesTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstExpensesCategoriesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_expenses_categories_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_expenses_categories_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_expenses_categories_mst_users_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_expenses_categories_mst_users_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_expenses_categories_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_expenses_categories_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_expenses_categories_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_expenses_categories_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_members_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstMembersTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstMembersTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_members_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_members_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_members_mst_users_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_members_mst_users_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_members_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_members_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_members_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_members_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_plans_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstPlansTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstPlansTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('service_id', 'FK_mst_plans_mst_services')->references('id')->on('mst_services')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('service_id', 'FK_mst_plans_mst_services')->references('id')->on('mst_services')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('service_id', 'FK_mst_plans_mst_services')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('service_id', 'FK_mst_plans_mst_services')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_plans_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_plans_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_plans_mst_users_1')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_plans_mst_users_1')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_plans_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_plans_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_plans_mst_users_2')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_plans_mst_users_2')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_services_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstServicesTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstServicesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_services_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_services_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_services_mst_users_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_services_mst_users_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_services_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_services_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_services_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_services_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_mst_sms_events_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToMstSmsEventsTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToMstSmsEventsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_sms_events_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_sms_events_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_sms_events_mst_users_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_mst_sms_events_mst_users_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_sms_events_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_sms_events_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_sms_events_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_mst_sms_events_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_permission_role_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToPermissionRoleTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToPermissionRoleTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('permission_id')->references('id')->on('permissions')->onUpdate('CASCADE')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('permission_id')->references('id')->on('permissions')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('permission_id')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('permission_id')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on('roles')->onUpdate('CASCADE')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on('roles')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_role_user_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 26,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToRoleUserTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToRoleUserTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on('roles')->onUpdate('CASCADE')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on('roles')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('role_id')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id')->references('id')->on('mst_users')->onUpdate('CASCADE')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_access_log_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 25,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnAccessLogTable",
+          "startLine": 6,
+          "endLine": 31,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnAccessLogTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id', 'FK_trn_activities_mst_users_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id', 'FK_trn_activities_mst_users_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id', 'FK_trn_activities_mst_users_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('user_id', 'FK_trn_activities_mst_users_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 27
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_cheque_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnChequeDetailsTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnChequeDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_cheque_details_mst_users')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_cheque_details_mst_users')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_cheque_details_mst_users')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_cheque_details_mst_users')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_cheque_details_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_cheque_details_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_cheque_details_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_cheque_details_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('payment_id', 'FK_trn_cheque_details_trn_payment_details')->references('id')->on('trn_payment_details')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('payment_id', 'FK_trn_cheque_details_trn_payment_details')->references('id')->on('trn_payment_details')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('payment_id', 'FK_trn_cheque_details_trn_payment_details')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('payment_id', 'FK_trn_cheque_details_trn_payment_details')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_enquiry_followups_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnEnquiryFollowupsTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnEnquiryFollowupsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('enquiry_id', 'FK_trn_enquiry_followups_mst_enquiries_1')->references('id')->on('mst_enquiries')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('enquiry_id', 'FK_trn_enquiry_followups_mst_enquiries_1')->references('id')->on('mst_enquiries')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('enquiry_id', 'FK_trn_enquiry_followups_mst_enquiries_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('enquiry_id', 'FK_trn_enquiry_followups_mst_enquiries_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_enquiry_followups_mst_staff_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_enquiry_followups_mst_staff_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_enquiry_followups_mst_staff_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_enquiry_followups_mst_staff_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_enquiry_followups_mst_staff_3')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_enquiry_followups_mst_staff_3')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_enquiry_followups_mst_staff_3')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_enquiry_followups_mst_staff_3')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_expenses_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnExpensesTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnExpensesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('category_id', 'FK_trn_expenses_mst_expenses_categories_1')->references('id')->on('mst_expenses_categories')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('category_id', 'FK_trn_expenses_mst_expenses_categories_1')->references('id')->on('mst_expenses_categories')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('category_id', 'FK_trn_expenses_mst_expenses_categories_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('category_id', 'FK_trn_expenses_mst_expenses_categories_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_expenses_mst_users_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_expenses_mst_users_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_expenses_mst_users_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_expenses_mst_users_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_expenses_mst_users_3')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_expenses_mst_users_3')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_expenses_mst_users_3')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_expenses_mst_users_3')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_invoice_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 28,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnInvoiceDetailsTable",
+          "startLine": 6,
+          "endLine": 37,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnInvoiceDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_details_mst_staff_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_details_mst_staff_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_details_mst_staff_2')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_details_mst_staff_2')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_details_mst_staff_3')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_details_mst_staff_3')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_details_mst_staff_3')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_details_mst_staff_3')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_invoice_details_trn_invoice_1')->references('id')->on('trn_invoice')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_invoice_details_trn_invoice_1')->references('id')->on('trn_invoice')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_invoice_details_trn_invoice_1')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_invoice_details_trn_invoice_1')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id')->references('id')->on('mst_plans')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id')->references('id')->on('mst_plans')->onUpdate",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id')->references('id')->on",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id')->references",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 19
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 33
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_invoice_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnInvoiceTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnInvoiceTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_invoice_mst_members_1')->references('id')->on('mst_members')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_invoice_mst_members_1')->references('id')->on('mst_members')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_invoice_mst_members_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_invoice_mst_members_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_mst_staff_1')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_mst_staff_1')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_mst_staff_1')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_invoice_mst_staff_1')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_mst_staff_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_mst_staff_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_mst_staff_2')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_invoice_mst_staff_2')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_payment_details_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnPaymentDetailsTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnPaymentDetailsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_payment_details_1')->references('id')->on('trn_invoice')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_payment_details_1')->references('id')->on('trn_invoice')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_payment_details_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_payment_details_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_payment_details_mst_staff_2')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_payment_details_mst_staff_2')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_payment_details_mst_staff_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_payment_details_mst_staff_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_payment_details_mst_staff_3')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_payment_details_mst_staff_3')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_payment_details_mst_staff_3')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_payment_details_mst_staff_3')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 30
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055232_add_foreign_keys_to_trn_subscriptions_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 29,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AddForeignKeysToTrnSubscriptionsTable",
+          "startLine": 6,
+          "endLine": 39,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddForeignKeysToTrnSubscriptionsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_subscriptions_mst_members_1')->references('id')->on('mst_members')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_subscriptions_mst_members_1')->references('id')->on('mst_members')->onUpdate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_subscriptions_mst_members_1')->references('id')->on",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('member_id', 'FK_trn_subscriptions_mst_members_1')->references",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id', 'FK_trn_subscriptions_mst_plans_2')->references('id')->on('mst_plans')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id', 'FK_trn_subscriptions_mst_plans_2')->references('id')->on('mst_plans')->onUpdate",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id', 'FK_trn_subscriptions_mst_plans_2')->references('id')->on",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('plan_id', 'FK_trn_subscriptions_mst_plans_2')->references",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_subscriptions_mst_staff_3')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_subscriptions_mst_staff_3')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_subscriptions_mst_staff_3')->references('id')->on",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('created_by', 'FK_trn_subscriptions_mst_staff_3')->references",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_subscriptions_mst_staff_4')->references('id')->on('mst_users')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_subscriptions_mst_staff_4')->references('id')->on('mst_users')->onUpdate",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_subscriptions_mst_staff_4')->references('id')->on",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('updated_by', 'FK_trn_subscriptions_mst_staff_4')->references",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_subscriptions_trn_invoice')->references('id')->on('trn_invoice')->onUpdate('RESTRICT')->onDelete",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_subscriptions_trn_invoice')->references('id')->on('trn_invoice')->onUpdate",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_subscriptions_trn_invoice')->references('id')->on",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign('invoice_id', 'FK_trn_subscriptions_trn_invoice')->references",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreign",
+          "lineNumber": 20
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 31
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 32
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 33
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 34
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 35
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropForeign",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Auth/AuthController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "summary": "app/Http/Controllers/Auth/AuthController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:getRegister",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "getRegister"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:postRegister",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "postRegister"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:getLogin",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "getLogin"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:postLogin",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "postLogin"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:getLogout",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "getLogout"
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/Auth/AuthController.php",
+      "symbolName": "AuthController"
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "summary": "app/Http/Controllers/Auth/PasswordController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/PasswordController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/PasswordController.php:PasswordController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "symbolName": "PasswordController"
+    },
+    {
+      "id": "file:app/Http/Controllers/Controller.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/Controller.php",
+      "summary": "app/Http/Controllers/Controller.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Http/Controllers/Controller.php:Controller",
+      "type": "class",
+      "filePath": "app/Http/Controllers/Controller.php",
+      "symbolName": "Controller"
+    },
+    {
+      "id": "file:app/Http/Controllers/ProductController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "summary": "app/Http/Controllers/ProductController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/ProductController.php:archive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "archive"
+    },
+    {
+      "id": "class:app/Http/Controllers/ProductController.php:ProductController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/ProductController.php",
+      "symbolName": "ProductController"
+    },
+    {
+      "id": "file:app/Http/Controllers/UsersController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "summary": "app/Http/Controllers/UsersController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/UsersController.php:archive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "archive"
+    },
+    {
+      "id": "class:app/Http/Controllers/UsersController.php:UsersController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/UsersController.php",
+      "symbolName": "UsersController"
+    },
+    {
+      "id": "file:app/Product.php",
+      "type": "file",
+      "filePath": "app/Product.php",
+      "summary": "app/Product.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Product.php:scopeExcludeArchive",
+      "type": "function",
+      "filePath": "app/Product.php",
+      "symbolName": "scopeExcludeArchive"
+    },
+    {
+      "id": "function:app/Product.php:scopeOnlyActive",
+      "type": "function",
+      "filePath": "app/Product.php",
+      "symbolName": "scopeOnlyActive"
+    },
+    {
+      "id": "function:app/Product.php:purchases",
+      "type": "function",
+      "filePath": "app/Product.php",
+      "symbolName": "purchases"
+    },
+    {
+      "id": "class:app/Product.php:Product",
+      "type": "class",
+      "filePath": "app/Product.php",
+      "symbolName": "Product"
+    },
+    {
+      "id": "file:app/User.php",
+      "type": "file",
+      "filePath": "app/User.php",
+      "summary": "app/User.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/User.php:registerMediaConversions",
+      "type": "function",
+      "filePath": "app/User.php",
+      "symbolName": "registerMediaConversions"
+    },
+    {
+      "id": "function:app/User.php:scopeExcludeArchive",
+      "type": "function",
+      "filePath": "app/User.php",
+      "symbolName": "scopeExcludeArchive"
+    },
+    {
+      "id": "function:app/User.php:roleUser",
+      "type": "function",
+      "filePath": "app/User.php",
+      "symbolName": "roleUser"
+    },
+    {
+      "id": "class:app/User.php:User",
+      "type": "class",
+      "filePath": "app/User.php",
+      "symbolName": "User"
+    },
+    {
+      "id": "file:database/seeds/UsersTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/UsersTableSeeder.php",
+      "summary": "database/seeds/UsersTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/UsersTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/UsersTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/UsersTableSeeder.php:UsersTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/UsersTableSeeder.php",
+      "symbolName": "UsersTableSeeder"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:getRegister",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:postRegister",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:getLogin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:postLogin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:getLogout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "file:app/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "target": "function:app/Http/Controllers/Auth/PasswordController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "target": "class:app/Http/Controllers/Auth/PasswordController.php:PasswordController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Controller.php",
+      "target": "class:app/Http/Controllers/Controller.php:Controller",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "function:app/Http/Controllers/ProductController.php:archive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "class:app/Http/Controllers/ProductController.php:ProductController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ProductController.php",
+      "target": "file:app/Product.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "function:app/Http/Controllers/UsersController.php:archive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "class:app/Http/Controllers/UsersController.php:UsersController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/UsersController.php",
+      "target": "file:app/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Product.php",
+      "target": "function:app/Product.php:scopeExcludeArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Product.php",
+      "target": "function:app/Product.php:scopeOnlyActive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Product.php",
+      "target": "function:app/Product.php:purchases",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Product.php",
+      "target": "class:app/Product.php:Product",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/User.php",
+      "target": "function:app/User.php:registerMediaConversions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/User.php",
+      "target": "function:app/User.php:scopeExcludeArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/User.php",
+      "target": "function:app/User.php:roleUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/User.php",
+      "target": "class:app/User.php:User",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/UsersTableSeeder.php",
+      "target": "function:database/seeds/UsersTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/UsersTableSeeder.php",
+      "target": "class:database/seeds/UsersTableSeeder.php:UsersTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/UsersTableSeeder.php",
+      "target": "file:app/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

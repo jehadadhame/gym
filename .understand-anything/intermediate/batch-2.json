@@ -1,0 +1,1861 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Console/Commands/FollowupSms.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/FollowupSms.php",
+      "summary": "app/Console/Commands/FollowupSms.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/FollowupSms.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/FollowupSms.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/FollowupSms.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/FollowupSms.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/FollowupSms.php:FollowupSms",
+      "type": "class",
+      "filePath": "app/Console/Commands/FollowupSms.php",
+      "symbolName": "FollowupSms"
+    },
+    {
+      "id": "file:app/Console/Commands/ReshootOfflineSms.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/ReshootOfflineSms.php",
+      "summary": "app/Console/Commands/ReshootOfflineSms.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/ReshootOfflineSms.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/ReshootOfflineSms.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/ReshootOfflineSms.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/ReshootOfflineSms.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/ReshootOfflineSms.php:ReshootOfflineSms",
+      "type": "class",
+      "filePath": "app/Console/Commands/ReshootOfflineSms.php",
+      "symbolName": "ReshootOfflineSms"
+    },
+    {
+      "id": "file:app/Console/Commands/SmsEvent.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/SmsEvent.php",
+      "summary": "app/Console/Commands/SmsEvent.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/SmsEvent.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/SmsEvent.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/SmsEvent.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/SmsEvent.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/SmsEvent.php:SmsEvent",
+      "type": "class",
+      "filePath": "app/Console/Commands/SmsEvent.php",
+      "symbolName": "SmsEvent"
+    },
+    {
+      "id": "file:app/Enquiry.php",
+      "type": "file",
+      "filePath": "app/Enquiry.php",
+      "summary": "app/Enquiry.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Enquiry.php:Followups",
+      "type": "function",
+      "filePath": "app/Enquiry.php",
+      "symbolName": "Followups"
+    },
+    {
+      "id": "function:app/Enquiry.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/Enquiry.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "function:app/Enquiry.php:scopeOnlyLeads",
+      "type": "function",
+      "filePath": "app/Enquiry.php",
+      "symbolName": "scopeOnlyLeads"
+    },
+    {
+      "id": "class:app/Enquiry.php:Enquiry",
+      "type": "class",
+      "filePath": "app/Enquiry.php",
+      "symbolName": "Enquiry"
+    },
+    {
+      "id": "file:app/Followup.php",
+      "type": "file",
+      "filePath": "app/Followup.php",
+      "summary": "app/Followup.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Followup.php:enquiry",
+      "type": "function",
+      "filePath": "app/Followup.php",
+      "symbolName": "enquiry"
+    },
+    {
+      "id": "function:app/Followup.php:scopeReminders",
+      "type": "function",
+      "filePath": "app/Followup.php",
+      "symbolName": "scopeReminders"
+    },
+    {
+      "id": "class:app/Followup.php:Followup",
+      "type": "class",
+      "filePath": "app/Followup.php",
+      "symbolName": "Followup"
+    },
+    {
+      "id": "file:app/Http/Controllers/DashboardController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "summary": "app/Http/Controllers/DashboardController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/DashboardController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/DashboardController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/DashboardController.php:smsRequest",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "symbolName": "smsRequest"
+    },
+    {
+      "id": "class:app/Http/Controllers/DashboardController.php:DashboardController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "symbolName": "DashboardController"
+    },
+    {
+      "id": "file:app/Http/Controllers/EnquiriesController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "summary": "app/Http/Controllers/EnquiriesController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:lost",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "lost"
+    },
+    {
+      "id": "function:app/Http/Controllers/EnquiriesController.php:markMember",
+      "type": "function",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "markMember"
+    },
+    {
+      "id": "class:app/Http/Controllers/EnquiriesController.php:EnquiriesController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/EnquiriesController.php",
+      "symbolName": "EnquiriesController"
+    },
+    {
+      "id": "file:app/Http/Controllers/FollowupsController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/FollowupsController.php",
+      "summary": "app/Http/Controllers/FollowupsController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/FollowupsController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/FollowupsController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/FollowupsController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/FollowupsController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/FollowupsController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/FollowupsController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "class:app/Http/Controllers/FollowupsController.php:FollowupsController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/FollowupsController.php",
+      "symbolName": "FollowupsController"
+    },
+    {
+      "id": "file:app/Http/Controllers/PlansController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "summary": "app/Http/Controllers/PlansController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/PlansController.php:archive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "archive"
+    },
+    {
+      "id": "class:app/Http/Controllers/PlansController.php:PlansController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/PlansController.php",
+      "symbolName": "PlansController"
+    },
+    {
+      "id": "file:app/Http/Controllers/SmsController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "summary": "app/Http/Controllers/SmsController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:triggersIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "triggersIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:triggerUpdate",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "triggerUpdate"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:eventsIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "eventsIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:createEvent",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "createEvent"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:storeEvent",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "storeEvent"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:editEvent",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "editEvent"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:updateEvent",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "updateEvent"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:destroyEvent",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "destroyEvent"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:send",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "send"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:shoot",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "shoot"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:logIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "logIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/SmsController.php:logRefresh",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "logRefresh"
+    },
+    {
+      "id": "class:app/Http/Controllers/SmsController.php:SmsController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/SmsController.php",
+      "symbolName": "SmsController"
+    },
+    {
+      "id": "file:app/Lubus/Utilities.php",
+      "type": "file",
+      "filePath": "app/Lubus/Utilities.php",
+      "summary": "app/Lubus/Utilities.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:setActiveMenu",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "setActiveMenu"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getSetting",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getSetting"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getSettings",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getSettings"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getFollowUpStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getFollowUpStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getFollowupBy",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getFollowupBy"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getIconBg",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getIconBg"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getStatusIcon",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getStatusIcon"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getAim",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getAim"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getInvoiceLabel",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getInvoiceLabel"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:expenseRepeatIntervel",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "expenseRepeatIntervel"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getPaidUnpaid",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getPaidUnpaid"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getActiveInactive",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getActiveInactive"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getOccupation",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getOccupation"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getSource",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getSource"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getStatusValue",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getStatusValue"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getEnquiryStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getEnquiryStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getEnquiryLabel",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getEnquiryLabel"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:setInvoiceStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "setInvoiceStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getInvoiceStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getInvoiceStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getSubscriptionStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getSubscriptionStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getSubscriptionLabel",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getSubscriptionLabel"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getPaymentMode",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getPaymentMode"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getChequeStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getChequeStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getGender",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getGender"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getDisplay",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getDisplay"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getMode",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getMode"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:getGreeting",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "getGreeting"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:uploadFile",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "uploadFile"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:registrationsTrend",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "registrationsTrend"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:membersPerPlan",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "membersPerPlan"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:smsGatewayStatus",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "smsGatewayStatus"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:isDomainAvailible",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "isDomainAvailible"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:Sms",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "Sms"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:retrySms",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "retrySms"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:smsBalance",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "smsBalance"
+    },
+    {
+      "id": "function:app/Lubus/Utilities.php:smsStatusUpdate",
+      "type": "function",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "smsStatusUpdate"
+    },
+    {
+      "id": "class:app/Lubus/Utilities.php:Utilities",
+      "type": "class",
+      "filePath": "app/Lubus/Utilities.php",
+      "symbolName": "Utilities"
+    },
+    {
+      "id": "file:app/Member.php",
+      "type": "file",
+      "filePath": "app/Member.php",
+      "summary": "app/Member.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Member.php:getDobAttribute",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "getDobAttribute"
+    },
+    {
+      "id": "function:app/Member.php:registerMediaConversions",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "registerMediaConversions"
+    },
+    {
+      "id": "function:app/Member.php:subscriptions",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "subscriptions"
+    },
+    {
+      "id": "function:app/Member.php:purchases",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "purchases"
+    },
+    {
+      "id": "function:app/Member.php:invoices",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "invoices"
+    },
+    {
+      "id": "function:app/Member.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "function:app/Member.php:scopeActive",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeActive"
+    },
+    {
+      "id": "function:app/Member.php:scopeInactive",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeInactive"
+    },
+    {
+      "id": "function:app/Member.php:scopeRecent",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeRecent"
+    },
+    {
+      "id": "function:app/Member.php:scopeBirthday",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeBirthday"
+    },
+    {
+      "id": "function:app/Member.php:scopeRegistrations",
+      "type": "function",
+      "filePath": "app/Member.php",
+      "symbolName": "scopeRegistrations"
+    },
+    {
+      "id": "class:app/Member.php:Member",
+      "type": "class",
+      "filePath": "app/Member.php",
+      "symbolName": "Member"
+    },
+    {
+      "id": "file:app/Plan.php",
+      "type": "file",
+      "filePath": "app/Plan.php",
+      "summary": "app/Plan.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Plan.php:getPlanDisplayAttribute",
+      "type": "function",
+      "filePath": "app/Plan.php",
+      "symbolName": "getPlanDisplayAttribute"
+    },
+    {
+      "id": "function:app/Plan.php:scopeExcludeArchive",
+      "type": "function",
+      "filePath": "app/Plan.php",
+      "symbolName": "scopeExcludeArchive"
+    },
+    {
+      "id": "function:app/Plan.php:scopeOnlyActive",
+      "type": "function",
+      "filePath": "app/Plan.php",
+      "symbolName": "scopeOnlyActive"
+    },
+    {
+      "id": "function:app/Plan.php:subscriptions",
+      "type": "function",
+      "filePath": "app/Plan.php",
+      "symbolName": "subscriptions"
+    },
+    {
+      "id": "function:app/Plan.php:service",
+      "type": "function",
+      "filePath": "app/Plan.php",
+      "symbolName": "service"
+    },
+    {
+      "id": "class:app/Plan.php:Plan",
+      "type": "class",
+      "filePath": "app/Plan.php",
+      "symbolName": "Plan"
+    },
+    {
+      "id": "file:app/SmsEvent.php",
+      "type": "file",
+      "filePath": "app/SmsEvent.php",
+      "summary": "app/SmsEvent.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/SmsEvent.php:SmsEvent",
+      "type": "class",
+      "filePath": "app/SmsEvent.php",
+      "symbolName": "SmsEvent"
+    },
+    {
+      "id": "file:app/SmsLog.php",
+      "type": "file",
+      "filePath": "app/SmsLog.php",
+      "summary": "app/SmsLog.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/SmsLog.php:scopeDashboardLogs",
+      "type": "function",
+      "filePath": "app/SmsLog.php",
+      "symbolName": "scopeDashboardLogs"
+    },
+    {
+      "id": "class:app/SmsLog.php:SmsLog",
+      "type": "class",
+      "filePath": "app/SmsLog.php",
+      "symbolName": "SmsLog"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Console/Commands/FollowupSms.php",
+      "target": "function:app/Console/Commands/FollowupSms.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/FollowupSms.php",
+      "target": "function:app/Console/Commands/FollowupSms.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/FollowupSms.php",
+      "target": "class:app/Console/Commands/FollowupSms.php:FollowupSms",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/FollowupSms.php",
+      "target": "file:app/Followup.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/FollowupSms.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ReshootOfflineSms.php",
+      "target": "function:app/Console/Commands/ReshootOfflineSms.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ReshootOfflineSms.php",
+      "target": "function:app/Console/Commands/ReshootOfflineSms.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ReshootOfflineSms.php",
+      "target": "class:app/Console/Commands/ReshootOfflineSms.php:ReshootOfflineSms",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ReshootOfflineSms.php",
+      "target": "file:app/SmsLog.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "function:app/Console/Commands/SmsEvent.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "function:app/Console/Commands/SmsEvent.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "class:app/Console/Commands/SmsEvent.php:SmsEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "file:app/Enquiry.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsEvent.php",
+      "target": "file:app/SmsEvent.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Enquiry.php",
+      "target": "function:app/Enquiry.php:Followups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Enquiry.php",
+      "target": "function:app/Enquiry.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Enquiry.php",
+      "target": "function:app/Enquiry.php:scopeOnlyLeads",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Enquiry.php",
+      "target": "class:app/Enquiry.php:Enquiry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Followup.php",
+      "target": "function:app/Followup.php:enquiry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Followup.php",
+      "target": "function:app/Followup.php:scopeReminders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Followup.php",
+      "target": "class:app/Followup.php:Followup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "function:app/Http/Controllers/DashboardController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "function:app/Http/Controllers/DashboardController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "function:app/Http/Controllers/DashboardController.php:smsRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "class:app/Http/Controllers/DashboardController.php:DashboardController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Enquiry.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Expense.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Followup.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/SmsLog.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Subscription.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:lost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "function:app/Http/Controllers/EnquiriesController.php:markMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "class:app/Http/Controllers/EnquiriesController.php:EnquiriesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "file:app/Enquiry.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "file:app/Followup.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/EnquiriesController.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/FollowupsController.php",
+      "target": "function:app/Http/Controllers/FollowupsController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/FollowupsController.php",
+      "target": "function:app/Http/Controllers/FollowupsController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/FollowupsController.php",
+      "target": "function:app/Http/Controllers/FollowupsController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/FollowupsController.php",
+      "target": "class:app/Http/Controllers/FollowupsController.php:FollowupsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/FollowupsController.php",
+      "target": "file:app/Followup.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "function:app/Http/Controllers/PlansController.php:archive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "class:app/Http/Controllers/PlansController.php:PlansController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PlansController.php",
+      "target": "file:app/Plan.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:triggersIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:triggerUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:eventsIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:createEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:storeEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:editEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:updateEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:destroyEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:send",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:shoot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:logIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "function:app/Http/Controllers/SmsController.php:logRefresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "class:app/Http/Controllers/SmsController.php:SmsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "file:app/Enquiry.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "file:app/SmsEvent.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "file:app/SmsLog.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SmsController.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:setActiveMenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getSetting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getFollowUpStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getFollowupBy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getIconBg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getStatusIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getAim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getInvoiceLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:expenseRepeatIntervel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getPaidUnpaid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getActiveInactive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getOccupation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getStatusValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getEnquiryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getEnquiryLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:setInvoiceStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getInvoiceStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getSubscriptionStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getSubscriptionLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getPaymentMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getChequeStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getGender",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:getGreeting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:uploadFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:registrationsTrend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:membersPerPlan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:smsGatewayStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:isDomainAvailible",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:Sms",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:retrySms",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:smsBalance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "function:app/Lubus/Utilities.php:smsStatusUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "class:app/Lubus/Utilities.php:Utilities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "file:app/Plan.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "file:app/SmsLog.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/Utilities.php",
+      "target": "file:app/Subscription.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:getDobAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:registerMediaConversions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:subscriptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:purchases",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:invoices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeActive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeInactive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeRecent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeBirthday",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "function:app/Member.php:scopeRegistrations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Member.php",
+      "target": "class:app/Member.php:Member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "function:app/Plan.php:getPlanDisplayAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "function:app/Plan.php:scopeExcludeArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "function:app/Plan.php:scopeOnlyActive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "function:app/Plan.php:subscriptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "function:app/Plan.php:service",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Plan.php",
+      "target": "class:app/Plan.php:Plan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/SmsEvent.php",
+      "target": "class:app/SmsEvent.php:SmsEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/SmsLog.php",
+      "target": "function:app/SmsLog.php:scopeDashboardLogs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/SmsLog.php",
+      "target": "class:app/SmsLog.php:SmsLog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

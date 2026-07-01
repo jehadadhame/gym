@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/products/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/products/edit.blade.php",
+      "summary": "resources/views/products/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/products/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/products/form.blade.php",
+      "summary": "resources/views/products/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/products/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/products/index.blade.php",
+      "summary": "resources/views/products/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/products/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/products/show.blade.php",
+      "summary": "resources/views/products/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/_invoice.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/_invoice.blade.php",
+      "summary": "resources/views/purchases/_invoice.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/_payment.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/_payment.blade.php",
+      "summary": "resources/views/purchases/_payment.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/create.blade.php",
+      "summary": "resources/views/purchases/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/edit.blade.php",
+      "summary": "resources/views/purchases/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/form.blade.php",
+      "summary": "resources/views/purchases/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/index.blade.php",
+      "summary": "resources/views/purchases/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/purchases/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/purchases/show.blade.php",
+      "summary": "resources/views/purchases/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/services/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/services/create.blade.php",
+      "summary": "resources/views/services/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/services/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/services/edit.blade.php",
+      "summary": "resources/views/services/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/services/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/services/form.blade.php",
+      "summary": "resources/views/services/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/services/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/services/index.blade.php",
+      "summary": "resources/views/services/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/settings/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/settings/edit.blade.php",
+      "summary": "resources/views/settings/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/settings/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/settings/show.blade.php",
+      "summary": "resources/views/settings/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/events/_form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/events/_form.blade.php",
+      "summary": "resources/views/sms/events/_form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/events/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/events/create.blade.php",
+      "summary": "resources/views/sms/events/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/events/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/events/edit.blade.php",
+      "summary": "resources/views/sms/events/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/events/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/events/index.blade.php",
+      "summary": "resources/views/sms/events/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/log.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/log.blade.php",
+      "summary": "resources/views/sms/log.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/send.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/send.blade.php",
+      "summary": "resources/views/sms/send.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/sms/triggers/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/sms/triggers/index.blade.php",
+      "summary": "resources/views/sms/triggers/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/_invoice.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/_invoice.blade.php",
+      "summary": "resources/views/subscriptions/_invoice.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

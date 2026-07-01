@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/CHANGES.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/CHANGES.md",
+      "summary": "public/assets/plugins/ckeditor/CHANGES.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/LICENSE.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/LICENSE.md",
+      "summary": "public/assets/plugins/ckeditor/LICENSE.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/README.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/README.md",
+      "summary": "public/assets/plugins/ckeditor/README.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/contents.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/contents.css",
+      "summary": "public/assets/plugins/ckeditor/contents.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

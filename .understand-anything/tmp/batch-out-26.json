@@ -1,0 +1,1997 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "config/jwt.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 139,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/laravel-medialibrary.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 50,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/mail.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 124,
+      "nonEmptyLines": 104,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/queue.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 78,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/sentry.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/services.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/session.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 153,
+      "nonEmptyLines": 128,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/view.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/factories/ModelFactory.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/migrations/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_media_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 37,
+          "endLine": 40,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMediaTable",
+          "startLine": 6,
+          "endLine": 41,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMediaTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('model_id')->unsigned",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('size')->unsigned",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('order_column')->unsigned()->nullable",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('order_column')->unsigned",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->index",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_enquiries_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 41,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstEnquiriesTable",
+          "startLine": 6,
+          "endLine": 45,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstEnquiriesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments('id')->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 32
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_expenses_categories_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstExpensesCategoriesTable",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstExpensesCategoriesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('name', 50)->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_members_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstMembersTable",
+          "startLine": 6,
+          "endLine": 49,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstMembersTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('member_code', 50)->unique('member_id')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('member_code', 50)->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('name', 50)->comment",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('photo', 50)->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date('DOB')->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email', 50)->unique('email')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email', 50)->unique",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('address', 200)->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('proof_name', 50)->comment",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('proof_photo', 50)->comment",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->char('gender', 50)->comment",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->char",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('contact', 11)->unique('contact')->comment",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('contact', 11)->unique",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 33
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 35
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 35
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 35
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 36
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 36
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 36
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_plans_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstPlansTable",
+          "startLine": 6,
+          "endLine": 39,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstPlansTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('id', true)->comment",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('plan_code', 50)->unique('plan_id')->comment",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('plan_code', 50)->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('service_id')->index",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('plan_name', 50)->comment",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text('plan_details', 65535)->comment",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('days')->comment",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('amount')->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean('status')->comment",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->nullable()->index",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->nullable",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_services_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstServicesTable",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstServicesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_sms_events_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstSmsEventsTable",
+          "startLine": 6,
+          "endLine": 38,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstSmsEventsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('send_to')->comment",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned()->index",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('created_by')->unsigned",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned()->index",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('updated_by')->unsigned",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_sms_triggers_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstSmsTriggersTable",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstSmsTriggersTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 21
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_mst_users_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateMstUsersTable",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateMstUsersTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email')->unique",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->boolean",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('remember_token', 100)->nullable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 22
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_password_resets_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreatePasswordResetsTable",
+          "startLine": 6,
+          "endLine": 31,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreatePasswordResetsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email')->index",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('token')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime('created_at')->default",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_permission_role_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreatePermissionRoleTable",
+          "startLine": 6,
+          "endLine": 31,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreatePermissionRoleTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('permission_id')->unsigned",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('role_id')->unsigned()->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('role_id')->unsigned",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->primary",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_permissions_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreatePermissionsTable",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreatePermissionsTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('name')->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 21
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_role_user_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 27,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateRoleUserTable",
+          "startLine": 6,
+          "endLine": 31,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateRoleUserTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('user_id')->unsigned",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('role_id')->unsigned()->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('role_id')->unsigned",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->primary",
+          "lineNumber": 18
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_roles_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 29,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateRolesTable",
+          "startLine": 6,
+          "endLine": 33,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateRolesTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('name')->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('display_name')->nullable",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('description')->nullable",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 20
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/2018_03_07_055231_create_trn_access_log_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "up",
+          "startLine": 13,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "down",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateTrnAccessLogTable",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "up",
+            "down"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateTrnAccessLogTable",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('user_id')->unsigned()->default(0)->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('user_id')->unsigned()->default",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('user_id')->unsigned",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dateTime",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 21
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::drop",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

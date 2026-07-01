@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ionicons/less/_ionicons-font.less",
+      "type": "file",
+      "filePath": "public/assets/plugins/ionicons/less/_ionicons-font.less",
+      "summary": "public/assets/plugins/ionicons/less/_ionicons-font.less",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ionicons/less/_ionicons-icons.less",
+      "type": "file",
+      "filePath": "public/assets/plugins/ionicons/less/_ionicons-icons.less",
+      "summary": "public/assets/plugins/ionicons/less/_ionicons-icons.less",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ionicons/less/_ionicons-variables.less",
+      "type": "file",
+      "filePath": "public/assets/plugins/ionicons/less/_ionicons-variables.less",
+      "summary": "public/assets/plugins/ionicons/less/_ionicons-variables.less",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ionicons/less/ionicons.less",
+      "type": "file",
+      "filePath": "public/assets/plugins/ionicons/less/ionicons.less",
+      "summary": "public/assets/plugins/ionicons/less/ionicons.less",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

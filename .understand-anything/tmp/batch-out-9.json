@@ -1,0 +1,71 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/css/color-palettes.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/helpers.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1164,
+      "nonEmptyLines": 1105,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/material.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1285,
+      "nonEmptyLines": 1284,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/mystyle.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 158,
+      "nonEmptyLines": 126,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/plugins.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 375,
+      "nonEmptyLines": 344,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/print.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/responsive.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 309,
+      "nonEmptyLines": 293,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/css/style.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 2916,
+      "nonEmptyLines": 2694,
+      "metrics": {}
+    }
+  ]
+}

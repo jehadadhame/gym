@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

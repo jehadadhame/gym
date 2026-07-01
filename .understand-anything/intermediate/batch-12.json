@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/ajax.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/ajax.html",
+      "summary": "public/assets/plugins/ckeditor/samples/ajax.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/api.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/api.html",
+      "summary": "public/assets/plugins/ckeditor/samples/api.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/appendto.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/appendto.html",
+      "summary": "public/assets/plugins/ckeditor/samples/appendto.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/datafiltering.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/datafiltering.html",
+      "summary": "public/assets/plugins/ckeditor/samples/datafiltering.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/divreplace.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/divreplace.html",
+      "summary": "public/assets/plugins/ckeditor/samples/divreplace.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/index.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/index.html",
+      "summary": "public/assets/plugins/ckeditor/samples/index.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/inlineall.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/inlineall.html",
+      "summary": "public/assets/plugins/ckeditor/samples/inlineall.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/inlinebycode.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/inlinebycode.html",
+      "summary": "public/assets/plugins/ckeditor/samples/inlinebycode.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/inlinetextarea.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/inlinetextarea.html",
+      "summary": "public/assets/plugins/ckeditor/samples/inlinetextarea.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/jquery.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/jquery.html",
+      "summary": "public/assets/plugins/ckeditor/samples/jquery.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/readonly.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/readonly.html",
+      "summary": "public/assets/plugins/ckeditor/samples/readonly.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/replacebyclass.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/replacebyclass.html",
+      "summary": "public/assets/plugins/ckeditor/samples/replacebyclass.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/replacebycode.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/replacebycode.html",
+      "summary": "public/assets/plugins/ckeditor/samples/replacebycode.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/sample.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/sample.css",
+      "summary": "public/assets/plugins/ckeditor/samples/sample.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/tabindex.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/tabindex.html",
+      "summary": "public/assets/plugins/ckeditor/samples/tabindex.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/uicolor.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/uicolor.html",
+      "summary": "public/assets/plugins/ckeditor/samples/uicolor.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/uilanguages.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/uilanguages.html",
+      "summary": "public/assets/plugins/ckeditor/samples/uilanguages.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/xhtmlstyle.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/xhtmlstyle.html",
+      "summary": "public/assets/plugins/ckeditor/samples/xhtmlstyle.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,985 @@
+{
+  "nodes": [
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": ".understand-anything/.understandignore",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:.understand-anything/config.json",
+      "type": "file",
+      "filePath": ".understand-anything/config.json",
+      "summary": ".understand-anything/config.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/Commands/SyncDataToGoogleSheet.php",
+      "type": "file",
+      "filePath": "app/Commands/SyncDataToGoogleSheet.php",
+      "summary": "app/Commands/SyncDataToGoogleSheet.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Commands/SyncDataToGoogleSheet.php:handle",
+      "type": "function",
+      "filePath": "app/Commands/SyncDataToGoogleSheet.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Commands/SyncDataToGoogleSheet.php:SyncDataToGoogleSheet",
+      "type": "class",
+      "filePath": "app/Commands/SyncDataToGoogleSheet.php",
+      "symbolName": "SyncDataToGoogleSheet"
+    },
+    {
+      "id": "file:app/Console/Commands/Inspire.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/Inspire.php",
+      "summary": "app/Console/Commands/Inspire.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/Inspire.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/Inspire.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/Inspire.php:Inspire",
+      "type": "class",
+      "filePath": "app/Console/Commands/Inspire.php",
+      "symbolName": "Inspire"
+    },
+    {
+      "id": "file:app/Console/Commands/SmsStatus.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/SmsStatus.php",
+      "summary": "app/Console/Commands/SmsStatus.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/SmsStatus.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/SmsStatus.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/SmsStatus.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/SmsStatus.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/SmsStatus.php:SmsStatus",
+      "type": "class",
+      "filePath": "app/Console/Commands/SmsStatus.php",
+      "symbolName": "SmsStatus"
+    },
+    {
+      "id": "file:app/Console/Kernel.php",
+      "type": "file",
+      "filePath": "app/Console/Kernel.php",
+      "summary": "app/Console/Kernel.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Kernel.php:schedule",
+      "type": "function",
+      "filePath": "app/Console/Kernel.php",
+      "symbolName": "schedule"
+    },
+    {
+      "id": "class:app/Console/Kernel.php:Kernel",
+      "type": "class",
+      "filePath": "app/Console/Kernel.php",
+      "symbolName": "Kernel"
+    },
+    {
+      "id": "file:app/createdByUser.php",
+      "type": "file",
+      "filePath": "app/createdByUser.php",
+      "summary": "app/createdByUser.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/Events/Event.php",
+      "type": "file",
+      "filePath": "app/Events/Event.php",
+      "summary": "app/Events/Event.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Events/Event.php:Event",
+      "type": "class",
+      "filePath": "app/Events/Event.php",
+      "symbolName": "Event"
+    },
+    {
+      "id": "file:app/Exceptions/Handler.php",
+      "type": "file",
+      "filePath": "app/Exceptions/Handler.php",
+      "summary": "app/Exceptions/Handler.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Exceptions/Handler.php:report",
+      "type": "function",
+      "filePath": "app/Exceptions/Handler.php",
+      "symbolName": "report"
+    },
+    {
+      "id": "function:app/Exceptions/Handler.php:render",
+      "type": "function",
+      "filePath": "app/Exceptions/Handler.php",
+      "symbolName": "render"
+    },
+    {
+      "id": "class:app/Exceptions/Handler.php:Handler",
+      "type": "class",
+      "filePath": "app/Exceptions/Handler.php",
+      "symbolName": "Handler"
+    },
+    {
+      "id": "file:app/ExpenseCategory.php",
+      "type": "file",
+      "filePath": "app/ExpenseCategory.php",
+      "summary": "app/ExpenseCategory.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/ExpenseCategory.php:scopeExcludeArchive",
+      "type": "function",
+      "filePath": "app/ExpenseCategory.php",
+      "symbolName": "scopeExcludeArchive"
+    },
+    {
+      "id": "function:app/ExpenseCategory.php:expenses",
+      "type": "function",
+      "filePath": "app/ExpenseCategory.php",
+      "symbolName": "expenses"
+    },
+    {
+      "id": "class:app/ExpenseCategory.php:ExpenseCategory",
+      "type": "class",
+      "filePath": "app/ExpenseCategory.php",
+      "symbolName": "ExpenseCategory"
+    },
+    {
+      "id": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "summary": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpenseCategoriesController.php:archive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "archive"
+    },
+    {
+      "id": "class:app/Http/Controllers/ExpenseCategoriesController.php:ExpenseCategoriesController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/ExpenseCategoriesController.php",
+      "symbolName": "ExpenseCategoriesController"
+    },
+    {
+      "id": "file:app/Http/Kernel.php",
+      "type": "file",
+      "filePath": "app/Http/Kernel.php",
+      "summary": "app/Http/Kernel.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Http/Kernel.php:Kernel",
+      "type": "class",
+      "filePath": "app/Http/Kernel.php",
+      "symbolName": "Kernel"
+    },
+    {
+      "id": "file:app/Http/Middleware/Authenticate.php",
+      "type": "file",
+      "filePath": "app/Http/Middleware/Authenticate.php",
+      "summary": "app/Http/Middleware/Authenticate.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Middleware/Authenticate.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Middleware/Authenticate.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Middleware/Authenticate.php:handle",
+      "type": "function",
+      "filePath": "app/Http/Middleware/Authenticate.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Http/Middleware/Authenticate.php:Authenticate",
+      "type": "class",
+      "filePath": "app/Http/Middleware/Authenticate.php",
+      "symbolName": "Authenticate"
+    },
+    {
+      "id": "file:app/Http/Middleware/EncryptCookies.php",
+      "type": "file",
+      "filePath": "app/Http/Middleware/EncryptCookies.php",
+      "summary": "app/Http/Middleware/EncryptCookies.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Http/Middleware/EncryptCookies.php:EncryptCookies",
+      "type": "class",
+      "filePath": "app/Http/Middleware/EncryptCookies.php",
+      "symbolName": "EncryptCookies"
+    },
+    {
+      "id": "file:app/Http/Middleware/Owner.php",
+      "type": "file",
+      "filePath": "app/Http/Middleware/Owner.php",
+      "summary": "app/Http/Middleware/Owner.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Middleware/Owner.php:handle",
+      "type": "function",
+      "filePath": "app/Http/Middleware/Owner.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Http/Middleware/Owner.php:Owner",
+      "type": "class",
+      "filePath": "app/Http/Middleware/Owner.php",
+      "symbolName": "Owner"
+    },
+    {
+      "id": "file:app/Http/Middleware/RedirectIfAuthenticated.php",
+      "type": "file",
+      "filePath": "app/Http/Middleware/RedirectIfAuthenticated.php",
+      "summary": "app/Http/Middleware/RedirectIfAuthenticated.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Middleware/RedirectIfAuthenticated.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Middleware/RedirectIfAuthenticated.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Middleware/RedirectIfAuthenticated.php:handle",
+      "type": "function",
+      "filePath": "app/Http/Middleware/RedirectIfAuthenticated.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Http/Middleware/RedirectIfAuthenticated.php:RedirectIfAuthenticated",
+      "type": "class",
+      "filePath": "app/Http/Middleware/RedirectIfAuthenticated.php",
+      "symbolName": "RedirectIfAuthenticated"
+    },
+    {
+      "id": "file:app/Http/Middleware/VerifyCsrfToken.php",
+      "type": "file",
+      "filePath": "app/Http/Middleware/VerifyCsrfToken.php",
+      "summary": "app/Http/Middleware/VerifyCsrfToken.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Http/Middleware/VerifyCsrfToken.php:VerifyCsrfToken",
+      "type": "class",
+      "filePath": "app/Http/Middleware/VerifyCsrfToken.php",
+      "symbolName": "VerifyCsrfToken"
+    },
+    {
+      "id": "file:app/Http/routes.php",
+      "type": "file",
+      "filePath": "app/Http/routes.php",
+      "summary": "app/Http/routes.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/Jobs/Job.php",
+      "type": "file",
+      "filePath": "app/Jobs/Job.php",
+      "summary": "app/Jobs/Job.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Jobs/Job.php:Job",
+      "type": "class",
+      "filePath": "app/Jobs/Job.php",
+      "symbolName": "Job"
+    },
+    {
+      "id": "file:app/Listeners/.gitkeep",
+      "type": "file",
+      "filePath": "app/Listeners/.gitkeep",
+      "summary": "app/Listeners/.gitkeep",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/Lubus/constants.php",
+      "type": "file",
+      "filePath": "app/Lubus/constants.php",
+      "summary": "app/Lubus/constants.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constStatus",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constStatus"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constEnquiryStatus",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constEnquiryStatus"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constFollowUpStatus",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constFollowUpStatus"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constFollowUpBy",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constFollowUpBy"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constPaths",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constPaths"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constFilePrefix",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constFilePrefix"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constPaymentStatus",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constPaymentStatus"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constChequeStatus",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constChequeStatus"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constInvoiceItem",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constInvoiceItem"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constSubscription",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constSubscription"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constNumberingMode",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constNumberingMode"
+    },
+    {
+      "id": "class:app/Lubus/constants.php:constPaymentMode",
+      "type": "class",
+      "filePath": "app/Lubus/constants.php",
+      "symbolName": "constPaymentMode"
+    },
+    {
+      "id": "file:app/Lubus/helpers.php",
+      "type": "file",
+      "filePath": "app/Lubus/helpers.php",
+      "summary": "app/Lubus/helpers.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/Lubus/ImageFilters/Image100x100.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Image100x100.php",
+      "summary": "app/Lubus/ImageFilters/Image100x100.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Image100x100.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Image100x100.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Image100x100.php:Image100x100",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Image100x100.php",
+      "symbolName": "Image100x100"
+    },
+    {
+      "id": "file:app/Lubus/ImageFilters/Image400x400.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Image400x400.php",
+      "summary": "app/Lubus/ImageFilters/Image400x400.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Image400x400.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Image400x400.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Image400x400.php:Image400x400",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Image400x400.php",
+      "symbolName": "Image400x400"
+    },
+    {
+      "id": "file:app/Lubus/ImageFilters/Image50x50.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Image50x50.php",
+      "summary": "app/Lubus/ImageFilters/Image50x50.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Image50x50.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Image50x50.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Image50x50.php:Image50x50",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Image50x50.php",
+      "symbolName": "Image50x50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Commands/SyncDataToGoogleSheet.php",
+      "target": "function:app/Commands/SyncDataToGoogleSheet.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Commands/SyncDataToGoogleSheet.php",
+      "target": "class:app/Commands/SyncDataToGoogleSheet.php:SyncDataToGoogleSheet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Commands/SyncDataToGoogleSheet.php",
+      "target": "file:app/Purchase.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/Inspire.php",
+      "target": "function:app/Console/Commands/Inspire.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/Inspire.php",
+      "target": "class:app/Console/Commands/Inspire.php:Inspire",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsStatus.php",
+      "target": "function:app/Console/Commands/SmsStatus.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsStatus.php",
+      "target": "function:app/Console/Commands/SmsStatus.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/SmsStatus.php",
+      "target": "class:app/Console/Commands/SmsStatus.php:SmsStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Kernel.php",
+      "target": "function:app/Console/Kernel.php:schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Kernel.php",
+      "target": "class:app/Console/Kernel.php:Kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Events/Event.php",
+      "target": "class:app/Events/Event.php:Event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Exceptions/Handler.php",
+      "target": "function:app/Exceptions/Handler.php:report",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Exceptions/Handler.php",
+      "target": "function:app/Exceptions/Handler.php:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Exceptions/Handler.php",
+      "target": "class:app/Exceptions/Handler.php:Handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/ExpenseCategory.php",
+      "target": "function:app/ExpenseCategory.php:scopeExcludeArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/ExpenseCategory.php",
+      "target": "function:app/ExpenseCategory.php:expenses",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/ExpenseCategory.php",
+      "target": "class:app/ExpenseCategory.php:ExpenseCategory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "function:app/Http/Controllers/ExpenseCategoriesController.php:archive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "class:app/Http/Controllers/ExpenseCategoriesController.php:ExpenseCategoriesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpenseCategoriesController.php",
+      "target": "file:app/ExpenseCategory.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Kernel.php",
+      "target": "class:app/Http/Kernel.php:Kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/Authenticate.php",
+      "target": "function:app/Http/Middleware/Authenticate.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/Authenticate.php",
+      "target": "function:app/Http/Middleware/Authenticate.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/Authenticate.php",
+      "target": "class:app/Http/Middleware/Authenticate.php:Authenticate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/EncryptCookies.php",
+      "target": "class:app/Http/Middleware/EncryptCookies.php:EncryptCookies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/Owner.php",
+      "target": "function:app/Http/Middleware/Owner.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/Owner.php",
+      "target": "class:app/Http/Middleware/Owner.php:Owner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/RedirectIfAuthenticated.php",
+      "target": "function:app/Http/Middleware/RedirectIfAuthenticated.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/RedirectIfAuthenticated.php",
+      "target": "function:app/Http/Middleware/RedirectIfAuthenticated.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/RedirectIfAuthenticated.php",
+      "target": "class:app/Http/Middleware/RedirectIfAuthenticated.php:RedirectIfAuthenticated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Middleware/VerifyCsrfToken.php",
+      "target": "class:app/Http/Middleware/VerifyCsrfToken.php:VerifyCsrfToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Jobs/Job.php",
+      "target": "class:app/Jobs/Job.php:Job",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constEnquiryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constFollowUpStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constFollowUpBy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constPaths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constFilePrefix",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constPaymentStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constChequeStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constInvoiceItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constSubscription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constNumberingMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/constants.php",
+      "target": "class:app/Lubus/constants.php:constPaymentMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image100x100.php",
+      "target": "function:app/Lubus/ImageFilters/Image100x100.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image100x100.php",
+      "target": "class:app/Lubus/ImageFilters/Image100x100.php:Image100x100",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image400x400.php",
+      "target": "function:app/Lubus/ImageFilters/Image400x400.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image400x400.php",
+      "target": "class:app/Lubus/ImageFilters/Image400x400.php:Image400x400",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image50x50.php",
+      "target": "function:app/Lubus/ImageFilters/Image50x50.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image50x50.php",
+      "target": "class:app/Lubus/ImageFilters/Image50x50.php:Image50x50",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

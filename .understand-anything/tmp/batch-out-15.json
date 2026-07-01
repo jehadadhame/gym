@@ -1,0 +1,111 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/font-awesome/less/animated.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 34,
+      "nonEmptyLines": 30,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/bordered-pulled.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/core.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/fixed-width.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/font-awesome.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/icons.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 697,
+      "nonEmptyLines": 696,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/larger.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/list.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 19,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/mixins.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 26,
+      "nonEmptyLines": 22,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/path.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/rotated-flipped.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/stacked.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/less/variables.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 708,
+      "nonEmptyLines": 705,
+      "metrics": {}
+    }
+  ]
+}

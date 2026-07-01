@@ -1,0 +1,666 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/AclController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "summary": "app/Http/Controllers/AclController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:userIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "userIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:createUser",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "createUser"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:storeUser",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "storeUser"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:editUser",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "editUser"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:updateUser",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "updateUser"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:deleteUser",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "deleteUser"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:roleIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "roleIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:createRole",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "createRole"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:storeRole",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "storeRole"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:editRole",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "editRole"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:updateRole",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "updateRole"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:deleteRole",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "deleteRole"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:permissionIndex",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "permissionIndex"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:createPermission",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "createPermission"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:storePermission",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "storePermission"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:editPermission",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "editPermission"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:updatePermission",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "updatePermission"
+    },
+    {
+      "id": "function:app/Http/Controllers/AclController.php:deletePermission",
+      "type": "function",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "deletePermission"
+    },
+    {
+      "id": "class:app/Http/Controllers/AclController.php:AclController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/AclController.php",
+      "symbolName": "AclController"
+    },
+    {
+      "id": "file:app/Permission.php",
+      "type": "file",
+      "filePath": "app/Permission.php",
+      "summary": "app/Permission.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Permission.php:roles",
+      "type": "function",
+      "filePath": "app/Permission.php",
+      "symbolName": "roles"
+    },
+    {
+      "id": "class:app/Permission.php:Permission",
+      "type": "class",
+      "filePath": "app/Permission.php",
+      "symbolName": "Permission"
+    },
+    {
+      "id": "file:app/PermissionRole.php",
+      "type": "file",
+      "filePath": "app/PermissionRole.php",
+      "summary": "app/PermissionRole.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/PermissionRole.php:PermissionRole",
+      "type": "class",
+      "filePath": "app/PermissionRole.php",
+      "symbolName": "PermissionRole"
+    },
+    {
+      "id": "file:app/Role.php",
+      "type": "file",
+      "filePath": "app/Role.php",
+      "summary": "app/Role.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Role.php:users",
+      "type": "function",
+      "filePath": "app/Role.php",
+      "symbolName": "users"
+    },
+    {
+      "id": "function:app/Role.php:permissions",
+      "type": "function",
+      "filePath": "app/Role.php",
+      "symbolName": "permissions"
+    },
+    {
+      "id": "function:app/Role.php:roleUsers",
+      "type": "function",
+      "filePath": "app/Role.php",
+      "symbolName": "roleUsers"
+    },
+    {
+      "id": "function:app/Role.php:scopeExcludeGymie",
+      "type": "function",
+      "filePath": "app/Role.php",
+      "symbolName": "scopeExcludeGymie"
+    },
+    {
+      "id": "class:app/Role.php:Role",
+      "type": "class",
+      "filePath": "app/Role.php",
+      "symbolName": "Role"
+    },
+    {
+      "id": "file:app/RoleUser.php",
+      "type": "file",
+      "filePath": "app/RoleUser.php",
+      "summary": "app/RoleUser.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/RoleUser.php:user",
+      "type": "function",
+      "filePath": "app/RoleUser.php",
+      "symbolName": "user"
+    },
+    {
+      "id": "function:app/RoleUser.php:role",
+      "type": "function",
+      "filePath": "app/RoleUser.php",
+      "symbolName": "role"
+    },
+    {
+      "id": "class:app/RoleUser.php:RoleUser",
+      "type": "class",
+      "filePath": "app/RoleUser.php",
+      "symbolName": "RoleUser"
+    },
+    {
+      "id": "file:database/seeds/PermissionsRoleTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/PermissionsRoleTableSeeder.php",
+      "summary": "database/seeds/PermissionsRoleTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/PermissionsRoleTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/PermissionsRoleTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/PermissionsRoleTableSeeder.php:PermissionsRoleTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/PermissionsRoleTableSeeder.php",
+      "symbolName": "PermissionsRoleTableSeeder"
+    },
+    {
+      "id": "file:database/seeds/PermissionsTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/PermissionsTableSeeder.php",
+      "summary": "database/seeds/PermissionsTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/PermissionsTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/PermissionsTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/PermissionsTableSeeder.php:PermissionsTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/PermissionsTableSeeder.php",
+      "symbolName": "PermissionsTableSeeder"
+    },
+    {
+      "id": "file:database/seeds/RoleUserTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/RoleUserTableSeeder.php",
+      "summary": "database/seeds/RoleUserTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/RoleUserTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/RoleUserTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/RoleUserTableSeeder.php:RoleUserTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/RoleUserTableSeeder.php",
+      "symbolName": "RoleUserTableSeeder"
+    },
+    {
+      "id": "file:database/seeds/RolesTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/RolesTableSeeder.php",
+      "summary": "database/seeds/RolesTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/RolesTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/RolesTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/RolesTableSeeder.php:RolesTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/RolesTableSeeder.php",
+      "symbolName": "RolesTableSeeder"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:userIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:createUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:storeUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:editUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:updateUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:deleteUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:roleIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:createRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:storeRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:editRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:updateRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:deleteRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:permissionIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:createPermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:storePermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:editPermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:updatePermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "function:app/Http/Controllers/AclController.php:deletePermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "class:app/Http/Controllers/AclController.php:AclController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "file:app/Permission.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "file:app/PermissionRole.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "file:app/Role.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "file:app/RoleUser.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/AclController.php",
+      "target": "file:app/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Permission.php",
+      "target": "function:app/Permission.php:roles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Permission.php",
+      "target": "class:app/Permission.php:Permission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/PermissionRole.php",
+      "target": "class:app/PermissionRole.php:PermissionRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Role.php",
+      "target": "function:app/Role.php:users",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Role.php",
+      "target": "function:app/Role.php:permissions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Role.php",
+      "target": "function:app/Role.php:roleUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Role.php",
+      "target": "function:app/Role.php:scopeExcludeGymie",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Role.php",
+      "target": "class:app/Role.php:Role",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/RoleUser.php",
+      "target": "function:app/RoleUser.php:user",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/RoleUser.php",
+      "target": "function:app/RoleUser.php:role",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/RoleUser.php",
+      "target": "class:app/RoleUser.php:RoleUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsRoleTableSeeder.php",
+      "target": "function:database/seeds/PermissionsRoleTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsRoleTableSeeder.php",
+      "target": "class:database/seeds/PermissionsRoleTableSeeder.php:PermissionsRoleTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsRoleTableSeeder.php",
+      "target": "file:app/PermissionRole.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsTableSeeder.php",
+      "target": "function:database/seeds/PermissionsTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsTableSeeder.php",
+      "target": "class:database/seeds/PermissionsTableSeeder.php:PermissionsTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/PermissionsTableSeeder.php",
+      "target": "file:app/Permission.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RoleUserTableSeeder.php",
+      "target": "function:database/seeds/RoleUserTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RoleUserTableSeeder.php",
+      "target": "class:database/seeds/RoleUserTableSeeder.php:RoleUserTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RoleUserTableSeeder.php",
+      "target": "file:app/RoleUser.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RolesTableSeeder.php",
+      "target": "function:database/seeds/RolesTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RolesTableSeeder.php",
+      "target": "class:database/seeds/RolesTableSeeder.php:RolesTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/RolesTableSeeder.php",
+      "target": "file:app/Role.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,794 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Console/Commands/ExpenseAlert.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExpenseAlert",
+          "startLine": 10,
+          "endLine": 56,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExpenseAlert",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Expense::where('due_date', '=', Carbon::today()->addDays(1))->where('paid', '=', 0)->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Expense::where('due_date', '=', Carbon::today()->addDays(1))->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Expense::where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today()->addDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'expense_alert')->first",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/RepeatExpense.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 40,
+          "endLine": 99,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RepeatExpense",
+          "startLine": 9,
+          "endLine": 100,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RepeatExpense",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 32
+        },
+        {
+          "caller": "handle",
+          "callee": "Expense::where('due_date', '=', Carbon::today()->format('Y-m-d'))->get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Expense::where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "$expense->due_date->addDays",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "$newExpense->save",
+          "lineNumber": 57
+        },
+        {
+          "caller": "handle",
+          "callee": "$expense->due_date->addWeek",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handle",
+          "callee": "$newExpense->save",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handle",
+          "callee": "$expense->due_date->addMonth",
+          "lineNumber": 74
+        },
+        {
+          "caller": "handle",
+          "callee": "$newExpense->save",
+          "lineNumber": 83
+        },
+        {
+          "caller": "handle",
+          "callee": "$expense->due_date->addYear",
+          "lineNumber": 87
+        },
+        {
+          "caller": "handle",
+          "callee": "$newExpense->save",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Expense.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 65,
+      "functions": [
+        {
+          "name": "category",
+          "startLine": 36,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "scopeDueAlerts",
+          "startLine": 41,
+          "endLine": 44,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeOutstandingAlerts",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 51,
+          "endLine": 81,
+          "params": [
+            "$query",
+            "$category",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Expense",
+          "startLine": 9,
+          "endLine": 82,
+          "methods": [
+            "category",
+            "scopeDueAlerts",
+            "scopeOutstandingAlerts",
+            "scopeIndexQuery"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns",
+            "dates"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Expense",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "category",
+          "callee": "$this->belongsTo",
+          "lineNumber": 38
+        },
+        {
+          "caller": "scopeDueAlerts",
+          "callee": "$query->where('paid', '!=', \\constPaymentStatus::Paid)->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "scopeDueAlerts",
+          "callee": "$query->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "scopeDueAlerts",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "scopeOutstandingAlerts",
+          "callee": "$query->where('paid', '!=', \\constPaymentStatus::Paid)->where",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeOutstandingAlerts",
+          "callee": "$query->where",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeOutstandingAlerts",
+          "callee": "Carbon::today",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('mst_expenses_categories', 'trn_expenses.category_id', '=', 'mst_expenses_categories.id')->select",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 63
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 66
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 67
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('trn_expenses.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('trn_expenses.amount', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('trn_expenses.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 75
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/ExpensesController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 12,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 21,
+          "endLine": 36,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 44,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "create",
+          "startLine": 56,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 66,
+          "endLine": 94,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 96,
+          "endLine": 101,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 103,
+          "endLine": 123,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "paid",
+          "startLine": 125,
+          "endLine": 132,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 134,
+          "endLine": 139,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExpensesController",
+          "startLine": 10,
+          "endLine": 140,
+          "methods": [
+            "__construct",
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "paid",
+            "delete"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExpensesController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 14
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->paginate",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::indexQuery",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "$expenseTotal->sum",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 27
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 27
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 33
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 35
+        },
+        {
+          "caller": "show",
+          "callee": "Expense::findOrFail",
+          "lineNumber": 46
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 48
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 58
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->createdBy()->associate",
+          "lineNumber": 78
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->createdBy",
+          "lineNumber": 78
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 78
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->updatedBy()->associate",
+          "lineNumber": 79
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->updatedBy",
+          "lineNumber": 79
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 79
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->save",
+          "lineNumber": 80
+        },
+        {
+          "caller": "store",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 82
+        },
+        {
+          "caller": "store",
+          "callee": "Carbon::today",
+          "lineNumber": 82
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->createdBy()->associate",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->createdBy",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "$expense->save",
+          "lineNumber": 90
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 91
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 91
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 93
+        },
+        {
+          "caller": "edit",
+          "callee": "Expense::findOrFail",
+          "lineNumber": 98
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 100
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 100
+        },
+        {
+          "caller": "update",
+          "callee": "Expense::findOrFail",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "$expense->update",
+          "lineNumber": 107
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 107
+        },
+        {
+          "caller": "update",
+          "callee": "Carbon::today",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "Carbon::today",
+          "lineNumber": 111
+        },
+        {
+          "caller": "update",
+          "callee": "$expense->updatedBy()->associate",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "$expense->updatedBy",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "$expense->save",
+          "lineNumber": 119
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 120
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 120
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 122
+        },
+        {
+          "caller": "paid",
+          "callee": "Expense::where('id', '=', $id)->update",
+          "lineNumber": 127
+        },
+        {
+          "caller": "paid",
+          "callee": "Expense::where",
+          "lineNumber": 127
+        },
+        {
+          "caller": "paid",
+          "callee": "flash()->success",
+          "lineNumber": 129
+        },
+        {
+          "caller": "paid",
+          "callee": "flash",
+          "lineNumber": 129
+        },
+        {
+          "caller": "paid",
+          "callee": "redirect",
+          "lineNumber": 131
+        },
+        {
+          "caller": "delete",
+          "callee": "Expense::destroy",
+          "lineNumber": 136
+        },
+        {
+          "caller": "delete",
+          "callee": "redirect",
+          "lineNumber": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    }
+  ]
+}

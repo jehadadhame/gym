@@ -1,0 +1,1022 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Console/Commands/BirthdaySms.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BirthdaySms",
+          "startLine": 10,
+          "endLine": 56,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BirthdaySms",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::whereMonth('DOB', '=', Carbon::today()->month)->whereDay('DOB', '=', Carbon::today()->day)->where('status', '=', \\constStatus::Active)->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::whereMonth('DOB', '=', Carbon::today()->month)->whereDay('DOB', '=', Carbon::today()->day)->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::whereMonth('DOB', '=', Carbon::today()->month)->whereDay",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::whereMonth",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'member_birthday')->first",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/PendingInvoice.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 59,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PendingInvoice",
+          "startLine": 10,
+          "endLine": 60,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PendingInvoice",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Invoice::select(DB::raw('*, DATE_ADD(created_at , INTERVAL 4 DAY) AS sms_start, DATE_ADD(created_at , INTERVAL 6 DAY) AS sms_end'))\r\n                                ->havingRaw('CURDATE() >= sms_start AND CURDATE() <= sms_end')\r\n                                ->whereIn('status', [0, 2])->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Invoice::select(DB::raw('*, DATE_ADD(created_at , INTERVAL 4 DAY) AS sms_start, DATE_ADD(created_at , INTERVAL 6 DAY) AS sms_end'))\r\n                                ->havingRaw('CURDATE() >= sms_start AND CURDATE() <= sms_end')->whereIn",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Invoice::select(DB::raw('*, DATE_ADD(created_at , INTERVAL 4 DAY) AS sms_start, DATE_ADD(created_at , INTERVAL 6 DAY) AS sms_end'))->havingRaw",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Invoice::select",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "DB::raw",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'pending_invoice')->first",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "$invoice->PaymentDetails->contains",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/SetExpired.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SetExpired",
+          "startLine": 9,
+          "endLine": 44,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SetExpired",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 32
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('end_date', '<', Carbon::today())->where('status', '=', \\constSubscription::onGoing)->update",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('end_date', '<', Carbon::today())->where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/SmsExpired.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsExpired",
+          "startLine": 10,
+          "endLine": 55,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsExpired",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('status', '=', \\constSubscription::Expired)->where('end_date', '=', Carbon::today()->subDay())->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('status', '=', \\constSubscription::Expired)->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today()->subDay",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'subscription_expired')->first",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "$subscription->end_date->format",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/SmsExpiring.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsExpiring",
+          "startLine": 10,
+          "endLine": 55,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsExpiring",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('end_date', '<=', Carbon::today()->addDays(3))->where('status', '=', \\constSubscription::onGoing)->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where('end_date', '<=', Carbon::today()->addDays(3))->where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Subscription::where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today()->addDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'subscription_expiring')->first",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "$expiring->end_date->format",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/SmsTrigger.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 23,
+      "classes": [
+        {
+          "name": "SmsTrigger",
+          "startLine": 8,
+          "endLine": 30,
+          "methods": [],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsTrigger",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Subscription.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 198,
+      "nonEmptyLines": 164,
+      "functions": [
+        {
+          "name": "scopeDashboardExpiring",
+          "startLine": 42,
+          "endLine": 50,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeDashboardExpired",
+          "startLine": 52,
+          "endLine": 61,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 63,
+          "endLine": 107,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$plan_id",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "scopeExpiring",
+          "startLine": 108,
+          "endLine": 144,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "scopeExpired",
+          "startLine": 146,
+          "endLine": 182,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "member",
+          "startLine": 184,
+          "endLine": 187,
+          "params": []
+        },
+        {
+          "name": "plan",
+          "startLine": 189,
+          "endLine": 192,
+          "params": []
+        },
+        {
+          "name": "invoice",
+          "startLine": 194,
+          "endLine": 197,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Subscription",
+          "startLine": 9,
+          "endLine": 198,
+          "methods": [
+            "scopeDashboardExpiring",
+            "scopeDashboardExpired",
+            "scopeIndexQuery",
+            "scopeExpiring",
+            "scopeExpired",
+            "member",
+            "plan",
+            "invoice"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Subscription",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "$query\r\n            ->with(['member' => function ($query) {\r\n                $query->where('status', '=', \\constStatus::Active);\r\n            }])\r\n            ->where('end_date', '<', Carbon::today()->addDays(7))->where",
+          "lineNumber": 44
+        },
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "$query\r\n            ->with(['member' => function ($query) {\r\n                $query->where('status', '=', \\constStatus::Active);\r\n            }])->where",
+          "lineNumber": 44
+        },
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "$query->with",
+          "lineNumber": 44
+        },
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "$query->where",
+          "lineNumber": 46
+        },
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "Carbon::today()->addDays",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeDashboardExpiring",
+          "callee": "Carbon::today",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeDashboardExpired",
+          "callee": "$query\r\n            ->with(['member' => function ($query) {\r\n                $query->where('status', '=', \\constStatus::Active);\r\n            }])\r\n            ->where('status', '=', \\constSubscription::Expired)\r\n            ->where('plan_id', '=', 6)->where",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeDashboardExpired",
+          "callee": "$query\r\n            ->with(['member' => function ($query) {\r\n                $query->where('status', '=', \\constStatus::Active);\r\n            }])\r\n            ->where('status', '=', \\constSubscription::Expired)->where",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeDashboardExpired",
+          "callee": "$query\r\n            ->with(['member' => function ($query) {\r\n                $query->where('status', '=', \\constStatus::Active);\r\n            }])->where",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeDashboardExpired",
+          "callee": "$query->with",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeDashboardExpired",
+          "callee": "$query->where",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')\r\n            ->leftJoin('mst_members', 'trn_subscriptions.member_id', '=', 'mst_members.id')\r\n            ->leftJoin('trn_invoice', 'trn_subscriptions.invoice_id', '=', 'trn_invoice.id')->select",
+          "lineNumber": 69
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')\r\n            ->leftJoin('mst_members', 'trn_subscriptions.member_id', '=', 'mst_members.id')->leftJoin",
+          "lineNumber": 69
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')->leftJoin",
+          "lineNumber": 69
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 69
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 83
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 87
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 88
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_plans.plan_name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('trn_invoice.invoice_number', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('trn_subscriptions.start_date', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_plans.plan_name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('trn_invoice.invoice_number', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_plans.plan_name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 89
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 100
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 104
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')\r\n            ->leftJoin('mst_members', 'trn_subscriptions.member_id', '=', 'mst_members.id')->select",
+          "lineNumber": 113
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')->leftJoin",
+          "lineNumber": 113
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->leftJoin",
+          "lineNumber": 113
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->where",
+          "lineNumber": 124
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->where('trn_subscriptions.end_date', '<', Carbon::today()->addDays(7))->where",
+          "lineNumber": 126
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->where",
+          "lineNumber": 126
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "Carbon::today()->addDays",
+          "lineNumber": 126
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "Carbon::today",
+          "lineNumber": 126
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "empty",
+          "lineNumber": 129
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->where",
+          "lineNumber": 130
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 131
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 131
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$q->where",
+          "lineNumber": 131
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->whereBetween",
+          "lineNumber": 138
+        },
+        {
+          "caller": "scopeExpiring",
+          "callee": "$query->orderBy",
+          "lineNumber": 141
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')\r\n            ->leftJoin('mst_members', 'trn_subscriptions.member_id', '=', 'mst_members.id')->select",
+          "lineNumber": 151
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->leftJoin('mst_plans', 'trn_subscriptions.plan_id', '=', 'mst_plans.id')->leftJoin",
+          "lineNumber": 151
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->leftJoin",
+          "lineNumber": 151
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->where('trn_subscriptions.status', '=', \\constSubscription::Expired)->where",
+          "lineNumber": 161
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->where",
+          "lineNumber": 161
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->where('trn_subscriptions.plan_id', '!=', 6)->where",
+          "lineNumber": 164
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->where",
+          "lineNumber": 164
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "empty",
+          "lineNumber": 167
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->where",
+          "lineNumber": 168
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 169
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 169
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$q->where",
+          "lineNumber": 169
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->whereBetween",
+          "lineNumber": 176
+        },
+        {
+          "caller": "scopeExpired",
+          "callee": "$query->orderBy",
+          "lineNumber": 179
+        },
+        {
+          "caller": "member",
+          "callee": "$this->belongsTo",
+          "lineNumber": 186
+        },
+        {
+          "caller": "plan",
+          "callee": "$this->belongsTo",
+          "lineNumber": 191
+        },
+        {
+          "caller": "invoice",
+          "callee": "$this->belongsTo",
+          "lineNumber": 196
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/SmsTriggersTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 112,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsTriggersTableSeeder",
+          "startLine": 6,
+          "endLine": 113,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsTriggersTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "SmsTrigger::create",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

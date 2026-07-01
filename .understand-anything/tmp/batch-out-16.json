@@ -1,0 +1,111 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_animated.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 34,
+      "nonEmptyLines": 30,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_bordered-pulled.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_core.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_fixed-width.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_icons.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 697,
+      "nonEmptyLines": 696,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_larger.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_list.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 19,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_mixins.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 26,
+      "nonEmptyLines": 22,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_path.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_rotated-flipped.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_stacked.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/_variables.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 708,
+      "nonEmptyLines": 705,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/font-awesome/scss/font-awesome.scss",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    }
+  ]
+}

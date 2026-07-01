@@ -1,0 +1,360 @@
+{
+  "nodes": [
+    {
+      "id": "file:database/migrations/2025_07_24_134855_create_products_table.php",
+      "type": "file",
+      "filePath": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "summary": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/migrations/2025_07_24_134855_create_products_table.php:up",
+      "type": "function",
+      "filePath": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "symbolName": "up"
+    },
+    {
+      "id": "function:database/migrations/2025_07_24_134855_create_products_table.php:down",
+      "type": "function",
+      "filePath": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "symbolName": "down"
+    },
+    {
+      "id": "class:database/migrations/2025_07_24_134855_create_products_table.php:CreateProductsTable",
+      "type": "class",
+      "filePath": "database/migrations/2025_07_24_134855_create_products_table.php",
+      "symbolName": "CreateProductsTable"
+    },
+    {
+      "id": "file:database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "type": "file",
+      "filePath": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "summary": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/migrations/2025_07_24_135049_create_purchases_table.php:up",
+      "type": "function",
+      "filePath": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "symbolName": "up"
+    },
+    {
+      "id": "function:database/migrations/2025_07_24_135049_create_purchases_table.php:down",
+      "type": "function",
+      "filePath": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "symbolName": "down"
+    },
+    {
+      "id": "class:database/migrations/2025_07_24_135049_create_purchases_table.php:CreatePurchasesTable",
+      "type": "class",
+      "filePath": "database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "symbolName": "CreatePurchasesTable"
+    },
+    {
+      "id": "file:database/seeds/.gitkeep",
+      "type": "file",
+      "filePath": "database/seeds/.gitkeep",
+      "summary": "database/seeds/.gitkeep",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:database/seeds/DatabaseSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/DatabaseSeeder.php",
+      "summary": "database/seeds/DatabaseSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/DatabaseSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/DatabaseSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/DatabaseSeeder.php:DatabaseSeeder",
+      "type": "class",
+      "filePath": "database/seeds/DatabaseSeeder.php",
+      "symbolName": "DatabaseSeeder"
+    },
+    {
+      "id": "file:gulpfile.js",
+      "type": "file",
+      "filePath": "gulpfile.js",
+      "summary": "gulpfile.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/.htaccess",
+      "type": "file",
+      "filePath": "public/.htaccess",
+      "summary": "public/.htaccess",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/img/gym/.gitkeep",
+      "type": "file",
+      "filePath": "public/assets/img/gym/.gitkeep",
+      "summary": "public/assets/img/gym/.gitkeep",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/core.js",
+      "type": "file",
+      "filePath": "public/assets/js/core.js",
+      "summary": "public/assets/js/core.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/enquiry.js",
+      "type": "file",
+      "filePath": "public/assets/js/enquiry.js",
+      "summary": "public/assets/js/enquiry.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/event.js",
+      "type": "file",
+      "filePath": "public/assets/js/event.js",
+      "summary": "public/assets/js/event.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/expense.js",
+      "type": "file",
+      "filePath": "public/assets/js/expense.js",
+      "summary": "public/assets/js/expense.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/expenseCategory.js",
+      "type": "file",
+      "filePath": "public/assets/js/expenseCategory.js",
+      "summary": "public/assets/js/expenseCategory.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/followup.js",
+      "type": "file",
+      "filePath": "public/assets/js/followup.js",
+      "summary": "public/assets/js/followup.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/gymie.js",
+      "type": "file",
+      "filePath": "public/assets/js/gymie.js",
+      "summary": "public/assets/js/gymie.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/login.js",
+      "type": "file",
+      "filePath": "public/assets/js/login.js",
+      "summary": "public/assets/js/login.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/member.js",
+      "type": "file",
+      "filePath": "public/assets/js/member.js",
+      "summary": "public/assets/js/member.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/payment.js",
+      "type": "file",
+      "filePath": "public/assets/js/payment.js",
+      "summary": "public/assets/js/payment.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/plan.js",
+      "type": "file",
+      "filePath": "public/assets/js/plan.js",
+      "summary": "public/assets/js/plan.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/product.js",
+      "type": "file",
+      "filePath": "public/assets/js/product.js",
+      "summary": "public/assets/js/product.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/purchases.js",
+      "type": "file",
+      "filePath": "public/assets/js/purchases.js",
+      "summary": "public/assets/js/purchases.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/send.js",
+      "type": "file",
+      "filePath": "public/assets/js/send.js",
+      "summary": "public/assets/js/send.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/setting.js",
+      "type": "file",
+      "filePath": "public/assets/js/setting.js",
+      "summary": "public/assets/js/setting.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/subscription.js",
+      "type": "file",
+      "filePath": "public/assets/js/subscription.js",
+      "summary": "public/assets/js/subscription.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/subscriptionChange.js",
+      "type": "file",
+      "filePath": "public/assets/js/subscriptionChange.js",
+      "summary": "public/assets/js/subscriptionChange.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/js/trigger.js",
+      "type": "file",
+      "filePath": "public/assets/js/trigger.js",
+      "summary": "public/assets/js/trigger.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:database/migrations/2025_07_24_134855_create_products_table.php",
+      "target": "function:database/migrations/2025_07_24_134855_create_products_table.php:up",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/migrations/2025_07_24_134855_create_products_table.php",
+      "target": "function:database/migrations/2025_07_24_134855_create_products_table.php:down",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/migrations/2025_07_24_134855_create_products_table.php",
+      "target": "class:database/migrations/2025_07_24_134855_create_products_table.php:CreateProductsTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "target": "function:database/migrations/2025_07_24_135049_create_purchases_table.php:up",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "target": "function:database/migrations/2025_07_24_135049_create_purchases_table.php:down",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/migrations/2025_07_24_135049_create_purchases_table.php",
+      "target": "class:database/migrations/2025_07_24_135049_create_purchases_table.php:CreatePurchasesTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/DatabaseSeeder.php",
+      "target": "function:database/seeds/DatabaseSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/DatabaseSeeder.php",
+      "target": "class:database/seeds/DatabaseSeeder.php:DatabaseSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "file:CHANGELOG.md",
+      "type": "file",
+      "filePath": "CHANGELOG.md",
+      "summary": "CHANGELOG.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:CONTRIBUTING.md",
+      "type": "file",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "CONTRIBUTING.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:LICENSE.md",
+      "type": "file",
+      "filePath": "LICENSE.md",
+      "summary": "LICENSE.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:README.md",
+      "type": "file",
+      "filePath": "README.md",
+      "summary": "README.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:composer.json",
+      "type": "file",
+      "filePath": "composer.json",
+      "summary": "composer.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:package.json",
+      "type": "file",
+      "filePath": "package.json",
+      "summary": "package.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:phpspec.yml",
+      "type": "file",
+      "filePath": "phpspec.yml",
+      "summary": "phpspec.yml",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:phpunit.xml",
+      "type": "file",
+      "filePath": "phpunit.xml",
+      "summary": "phpunit.xml",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

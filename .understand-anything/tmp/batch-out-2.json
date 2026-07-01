@@ -1,0 +1,3805 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 15,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Console/Commands/FollowupSms.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 41,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FollowupSms",
+          "startLine": 10,
+          "endLine": 56,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FollowupSms",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "Followup::where('due_date', '=', Carbon::today())->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Followup::where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where('alias', '=', 'followup')->first",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 49
+        },
+        {
+          "caller": "handle",
+          "callee": "sprintf",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/ReshootOfflineSms.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 29,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 39,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReshootOfflineSms",
+          "startLine": 8,
+          "endLine": 52,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReshootOfflineSms",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 31
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsLog::where('status', '=', 'offline')->get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsLog::where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handle",
+          "callee": "urldecode",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::retrySms",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Console/Commands/SmsEvent.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 32,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 42,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsEvent",
+          "startLine": 11,
+          "endLine": 90,
+          "methods": [
+            "__construct",
+            "handle"
+          ],
+          "properties": [
+            "signature",
+            "description"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsEvent",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "parent::__construct",
+          "lineNumber": 34
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsEventModel::where('date', '=', Carbon::today())->get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handle",
+          "callee": "SmsEventModel::where",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handle",
+          "callee": "Carbon::today",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handle",
+          "callee": "explode",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::where('status', 1)->get",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::where",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::where('status', 0)->get",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handle",
+          "callee": "Member::where",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handle",
+          "callee": "Enquiry::where('status', 1)->get",
+          "lineNumber": 68
+        },
+        {
+          "caller": "handle",
+          "callee": "Enquiry::where",
+          "lineNumber": 68
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handle",
+          "callee": "Enquiry::where('status', 0)->get",
+          "lineNumber": 76
+        },
+        {
+          "caller": "handle",
+          "callee": "Enquiry::where",
+          "lineNumber": 76
+        },
+        {
+          "caller": "handle",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Enquiry.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "Followups",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 45,
+          "endLine": 58,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end"
+          ]
+        },
+        {
+          "name": "scopeOnlyLeads",
+          "startLine": 60,
+          "endLine": 63,
+          "params": [
+            "$query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Enquiry",
+          "startLine": 8,
+          "endLine": 64,
+          "methods": [
+            "Followups",
+            "scopeIndexQuery",
+            "scopeOnlyLeads"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Enquiry",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Followups",
+          "callee": "$this->hasMany",
+          "lineNumber": 42
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->select('id', 'name', 'contact', 'email', 'address', 'gender', 'created_at', 'status')->orderBy",
+          "lineNumber": 51
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->select",
+          "lineNumber": 51
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->select('id', 'name', 'contact', 'email', 'address', 'gender', 'created_at', 'status')->whereBetween('created_at', [\r\n            $drp_start,\r\n            $drp_end,\r\n        ])->orderBy",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->select('id', 'name', 'contact', 'email', 'address', 'gender', 'created_at', 'status')->whereBetween",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->select",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeOnlyLeads",
+          "callee": "$query->where('status', '=', \\constEnquiryStatus::Lead)->orderBy('created_at', 'desc')->take",
+          "lineNumber": 62
+        },
+        {
+          "caller": "scopeOnlyLeads",
+          "callee": "$query->where('status', '=', \\constEnquiryStatus::Lead)->orderBy",
+          "lineNumber": 62
+        },
+        {
+          "caller": "scopeOnlyLeads",
+          "callee": "$query->where",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Followup.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "enquiry",
+          "startLine": 26,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "scopeReminders",
+          "startLine": 31,
+          "endLine": 34,
+          "params": [
+            "$query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Followup",
+          "startLine": 8,
+          "endLine": 35,
+          "methods": [
+            "enquiry",
+            "scopeReminders"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "dates"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Followup",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "enquiry",
+          "callee": "$this->belongsTo",
+          "lineNumber": 28
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "$query->leftJoin('mst_enquiries', 'trn_enquiry_followups.enquiry_id', '=', 'mst_enquiries.id')->select('trn_enquiry_followups.*', 'mst_enquiries.status')->where('trn_enquiry_followups.due_date', '<=', Carbon::today())->where('trn_enquiry_followups.status', '=', \\constFollowUpStatus::Pending)->where",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "$query->leftJoin('mst_enquiries', 'trn_enquiry_followups.enquiry_id', '=', 'mst_enquiries.id')->select('trn_enquiry_followups.*', 'mst_enquiries.status')->where('trn_enquiry_followups.due_date', '<=', Carbon::today())->where",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "$query->leftJoin('mst_enquiries', 'trn_enquiry_followups.enquiry_id', '=', 'mst_enquiries.id')->select('trn_enquiry_followups.*', 'mst_enquiries.status')->where",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "$query->leftJoin('mst_enquiries', 'trn_enquiry_followups.enquiry_id', '=', 'mst_enquiries.id')->select",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "$query->leftJoin",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeReminders",
+          "callee": "Carbon::today",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/DashboardController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 19,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 24,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "smsRequest",
+          "startLine": 56,
+          "endLine": 68,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 17,
+          "endLine": 69,
+          "methods": [
+            "__construct",
+            "index",
+            "smsRequest"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardController",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "JavaScript::put",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "\\Utilities::registrationsTrend",
+          "lineNumber": 27
+        },
+        {
+          "caller": "index",
+          "callee": "\\Utilities::membersPerPlan",
+          "lineNumber": 28
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::dashboardExpiring()->paginate",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::dashboardExpiring",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "$expirings->total",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::dashboardExpired()->paginate",
+          "lineNumber": 33
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::dashboardExpired",
+          "lineNumber": 33
+        },
+        {
+          "caller": "index",
+          "callee": "$allExpired->total",
+          "lineNumber": 34
+        },
+        {
+          "caller": "index",
+          "callee": "Member::birthday()->get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "Member::birthday",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "$birthdays->count",
+          "lineNumber": 36
+        },
+        {
+          "caller": "index",
+          "callee": "Member::recent()->get",
+          "lineNumber": 37
+        },
+        {
+          "caller": "index",
+          "callee": "Member::recent",
+          "lineNumber": 37
+        },
+        {
+          "caller": "index",
+          "callee": "Enquiry::onlyLeads()->get",
+          "lineNumber": 38
+        },
+        {
+          "caller": "index",
+          "callee": "Enquiry::onlyLeads",
+          "lineNumber": 38
+        },
+        {
+          "caller": "index",
+          "callee": "Followup::reminders()->get",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "Followup::reminders",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "$reminders->count",
+          "lineNumber": 40
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::dueAlerts()->get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::dueAlerts",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::outstandingAlerts()->get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "Expense::outstandingAlerts",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 43
+        },
+        {
+          "caller": "index",
+          "callee": "SmsLog::dashboardLogs()->get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "index",
+          "callee": "SmsLog::dashboardLogs",
+          "lineNumber": 44
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where('status', \\constChequeStatus::Recieved)->get",
+          "lineNumber": 45
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 45
+        },
+        {
+          "caller": "index",
+          "callee": "$recievedCheques->count",
+          "lineNumber": 46
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where('status', \\constChequeStatus::Deposited)->get",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "$depositedCheques->count",
+          "lineNumber": 48
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where('status', \\constChequeStatus::Bounced)->get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "index",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "index",
+          "callee": "$bouncedCheques->count",
+          "lineNumber": 50
+        },
+        {
+          "caller": "index",
+          "callee": "json_decode",
+          "lineNumber": 51
+        },
+        {
+          "caller": "index",
+          "callee": "\\Utilities::membersPerPlan",
+          "lineNumber": 51
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 53
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 53
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 59
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "Auth::user",
+          "lineNumber": 59
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 61
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "Setting::where('key', '=', 'sms_request')->update",
+          "lineNumber": 63
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "Setting::where",
+          "lineNumber": 63
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "flash()->success",
+          "lineNumber": 65
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "flash",
+          "lineNumber": 65
+        },
+        {
+          "caller": "smsRequest",
+          "callee": "redirect",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/EnquiriesController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 174,
+      "nonEmptyLines": 136,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 20,
+          "endLine": 34,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 36,
+          "endLine": 43,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 50,
+          "endLine": 113,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 117,
+          "endLine": 122,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 124,
+          "endLine": 147,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "lost",
+          "startLine": 149,
+          "endLine": 160,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "markMember",
+          "startLine": 162,
+          "endLine": 173,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EnquiriesController",
+          "startLine": 13,
+          "endLine": 174,
+          "methods": [
+            "__construct",
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "lost",
+            "markMember"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EnquiriesController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 17
+        },
+        {
+          "caller": "index",
+          "callee": "Enquiry::indexQuery($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->paginate",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "Enquiry::indexQuery($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "Enquiry::indexQuery",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "$enquiries->total",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 33
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 33
+        },
+        {
+          "caller": "show",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 38
+        },
+        {
+          "caller": "show",
+          "callee": "$enquiry->followups->sortByDesc",
+          "lineNumber": 40
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 42
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 42
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 47
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 53
+        },
+        {
+          "caller": "store",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 57
+        },
+        {
+          "caller": "store",
+          "callee": "implode",
+          "lineNumber": 71
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->createdBy()->associate",
+          "lineNumber": 76
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->createdBy",
+          "lineNumber": 76
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 76
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->updatedBy()->associate",
+          "lineNumber": 77
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->updatedBy",
+          "lineNumber": 77
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 77
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->save",
+          "lineNumber": 78
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->createdBy()->associate",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->createdBy",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 88
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->updatedBy()->associate",
+          "lineNumber": 89
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->updatedBy",
+          "lineNumber": 89
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 89
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->save",
+          "lineNumber": 90
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 93
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 94
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'enquiry_placement')->first",
+          "lineNumber": 96
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 96
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 98
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 101
+        },
+        {
+          "caller": "store",
+          "callee": "DB::commit",
+          "lineNumber": 103
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 104
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 104
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 106
+        },
+        {
+          "caller": "store",
+          "callee": "DB::rollback",
+          "lineNumber": 108
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 109
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 109
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 111
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 111
+        },
+        {
+          "caller": "edit",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 119
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 121
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 121
+        },
+        {
+          "caller": "update",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 126
+        },
+        {
+          "caller": "update",
+          "callee": "implode",
+          "lineNumber": 137
+        },
+        {
+          "caller": "update",
+          "callee": "$enquiry->createdBy()->associate",
+          "lineNumber": 140
+        },
+        {
+          "caller": "update",
+          "callee": "$enquiry->createdBy",
+          "lineNumber": 140
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 140
+        },
+        {
+          "caller": "update",
+          "callee": "$enquiry->updatedBy()->associate",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "$enquiry->updatedBy",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "$enquiry->update",
+          "lineNumber": 142
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 144
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 144
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 146
+        },
+        {
+          "caller": "update",
+          "callee": "action",
+          "lineNumber": 146
+        },
+        {
+          "caller": "lost",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 151
+        },
+        {
+          "caller": "lost",
+          "callee": "$enquiry->updatedBy()->associate",
+          "lineNumber": 154
+        },
+        {
+          "caller": "lost",
+          "callee": "$enquiry->updatedBy",
+          "lineNumber": 154
+        },
+        {
+          "caller": "lost",
+          "callee": "Auth::user",
+          "lineNumber": 154
+        },
+        {
+          "caller": "lost",
+          "callee": "$enquiry->update",
+          "lineNumber": 155
+        },
+        {
+          "caller": "lost",
+          "callee": "flash()->success",
+          "lineNumber": 157
+        },
+        {
+          "caller": "lost",
+          "callee": "flash",
+          "lineNumber": 157
+        },
+        {
+          "caller": "lost",
+          "callee": "redirect",
+          "lineNumber": 159
+        },
+        {
+          "caller": "markMember",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 164
+        },
+        {
+          "caller": "markMember",
+          "callee": "$enquiry->updatedBy()->associate",
+          "lineNumber": 167
+        },
+        {
+          "caller": "markMember",
+          "callee": "$enquiry->updatedBy",
+          "lineNumber": 167
+        },
+        {
+          "caller": "markMember",
+          "callee": "Auth::user",
+          "lineNumber": 167
+        },
+        {
+          "caller": "markMember",
+          "callee": "$enquiry->update",
+          "lineNumber": 168
+        },
+        {
+          "caller": "markMember",
+          "callee": "flash()->success",
+          "lineNumber": 170
+        },
+        {
+          "caller": "markMember",
+          "callee": "flash",
+          "lineNumber": 170
+        },
+        {
+          "caller": "markMember",
+          "callee": "redirect",
+          "lineNumber": 172
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/FollowupsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 16,
+          "endLine": 28,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 30,
+          "endLine": 40,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FollowupsController",
+          "startLine": 9,
+          "endLine": 41,
+          "methods": [
+            "__construct",
+            "store",
+            "update"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FollowupsController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 13
+        },
+        {
+          "caller": "store",
+          "callee": "$request->all",
+          "lineNumber": 18
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->createdBy()->associate",
+          "lineNumber": 20
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->createdBy",
+          "lineNumber": 20
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 20
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->updatedBy()->associate",
+          "lineNumber": 21
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->updatedBy",
+          "lineNumber": 21
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 21
+        },
+        {
+          "caller": "store",
+          "callee": "$followup->save",
+          "lineNumber": 23
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 25
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 25
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 27
+        },
+        {
+          "caller": "update",
+          "callee": "Followup::findOrFail",
+          "lineNumber": 32
+        },
+        {
+          "caller": "update",
+          "callee": "$followup->update",
+          "lineNumber": 33
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 33
+        },
+        {
+          "caller": "update",
+          "callee": "$followup->updatedBy()->associate",
+          "lineNumber": 34
+        },
+        {
+          "caller": "update",
+          "callee": "$followup->updatedBy",
+          "lineNumber": 34
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 34
+        },
+        {
+          "caller": "update",
+          "callee": "$followup->save",
+          "lineNumber": 35
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 37
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 39
+        },
+        {
+          "caller": "update",
+          "callee": "action",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/PlansController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 82,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 21,
+          "endLine": 26,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 34,
+          "endLine": 39,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 46,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 56,
+          "endLine": 74,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 76,
+          "endLine": 81,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 83,
+          "endLine": 93,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "archive",
+          "startLine": 95,
+          "endLine": 101,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlansController",
+          "startLine": 9,
+          "endLine": 102,
+          "methods": [
+            "__construct",
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "archive"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PlansController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 13
+        },
+        {
+          "caller": "index",
+          "callee": "Plan::excludeArchive()->search('\"' . $request->input('search') . '\"')->paginate",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Plan::excludeArchive()->search",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Plan::excludeArchive",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$plans->total",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 25
+        },
+        {
+          "caller": "show",
+          "callee": "dd",
+          "lineNumber": 36
+        },
+        {
+          "caller": "show",
+          "callee": "Plan::find",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 38
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 38
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 48
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 59
+        },
+        {
+          "caller": "store",
+          "callee": "$request->all",
+          "lineNumber": 64
+        },
+        {
+          "caller": "store",
+          "callee": "$plan->createdBy()->associate",
+          "lineNumber": 66
+        },
+        {
+          "caller": "store",
+          "callee": "$plan->createdBy",
+          "lineNumber": 66
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 66
+        },
+        {
+          "caller": "store",
+          "callee": "$plan->updatedBy()->associate",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "$plan->updatedBy",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "$plan->save",
+          "lineNumber": 69
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 71
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 71
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "Plan::findOrFail",
+          "lineNumber": 78
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 80
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 80
+        },
+        {
+          "caller": "update",
+          "callee": "Plan::findOrFail",
+          "lineNumber": 85
+        },
+        {
+          "caller": "update",
+          "callee": "$plan->update",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "$plan->updatedBy()->associate",
+          "lineNumber": 88
+        },
+        {
+          "caller": "update",
+          "callee": "$plan->updatedBy",
+          "lineNumber": 88
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 88
+        },
+        {
+          "caller": "update",
+          "callee": "$plan->save",
+          "lineNumber": 89
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 92
+        },
+        {
+          "caller": "archive",
+          "callee": "Plan::destroy",
+          "lineNumber": 98
+        },
+        {
+          "caller": "archive",
+          "callee": "redirect",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/SmsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 136,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "triggersIndex",
+          "startLine": 21,
+          "endLine": 26,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "triggerUpdate",
+          "startLine": 28,
+          "endLine": 43,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "eventsIndex",
+          "startLine": 45,
+          "endLine": 50,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "createEvent",
+          "startLine": 52,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "storeEvent",
+          "startLine": 57,
+          "endLine": 69,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "editEvent",
+          "startLine": 71,
+          "endLine": 76,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "updateEvent",
+          "startLine": 78,
+          "endLine": 88,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "destroyEvent",
+          "startLine": 90,
+          "endLine": 98,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "send",
+          "startLine": 100,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "shoot",
+          "startLine": 105,
+          "endLine": 162,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "logIndex",
+          "startLine": 164,
+          "endLine": 169,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "logRefresh",
+          "startLine": 171,
+          "endLine": 178,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsController",
+          "startLine": 14,
+          "endLine": 179,
+          "methods": [
+            "__construct",
+            "triggersIndex",
+            "triggerUpdate",
+            "eventsIndex",
+            "createEvent",
+            "storeEvent",
+            "editEvent",
+            "updateEvent",
+            "destroyEvent",
+            "send",
+            "shoot",
+            "logIndex",
+            "logRefresh"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsController",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 18
+        },
+        {
+          "caller": "triggersIndex",
+          "callee": "SmsTrigger::search($request->input('search'))->get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "triggersIndex",
+          "callee": "SmsTrigger::search",
+          "lineNumber": 23
+        },
+        {
+          "caller": "triggersIndex",
+          "callee": "$request->input",
+          "lineNumber": 23
+        },
+        {
+          "caller": "triggersIndex",
+          "callee": "view",
+          "lineNumber": 25
+        },
+        {
+          "caller": "triggersIndex",
+          "callee": "compact",
+          "lineNumber": 25
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "SmsTrigger::all",
+          "lineNumber": 30
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "collect",
+          "lineNumber": 31
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "$Clienttriggers->contains",
+          "lineNumber": 35
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "SmsTrigger::where('id', '=', $trigger['id'])->update",
+          "lineNumber": 37
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "flash()->success",
+          "lineNumber": 40
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "flash",
+          "lineNumber": 40
+        },
+        {
+          "caller": "triggerUpdate",
+          "callee": "redirect",
+          "lineNumber": 42
+        },
+        {
+          "caller": "eventsIndex",
+          "callee": "SmsEvent::search($request->input('search'))->paginate",
+          "lineNumber": 47
+        },
+        {
+          "caller": "eventsIndex",
+          "callee": "SmsEvent::search",
+          "lineNumber": 47
+        },
+        {
+          "caller": "eventsIndex",
+          "callee": "$request->input",
+          "lineNumber": 47
+        },
+        {
+          "caller": "eventsIndex",
+          "callee": "view",
+          "lineNumber": 49
+        },
+        {
+          "caller": "eventsIndex",
+          "callee": "compact",
+          "lineNumber": 49
+        },
+        {
+          "caller": "createEvent",
+          "callee": "view",
+          "lineNumber": 54
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$request->all",
+          "lineNumber": 59
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$event->createdBy()->associate",
+          "lineNumber": 61
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$event->createdBy",
+          "lineNumber": 61
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "Auth::user",
+          "lineNumber": 61
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$event->updatedBy()->associate",
+          "lineNumber": 62
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$event->updatedBy",
+          "lineNumber": 62
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "Auth::user",
+          "lineNumber": 62
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "$event->save",
+          "lineNumber": 64
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "flash()->success",
+          "lineNumber": 66
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "flash",
+          "lineNumber": 66
+        },
+        {
+          "caller": "storeEvent",
+          "callee": "redirect",
+          "lineNumber": 68
+        },
+        {
+          "caller": "editEvent",
+          "callee": "SmsEvent::findOrFail",
+          "lineNumber": 73
+        },
+        {
+          "caller": "editEvent",
+          "callee": "view",
+          "lineNumber": 75
+        },
+        {
+          "caller": "editEvent",
+          "callee": "compact",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "SmsEvent::findOrFail",
+          "lineNumber": 80
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "$event->update",
+          "lineNumber": 82
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "$request->all",
+          "lineNumber": 82
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "$event->updatedBy()->associate",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "$event->updatedBy",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "Auth::user",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "$event->save",
+          "lineNumber": 84
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "flash()->success",
+          "lineNumber": 85
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "flash",
+          "lineNumber": 85
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "redirect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "destroyEvent",
+          "callee": "SmsEvent::findOrFail",
+          "lineNumber": 92
+        },
+        {
+          "caller": "destroyEvent",
+          "callee": "$event->delete",
+          "lineNumber": 93
+        },
+        {
+          "caller": "destroyEvent",
+          "callee": "flash()->success",
+          "lineNumber": 95
+        },
+        {
+          "caller": "destroyEvent",
+          "callee": "flash",
+          "lineNumber": 95
+        },
+        {
+          "caller": "destroyEvent",
+          "callee": "redirect",
+          "lineNumber": 97
+        },
+        {
+          "caller": "send",
+          "callee": "view",
+          "lineNumber": 102
+        },
+        {
+          "caller": "shoot",
+          "callee": "Member::where('status', 1)->get",
+          "lineNumber": 113
+        },
+        {
+          "caller": "shoot",
+          "callee": "Member::where",
+          "lineNumber": 113
+        },
+        {
+          "caller": "shoot",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 115
+        },
+        {
+          "caller": "shoot",
+          "callee": "Member::where('status', 0)->get",
+          "lineNumber": 120
+        },
+        {
+          "caller": "shoot",
+          "callee": "Member::where",
+          "lineNumber": 120
+        },
+        {
+          "caller": "shoot",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 122
+        },
+        {
+          "caller": "shoot",
+          "callee": "Enquiry::where('status', 1)->get",
+          "lineNumber": 127
+        },
+        {
+          "caller": "shoot",
+          "callee": "Enquiry::where",
+          "lineNumber": 127
+        },
+        {
+          "caller": "shoot",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 129
+        },
+        {
+          "caller": "shoot",
+          "callee": "Enquiry::where('status', 0)->get",
+          "lineNumber": 135
+        },
+        {
+          "caller": "shoot",
+          "callee": "Enquiry::where",
+          "lineNumber": 135
+        },
+        {
+          "caller": "shoot",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 137
+        },
+        {
+          "caller": "shoot",
+          "callee": "explode",
+          "lineNumber": 144
+        },
+        {
+          "caller": "shoot",
+          "callee": "str_replace",
+          "lineNumber": 144
+        },
+        {
+          "caller": "shoot",
+          "callee": "starts_with",
+          "lineNumber": 146
+        },
+        {
+          "caller": "shoot",
+          "callee": "substr",
+          "lineNumber": 147
+        },
+        {
+          "caller": "shoot",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 149
+        },
+        {
+          "caller": "shoot",
+          "callee": "flash()->success",
+          "lineNumber": 159
+        },
+        {
+          "caller": "shoot",
+          "callee": "flash",
+          "lineNumber": 159
+        },
+        {
+          "caller": "shoot",
+          "callee": "redirect",
+          "lineNumber": 161
+        },
+        {
+          "caller": "logIndex",
+          "callee": "SmsLog::orderBy('send_time', 'desc')->search($request->input('search'))->paginate",
+          "lineNumber": 166
+        },
+        {
+          "caller": "logIndex",
+          "callee": "SmsLog::orderBy('send_time', 'desc')->search",
+          "lineNumber": 166
+        },
+        {
+          "caller": "logIndex",
+          "callee": "SmsLog::orderBy",
+          "lineNumber": 166
+        },
+        {
+          "caller": "logIndex",
+          "callee": "$request->input",
+          "lineNumber": 166
+        },
+        {
+          "caller": "logIndex",
+          "callee": "view",
+          "lineNumber": 168
+        },
+        {
+          "caller": "logIndex",
+          "callee": "compact",
+          "lineNumber": 168
+        },
+        {
+          "caller": "logRefresh",
+          "callee": "\\Utilities::smsStatusUpdate",
+          "lineNumber": 173
+        },
+        {
+          "caller": "logRefresh",
+          "callee": "flash()->success",
+          "lineNumber": 175
+        },
+        {
+          "caller": "logRefresh",
+          "callee": "flash",
+          "lineNumber": 175
+        },
+        {
+          "caller": "logRefresh",
+          "callee": "back",
+          "lineNumber": 177
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Lubus/Utilities.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 721,
+      "nonEmptyLines": 594,
+      "functions": [
+        {
+          "name": "setActiveMenu",
+          "startLine": 13,
+          "endLine": 19,
+          "params": [
+            "$uri",
+            "$isParent"
+          ]
+        },
+        {
+          "name": "getSetting",
+          "startLine": 22,
+          "endLine": 27,
+          "params": [
+            "$key"
+          ]
+        },
+        {
+          "name": "getSettings",
+          "startLine": 30,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "getFollowUpStatus",
+          "startLine": 43,
+          "endLine": 54,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getFollowupBy",
+          "startLine": 57,
+          "endLine": 72,
+          "params": [
+            "$followUpBy"
+          ]
+        },
+        {
+          "name": "getIconBg",
+          "startLine": 75,
+          "endLine": 86,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getStatusIcon",
+          "startLine": 89,
+          "endLine": 100,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getAim",
+          "startLine": 103,
+          "endLine": 130,
+          "params": [
+            "$aim"
+          ]
+        },
+        {
+          "name": "getInvoiceLabel",
+          "startLine": 133,
+          "endLine": 152,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "expenseRepeatIntervel",
+          "startLine": 155,
+          "endLine": 178,
+          "params": [
+            "$repeat"
+          ]
+        },
+        {
+          "name": "getPaidUnpaid",
+          "startLine": 181,
+          "endLine": 192,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getActiveInactive",
+          "startLine": 195,
+          "endLine": 206,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getOccupation",
+          "startLine": 209,
+          "endLine": 236,
+          "params": [
+            "$occupation"
+          ]
+        },
+        {
+          "name": "getSource",
+          "startLine": 239,
+          "endLine": 254,
+          "params": [
+            "$source"
+          ]
+        },
+        {
+          "name": "getStatusValue",
+          "startLine": 257,
+          "endLine": 272,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getEnquiryStatus",
+          "startLine": 275,
+          "endLine": 290,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getEnquiryLabel",
+          "startLine": 293,
+          "endLine": 308,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "setInvoiceStatus",
+          "startLine": 311,
+          "endLine": 324,
+          "params": [
+            "$amount_due",
+            "$invoice_total"
+          ]
+        },
+        {
+          "name": "getInvoiceStatus",
+          "startLine": 327,
+          "endLine": 346,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getSubscriptionStatus",
+          "startLine": 349,
+          "endLine": 368,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getSubscriptionLabel",
+          "startLine": 371,
+          "endLine": 390,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getPaymentMode",
+          "startLine": 393,
+          "endLine": 404,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getChequeStatus",
+          "startLine": 407,
+          "endLine": 430,
+          "params": [
+            "$status"
+          ]
+        },
+        {
+          "name": "getGender",
+          "startLine": 433,
+          "endLine": 444,
+          "params": [
+            "$gender"
+          ]
+        },
+        {
+          "name": "getDisplay",
+          "startLine": 447,
+          "endLine": 458,
+          "params": [
+            "$display"
+          ]
+        },
+        {
+          "name": "getMode",
+          "startLine": 461,
+          "endLine": 472,
+          "params": [
+            "$mode"
+          ]
+        },
+        {
+          "name": "getGreeting",
+          "startLine": 474,
+          "endLine": 491,
+          "params": []
+        },
+        {
+          "name": "uploadFile",
+          "startLine": 496,
+          "endLine": 511,
+          "params": [
+            "$request",
+            "$prefix",
+            "$recordId",
+            "$upload_field",
+            "$upload_path"
+          ]
+        },
+        {
+          "name": "registrationsTrend",
+          "startLine": 513,
+          "endLine": 527,
+          "params": []
+        },
+        {
+          "name": "membersPerPlan",
+          "startLine": 529,
+          "endLine": 541,
+          "params": []
+        },
+        {
+          "name": "smsGatewayStatus",
+          "startLine": 544,
+          "endLine": 559,
+          "params": []
+        },
+        {
+          "name": "isDomainAvailible",
+          "startLine": 562,
+          "endLine": 586,
+          "params": [
+            "$domain"
+          ]
+        },
+        {
+          "name": "Sms",
+          "startLine": 588,
+          "endLine": 632,
+          "params": [
+            "$sender_id",
+            "$member_contact",
+            "$sms_text",
+            "$sms_status"
+          ]
+        },
+        {
+          "name": "retrySms",
+          "startLine": 634,
+          "endLine": 663,
+          "params": [
+            "$sender_id",
+            "$member_contact",
+            "$sms_text",
+            "$log"
+          ]
+        },
+        {
+          "name": "smsBalance",
+          "startLine": 665,
+          "endLine": 686,
+          "params": []
+        },
+        {
+          "name": "smsStatusUpdate",
+          "startLine": 688,
+          "endLine": 720,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Utilities",
+          "startLine": 11,
+          "endLine": 721,
+          "methods": [
+            "setActiveMenu",
+            "getSetting",
+            "getSettings",
+            "getFollowUpStatus",
+            "getFollowupBy",
+            "getIconBg",
+            "getStatusIcon",
+            "getAim",
+            "getInvoiceLabel",
+            "expenseRepeatIntervel",
+            "getPaidUnpaid",
+            "getActiveInactive",
+            "getOccupation",
+            "getSource",
+            "getStatusValue",
+            "getEnquiryStatus",
+            "getEnquiryLabel",
+            "setInvoiceStatus",
+            "getInvoiceStatus",
+            "getSubscriptionStatus",
+            "getSubscriptionLabel",
+            "getPaymentMode",
+            "getChequeStatus",
+            "getGender",
+            "getDisplay",
+            "getMode",
+            "getGreeting",
+            "uploadFile",
+            "registrationsTrend",
+            "membersPerPlan",
+            "smsGatewayStatus",
+            "isDomainAvailible",
+            "Sms",
+            "retrySms",
+            "smsBalance",
+            "smsStatusUpdate"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Utilities",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "setActiveMenu",
+          "callee": "\\Request::is",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getSetting",
+          "callee": "Setting::where('key', '=', $key)->pluck",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getSetting",
+          "callee": "Setting::where",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getSettings",
+          "callee": "Setting::all",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getGreeting",
+          "callee": "Carbon::now",
+          "lineNumber": 477
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$request->hasFile",
+          "lineNumber": 498
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$request->file",
+          "lineNumber": 499
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$file->isValid",
+          "lineNumber": 501
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "File::delete",
+          "lineNumber": 502
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "public_path",
+          "lineNumber": 502
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "public_path",
+          "lineNumber": 504
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$request->file($upload_field)->move",
+          "lineNumber": 505
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$request->file",
+          "lineNumber": 505
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "Image::make($destinationPath.'/'.$fileName)->resize(600, null, function ($constraint) {\r\n                    $constraint->aspectRatio();\r\n                })->save",
+          "lineNumber": 506
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "Image::make($destinationPath.'/'.$fileName)->resize",
+          "lineNumber": 506
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "Image::make",
+          "lineNumber": 506
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "$constraint->aspectRatio",
+          "lineNumber": 507
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "Setting::where('key', '=', 'financial_start')->pluck",
+          "lineNumber": 516
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "Setting::where",
+          "lineNumber": 516
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "Member::whereMonth('created_at', '=', $startDate->month)->whereYear('created_at', '=', $startDate->year)->count",
+          "lineNumber": 521
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "Member::whereMonth('created_at', '=', $startDate->month)->whereYear",
+          "lineNumber": 521
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "Member::whereMonth",
+          "lineNumber": 521
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "$startDate->format",
+          "lineNumber": 522
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "$startDate->addMonth",
+          "lineNumber": 523
+        },
+        {
+          "caller": "registrationsTrend",
+          "callee": "json_encode",
+          "lineNumber": 526
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "Plan::onlyActive()->get",
+          "lineNumber": 533
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "Plan::onlyActive",
+          "lineNumber": 533
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "Subscription::where('status', '=', \\constSubscription::onGoing)->where('plan_id', '=', $plan->id)->count",
+          "lineNumber": 536
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "Subscription::where('status', '=', \\constSubscription::onGoing)->where",
+          "lineNumber": 536
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "Subscription::where",
+          "lineNumber": 536
+        },
+        {
+          "caller": "membersPerPlan",
+          "callee": "json_encode",
+          "lineNumber": 540
+        },
+        {
+          "caller": "smsGatewayStatus",
+          "callee": "self::getSetting",
+          "lineNumber": 547
+        },
+        {
+          "caller": "smsGatewayStatus",
+          "callee": "self::isDomainAvailible",
+          "lineNumber": 551
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "filter_var",
+          "lineNumber": 565
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_init",
+          "lineNumber": 570
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_setopt",
+          "lineNumber": 571
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_setopt",
+          "lineNumber": 572
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_setopt",
+          "lineNumber": 573
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_setopt",
+          "lineNumber": 574
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_exec",
+          "lineNumber": 577
+        },
+        {
+          "caller": "isDomainAvailible",
+          "callee": "curl_close",
+          "lineNumber": 579
+        },
+        {
+          "caller": "Sms",
+          "callee": "self::getSetting",
+          "lineNumber": 590
+        },
+        {
+          "caller": "Sms",
+          "callee": "self::smsGatewayStatus",
+          "lineNumber": 591
+        },
+        {
+          "caller": "Sms",
+          "callee": "self::getSetting",
+          "lineNumber": 595
+        },
+        {
+          "caller": "Sms",
+          "callee": "urlencode",
+          "lineNumber": 598
+        },
+        {
+          "caller": "Sms",
+          "callee": "file_get_contents",
+          "lineNumber": 604
+        },
+        {
+          "caller": "Sms",
+          "callee": "str_contains",
+          "lineNumber": 606
+        },
+        {
+          "caller": "Sms",
+          "callee": "substr",
+          "lineNumber": 608
+        },
+        {
+          "caller": "Sms",
+          "callee": "strpos",
+          "lineNumber": 608
+        },
+        {
+          "caller": "Sms",
+          "callee": "Carbon::now",
+          "lineNumber": 612
+        },
+        {
+          "caller": "Sms",
+          "callee": "$SmsLog->save",
+          "lineNumber": 616
+        },
+        {
+          "caller": "Sms",
+          "callee": "self::smsBalance",
+          "lineNumber": 619
+        },
+        {
+          "caller": "Sms",
+          "callee": "Carbon::now",
+          "lineNumber": 625
+        },
+        {
+          "caller": "Sms",
+          "callee": "$SmsLog->save",
+          "lineNumber": 629
+        },
+        {
+          "caller": "retrySms",
+          "callee": "self::smsGatewayStatus",
+          "lineNumber": 636
+        },
+        {
+          "caller": "retrySms",
+          "callee": "self::getSetting",
+          "lineNumber": 639
+        },
+        {
+          "caller": "retrySms",
+          "callee": "urlencode",
+          "lineNumber": 642
+        },
+        {
+          "caller": "retrySms",
+          "callee": "file_get_contents",
+          "lineNumber": 648
+        },
+        {
+          "caller": "retrySms",
+          "callee": "str_contains",
+          "lineNumber": 650
+        },
+        {
+          "caller": "retrySms",
+          "callee": "$log->update",
+          "lineNumber": 652
+        },
+        {
+          "caller": "retrySms",
+          "callee": "substr",
+          "lineNumber": 652
+        },
+        {
+          "caller": "retrySms",
+          "callee": "strpos",
+          "lineNumber": 652
+        },
+        {
+          "caller": "retrySms",
+          "callee": "Carbon::now",
+          "lineNumber": 656
+        },
+        {
+          "caller": "retrySms",
+          "callee": "$log->save",
+          "lineNumber": 658
+        },
+        {
+          "caller": "retrySms",
+          "callee": "self::smsBalance",
+          "lineNumber": 661
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "self::getSetting",
+          "lineNumber": 667
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "self::smsGatewayStatus",
+          "lineNumber": 668
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "self::getSetting",
+          "lineNumber": 671
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "file_get_contents",
+          "lineNumber": 677
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "json_decode",
+          "lineNumber": 678
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "Setting::where('key', '=', 'sms_balance')->update",
+          "lineNumber": 679
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "Setting::where",
+          "lineNumber": 679
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "Setting::where('key', '=', 'sms')->update",
+          "lineNumber": 683
+        },
+        {
+          "caller": "smsBalance",
+          "callee": "Setting::where",
+          "lineNumber": 683
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "self::getSetting",
+          "lineNumber": 690
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "self::smsGatewayStatus",
+          "lineNumber": 691
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "self::getSetting",
+          "lineNumber": 694
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "SmsLog::where('status', 'offline')->get",
+          "lineNumber": 697
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "SmsLog::where",
+          "lineNumber": 697
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "self::retrySms",
+          "lineNumber": 700
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "SmsLog::whereNotIn('status', ['Delivered', 'Failed', 'offline'])->get",
+          "lineNumber": 704
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "SmsLog::whereNotIn",
+          "lineNumber": 704
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "file_get_contents",
+          "lineNumber": 711
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "json_decode",
+          "lineNumber": 713
+        },
+        {
+          "caller": "smsStatusUpdate",
+          "callee": "$message->save",
+          "lineNumber": 717
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 36,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Member.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 206,
+      "nonEmptyLines": 167,
+      "functions": [
+        {
+          "name": "getDobAttribute",
+          "startLine": 51,
+          "endLine": 54,
+          "params": [
+            "$value"
+          ]
+        },
+        {
+          "name": "registerMediaConversions",
+          "startLine": 57,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "subscriptions",
+          "startLine": 65,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "purchases",
+          "startLine": 70,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "invoices",
+          "startLine": 75,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 81,
+          "endLine": 144,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "scopeActive",
+          "startLine": 147,
+          "endLine": 167,
+          "params": [
+            "$query",
+            "$sortField",
+            "$sortDirection",
+            "$drpStart",
+            "$drpEnd",
+            "$search"
+          ]
+        },
+        {
+          "name": "scopeInactive",
+          "startLine": 169,
+          "endLine": 189,
+          "params": [
+            "$query",
+            "$sortField",
+            "$sortDirection",
+            "$drpStart",
+            "$drpEnd",
+            "$search"
+          ]
+        },
+        {
+          "name": "scopeRecent",
+          "startLine": 191,
+          "endLine": 194,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeBirthday",
+          "startLine": 196,
+          "endLine": 199,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeRegistrations",
+          "startLine": 202,
+          "endLine": 205,
+          "params": [
+            "$query",
+            "$month",
+            "$year"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Member",
+          "startLine": 12,
+          "endLine": 206,
+          "methods": [
+            "getDobAttribute",
+            "registerMediaConversions",
+            "subscriptions",
+            "purchases",
+            "invoices",
+            "scopeIndexQuery",
+            "scopeActive",
+            "scopeInactive",
+            "scopeRecent",
+            "scopeBirthday",
+            "scopeRegistrations"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Member",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDobAttribute",
+          "callee": "(new Carbon($value))->format",
+          "lineNumber": 53
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('thumb')->setManipulations(['w' => 50, 'h' => 50, 'q' => 100, 'fit' => 'crop'])->performOnCollections",
+          "lineNumber": 59
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('thumb')->setManipulations",
+          "lineNumber": 59
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion",
+          "lineNumber": 59
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('form')->setManipulations(['w' => 70, 'h' => 70, 'q' => 100, 'fit' => 'crop'])->performOnCollections",
+          "lineNumber": 61
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('form')->setManipulations",
+          "lineNumber": 61
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion",
+          "lineNumber": 61
+        },
+        {
+          "caller": "subscriptions",
+          "callee": "$this->hasMany",
+          "lineNumber": 67
+        },
+        {
+          "caller": "purchases",
+          "callee": "$this->hasMany",
+          "lineNumber": 72
+        },
+        {
+          "caller": "invoices",
+          "callee": "$this->hasMany",
+          "lineNumber": 77
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "in_array",
+          "lineNumber": 85
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "strtolower",
+          "lineNumber": 85
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query\r\n            ->leftJoin('trn_invoice', 'trn_invoice.member_id', '=', 'mst_members.id')\r\n            ->select([\r\n                'mst_members.id',\r\n                'mst_members.member_code',\r\n                'mst_members.name',\r\n                'mst_members.contact',\r\n                'mst_members.created_at',\r\n                'mst_members.status',\r\n                'mst_members.note',\r\n                DB::raw('COALESCE(SUM(trn_invoice.pending_amount), 0) AS pending_sum'),\r\n            ])->where",
+          "lineNumber": 88
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query\r\n            ->leftJoin('trn_invoice', 'trn_invoice.member_id', '=', 'mst_members.id')->select",
+          "lineNumber": 88
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 88
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "DB::raw",
+          "lineNumber": 98
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 104
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 107
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 108
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 109
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 109
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 109
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->groupBy",
+          "lineNumber": 117
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 128
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "DB::raw",
+          "lineNumber": 128
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "isset",
+          "lineNumber": 141
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 143
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$query->where",
+          "lineNumber": 149
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "empty",
+          "lineNumber": 151
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$query->where",
+          "lineNumber": 152
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 153
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 153
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$q->where",
+          "lineNumber": 153
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "empty",
+          "lineNumber": 160
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "empty",
+          "lineNumber": 160
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$query->whereBetween",
+          "lineNumber": 161
+        },
+        {
+          "caller": "scopeActive",
+          "callee": "$query->orderBy",
+          "lineNumber": 164
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$query->where",
+          "lineNumber": 171
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "empty",
+          "lineNumber": 173
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$query->where",
+          "lineNumber": 174
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 175
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 175
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$q->where",
+          "lineNumber": 175
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "empty",
+          "lineNumber": 182
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "empty",
+          "lineNumber": 182
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$query->whereBetween",
+          "lineNumber": 183
+        },
+        {
+          "caller": "scopeInactive",
+          "callee": "$query->orderBy",
+          "lineNumber": 186
+        },
+        {
+          "caller": "scopeRecent",
+          "callee": "$query->where('created_at', '<=', Carbon::today())->take(10)->orderBy",
+          "lineNumber": 193
+        },
+        {
+          "caller": "scopeRecent",
+          "callee": "$query->where('created_at', '<=', Carbon::today())->take",
+          "lineNumber": 193
+        },
+        {
+          "caller": "scopeRecent",
+          "callee": "$query->where",
+          "lineNumber": 193
+        },
+        {
+          "caller": "scopeRecent",
+          "callee": "Carbon::today",
+          "lineNumber": 193
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "$query->whereMonth('DOB', '=', Carbon::today()->month)->whereDay('DOB', '<', Carbon::today()->addDays(7))->whereDay('DOB', '>=', Carbon::today()->day)->where",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "$query->whereMonth('DOB', '=', Carbon::today()->month)->whereDay('DOB', '<', Carbon::today()->addDays(7))->whereDay",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "$query->whereMonth('DOB', '=', Carbon::today()->month)->whereDay",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "$query->whereMonth",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "Carbon::today",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "Carbon::today()->addDays",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "Carbon::today",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeBirthday",
+          "callee": "Carbon::today",
+          "lineNumber": 198
+        },
+        {
+          "caller": "scopeRegistrations",
+          "callee": "$query->whereMonth('created_at', '=', $month)->whereYear('created_at', '=', $year)->count",
+          "lineNumber": 204
+        },
+        {
+          "caller": "scopeRegistrations",
+          "callee": "$query->whereMonth('created_at', '=', $month)->whereYear",
+          "lineNumber": 204
+        },
+        {
+          "caller": "scopeRegistrations",
+          "callee": "$query->whereMonth",
+          "lineNumber": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Plan.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "getPlanDisplayAttribute",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "scopeExcludeArchive",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeOnlyActive",
+          "startLine": 45,
+          "endLine": 48,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "subscriptions",
+          "startLine": 50,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "service",
+          "startLine": 55,
+          "endLine": 58,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Plan",
+          "startLine": 9,
+          "endLine": 59,
+          "methods": [
+            "getPlanDisplayAttribute",
+            "scopeExcludeArchive",
+            "scopeOnlyActive",
+            "subscriptions",
+            "service"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Plan",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "$query->where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "scopeOnlyActive",
+          "callee": "$query->where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "subscriptions",
+          "callee": "$this->hasMany",
+          "lineNumber": 52
+        },
+        {
+          "caller": "service",
+          "callee": "$this->belongsTo",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/SmsEvent.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "classes": [
+        {
+          "name": "SmsEvent",
+          "startLine": 8,
+          "endLine": 34,
+          "methods": [],
+          "properties": [
+            "table",
+            "fillable",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsEvent",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/SmsLog.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "scopeDashboardLogs",
+          "startLine": 35,
+          "endLine": 38,
+          "params": [
+            "$query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmsLog",
+          "startLine": 9,
+          "endLine": 39,
+          "methods": [
+            "scopeDashboardLogs"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "timestamps",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SmsLog",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeDashboardLogs",
+          "callee": "$query->where('send_time', '<=', Carbon::now())->take(5)->orderBy",
+          "lineNumber": 37
+        },
+        {
+          "caller": "scopeDashboardLogs",
+          "callee": "$query->where('send_time', '<=', Carbon::now())->take",
+          "lineNumber": 37
+        },
+        {
+          "caller": "scopeDashboardLogs",
+          "callee": "$query->where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "scopeDashboardLogs",
+          "callee": "Carbon::now",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

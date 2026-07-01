@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/_jsVariables.php",
+      "type": "file",
+      "filePath": "resources/views/_jsVariables.php",
+      "summary": "resources/views/_jsVariables.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/app.blade.php",
+      "type": "file",
+      "filePath": "resources/views/app.blade.php",
+      "summary": "resources/views/app.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/auth/login.blade.php",
+      "type": "file",
+      "filePath": "resources/views/auth/login.blade.php",
+      "summary": "resources/views/auth/login.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/birthdays.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/birthdays.blade.php",
+      "summary": "resources/views/dashboard/_index/birthdays.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/bouncedCheques.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/bouncedCheques.blade.php",
+      "summary": "resources/views/dashboard/_index/bouncedCheques.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/collection.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/collection.blade.php",
+      "summary": "resources/views/dashboard/_index/collection.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/depositedCheques.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/depositedCheques.blade.php",
+      "summary": "resources/views/dashboard/_index/depositedCheques.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/due.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/due.blade.php",
+      "summary": "resources/views/dashboard/_index/due.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/enquiries.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/enquiries.blade.php",
+      "summary": "resources/views/dashboard/_index/enquiries.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/expired.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/expired.blade.php",
+      "summary": "resources/views/dashboard/_index/expired.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/expiredMembers.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/expiredMembers.blade.php",
+      "summary": "resources/views/dashboard/_index/expiredMembers.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/expiring.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/expiring.blade.php",
+      "summary": "resources/views/dashboard/_index/expiring.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/inActiveMembers.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/inActiveMembers.blade.php",
+      "summary": "resources/views/dashboard/_index/inActiveMembers.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/outStanding.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/outStanding.blade.php",
+      "summary": "resources/views/dashboard/_index/outStanding.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/outstandingPayments.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/outstandingPayments.blade.php",
+      "summary": "resources/views/dashboard/_index/outstandingPayments.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/receivedCheque.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/receivedCheque.blade.php",
+      "summary": "resources/views/dashboard/_index/receivedCheque.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/recents.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/recents.blade.php",
+      "summary": "resources/views/dashboard/_index/recents.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/registeredThisMonth.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/registeredThisMonth.blade.php",
+      "summary": "resources/views/dashboard/_index/registeredThisMonth.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/reminders.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/reminders.blade.php",
+      "summary": "resources/views/dashboard/_index/reminders.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/smsLog.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/smsLog.blade.php",
+      "summary": "resources/views/dashboard/_index/smsLog.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/_index/totalMembers.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/_index/totalMembers.blade.php",
+      "summary": "resources/views/dashboard/_index/totalMembers.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/dashboard/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/dashboard/index.blade.php",
+      "summary": "resources/views/dashboard/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/enquiries/_followUp.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/_followUp.blade.php",
+      "summary": "resources/views/enquiries/_followUp.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/enquiries/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/create.blade.php",
+      "summary": "resources/views/enquiries/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/enquiries/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/edit.blade.php",
+      "summary": "resources/views/enquiries/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

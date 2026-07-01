@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/enquiries/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/form.blade.php",
+      "summary": "resources/views/enquiries/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/enquiries/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/index.blade.php",
+      "summary": "resources/views/enquiries/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/enquiries/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/enquiries/show.blade.php",
+      "summary": "resources/views/enquiries/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/errors/403.blade.php",
+      "type": "file",
+      "filePath": "resources/views/errors/403.blade.php",
+      "summary": "resources/views/errors/403.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/errors/503.blade.php",
+      "type": "file",
+      "filePath": "resources/views/errors/503.blade.php",
+      "summary": "resources/views/errors/503.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/errors/list.blade.php",
+      "type": "file",
+      "filePath": "resources/views/errors/list.blade.php",
+      "summary": "resources/views/errors/list.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenseCategories/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenseCategories/create.blade.php",
+      "summary": "resources/views/expenseCategories/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenseCategories/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenseCategories/edit.blade.php",
+      "summary": "resources/views/expenseCategories/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenseCategories/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenseCategories/form.blade.php",
+      "summary": "resources/views/expenseCategories/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenseCategories/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenseCategories/index.blade.php",
+      "summary": "resources/views/expenseCategories/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenseCategories/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenseCategories/show.blade.php",
+      "summary": "resources/views/expenseCategories/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenses/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenses/create.blade.php",
+      "summary": "resources/views/expenses/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenses/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenses/edit.blade.php",
+      "summary": "resources/views/expenses/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenses/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenses/form.blade.php",
+      "summary": "resources/views/expenses/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenses/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenses/index.blade.php",
+      "summary": "resources/views/expenses/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/expenses/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/expenses/show.blade.php",
+      "summary": "resources/views/expenses/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/_item.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/_item.blade.php",
+      "summary": "resources/views/invoices/_item.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/_payment.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/_payment.blade.php",
+      "summary": "resources/views/invoices/_payment.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/discount.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/discount.blade.php",
+      "summary": "resources/views/invoices/discount.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/index.blade.php",
+      "summary": "resources/views/invoices/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/overpaid.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/overpaid.blade.php",
+      "summary": "resources/views/invoices/overpaid.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/paid.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/paid.blade.php",
+      "summary": "resources/views/invoices/paid.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/partial.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/partial.blade.php",
+      "summary": "resources/views/invoices/partial.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/purchases/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/purchases/show.blade.php",
+      "summary": "resources/views/invoices/purchases/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/invoices/subscriptions/show.blade.php",
+      "type": "file",
+      "filePath": "resources/views/invoices/subscriptions/show.blade.php",
+      "summary": "resources/views/invoices/subscriptions/show.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

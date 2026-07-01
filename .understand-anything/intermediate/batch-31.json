@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/cs.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/cs.js",
+      "summary": "public/assets/plugins/ckeditor/lang/cs.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/cy.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/cy.js",
+      "summary": "public/assets/plugins/ckeditor/lang/cy.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/da.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/da.js",
+      "summary": "public/assets/plugins/ckeditor/lang/da.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/de.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/de.js",
+      "summary": "public/assets/plugins/ckeditor/lang/de.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/el.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/el.js",
+      "summary": "public/assets/plugins/ckeditor/lang/el.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/en-au.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/en-au.js",
+      "summary": "public/assets/plugins/ckeditor/lang/en-au.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/en-ca.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/en-ca.js",
+      "summary": "public/assets/plugins/ckeditor/lang/en-ca.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/en-gb.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/en-gb.js",
+      "summary": "public/assets/plugins/ckeditor/lang/en-gb.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/en.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/en.js",
+      "summary": "public/assets/plugins/ckeditor/lang/en.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/eo.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/eo.js",
+      "summary": "public/assets/plugins/ckeditor/lang/eo.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/es.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/es.js",
+      "summary": "public/assets/plugins/ckeditor/lang/es.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/et.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/et.js",
+      "summary": "public/assets/plugins/ckeditor/lang/et.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/eu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/eu.js",
+      "summary": "public/assets/plugins/ckeditor/lang/eu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/fa.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/fa.js",
+      "summary": "public/assets/plugins/ckeditor/lang/fa.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/fi.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/fi.js",
+      "summary": "public/assets/plugins/ckeditor/lang/fi.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/fo.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/fo.js",
+      "summary": "public/assets/plugins/ckeditor/lang/fo.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/fr-ca.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/fr-ca.js",
+      "summary": "public/assets/plugins/ckeditor/lang/fr-ca.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/fr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/fr.js",
+      "summary": "public/assets/plugins/ckeditor/lang/fr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/gl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/gl.js",
+      "summary": "public/assets/plugins/ckeditor/lang/gl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/gu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/gu.js",
+      "summary": "public/assets/plugins/ckeditor/lang/gu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/he.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/he.js",
+      "summary": "public/assets/plugins/ckeditor/lang/he.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/hi.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/hi.js",
+      "summary": "public/assets/plugins/ckeditor/lang/hi.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/hr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/hr.js",
+      "summary": "public/assets/plugins/ckeditor/lang/hr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/hu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/hu.js",
+      "summary": "public/assets/plugins/ckeditor/lang/hu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/id.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/id.js",
+      "summary": "public/assets/plugins/ckeditor/lang/id.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

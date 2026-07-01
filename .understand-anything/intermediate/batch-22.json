@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinHTML5.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinHTML5.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinHTML5.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinModern.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinModern.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinModern.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinNice.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinNice.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinNice.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinSimple.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinSimple.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinSimple.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/css/normalize.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/css/normalize.css",
+      "summary": "public/assets/plugins/ion-rangeSlider/css/normalize.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/datepicker/css/bootstrap-datepicker.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 473,
+      "nonEmptyLines": 473,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/datepicker/css/bootstrap-datepicker.standalone.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 506,
+      "nonEmptyLines": 506,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 680,
+      "nonEmptyLines": 680,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.standalone.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 709,
+      "nonEmptyLines": 709,
+      "metrics": {}
+    }
+  ]
+}

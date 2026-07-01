@@ -1,0 +1,1944 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ionicons/css/ionicons.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1480,
+      "nonEmptyLines": 746,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/jquery-countTo/jquery.countTo.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 66,
+      "callGraph": [
+        {
+          "caller": "updateTimer",
+          "callee": "render",
+          "lineNumber": 41
+        },
+        {
+          "caller": "updateTimer",
+          "callee": "settings.onUpdate.call",
+          "lineNumber": 44
+        },
+        {
+          "caller": "updateTimer",
+          "callee": "$self.removeData",
+          "lineNumber": 49
+        },
+        {
+          "caller": "updateTimer",
+          "callee": "clearInterval",
+          "lineNumber": 50
+        },
+        {
+          "caller": "updateTimer",
+          "callee": "settings.onComplete.call",
+          "lineNumber": 54
+        },
+        {
+          "caller": "render",
+          "callee": "settings.formatter.call",
+          "lineNumber": 60
+        },
+        {
+          "caller": "render",
+          "callee": "$self.text",
+          "lineNumber": 61
+        },
+        {
+          "caller": "formatter",
+          "callee": "value.toFixed",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 36,
+      "nonEmptyLines": 33,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-europe-merc-en.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/jquery-knob/jquery.knob.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 805,
+      "nonEmptyLines": 675,
+      "callGraph": [
+        {
+          "caller": "cf",
+          "callee": "s._carve().init",
+          "lineNumber": 89
+        },
+        {
+          "caller": "cf",
+          "callee": "s._carve",
+          "lineNumber": 89
+        },
+        {
+          "caller": "cf",
+          "callee": "s._configure()\r\n                 ._draw",
+          "lineNumber": 90
+        },
+        {
+          "caller": "cf",
+          "callee": "s._configure",
+          "lineNumber": 90
+        },
+        {
+          "caller": "touchMove",
+          "callee": "s.xy2val",
+          "lineNumber": 318
+        },
+        {
+          "caller": "touchMove",
+          "callee": "s.cH",
+          "lineNumber": 325
+        },
+        {
+          "caller": "touchMove",
+          "callee": "s.change",
+          "lineNumber": 327
+        },
+        {
+          "caller": "touchMove",
+          "callee": "s._validate",
+          "lineNumber": 327
+        },
+        {
+          "caller": "touchMove",
+          "callee": "s._draw",
+          "lineNumber": 328
+        },
+        {
+          "caller": "mouseMove",
+          "callee": "s.xy2val",
+          "lineNumber": 353
+        },
+        {
+          "caller": "mouseMove",
+          "callee": "s.cH",
+          "lineNumber": 357
+        },
+        {
+          "caller": "mouseMove",
+          "callee": "s.change",
+          "lineNumber": 359
+        },
+        {
+          "caller": "mouseMove",
+          "callee": "s._validate",
+          "lineNumber": 359
+        },
+        {
+          "caller": "mouseMove",
+          "callee": "s._draw",
+          "lineNumber": 360
+        },
+        {
+          "caller": "mw",
+          "callee": "e.preventDefault",
+          "lineNumber": 569
+        },
+        {
+          "caller": "mw",
+          "callee": "s._validate",
+          "lineNumber": 574
+        },
+        {
+          "caller": "mw",
+          "callee": "s.o.parse",
+          "lineNumber": 574
+        },
+        {
+          "caller": "mw",
+          "callee": "s.$.val",
+          "lineNumber": 574
+        },
+        {
+          "caller": "mw",
+          "callee": "max",
+          "lineNumber": 581
+        },
+        {
+          "caller": "mw",
+          "callee": "min",
+          "lineNumber": 581
+        },
+        {
+          "caller": "mw",
+          "callee": "s.val",
+          "lineNumber": 583
+        },
+        {
+          "caller": "mw",
+          "callee": "clearTimeout",
+          "lineNumber": 587
+        },
+        {
+          "caller": "mw",
+          "callee": "setTimeout",
+          "lineNumber": 588
+        },
+        {
+          "caller": "mw",
+          "callee": "s.rH",
+          "lineNumber": 589
+        },
+        {
+          "caller": "mw",
+          "callee": "setTimeout",
+          "lineNumber": 595
+        },
+        {
+          "caller": "mw",
+          "callee": "s.rH",
+          "lineNumber": 597
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/morris/morris.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/morris/morris.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1888,
+      "nonEmptyLines": 1750,
+      "callGraph": [
+        {
+          "caller": "__bind",
+          "callee": "fn.apply",
+          "lineNumber": 4
+        },
+        {
+          "caller": "__extends",
+          "callee": "__hasProp.call",
+          "lineNumber": 6
+        },
+        {
+          "caller": "Grid",
+          "callee": "__bind",
+          "lineNumber": 70
+        },
+        {
+          "caller": "Grid",
+          "callee": "$",
+          "lineNumber": 73
+        },
+        {
+          "caller": "Grid",
+          "callee": "document.getElementById",
+          "lineNumber": 73
+        },
+        {
+          "caller": "Grid",
+          "callee": "$",
+          "lineNumber": 75
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.css",
+          "lineNumber": 80
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.css",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Grid",
+          "callee": "$.extend",
+          "lineNumber": 83
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.init",
+          "lineNumber": 93
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.setData",
+          "lineNumber": 95
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 96
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.el.offset",
+          "lineNumber": 98
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.hitTest",
+          "lineNumber": 101
+        },
+        {
+          "caller": "Grid",
+          "callee": "Math.min",
+          "lineNumber": 101
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.hitTest",
+          "lineNumber": 102
+        },
+        {
+          "caller": "Grid",
+          "callee": "Math.max",
+          "lineNumber": 102
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.selectionRect.attr",
+          "lineNumber": 104
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.fire",
+          "lineNumber": 109
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 112
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.selectionRect.hide",
+          "lineNumber": 114
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.fire",
+          "lineNumber": 117
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 119
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.el.offset",
+          "lineNumber": 122
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.fire",
+          "lineNumber": 123
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 126
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.el.offset",
+          "lineNumber": 128
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.fire",
+          "lineNumber": 129
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.raphael.rect(0, 0, 0, this.el.innerHeight()).attr({\r\n          fill: this.options.rangeSelectColor,\r\n          stroke: false\r\n        }).toBack().hide",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.raphael.rect(0, 0, 0, this.el.innerHeight()).attr({\r\n          fill: this.options.rangeSelectColor,\r\n          stroke: false\r\n        }).toBack",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.raphael.rect(0, 0, 0, this.el.innerHeight()).attr",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.raphael.rect",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.innerHeight",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 136
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.el.offset",
+          "lineNumber": 138
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.startRange",
+          "lineNumber": 139
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.el.bind",
+          "lineNumber": 141
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.el.offset",
+          "lineNumber": 143
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.endRange",
+          "lineNumber": 144
+        },
+        {
+          "caller": "Grid",
+          "callee": "_this.fire",
+          "lineNumber": 145
+        },
+        {
+          "caller": "Grid",
+          "callee": "$(window).bind",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Grid",
+          "callee": "$",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Grid",
+          "callee": "window.clearTimeout",
+          "lineNumber": 151
+        },
+        {
+          "caller": "Grid",
+          "callee": "window.setTimeout",
+          "lineNumber": 153
+        },
+        {
+          "caller": "Grid",
+          "callee": "this.postInit",
+          "lineNumber": 157
+        },
+        {
+          "caller": "Hover",
+          "callee": "$.extend",
+          "lineNumber": 652
+        },
+        {
+          "caller": "Hover",
+          "callee": "$",
+          "lineNumber": 653
+        },
+        {
+          "caller": "Hover",
+          "callee": "this.el.hide",
+          "lineNumber": 654
+        },
+        {
+          "caller": "Hover",
+          "callee": "this.options.parent.append",
+          "lineNumber": 655
+        },
+        {
+          "caller": "Line",
+          "callee": "__bind",
+          "lineNumber": 708
+        },
+        {
+          "caller": "Line",
+          "callee": "__bind",
+          "lineNumber": 709
+        },
+        {
+          "caller": "Line",
+          "callee": "__bind",
+          "lineNumber": 710
+        },
+        {
+          "caller": "Line",
+          "callee": "__bind",
+          "lineNumber": 711
+        },
+        {
+          "caller": "Line",
+          "callee": "Line.__super__.constructor.call",
+          "lineNumber": 715
+        },
+        {
+          "caller": "Area",
+          "callee": "$.extend",
+          "lineNumber": 1297
+        },
+        {
+          "caller": "Area",
+          "callee": "Area.__super__.constructor.call",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "Bar",
+          "callee": "__bind",
+          "lineNumber": 1386
+        },
+        {
+          "caller": "Bar",
+          "callee": "__bind",
+          "lineNumber": 1387
+        },
+        {
+          "caller": "Bar",
+          "callee": "__bind",
+          "lineNumber": 1388
+        },
+        {
+          "caller": "Bar",
+          "callee": "Bar.__super__.constructor.call",
+          "lineNumber": 1392
+        },
+        {
+          "caller": "Bar",
+          "callee": "$.extend",
+          "lineNumber": 1392
+        },
+        {
+          "caller": "Donut",
+          "callee": "__bind",
+          "lineNumber": 1638
+        },
+        {
+          "caller": "Donut",
+          "callee": "__bind",
+          "lineNumber": 1639
+        },
+        {
+          "caller": "Donut",
+          "callee": "__bind",
+          "lineNumber": 1640
+        },
+        {
+          "caller": "Donut",
+          "callee": "$.extend",
+          "lineNumber": 1645
+        },
+        {
+          "caller": "Donut",
+          "callee": "$",
+          "lineNumber": 1647
+        },
+        {
+          "caller": "Donut",
+          "callee": "document.getElementById",
+          "lineNumber": 1647
+        },
+        {
+          "caller": "Donut",
+          "callee": "$",
+          "lineNumber": 1649
+        },
+        {
+          "caller": "Donut",
+          "callee": "$(window).bind",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "Donut",
+          "callee": "$",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "Donut",
+          "callee": "window.clearTimeout",
+          "lineNumber": 1661
+        },
+        {
+          "caller": "Donut",
+          "callee": "window.setTimeout",
+          "lineNumber": 1663
+        },
+        {
+          "caller": "Donut",
+          "callee": "this.setData",
+          "lineNumber": 1666
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "__bind",
+          "lineNumber": 1805
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "__bind",
+          "lineNumber": 1806
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "Math.sin",
+          "lineNumber": 1807
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "Math.cos",
+          "lineNumber": 1808
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "Math.sin",
+          "lineNumber": 1809
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "Math.cos",
+          "lineNumber": 1810
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "this.calcSegment",
+          "lineNumber": 1812
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "this.calcSegment",
+          "lineNumber": 1813
+        },
+        {
+          "caller": "DonutSegment",
+          "callee": "this.calcArc",
+          "lineNumber": 1814
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/pace/pace.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 921,
+      "nonEmptyLines": 819,
+      "callGraph": [
+        {
+          "caller": "__extends",
+          "callee": "__hasProp.call",
+          "lineNumber": 5
+        },
+        {
+          "caller": "NoTargetError",
+          "callee": "NoTargetError.__super__.constructor.apply",
+          "lineNumber": 225
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "RequestIntercept.__super__.constructor.apply",
+          "lineNumber": 408
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "shouldTrack",
+          "lineNumber": 413
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "_this.trigger",
+          "lineNumber": 414
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "_open.apply",
+          "lineNumber": 420
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "monitorXHR",
+          "lineNumber": 426
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "extendNative",
+          "lineNumber": 430
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "monitorXHR",
+          "lineNumber": 436
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "extendNative",
+          "lineNumber": 440
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "shouldTrack",
+          "lineNumber": 451
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "_this.trigger",
+          "lineNumber": 452
+        },
+        {
+          "caller": "RequestIntercept",
+          "callee": "extendNative",
+          "lineNumber": 462
+        },
+        {
+          "caller": "AjaxMonitor",
+          "callee": "getIntercept().on",
+          "lineNumber": 540
+        },
+        {
+          "caller": "AjaxMonitor",
+          "callee": "getIntercept",
+          "lineNumber": 540
+        },
+        {
+          "caller": "AjaxMonitor",
+          "callee": "_this.watch.apply",
+          "lineNumber": 541
+        },
+        {
+          "caller": "XHRRequestTracker",
+          "callee": "request.addEventListener",
+          "lineNumber": 570
+        },
+        {
+          "caller": "XHRRequestTracker",
+          "callee": "request.addEventListener",
+          "lineNumber": 580
+        },
+        {
+          "caller": "XHRRequestTracker",
+          "callee": "_onreadystatechange.apply",
+          "lineNumber": 593
+        },
+        {
+          "caller": "SocketRequestTracker",
+          "callee": "request.addEventListener",
+          "lineNumber": 610
+        },
+        {
+          "caller": "ElementMonitor",
+          "callee": "this.elements.push",
+          "lineNumber": 633
+        },
+        {
+          "caller": "ElementTracker",
+          "callee": "this.check",
+          "lineNumber": 645
+        },
+        {
+          "caller": "DocumentMonitor",
+          "callee": "_onreadystatechange.apply",
+          "lineNumber": 683
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "now",
+          "lineNumber": 699
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "setInterval",
+          "lineNumber": 700
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "now",
+          "lineNumber": 702
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "now",
+          "lineNumber": 703
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "samples.push",
+          "lineNumber": 704
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "samples.shift",
+          "lineNumber": 706
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "avgAmplitude",
+          "lineNumber": 708
+        },
+        {
+          "caller": "EventLagMonitor",
+          "callee": "clearInterval",
+          "lineNumber": 711
+        },
+        {
+          "caller": "Scaler",
+          "callee": "result",
+          "lineNumber": 730
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/rickshaw/rickshaw.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 355,
+      "nonEmptyLines": 346,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/rickshaw/rickshaw.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 4067,
+      "nonEmptyLines": 3090,
+      "callGraph": [
+        {
+          "caller": "isFunction",
+          "callee": "_toString.call",
+          "lineNumber": 90
+        },
+        {
+          "caller": "extend",
+          "callee": "source.hasOwnProperty",
+          "lineNumber": 93
+        },
+        {
+          "caller": "keys",
+          "callee": "Type",
+          "lineNumber": 98
+        },
+        {
+          "caller": "keys",
+          "callee": "object.hasOwnProperty",
+          "lineNumber": 101
+        },
+        {
+          "caller": "keys",
+          "callee": "results.push",
+          "lineNumber": 102
+        },
+        {
+          "caller": "argumentNames",
+          "callee": "fn.toString().match(/^[\\s\\(]*function[^(]*\\(([^)]*)\\)/)[1]\r\n    .replace(/\\/\\/.*?[\\r\\n]|\\/\\*(?:.|[\\r\\n])*?\\*\\//g, '')\r\n    .replace(/\\s+/g, '').split",
+          "lineNumber": 128
+        },
+        {
+          "caller": "argumentNames",
+          "callee": "fn.toString().match(/^[\\s\\(]*function[^(]*\\(([^)]*)\\)/)[1]\r\n    .replace(/\\/\\/.*?[\\r\\n]|\\/\\*(?:.|[\\r\\n])*?\\*\\//g, '')\r\n    .replace",
+          "lineNumber": 128
+        },
+        {
+          "caller": "argumentNames",
+          "callee": "fn.toString().match(/^[\\s\\(]*function[^(]*\\(([^)]*)\\)/)[1]\r\n    .replace",
+          "lineNumber": 128
+        },
+        {
+          "caller": "argumentNames",
+          "callee": "fn.toString().match",
+          "lineNumber": 128
+        },
+        {
+          "caller": "argumentNames",
+          "callee": "fn.toString",
+          "lineNumber": 128
+        },
+        {
+          "caller": "wrap",
+          "callee": "update",
+          "lineNumber": 136
+        },
+        {
+          "caller": "wrap",
+          "callee": "bind",
+          "lineNumber": 136
+        },
+        {
+          "caller": "wrap",
+          "callee": "wrapper.apply",
+          "lineNumber": 137
+        },
+        {
+          "caller": "merge",
+          "callee": "slice.call",
+          "lineNumber": 146
+        },
+        {
+          "caller": "merge",
+          "callee": "update",
+          "lineNumber": 147
+        },
+        {
+          "caller": "bind",
+          "callee": "isUndefined",
+          "lineNumber": 150
+        },
+        {
+          "caller": "bind",
+          "callee": "slice.call",
+          "lineNumber": 151
+        },
+        {
+          "caller": "bind",
+          "callee": "merge",
+          "lineNumber": 153
+        },
+        {
+          "caller": "bind",
+          "callee": "__method.apply",
+          "lineNumber": 154
+        },
+        {
+          "caller": "create",
+          "callee": "[].slice.apply",
+          "lineNumber": 177
+        },
+        {
+          "caller": "create",
+          "callee": "isFunction",
+          "lineNumber": 178
+        },
+        {
+          "caller": "create",
+          "callee": "properties.shift",
+          "lineNumber": 179
+        },
+        {
+          "caller": "klass",
+          "callee": "this.initialize.apply",
+          "lineNumber": 182
+        },
+        {
+          "caller": "create",
+          "callee": "extend",
+          "lineNumber": 185
+        },
+        {
+          "caller": "create",
+          "callee": "parent.subclasses.push",
+          "lineNumber": 192
+        },
+        {
+          "caller": "create",
+          "callee": "klass.addMethods",
+          "lineNumber": 196
+        },
+        {
+          "caller": "addMethods",
+          "callee": "keys",
+          "lineNumber": 207
+        },
+        {
+          "caller": "addMethods",
+          "callee": "properties.push",
+          "lineNumber": 214
+        },
+        {
+          "caller": "addMethods",
+          "callee": "properties.push",
+          "lineNumber": 216
+        },
+        {
+          "caller": "addMethods",
+          "callee": "isFunction",
+          "lineNumber": 221
+        },
+        {
+          "caller": "addMethods",
+          "callee": "argumentNames",
+          "lineNumber": 222
+        },
+        {
+          "caller": "addMethods",
+          "callee": "wrap",
+          "lineNumber": 224
+        },
+        {
+          "caller": "addMethods",
+          "callee": "(function(m) {\r\n          return function() { return ancestor[m].apply(this, arguments); };\r\n        })",
+          "lineNumber": 224
+        },
+        {
+          "caller": "addMethods",
+          "callee": "ancestor[m].apply",
+          "lineNumber": 225
+        },
+        {
+          "caller": "addMethods",
+          "callee": "bind",
+          "lineNumber": 228
+        },
+        {
+          "caller": "addMethods",
+          "callee": "bind",
+          "lineNumber": 229
+        },
+        {
+          "caller": "checkTokenAndGetIndex",
+          "callee": "/\\s/.test",
+          "lineNumber": 297
+        },
+        {
+          "caller": "checkTokenAndGetIndex",
+          "callee": "arrIndexOf.call",
+          "lineNumber": 303
+        },
+        {
+          "caller": "ClassList",
+          "callee": "strTrim.call",
+          "lineNumber": 307
+        },
+        {
+          "caller": "ClassList",
+          "callee": "trimmedClasses.split",
+          "lineNumber": 308
+        },
+        {
+          "caller": "ClassList",
+          "callee": "this.push",
+          "lineNumber": 313
+        },
+        {
+          "caller": "ClassList",
+          "callee": "this.toString",
+          "lineNumber": 316
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "Rickshaw.extend",
+          "lineNumber": 2618
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "Rickshaw.extend",
+          "lineNumber": 2622
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "this.appendChild",
+          "lineNumber": 2623
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "document.createElement",
+          "lineNumber": 2623
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "self.previews.push",
+          "lineNumber": 2631
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "parent.onUpdate",
+          "lineNumber": 2633
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "graph.render",
+          "lineNumber": 2633
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "self.render",
+          "lineNumber": 2633
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "parent.onConfigure",
+          "lineNumber": 2635
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "graph.configure",
+          "lineNumber": 2639
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "graph.render",
+          "lineNumber": 2640
+        },
+        {
+          "caller": "buildGraph",
+          "callee": "graph.render",
+          "lineNumber": 2643
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "self._getClientXFromEvent",
+          "lineNumber": 2850
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "self.frameBeforeDrag.slice",
+          "lineNumber": 2852
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "Math.max",
+          "lineNumber": 2859
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "Math.min",
+          "lineNumber": 2862
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "self.graphs.forEach",
+          "lineNumber": 2885
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "d3.scale.linear()\r\n\t\t\t\t\t.interpolate(d3.interpolateNumber)\r\n\t\t\t\t\t.domain([0, self.previewWidth])\r\n\t\t\t\t\t.range",
+          "lineNumber": 2887
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "d3.scale.linear()\r\n\t\t\t\t\t.interpolate(d3.interpolateNumber)\r\n\t\t\t\t\t.domain",
+          "lineNumber": 2887
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "d3.scale.linear()\r\n\t\t\t\t\t.interpolate",
+          "lineNumber": 2887
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "d3.scale.linear",
+          "lineNumber": 2887
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "graph.dataDomain",
+          "lineNumber": 2890
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "domainScale",
+          "lineNumber": 2893
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "domainScale",
+          "lineNumber": 2894
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "self.slideCallbacks.forEach",
+          "lineNumber": 2897
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "callback",
+          "lineNumber": 2898
+        },
+        {
+          "caller": "onMousemove",
+          "callee": "graph.update",
+          "lineNumber": 2910
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "self._getClientXFromEvent",
+          "lineNumber": 2916
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "self.currentFrame.slice",
+          "lineNumber": 2917
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.event.preventDefault",
+          "lineNumber": 2918
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2919
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select",
+          "lineNumber": 2919
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2920
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select",
+          "lineNumber": 2920
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2921
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select",
+          "lineNumber": 2921
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2922
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select",
+          "lineNumber": 2922
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2923
+        },
+        {
+          "caller": "onMousedown",
+          "callee": "d3.select",
+          "lineNumber": 2923
+        },
+        {
+          "caller": "onMousedownLeftHandle",
+          "callee": "onMousedown",
+          "lineNumber": 2928
+        },
+        {
+          "caller": "onMousedownRightHandle",
+          "callee": "onMousedown",
+          "lineNumber": 2933
+        },
+        {
+          "caller": "onMousedownMiddleHandle",
+          "callee": "onMousedown",
+          "lineNumber": 2940
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2944
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select",
+          "lineNumber": 2944
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2945
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select",
+          "lineNumber": 2945
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2946
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select",
+          "lineNumber": 2946
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2947
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select",
+          "lineNumber": 2947
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select(document).on",
+          "lineNumber": 2948
+        },
+        {
+          "caller": "onMouseup",
+          "callee": "d3.select",
+          "lineNumber": 2948
+        },
+        {
+          "caller": "transform",
+          "callee": "graph.y.magnitude",
+          "lineNumber": 3277
+        },
+        {
+          "caller": "transform",
+          "callee": "Math.abs",
+          "lineNumber": 3277
+        },
+        {
+          "caller": "transform",
+          "callee": "matrix.join",
+          "lineNumber": 3278
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/select2/select2-bootstrap.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 495,
+      "nonEmptyLines": 450,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/slimScroll/jquery.slimscroll.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 464,
+      "nonEmptyLines": 381,
+      "callGraph": [
+        {
+          "caller": "_onWheel",
+          "callee": "$(target).closest('.' + o.wrapperClass).is",
+          "lineNumber": 319
+        },
+        {
+          "caller": "_onWheel",
+          "callee": "$(target).closest",
+          "lineNumber": 319
+        },
+        {
+          "caller": "_onWheel",
+          "callee": "$",
+          "lineNumber": 319
+        },
+        {
+          "caller": "_onWheel",
+          "callee": "me.parent",
+          "lineNumber": 319
+        },
+        {
+          "caller": "_onWheel",
+          "callee": "scrollContent",
+          "lineNumber": 321
+        },
+        {
+          "caller": "_onWheel",
+          "callee": "e.preventDefault",
+          "lineNumber": 325
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.outerHeight",
+          "lineNumber": 333
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.outerHeight",
+          "lineNumber": 333
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "parseInt",
+          "lineNumber": 338
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.css",
+          "lineNumber": 338
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "parseInt",
+          "lineNumber": 338
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.outerHeight",
+          "lineNumber": 338
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.min",
+          "lineNumber": 341
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.max",
+          "lineNumber": 341
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.ceil",
+          "lineNumber": 347
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.floor",
+          "lineNumber": 347
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.css",
+          "lineNumber": 350
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "parseInt",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.css",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.outerHeight",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.outerHeight",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.outerHeight",
+          "lineNumber": 355
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.outerHeight",
+          "lineNumber": 360
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.min",
+          "lineNumber": 361
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "Math.max",
+          "lineNumber": 361
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "bar.css",
+          "lineNumber": 362
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.scrollTop",
+          "lineNumber": 366
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "me.trigger",
+          "lineNumber": 369
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "showBar",
+          "lineNumber": 372
+        },
+        {
+          "caller": "scrollContent",
+          "callee": "hideBar",
+          "lineNumber": 375
+        },
+        {
+          "caller": "attachWheel",
+          "callee": "this.addEventListener",
+          "lineNumber": 382
+        },
+        {
+          "caller": "attachWheel",
+          "callee": "this.addEventListener",
+          "lineNumber": 383
+        },
+        {
+          "caller": "attachWheel",
+          "callee": "this.addEventListener",
+          "lineNumber": 384
+        },
+        {
+          "caller": "attachWheel",
+          "callee": "document.attachEvent",
+          "lineNumber": 388
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "Math.max",
+          "lineNumber": 395
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "me.outerHeight",
+          "lineNumber": 395
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "me.outerHeight",
+          "lineNumber": 395
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "bar.css",
+          "lineNumber": 396
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "me.outerHeight",
+          "lineNumber": 399
+        },
+        {
+          "caller": "getBarHeight",
+          "callee": "bar.css",
+          "lineNumber": 400
+        },
+        {
+          "caller": "showBar",
+          "callee": "getBarHeight",
+          "lineNumber": 406
+        },
+        {
+          "caller": "showBar",
+          "callee": "clearTimeout",
+          "lineNumber": 407
+        },
+        {
+          "caller": "showBar",
+          "callee": "me.trigger",
+          "lineNumber": 419
+        },
+        {
+          "caller": "showBar",
+          "callee": "me.outerHeight",
+          "lineNumber": 429
+        },
+        {
+          "caller": "showBar",
+          "callee": "bar.stop(true,true).fadeIn",
+          "lineNumber": 434
+        },
+        {
+          "caller": "showBar",
+          "callee": "bar.stop",
+          "lineNumber": 434
+        },
+        {
+          "caller": "showBar",
+          "callee": "rail.stop(true,true).fadeIn",
+          "lineNumber": 435
+        },
+        {
+          "caller": "showBar",
+          "callee": "rail.stop",
+          "lineNumber": 435
+        },
+        {
+          "caller": "hideBar",
+          "callee": "setTimeout",
+          "lineNumber": 443
+        },
+        {
+          "caller": "hideBar",
+          "callee": "bar.fadeOut",
+          "lineNumber": 446
+        },
+        {
+          "caller": "hideBar",
+          "callee": "rail.fadeOut",
+          "lineNumber": 447
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/slimScroll/slimScroll.jquery.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "keywords",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "demo",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "download",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "author",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 16
+        },
+        {
+          "heading": "licenses",
+          "level": 1,
+          "line": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "public/assets/plugins/sweetalert/sweetalert.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 932,
+      "nonEmptyLines": 863,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/switchery/switchery.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 64,
+      "nonEmptyLines": 53,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/switchery/switchery.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1553,
+      "nonEmptyLines": 1279,
+      "callGraph": [
+        {
+          "caller": "require",
+          "callee": "module.definition.call",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Transitionize",
+          "callee": "this.init",
+          "lineNumber": 175
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onClick.apply",
+          "lineNumber": 301
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onMouse.apply",
+          "lineNumber": 304
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onTouchStart.apply",
+          "lineNumber": 307
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onTouchMove.apply",
+          "lineNumber": 310
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onTouchEnd.apply",
+          "lineNumber": 313
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.prototype.onTouchCancel.apply",
+          "lineNumber": 316
+        },
+        {
+          "caller": "FastClick",
+          "callee": "FastClick.notNeeded",
+          "lineNumber": 318
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 324
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 325
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 326
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 329
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 330
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 331
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 332
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 333
+        },
+        {
+          "caller": "FastClick",
+          "callee": "rmv.call",
+          "lineNumber": 342
+        },
+        {
+          "caller": "FastClick",
+          "callee": "rmv.call",
+          "lineNumber": 344
+        },
+        {
+          "caller": "FastClick",
+          "callee": "adv.call",
+          "lineNumber": 351
+        },
+        {
+          "caller": "FastClick",
+          "callee": "callback",
+          "lineNumber": 353
+        },
+        {
+          "caller": "FastClick",
+          "callee": "adv.call",
+          "lineNumber": 357
+        },
+        {
+          "caller": "FastClick",
+          "callee": "layer.addEventListener",
+          "lineNumber": 370
+        },
+        {
+          "caller": "FastClick",
+          "callee": "oldOnClick",
+          "lineNumber": 371
+        },
+        {
+          "caller": "Switchery",
+          "callee": "this.init",
+          "lineNumber": 1263
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 47,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/media/13/staff_2jpg",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 23,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/14/staff_3jpg",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 23,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/183/profile_72.enc",
+      "language": "enc",
+      "fileCategory": "code",
+      "totalLines": 346,
+      "nonEmptyLines": 343,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/184/profile_110.enc",
+      "language": "enc",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 69,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/215/profile_167.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 140,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/216/profile_168.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 1046,
+      "nonEmptyLines": 1036,
+      "metrics": {}
+    },
+    {
+      "path": "public/media/217/proof_168.jfif",
+      "language": "jfif",
+      "fileCategory": "code",
+      "totalLines": 932,
+      "nonEmptyLines": 923,
+      "metrics": {}
+    }
+  ]
+}

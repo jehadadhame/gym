@@ -1,0 +1,1054 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 30,
+          "endLine": 36,
+          "params": [
+            "$auth",
+            "$user"
+          ]
+        },
+        {
+          "name": "getRegister",
+          "startLine": 43,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "postRegister",
+          "startLine": 54,
+          "endLine": 63,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "getLogin",
+          "startLine": 70,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "postLogin",
+          "startLine": 81,
+          "endLine": 90,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "getLogout",
+          "startLine": 97,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 10,
+          "endLine": 103,
+          "methods": [
+            "__construct",
+            "getRegister",
+            "postRegister",
+            "getLogin",
+            "postLogin",
+            "getLogout"
+          ],
+          "properties": [
+            "user",
+            "auth"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getRegister",
+          "callee": "view",
+          "lineNumber": 45
+        },
+        {
+          "caller": "postRegister",
+          "callee": "bcrypt",
+          "lineNumber": 58
+        },
+        {
+          "caller": "postRegister",
+          "callee": "$this->user->save",
+          "lineNumber": 59
+        },
+        {
+          "caller": "postRegister",
+          "callee": "$this->auth->login",
+          "lineNumber": 60
+        },
+        {
+          "caller": "postRegister",
+          "callee": "redirect",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getLogin",
+          "callee": "view",
+          "lineNumber": 72
+        },
+        {
+          "caller": "postLogin",
+          "callee": "$this->auth->attempt",
+          "lineNumber": 83
+        },
+        {
+          "caller": "postLogin",
+          "callee": "redirect()->intended",
+          "lineNumber": 84
+        },
+        {
+          "caller": "postLogin",
+          "callee": "redirect",
+          "lineNumber": 84
+        },
+        {
+          "caller": "postLogin",
+          "callee": "redirect('/auth/login')->withErrors",
+          "lineNumber": 87
+        },
+        {
+          "caller": "postLogin",
+          "callee": "redirect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getLogout",
+          "callee": "$this->auth->logout",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getLogout",
+          "callee": "redirect",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Auth/PasswordController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordController",
+          "startLine": 8,
+          "endLine": 32,
+          "methods": [
+            "__construct"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PasswordController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "Controller",
+          "startLine": 9,
+          "endLine": 12,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Controller",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/ProductController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 24,
+          "endLine": 29,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 36,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 47,
+          "endLine": 64,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 72,
+          "endLine": 77,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 85,
+          "endLine": 91,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 100,
+          "endLine": 110,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "archive",
+          "startLine": 118,
+          "endLine": 122,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProductController",
+          "startLine": 12,
+          "endLine": 123,
+          "methods": [
+            "__construct",
+            "index",
+            "create",
+            "store",
+            "show",
+            "edit",
+            "update",
+            "archive"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProductController",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 17
+        },
+        {
+          "caller": "index",
+          "callee": "Product::excludeArchive()->search('\"' . $request->input(\"search\") . '\"')->paginate",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "Product::excludeArchive()->search",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "Product::excludeArchive",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "$products->total",
+          "lineNumber": 27
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 28
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 28
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 38
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 49
+        },
+        {
+          "caller": "store",
+          "callee": "$request->all",
+          "lineNumber": 54
+        },
+        {
+          "caller": "store",
+          "callee": "$product->createdBy()->associate",
+          "lineNumber": 56
+        },
+        {
+          "caller": "store",
+          "callee": "$product->createdBy",
+          "lineNumber": 56
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 56
+        },
+        {
+          "caller": "store",
+          "callee": "$product->updatedBy()->associate",
+          "lineNumber": 57
+        },
+        {
+          "caller": "store",
+          "callee": "$product->updatedBy",
+          "lineNumber": 57
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 57
+        },
+        {
+          "caller": "store",
+          "callee": "$product->save",
+          "lineNumber": 59
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 63
+        },
+        {
+          "caller": "show",
+          "callee": "Product::findOrFail",
+          "lineNumber": 74
+        },
+        {
+          "caller": "show",
+          "callee": "dd",
+          "lineNumber": 75
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 76
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 76
+        },
+        {
+          "caller": "edit",
+          "callee": "Product::findOrFail",
+          "lineNumber": 88
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 90
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "Product::findOrFail",
+          "lineNumber": 102
+        },
+        {
+          "caller": "update",
+          "callee": "$product->update",
+          "lineNumber": 104
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 104
+        },
+        {
+          "caller": "update",
+          "callee": "$product->updatedBy()->associate",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "$product->updatedBy",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "$product->save",
+          "lineNumber": 106
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 107
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 107
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 109
+        },
+        {
+          "caller": "archive",
+          "callee": "Product::destroy",
+          "lineNumber": 120
+        },
+        {
+          "caller": "archive",
+          "callee": "redirect",
+          "lineNumber": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/UsersController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 16,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "show",
+          "startLine": 29,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "create",
+          "startLine": 41,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 51,
+          "endLine": 76,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 78,
+          "endLine": 83,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 85,
+          "endLine": 107,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "archive",
+          "startLine": 109,
+          "endLine": 117,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UsersController",
+          "startLine": 9,
+          "endLine": 118,
+          "methods": [
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "archive"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UsersController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "user::excludeArchive()->paginate",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "user::excludeArchive",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 20
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 20
+        },
+        {
+          "caller": "show",
+          "callee": "user::findOrFail",
+          "lineNumber": 31
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 33
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 33
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 43
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 53
+        },
+        {
+          "caller": "store",
+          "callee": "bcrypt",
+          "lineNumber": 58
+        },
+        {
+          "caller": "store",
+          "callee": "$user->save",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "$user->save",
+          "lineNumber": 65
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::uploadFile",
+          "lineNumber": 66
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 68
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 68
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 70
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 72
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 72
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 74
+        },
+        {
+          "caller": "edit",
+          "callee": "user::findOrFail",
+          "lineNumber": 80
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 82
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 82
+        },
+        {
+          "caller": "update",
+          "callee": "user::findOrFail",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "bcrypt",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "$user->update",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update",
+          "callee": "$user->save",
+          "lineNumber": 100
+        },
+        {
+          "caller": "update",
+          "callee": "\\Utilities::uploadFile",
+          "lineNumber": 102
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 104
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 104
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "archive",
+          "callee": "user::findOrFail",
+          "lineNumber": 111
+        },
+        {
+          "caller": "archive",
+          "callee": "$user->save",
+          "lineNumber": 113
+        },
+        {
+          "caller": "archive",
+          "callee": "flash()->error",
+          "lineNumber": 114
+        },
+        {
+          "caller": "archive",
+          "callee": "flash",
+          "lineNumber": 114
+        },
+        {
+          "caller": "archive",
+          "callee": "redirect",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Product.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "scopeExcludeArchive",
+          "startLine": 31,
+          "endLine": 34,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeOnlyActive",
+          "startLine": 36,
+          "endLine": 39,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "purchases",
+          "startLine": 41,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Product",
+          "startLine": 10,
+          "endLine": 45,
+          "methods": [
+            "scopeExcludeArchive",
+            "scopeOnlyActive",
+            "purchases"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Product",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "$query->where",
+          "lineNumber": 33
+        },
+        {
+          "caller": "scopeOnlyActive",
+          "callee": "$query->where",
+          "lineNumber": 38
+        },
+        {
+          "caller": "purchases",
+          "callee": "$this->hasMany",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/User.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "registerMediaConversions",
+          "startLine": 42,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "scopeExcludeArchive",
+          "startLine": 53,
+          "endLine": 60,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "roleUser",
+          "startLine": 62,
+          "endLine": 65,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "startLine": 16,
+          "endLine": 66,
+          "methods": [
+            "registerMediaConversions",
+            "scopeExcludeArchive",
+            "roleUser"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "hidden"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "User",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('thumb')\r\n             ->setManipulations(['w' => 50, 'h' => 50, 'q' => 100, 'fit' => 'crop'])->performOnCollections",
+          "lineNumber": 44
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('thumb')->setManipulations",
+          "lineNumber": 44
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion",
+          "lineNumber": 44
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('form')\r\n             ->setManipulations(['w' => 70, 'h' => 70, 'q' => 100, 'fit' => 'crop'])->performOnCollections",
+          "lineNumber": 48
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion('form')->setManipulations",
+          "lineNumber": 48
+        },
+        {
+          "caller": "registerMediaConversions",
+          "callee": "$this->addMediaConversion",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "Auth::User",
+          "lineNumber": 55
+        },
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "$query->where('status', '!=', \\constStatus::Archive)->where",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "$query->where",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeExcludeArchive",
+          "callee": "$query->where",
+          "lineNumber": 59
+        },
+        {
+          "caller": "roleUser",
+          "callee": "$this->hasOne",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/UsersTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 22,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UsersTableSeeder",
+          "startLine": 6,
+          "endLine": 23,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UsersTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "User::create",
+          "lineNumber": 16
+        },
+        {
+          "caller": "run",
+          "callee": "bcrypt",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

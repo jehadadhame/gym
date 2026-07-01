@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/css/color-palettes.css",
+      "type": "file",
+      "filePath": "public/assets/css/color-palettes.css",
+      "summary": "public/assets/css/color-palettes.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/helpers.css",
+      "type": "file",
+      "filePath": "public/assets/css/helpers.css",
+      "summary": "public/assets/css/helpers.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/material.css",
+      "type": "file",
+      "filePath": "public/assets/css/material.css",
+      "summary": "public/assets/css/material.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/mystyle.css",
+      "type": "file",
+      "filePath": "public/assets/css/mystyle.css",
+      "summary": "public/assets/css/mystyle.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/plugins.css",
+      "type": "file",
+      "filePath": "public/assets/css/plugins.css",
+      "summary": "public/assets/css/plugins.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/print.css",
+      "type": "file",
+      "filePath": "public/assets/css/print.css",
+      "summary": "public/assets/css/print.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/responsive.css",
+      "type": "file",
+      "filePath": "public/assets/css/responsive.css",
+      "summary": "public/assets/css/responsive.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/css/style.css",
+      "type": "file",
+      "filePath": "public/assets/css/style.css",
+      "summary": "public/assets/css/style.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

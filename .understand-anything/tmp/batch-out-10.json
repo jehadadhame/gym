@@ -1,0 +1,221 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ckeditor/CHANGES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 720,
+      "nonEmptyLines": 579,
+      "sections": [
+        {
+          "heading": "CKEditor 4.4.7",
+          "level": 2,
+          "line": 4
+        },
+        {
+          "heading": "CKEditor 4.4.6",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "CKEditor 4.4.5",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "CKEditor 4.4.4",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "CKEditor 4.4.3",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "CKEditor 4.4.2",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "CKEditor 4.4.1",
+          "level": 2,
+          "line": 171
+        },
+        {
+          "heading": "CKEditor 4.4",
+          "level": 2,
+          "line": 210
+        },
+        {
+          "heading": "CKEditor 4.3.5",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "CKEditor 4.3.4",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "CKEditor 4.3.3",
+          "level": 2,
+          "line": 282
+        },
+        {
+          "heading": "CKEditor 4.3.2",
+          "level": 2,
+          "line": 308
+        },
+        {
+          "heading": "CKEditor 4.3.1",
+          "level": 2,
+          "line": 346
+        },
+        {
+          "heading": "CKEditor 4.3",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "CKEditor 4.3 Beta",
+          "level": 2,
+          "line": 439
+        },
+        {
+          "heading": "CKEditor 4.2.3",
+          "level": 2,
+          "line": 462
+        },
+        {
+          "heading": "CKEditor 4.2.2",
+          "level": 2,
+          "line": 472
+        },
+        {
+          "heading": "CKEditor 4.2.1",
+          "level": 2,
+          "line": 491
+        },
+        {
+          "heading": "CKEditor 4.2",
+          "level": 2,
+          "line": 510
+        },
+        {
+          "heading": "CKEditor 4.1.3",
+          "level": 2,
+          "line": 535
+        },
+        {
+          "heading": "CKEditor 4.1.2",
+          "level": 2,
+          "line": 549
+        },
+        {
+          "heading": "CKEditor 4.1.1",
+          "level": 2,
+          "line": 571
+        },
+        {
+          "heading": "CKEditor 4.1",
+          "level": 2,
+          "line": 594
+        },
+        {
+          "heading": "CKEditor 4.1 RC",
+          "level": 2,
+          "line": 606
+        },
+        {
+          "heading": "CKEditor 4.0.3",
+          "level": 2,
+          "line": 630
+        },
+        {
+          "heading": "CKEditor 4.0.2",
+          "level": 2,
+          "line": 638
+        },
+        {
+          "heading": "CKEditor 4.0.1.1",
+          "level": 2,
+          "line": 662
+        },
+        {
+          "heading": "CKEditor 4.0.1",
+          "level": 2,
+          "line": 668
+        },
+        {
+          "heading": "CKEditor 4.0",
+          "level": 2,
+          "line": 712
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 29
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/LICENSE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1264,
+      "nonEmptyLines": 1058,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checking Your Installation",
+          "level": 2,
+          "line": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/contents.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 134,
+      "nonEmptyLines": 114,
+      "metrics": {}
+    }
+  ]
+}

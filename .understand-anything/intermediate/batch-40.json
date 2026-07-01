@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.selection.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.selection.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.selection.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.stack.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.stack.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.stack.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.symbol.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.symbol.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.symbol.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.threshold.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.threshold.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.threshold.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.time.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.time.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.time.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/css/font-awesome.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/css/font-awesome.css",
+      "summary": "public/assets/plugins/font-awesome/css/font-awesome.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/font-awesome/fonts/FontAwesome.otf",
+      "type": "file",
+      "filePath": "public/assets/plugins/font-awesome/fonts/FontAwesome.otf",
+      "summary": "public/assets/plugins/font-awesome/fonts/FontAwesome.otf",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/fullcalendar/fullcalendar.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/fullcalendar/fullcalendar.css",
+      "summary": "public/assets/plugins/fullcalendar/fullcalendar.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/fullcalendar/fullcalendar.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/fullcalendar/fullcalendar.js",
+      "summary": "public/assets/plugins/fullcalendar/fullcalendar.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/fullcalendar/fullcalendar.print.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/fullcalendar/fullcalendar.print.css",
+      "summary": "public/assets/plugins/fullcalendar/fullcalendar.print.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/fullcalendar/gcal.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/fullcalendar/gcal.js",
+      "summary": "public/assets/plugins/fullcalendar/gcal.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/fullcalendar/lang-all.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/fullcalendar/lang-all.js",
+      "summary": "public/assets/plugins/fullcalendar/lang-all.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/gmaps/gmaps.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/gmaps/gmaps.js",
+      "summary": "public/assets/plugins/gmaps/gmaps.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/gmaps/prettify.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/gmaps/prettify.js",
+      "summary": "public/assets/plugins/gmaps/prettify.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/icheck.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/icheck.js",
+      "summary": "public/assets/plugins/iCheck/icheck.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/all.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/all.css",
+      "summary": "public/assets/plugins/iCheck/skins/all.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/futurico/futurico.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/futurico/futurico.css",
+      "summary": "public/assets/plugins/iCheck/skins/futurico/futurico.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/polaris/polaris.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/polaris/polaris.css",
+      "summary": "public/assets/plugins/iCheck/skins/polaris/polaris.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.date.extensions.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.date.extensions.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.date.extensions.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.extensions.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.extensions.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.extensions.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.numeric.extensions.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.numeric.extensions.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.numeric.extensions.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.phone.extensions.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.phone.extensions.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.phone.extensions.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/jquery.inputmask.regex.extensions.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/jquery.inputmask.regex.extensions.js",
+      "summary": "public/assets/plugins/input-mask/jquery.inputmask.regex.extensions.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ion-rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ion-rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js",
+      "summary": "public/assets/plugins/ion-rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

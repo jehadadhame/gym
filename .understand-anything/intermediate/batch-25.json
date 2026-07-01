@@ -1,0 +1,516 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Lubus/ImageFilters/Image64x64.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Image64x64.php",
+      "summary": "app/Lubus/ImageFilters/Image64x64.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Image64x64.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Image64x64.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Image64x64.php:Image64x64",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Image64x64.php",
+      "symbolName": "Image64x64"
+    },
+    {
+      "id": "file:app/Lubus/ImageFilters/Image70x70.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Image70x70.php",
+      "summary": "app/Lubus/ImageFilters/Image70x70.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Image70x70.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Image70x70.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Image70x70.php:Image70x70",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Image70x70.php",
+      "symbolName": "Image70x70"
+    },
+    {
+      "id": "file:app/Lubus/ImageFilters/Invoice.php",
+      "type": "file",
+      "filePath": "app/Lubus/ImageFilters/Invoice.php",
+      "summary": "app/Lubus/ImageFilters/Invoice.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Lubus/ImageFilters/Invoice.php:applyFilter",
+      "type": "function",
+      "filePath": "app/Lubus/ImageFilters/Invoice.php",
+      "symbolName": "applyFilter"
+    },
+    {
+      "id": "class:app/Lubus/ImageFilters/Invoice.php:Invoice",
+      "type": "class",
+      "filePath": "app/Lubus/ImageFilters/Invoice.php",
+      "symbolName": "Invoice"
+    },
+    {
+      "id": "file:app/Luser.php",
+      "type": "file",
+      "filePath": "app/Luser.php",
+      "summary": "app/Luser.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Luser.php:Luser",
+      "type": "class",
+      "filePath": "app/Luser.php",
+      "symbolName": "Luser"
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "type": "file",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "summary": "app/Providers/AppServiceProvider.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Providers/AppServiceProvider.php:boot",
+      "type": "function",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "symbolName": "boot"
+    },
+    {
+      "id": "function:app/Providers/AppServiceProvider.php:register",
+      "type": "function",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "symbolName": "register"
+    },
+    {
+      "id": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "type": "class",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "symbolName": "AppServiceProvider"
+    },
+    {
+      "id": "file:app/Providers/EventServiceProvider.php",
+      "type": "file",
+      "filePath": "app/Providers/EventServiceProvider.php",
+      "summary": "app/Providers/EventServiceProvider.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Providers/EventServiceProvider.php:boot",
+      "type": "function",
+      "filePath": "app/Providers/EventServiceProvider.php",
+      "symbolName": "boot"
+    },
+    {
+      "id": "class:app/Providers/EventServiceProvider.php:EventServiceProvider",
+      "type": "class",
+      "filePath": "app/Providers/EventServiceProvider.php",
+      "symbolName": "EventServiceProvider"
+    },
+    {
+      "id": "file:app/Providers/RouteServiceProvider.php",
+      "type": "file",
+      "filePath": "app/Providers/RouteServiceProvider.php",
+      "summary": "app/Providers/RouteServiceProvider.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Providers/RouteServiceProvider.php:boot",
+      "type": "function",
+      "filePath": "app/Providers/RouteServiceProvider.php",
+      "symbolName": "boot"
+    },
+    {
+      "id": "function:app/Providers/RouteServiceProvider.php:map",
+      "type": "function",
+      "filePath": "app/Providers/RouteServiceProvider.php",
+      "symbolName": "map"
+    },
+    {
+      "id": "class:app/Providers/RouteServiceProvider.php:RouteServiceProvider",
+      "type": "class",
+      "filePath": "app/Providers/RouteServiceProvider.php",
+      "symbolName": "RouteServiceProvider"
+    },
+    {
+      "id": "file:app/Purchase.php",
+      "type": "file",
+      "filePath": "app/Purchase.php",
+      "summary": "app/Purchase.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Purchase.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/Purchase.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "function:app/Purchase.php:member",
+      "type": "function",
+      "filePath": "app/Purchase.php",
+      "symbolName": "member"
+    },
+    {
+      "id": "function:app/Purchase.php:product",
+      "type": "function",
+      "filePath": "app/Purchase.php",
+      "symbolName": "product"
+    },
+    {
+      "id": "function:app/Purchase.php:invoice",
+      "type": "function",
+      "filePath": "app/Purchase.php",
+      "symbolName": "invoice"
+    },
+    {
+      "id": "class:app/Purchase.php:Purchase",
+      "type": "class",
+      "filePath": "app/Purchase.php",
+      "symbolName": "Purchase"
+    },
+    {
+      "id": "file:app/todo.txt",
+      "type": "file",
+      "filePath": "app/todo.txt",
+      "summary": "app/todo.txt",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:app/updatedByUser.php",
+      "type": "file",
+      "filePath": "app/updatedByUser.php",
+      "summary": "app/updatedByUser.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:artisan",
+      "type": "file",
+      "filePath": "artisan",
+      "summary": "artisan",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "type": "file",
+      "filePath": "bootstrap/app.php",
+      "summary": "bootstrap/app.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:bootstrap/autoload.php",
+      "type": "file",
+      "filePath": "bootstrap/autoload.php",
+      "summary": "bootstrap/autoload.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/app.php",
+      "type": "file",
+      "filePath": "config/app.php",
+      "summary": "config/app.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/auth.php",
+      "type": "file",
+      "filePath": "config/auth.php",
+      "summary": "config/auth.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/broadcasting.php",
+      "type": "file",
+      "filePath": "config/broadcasting.php",
+      "summary": "config/broadcasting.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/cache.php",
+      "type": "file",
+      "filePath": "config/cache.php",
+      "summary": "config/cache.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/compile.php",
+      "type": "file",
+      "filePath": "config/compile.php",
+      "summary": "config/compile.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/database.php",
+      "type": "file",
+      "filePath": "config/database.php",
+      "summary": "config/database.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/debugbar.php",
+      "type": "file",
+      "filePath": "config/debugbar.php",
+      "summary": "config/debugbar.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/entrust.php",
+      "type": "file",
+      "filePath": "config/entrust.php",
+      "summary": "config/entrust.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/filesystems.php",
+      "type": "file",
+      "filePath": "config/filesystems.php",
+      "summary": "config/filesystems.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/image.php",
+      "type": "file",
+      "filePath": "config/image.php",
+      "summary": "config/image.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/imagecache.php",
+      "type": "file",
+      "filePath": "config/imagecache.php",
+      "summary": "config/imagecache.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:config/javascript.php",
+      "type": "file",
+      "filePath": "config/javascript.php",
+      "summary": "config/javascript.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Lubus/ImageFilters/Image64x64.php",
+      "target": "function:app/Lubus/ImageFilters/Image64x64.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image64x64.php",
+      "target": "class:app/Lubus/ImageFilters/Image64x64.php:Image64x64",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image70x70.php",
+      "target": "function:app/Lubus/ImageFilters/Image70x70.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Image70x70.php",
+      "target": "class:app/Lubus/ImageFilters/Image70x70.php:Image70x70",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Invoice.php",
+      "target": "function:app/Lubus/ImageFilters/Invoice.php:applyFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Lubus/ImageFilters/Invoice.php",
+      "target": "class:app/Lubus/ImageFilters/Invoice.php:Invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Luser.php",
+      "target": "class:app/Luser.php:Luser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "function:app/Providers/AppServiceProvider.php:boot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "function:app/Providers/AppServiceProvider.php:register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/EventServiceProvider.php",
+      "target": "function:app/Providers/EventServiceProvider.php:boot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/EventServiceProvider.php",
+      "target": "class:app/Providers/EventServiceProvider.php:EventServiceProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/RouteServiceProvider.php",
+      "target": "function:app/Providers/RouteServiceProvider.php:boot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/RouteServiceProvider.php",
+      "target": "function:app/Providers/RouteServiceProvider.php:map",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Providers/RouteServiceProvider.php",
+      "target": "class:app/Providers/RouteServiceProvider.php:RouteServiceProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Purchase.php",
+      "target": "function:app/Purchase.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Purchase.php",
+      "target": "function:app/Purchase.php:member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Purchase.php",
+      "target": "function:app/Purchase.php:product",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Purchase.php",
+      "target": "function:app/Purchase.php:invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Purchase.php",
+      "target": "class:app/Purchase.php:Purchase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

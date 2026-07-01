@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/_all.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/_all.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/_all.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/aero.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/aero.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/aero.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/blue.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/blue.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/blue.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/green.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/green.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/green.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/grey.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/grey.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/grey.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/line.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/line.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/line.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/orange.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/orange.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/orange.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/pink.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/pink.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/pink.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/purple.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/purple.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/purple.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/red.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/red.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/red.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/iCheck/skins/line/yellow.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/iCheck/skins/line/yellow.css",
+      "summary": "public/assets/plugins/iCheck/skins/line/yellow.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,347 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Console/Commands/ExpenseAlert.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/ExpenseAlert.php",
+      "summary": "app/Console/Commands/ExpenseAlert.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/ExpenseAlert.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/ExpenseAlert.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/ExpenseAlert.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/ExpenseAlert.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/ExpenseAlert.php:ExpenseAlert",
+      "type": "class",
+      "filePath": "app/Console/Commands/ExpenseAlert.php",
+      "symbolName": "ExpenseAlert"
+    },
+    {
+      "id": "file:app/Console/Commands/RepeatExpense.php",
+      "type": "file",
+      "filePath": "app/Console/Commands/RepeatExpense.php",
+      "summary": "app/Console/Commands/RepeatExpense.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Console/Commands/RepeatExpense.php:__construct",
+      "type": "function",
+      "filePath": "app/Console/Commands/RepeatExpense.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Console/Commands/RepeatExpense.php:handle",
+      "type": "function",
+      "filePath": "app/Console/Commands/RepeatExpense.php",
+      "symbolName": "handle"
+    },
+    {
+      "id": "class:app/Console/Commands/RepeatExpense.php:RepeatExpense",
+      "type": "class",
+      "filePath": "app/Console/Commands/RepeatExpense.php",
+      "symbolName": "RepeatExpense"
+    },
+    {
+      "id": "file:app/Expense.php",
+      "type": "file",
+      "filePath": "app/Expense.php",
+      "summary": "app/Expense.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Expense.php:category",
+      "type": "function",
+      "filePath": "app/Expense.php",
+      "symbolName": "category"
+    },
+    {
+      "id": "function:app/Expense.php:scopeDueAlerts",
+      "type": "function",
+      "filePath": "app/Expense.php",
+      "symbolName": "scopeDueAlerts"
+    },
+    {
+      "id": "function:app/Expense.php:scopeOutstandingAlerts",
+      "type": "function",
+      "filePath": "app/Expense.php",
+      "symbolName": "scopeOutstandingAlerts"
+    },
+    {
+      "id": "function:app/Expense.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/Expense.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "class:app/Expense.php:Expense",
+      "type": "class",
+      "filePath": "app/Expense.php",
+      "symbolName": "Expense"
+    },
+    {
+      "id": "file:app/Http/Controllers/ExpensesController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "summary": "app/Http/Controllers/ExpensesController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:paid",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "paid"
+    },
+    {
+      "id": "function:app/Http/Controllers/ExpensesController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "class:app/Http/Controllers/ExpensesController.php:ExpensesController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/ExpensesController.php",
+      "symbolName": "ExpensesController"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Console/Commands/ExpenseAlert.php",
+      "target": "function:app/Console/Commands/ExpenseAlert.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ExpenseAlert.php",
+      "target": "function:app/Console/Commands/ExpenseAlert.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ExpenseAlert.php",
+      "target": "class:app/Console/Commands/ExpenseAlert.php:ExpenseAlert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ExpenseAlert.php",
+      "target": "file:app/Expense.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/ExpenseAlert.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/RepeatExpense.php",
+      "target": "function:app/Console/Commands/RepeatExpense.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/RepeatExpense.php",
+      "target": "function:app/Console/Commands/RepeatExpense.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/RepeatExpense.php",
+      "target": "class:app/Console/Commands/RepeatExpense.php:RepeatExpense",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Console/Commands/RepeatExpense.php",
+      "target": "file:app/Expense.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Expense.php",
+      "target": "function:app/Expense.php:category",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Expense.php",
+      "target": "function:app/Expense.php:scopeDueAlerts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Expense.php",
+      "target": "function:app/Expense.php:scopeOutstandingAlerts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Expense.php",
+      "target": "function:app/Expense.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Expense.php",
+      "target": "class:app/Expense.php:Expense",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:paid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "function:app/Http/Controllers/ExpensesController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "class:app/Http/Controllers/ExpensesController.php:ExpensesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ExpensesController.php",
+      "target": "file:app/Expense.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

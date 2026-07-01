@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ionicons/css/ionicons.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ionicons/css/ionicons.css",
+      "summary": "public/assets/plugins/ionicons/css/ionicons.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/jquery-countTo/jquery.countTo.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/jquery-countTo/jquery.countTo.js",
+      "summary": "public/assets/plugins/jquery-countTo/jquery.countTo.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css",
+      "summary": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/jquery-jvectormap/jquery-jvectormap-europe-merc-en.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-europe-merc-en.js",
+      "summary": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-europe-merc-en.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js",
+      "summary": "public/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/jquery-knob/jquery.knob.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/jquery-knob/jquery.knob.js",
+      "summary": "public/assets/plugins/jquery-knob/jquery.knob.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/morris/morris.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/morris/morris.css",
+      "summary": "public/assets/plugins/morris/morris.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/morris/morris.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/morris/morris.js",
+      "summary": "public/assets/plugins/morris/morris.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/pace/pace.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/pace/pace.js",
+      "summary": "public/assets/plugins/pace/pace.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/rickshaw/rickshaw.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/rickshaw/rickshaw.css",
+      "summary": "public/assets/plugins/rickshaw/rickshaw.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/rickshaw/rickshaw.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/rickshaw/rickshaw.js",
+      "summary": "public/assets/plugins/rickshaw/rickshaw.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/select2/select2-bootstrap.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/select2/select2-bootstrap.css",
+      "summary": "public/assets/plugins/select2/select2-bootstrap.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/slimScroll/jquery.slimscroll.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/slimScroll/jquery.slimscroll.js",
+      "summary": "public/assets/plugins/slimScroll/jquery.slimscroll.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/slimScroll/slimScroll.jquery.json",
+      "type": "file",
+      "filePath": "public/assets/plugins/slimScroll/slimScroll.jquery.json",
+      "summary": "public/assets/plugins/slimScroll/slimScroll.jquery.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/sweetalert/sweetalert.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/sweetalert/sweetalert.css",
+      "summary": "public/assets/plugins/sweetalert/sweetalert.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/switchery/switchery.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/switchery/switchery.css",
+      "summary": "public/assets/plugins/switchery/switchery.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/switchery/switchery.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/switchery/switchery.js",
+      "summary": "public/assets/plugins/switchery/switchery.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/index.php",
+      "type": "file",
+      "filePath": "public/index.php",
+      "summary": "public/index.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/13/staff_2jpg",
+      "type": "file",
+      "filePath": "public/media/13/staff_2jpg",
+      "summary": "public/media/13/staff_2jpg",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/14/staff_3jpg",
+      "type": "file",
+      "filePath": "public/media/14/staff_3jpg",
+      "summary": "public/media/14/staff_3jpg",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/183/profile_72.enc",
+      "type": "file",
+      "filePath": "public/media/183/profile_72.enc",
+      "summary": "public/media/183/profile_72.enc",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/184/profile_110.enc",
+      "type": "file",
+      "filePath": "public/media/184/profile_110.enc",
+      "summary": "public/media/184/profile_110.enc",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/215/profile_167.jfif",
+      "type": "file",
+      "filePath": "public/media/215/profile_167.jfif",
+      "summary": "public/media/215/profile_167.jfif",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/216/profile_168.jfif",
+      "type": "file",
+      "filePath": "public/media/216/profile_168.jfif",
+      "summary": "public/media/216/profile_168.jfif",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/media/217/proof_168.jfif",
+      "type": "file",
+      "filePath": "public/media/217/proof_168.jfif",
+      "summary": "public/media/217/proof_168.jfif",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

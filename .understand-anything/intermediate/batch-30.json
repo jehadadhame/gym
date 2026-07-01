@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/bootstrap-select/js/i18n/defaults-zh_TW.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-select/js/i18n/defaults-zh_TW.js",
+      "summary": "public/assets/plugins/bootstrap-select/js/i18n/defaults-zh_TW.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-slider/css/slider.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-slider/css/slider.css",
+      "summary": "public/assets/plugins/bootstrap-slider/css/slider.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-slider/js/bootstrap-slider.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-slider/js/bootstrap-slider.js",
+      "summary": "public/assets/plugins/bootstrap-slider/js/bootstrap-slider.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-slider/less/slider.less",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-slider/less/slider.less",
+      "summary": "public/assets/plugins/bootstrap-slider/less/slider.less",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-tokenfield/bootstrap-tokenfield.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-tokenfield/bootstrap-tokenfield.js",
+      "summary": "public/assets/plugins/bootstrap-tokenfield/bootstrap-tokenfield.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-tokenfield/css/bootstrap-tokenfield.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-tokenfield/css/bootstrap-tokenfield.css",
+      "summary": "public/assets/plugins/bootstrap-tokenfield/css/bootstrap-tokenfield.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-tokenfield/css/tokenfield-typeahead.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-tokenfield/css/tokenfield-typeahead.css",
+      "summary": "public/assets/plugins/bootstrap-tokenfield/css/tokenfield-typeahead.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css",
+      "summary": "public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js",
+      "summary": "public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap/css/bootstrap-theme.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap/css/bootstrap-theme.css",
+      "summary": "public/assets/plugins/bootstrap/css/bootstrap-theme.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap/css/bootstrap.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap/css/bootstrap.css",
+      "summary": "public/assets/plugins/bootstrap/css/bootstrap.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap/js/bootstrap.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap/js/bootstrap.js",
+      "summary": "public/assets/plugins/bootstrap/js/bootstrap.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrap/js/npm.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrap/js/npm.js",
+      "summary": "public/assets/plugins/bootstrap/js/npm.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrapValidator/bootstrapValidator.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrapValidator/bootstrapValidator.css",
+      "summary": "public/assets/plugins/bootstrapValidator/bootstrapValidator.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/bootstrapValidator/bootstrapValidator.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/bootstrapValidator/bootstrapValidator.js",
+      "summary": "public/assets/plugins/bootstrapValidator/bootstrapValidator.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/adapters/jquery.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/adapters/jquery.js",
+      "summary": "public/assets/plugins/ckeditor/adapters/jquery.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/build-config.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/build-config.js",
+      "summary": "public/assets/plugins/ckeditor/build-config.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/ckeditor.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/ckeditor.js",
+      "summary": "public/assets/plugins/ckeditor/ckeditor.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/config.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/config.js",
+      "summary": "public/assets/plugins/ckeditor/config.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/af.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/af.js",
+      "summary": "public/assets/plugins/ckeditor/lang/af.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/ar.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/ar.js",
+      "summary": "public/assets/plugins/ckeditor/lang/ar.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/bg.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/bg.js",
+      "summary": "public/assets/plugins/ckeditor/lang/bg.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/bn.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/bn.js",
+      "summary": "public/assets/plugins/ckeditor/lang/bn.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/bs.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/bs.js",
+      "summary": "public/assets/plugins/ckeditor/lang/bs.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/lang/ca.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/lang/ca.js",
+      "summary": "public/assets/plugins/ckeditor/lang/ca.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

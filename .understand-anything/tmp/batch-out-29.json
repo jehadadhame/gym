@@ -1,0 +1,2340 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/js/user.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 49,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/js/userUpdate.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/animate/animate.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 3158,
+      "nonEmptyLines": 2664,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 227,
+      "nonEmptyLines": 196,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1028,
+      "nonEmptyLines": 997,
+      "callGraph": [
+        {
+          "caller": "Color",
+          "callee": "val.charAt",
+          "lineNumber": 36
+        },
+        {
+          "caller": "Color",
+          "callee": "this.setColor",
+          "lineNumber": 39
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$(element).addClass",
+          "lineNumber": 605
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$",
+          "lineNumber": 605
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.extend",
+          "lineNumber": 606
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.data",
+          "lineNumber": 606
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.find",
+          "lineNumber": 608
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$",
+          "lineNumber": 613
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.is",
+          "lineNumber": 616
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.find",
+          "lineNumber": 617
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.getValue",
+          "lineNumber": 622
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$",
+          "lineNumber": 626
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.addClass",
+          "lineNumber": 628
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.addClass",
+          "lineNumber": 630
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.addClass",
+          "lineNumber": 633
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.addClass",
+          "lineNumber": 636
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.addClass",
+          "lineNumber": 639
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.on",
+          "lineNumber": 641
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 641
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.picker.appendTo",
+          "lineNumber": 642
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$",
+          "lineNumber": 642
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.input.on",
+          "lineNumber": 646
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 647
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.on",
+          "lineNumber": 650
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 651
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.on",
+          "lineNumber": 655
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 656
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.component.on",
+          "lineNumber": 662
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 663
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.on",
+          "lineNumber": 668
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 669
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.input.attr",
+          "lineNumber": 674
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.input.on",
+          "lineNumber": 676
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 677
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 678
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.update",
+          "lineNumber": 681
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$",
+          "lineNumber": 683
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "$.proxy",
+          "lineNumber": 683
+        },
+        {
+          "caller": "Colorpicker",
+          "callee": "this.element.trigger",
+          "lineNumber": 684
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 319,
+      "nonEmptyLines": 275,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-daterangepicker/daterangepicker.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1254,
+      "nonEmptyLines": 1014,
+      "callGraph": [
+        {
+          "caller": "DateRangePicker",
+          "callee": "$",
+          "lineNumber": 42
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$(DRPTemplate).appendTo",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.setOptions",
+          "lineNumber": 74
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.each",
+          "lineNumber": 78
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "c.find('button').addClass",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "c.find",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.daterangepicker_start_input label').html",
+          "lineNumber": 81
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 81
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.daterangepicker_end_input label').html",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.applyBtn').addClass",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.cancelBtn').addClass",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.applyBtn').html",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.cancelBtn').html",
+          "lineNumber": 88
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 88
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on('click.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\r\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\r\n            .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))\r\n            .on('change.daterangepicker', 'select.yearselect', $.proxy(this.updateMonthYear, this))\r\n            .on('change.daterangepicker', 'select.monthselect', $.proxy(this.updateMonthYear, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on('click.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\r\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\r\n            .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))\r\n            .on('change.daterangepicker', 'select.yearselect', $.proxy(this.updateMonthYear, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on('click.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\r\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\r\n            .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on('click.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\r\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on('click.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.calendar')\r\n            .on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 92
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 93
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 94
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 96
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 99
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 100
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on('click.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.showCalendars, this))\r\n            .on('change.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsChanged, this))\r\n            .on('keydown.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsKeydown, this))\r\n            .on('click.daterangepicker', 'li', $.proxy(this.clickRange, this))\r\n            .on('mouseenter.daterangepicker', 'li', $.proxy(this.enterRange, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on('click.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.showCalendars, this))\r\n            .on('change.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsChanged, this))\r\n            .on('keydown.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsKeydown, this))\r\n            .on('click.daterangepicker', 'li', $.proxy(this.clickRange, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on('click.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.showCalendars, this))\r\n            .on('change.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsChanged, this))\r\n            .on('keydown.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsKeydown, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on('click.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.showCalendars, this))\r\n            .on('change.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.inputsChanged, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on('click.daterangepicker', '.daterangepicker_start_input,.daterangepicker_end_input', $.proxy(this.showCalendars, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find('.ranges')\r\n            .on",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.container.find",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 105
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 106
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 107
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 108
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 110
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.element.is",
+          "lineNumber": 112
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.element.on",
+          "lineNumber": 113
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 114
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 115
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 116
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "this.element.on",
+          "lineNumber": 119
+        },
+        {
+          "caller": "DateRangePicker",
+          "callee": "$.proxy",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-daterangepicker/moment.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 2808,
+      "nonEmptyLines": 2420,
+      "callGraph": [
+        {
+          "caller": "printMsg",
+          "callee": "console.warn",
+          "lineNumber": 316
+        },
+        {
+          "caller": "deprecate",
+          "callee": "extend",
+          "lineNumber": 322
+        },
+        {
+          "caller": "deprecate",
+          "callee": "printMsg",
+          "lineNumber": 324
+        },
+        {
+          "caller": "deprecate",
+          "callee": "fn.apply",
+          "lineNumber": 327
+        },
+        {
+          "caller": "deprecateSimple",
+          "callee": "printMsg",
+          "lineNumber": 333
+        },
+        {
+          "caller": "padToken",
+          "callee": "leftZeroFill",
+          "lineNumber": 340
+        },
+        {
+          "caller": "padToken",
+          "callee": "func.call",
+          "lineNumber": 340
+        },
+        {
+          "caller": "ordinalizeToken",
+          "callee": "this.localeData().ordinal",
+          "lineNumber": 345
+        },
+        {
+          "caller": "ordinalizeToken",
+          "callee": "this.localeData",
+          "lineNumber": 345
+        },
+        {
+          "caller": "ordinalizeToken",
+          "callee": "func.call",
+          "lineNumber": 345
+        },
+        {
+          "caller": "Moment",
+          "callee": "checkOverflow",
+          "lineNumber": 370
+        },
+        {
+          "caller": "Moment",
+          "callee": "copyConfig",
+          "lineNumber": 372
+        },
+        {
+          "caller": "Duration",
+          "callee": "normalizeObjectUnits",
+          "lineNumber": 378
+        },
+        {
+          "caller": "Duration",
+          "callee": "moment.localeData",
+          "lineNumber": 407
+        },
+        {
+          "caller": "Duration",
+          "callee": "this._bubble",
+          "lineNumber": 409
+        },
+        {
+          "caller": "extend",
+          "callee": "b.hasOwnProperty",
+          "lineNumber": 419
+        },
+        {
+          "caller": "extend",
+          "callee": "b.hasOwnProperty",
+          "lineNumber": 424
+        },
+        {
+          "caller": "extend",
+          "callee": "b.hasOwnProperty",
+          "lineNumber": 428
+        },
+        {
+          "caller": "absRound",
+          "callee": "Math.ceil",
+          "lineNumber": 484
+        },
+        {
+          "caller": "absRound",
+          "callee": "Math.floor",
+          "lineNumber": 486
+        },
+        {
+          "caller": "leftZeroFill",
+          "callee": "Math.abs",
+          "lineNumber": 493
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "other.month",
+          "lineNumber": 505
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.month",
+          "lineNumber": 505
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "other.year",
+          "lineNumber": 506
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.year",
+          "lineNumber": 506
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.clone().add(res.months, 'M').isAfter",
+          "lineNumber": 507
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.clone().add",
+          "lineNumber": 507
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.clone",
+          "lineNumber": 507
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.clone().add",
+          "lineNumber": 511
+        },
+        {
+          "caller": "positiveMomentsDifference",
+          "callee": "base.clone",
+          "lineNumber": 511
+        },
+        {
+          "caller": "momentsDifference",
+          "callee": "makeAs",
+          "lineNumber": 518
+        },
+        {
+          "caller": "momentsDifference",
+          "callee": "base.isBefore",
+          "lineNumber": 519
+        },
+        {
+          "caller": "momentsDifference",
+          "callee": "positiveMomentsDifference",
+          "lineNumber": 520
+        },
+        {
+          "caller": "momentsDifference",
+          "callee": "positiveMomentsDifference",
+          "lineNumber": 522
+        },
+        {
+          "caller": "createAdder",
+          "callee": "isNaN",
+          "lineNumber": 535
+        },
+        {
+          "caller": "createAdder",
+          "callee": "deprecateSimple",
+          "lineNumber": 536
+        },
+        {
+          "caller": "createAdder",
+          "callee": "moment.duration",
+          "lineNumber": 541
+        },
+        {
+          "caller": "createAdder",
+          "callee": "addOrSubtractDurationFromMoment",
+          "lineNumber": 542
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "mom._d.setTime",
+          "lineNumber": 554
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "rawSetter",
+          "lineNumber": 557
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "rawGetter",
+          "lineNumber": 557
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "rawMonthSetter",
+          "lineNumber": 560
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "rawGetter",
+          "lineNumber": 560
+        },
+        {
+          "caller": "addOrSubtractDurationFromMoment",
+          "callee": "moment.updateOffset",
+          "lineNumber": 563
+        },
+        {
+          "caller": "isArray",
+          "callee": "Object.prototype.toString.call",
+          "lineNumber": 569
+        },
+        {
+          "caller": "isDate",
+          "callee": "Object.prototype.toString.call",
+          "lineNumber": 573
+        },
+        {
+          "caller": "compareArrays",
+          "callee": "Math.min",
+          "lineNumber": 579
+        },
+        {
+          "caller": "compareArrays",
+          "callee": "Math.abs",
+          "lineNumber": 580
+        },
+        {
+          "caller": "compareArrays",
+          "callee": "toInt",
+          "lineNumber": 585
+        },
+        {
+          "caller": "compareArrays",
+          "callee": "toInt",
+          "lineNumber": 585
+        },
+        {
+          "caller": "normalizeUnits",
+          "callee": "units.toLowerCase().replace",
+          "lineNumber": 594
+        },
+        {
+          "caller": "normalizeUnits",
+          "callee": "units.toLowerCase",
+          "lineNumber": 594
+        },
+        {
+          "caller": "normalizeObjectUnits",
+          "callee": "inputObject.hasOwnProperty",
+          "lineNumber": 606
+        },
+        {
+          "caller": "normalizeObjectUnits",
+          "callee": "normalizeUnits",
+          "lineNumber": 607
+        },
+        {
+          "caller": "makeList",
+          "callee": "field.indexOf",
+          "lineNumber": 620
+        },
+        {
+          "caller": "makeList",
+          "callee": "field.indexOf",
+          "lineNumber": 624
+        },
+        {
+          "caller": "makeList",
+          "callee": "moment().utc().set",
+          "lineNumber": 643
+        },
+        {
+          "caller": "makeList",
+          "callee": "moment().utc",
+          "lineNumber": 643
+        },
+        {
+          "caller": "makeList",
+          "callee": "moment",
+          "lineNumber": 643
+        },
+        {
+          "caller": "makeList",
+          "callee": "method.call",
+          "lineNumber": 644
+        },
+        {
+          "caller": "makeList",
+          "callee": "getter",
+          "lineNumber": 648
+        },
+        {
+          "caller": "makeList",
+          "callee": "results.push",
+          "lineNumber": 652
+        },
+        {
+          "caller": "makeList",
+          "callee": "getter",
+          "lineNumber": 652
+        },
+        {
+          "caller": "toInt",
+          "callee": "isFinite",
+          "lineNumber": 663
+        },
+        {
+          "caller": "toInt",
+          "callee": "Math.floor",
+          "lineNumber": 665
+        },
+        {
+          "caller": "toInt",
+          "callee": "Math.ceil",
+          "lineNumber": 667
+        },
+        {
+          "caller": "daysInMonth",
+          "callee": "new Date(Date.UTC(year, month + 1, 0)).getUTCDate",
+          "lineNumber": 675
+        },
+        {
+          "caller": "daysInMonth",
+          "callee": "Date.UTC",
+          "lineNumber": 675
+        },
+        {
+          "caller": "weeksInYear",
+          "callee": "weekOfYear",
+          "lineNumber": 679
+        },
+        {
+          "caller": "weeksInYear",
+          "callee": "moment",
+          "lineNumber": 679
+        },
+        {
+          "caller": "daysInYear",
+          "callee": "isLeapYear",
+          "lineNumber": 683
+        },
+        {
+          "caller": "checkOverflow",
+          "callee": "daysInMonth",
+          "lineNumber": 695
+        },
+        {
+          "caller": "isValid",
+          "callee": "isNaN",
+          "lineNumber": 712
+        },
+        {
+          "caller": "isValid",
+          "callee": "m._d.getTime",
+          "lineNumber": 712
+        },
+        {
+          "caller": "normalizeLocale",
+          "callee": "key.toLowerCase().replace",
+          "lineNumber": 730
+        },
+        {
+          "caller": "normalizeLocale",
+          "callee": "key.toLowerCase",
+          "lineNumber": 730
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "normalizeLocale(names[i]).split",
+          "lineNumber": 740
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "normalizeLocale",
+          "lineNumber": 740
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "normalizeLocale",
+          "lineNumber": 742
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "next.split",
+          "lineNumber": 743
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "loadLocale",
+          "lineNumber": 745
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "split.slice(0, j).join",
+          "lineNumber": 745
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "split.slice",
+          "lineNumber": 745
+        },
+        {
+          "caller": "chooseLocale",
+          "callee": "compareArrays",
+          "lineNumber": 749
+        },
+        {
+          "caller": "loadLocale",
+          "callee": "moment.locale",
+          "lineNumber": 764
+        },
+        {
+          "caller": "loadLocale",
+          "callee": "require",
+          "lineNumber": 765
+        },
+        {
+          "caller": "loadLocale",
+          "callee": "moment.locale",
+          "lineNumber": 767
+        },
+        {
+          "caller": "makeAs",
+          "callee": "moment(input).zone",
+          "lineNumber": 775
+        },
+        {
+          "caller": "makeAs",
+          "callee": "moment",
+          "lineNumber": 775
+        },
+        {
+          "caller": "makeAs",
+          "callee": "moment(input).local",
+          "lineNumber": 776
+        },
+        {
+          "caller": "makeAs",
+          "callee": "moment",
+          "lineNumber": 776
+        },
+        {
+          "caller": "removeFormattingTokens",
+          "callee": "input.match",
+          "lineNumber": 973
+        },
+        {
+          "caller": "removeFormattingTokens",
+          "callee": "input.replace",
+          "lineNumber": 974
+        },
+        {
+          "caller": "removeFormattingTokens",
+          "callee": "input.replace",
+          "lineNumber": 976
+        },
+        {
+          "caller": "makeFormatFunction",
+          "callee": "format.match",
+          "lineNumber": 980
+        },
+        {
+          "caller": "makeFormatFunction",
+          "callee": "removeFormattingTokens",
+          "lineNumber": 986
+        },
+        {
+          "caller": "makeFormatFunction",
+          "callee": "array[i].call",
+          "lineNumber": 993
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "m.isValid",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "m.localeData().invalidDate",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "m.localeData",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "expandFormat",
+          "lineNumber": 1005
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "m.localeData",
+          "lineNumber": 1005
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "makeFormatFunction",
+          "lineNumber": 1008
+        },
+        {
+          "caller": "formatMoment",
+          "callee": "formatFunctions[format]",
+          "lineNumber": 1011
+        },
+        {
+          "caller": "replaceLongDateFormatTokens",
+          "callee": "locale.longDateFormat",
+          "lineNumber": 1018
+        },
+        {
+          "caller": "expandFormat",
+          "callee": "localFormattingTokens.test",
+          "lineNumber": 1022
+        },
+        {
+          "caller": "expandFormat",
+          "callee": "format.replace",
+          "lineNumber": 1023
+        },
+        {
+          "caller": "getParseRegexForToken",
+          "callee": "regexpEscape",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "getParseRegexForToken",
+          "callee": "unescapeFormat",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "getParseRegexForToken",
+          "callee": "token.replace",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "timezoneMinutesFromString",
+          "callee": "string.match",
+          "lineNumber": 1127
+        },
+        {
+          "caller": "timezoneMinutesFromString",
+          "callee": "(tzChunk + '').match",
+          "lineNumber": 1129
+        },
+        {
+          "caller": "timezoneMinutesFromString",
+          "callee": "toInt",
+          "lineNumber": 1130
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1143
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "config._locale.monthsParse",
+          "lineNumber": 1155
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1167
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1172
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "parseInt",
+          "lineNumber": 1172
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1179
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "moment.parseTwoDigitYear",
+          "lineNumber": 1185
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1190
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "config._locale.isPM",
+          "lineNumber": 1195
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1202
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1207
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1212
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1219
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "parseFloat",
+          "lineNumber": 1223
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "timezoneMinutesFromString",
+          "lineNumber": 1229
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "config._locale.weekdaysParse",
+          "lineNumber": 1235
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "token.substr",
+          "lineNumber": 1252
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "token.substr",
+          "lineNumber": 1257
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "toInt",
+          "lineNumber": 1260
+        },
+        {
+          "caller": "addTimeToArrayFromToken",
+          "callee": "moment.parseTwoDigitYear",
+          "lineNumber": 1266
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dfl",
+          "lineNumber": 1282
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "weekOfYear",
+          "lineNumber": 1282
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "moment",
+          "lineNumber": 1282
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dfl",
+          "lineNumber": 1283
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dfl",
+          "lineNumber": 1284
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dfl",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "weekOfYear",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "moment",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dfl",
+          "lineNumber": 1290
+        },
+        {
+          "caller": "dayOfYearFromWeekInfo",
+          "callee": "dayOfYearFromWeeks",
+          "lineNumber": 1306
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "currentDateArray",
+          "lineNumber": 1323
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "dayOfYearFromWeekInfo",
+          "lineNumber": 1327
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "dfl",
+          "lineNumber": 1332
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "daysInYear",
+          "lineNumber": 1334
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "makeUTCDate",
+          "lineNumber": 1338
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "date.getUTCMonth",
+          "lineNumber": 1339
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "date.getUTCDate",
+          "lineNumber": 1340
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "(config._useUTC ? makeUTCDate : makeDate).apply",
+          "lineNumber": 1357
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "config._d.setUTCMinutes",
+          "lineNumber": 1361
+        },
+        {
+          "caller": "dateFromConfig",
+          "callee": "config._d.getUTCMinutes",
+          "lineNumber": 1361
+        },
+        {
+          "caller": "dateFromObject",
+          "callee": "normalizeObjectUnits",
+          "lineNumber": 1372
+        },
+        {
+          "caller": "dateFromObject",
+          "callee": "dateFromConfig",
+          "lineNumber": 1383
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getUTCFullYear",
+          "lineNumber": 1390
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getUTCMonth",
+          "lineNumber": 1391
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getUTCDate",
+          "lineNumber": 1392
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getFullYear",
+          "lineNumber": 1395
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getMonth",
+          "lineNumber": 1395
+        },
+        {
+          "caller": "currentDateArray",
+          "callee": "now.getDate",
+          "lineNumber": 1395
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "parseISO",
+          "lineNumber": 1402
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "expandFormat(config._f, config._locale).match",
+          "lineNumber": 1415
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "expandFormat",
+          "lineNumber": 1415
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "string.match",
+          "lineNumber": 1419
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "getParseRegexForToken",
+          "lineNumber": 1419
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "string.substr",
+          "lineNumber": 1421
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "string.indexOf",
+          "lineNumber": 1421
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "config._pf.unusedInput.push",
+          "lineNumber": 1423
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "string.slice",
+          "lineNumber": 1425
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "string.indexOf",
+          "lineNumber": 1425
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "config._pf.unusedTokens.push",
+          "lineNumber": 1434
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "addTimeToArrayFromToken",
+          "lineNumber": 1436
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "config._pf.unusedTokens.push",
+          "lineNumber": 1439
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "config._pf.unusedInput.push",
+          "lineNumber": 1446
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "dateFromConfig",
+          "lineNumber": 1458
+        },
+        {
+          "caller": "makeDateFromStringAndFormat",
+          "callee": "checkOverflow",
+          "lineNumber": 1459
+        },
+        {
+          "caller": "unescapeFormat",
+          "callee": "s.replace",
+          "lineNumber": 1463
+        },
+        {
+          "caller": "regexpEscape",
+          "callee": "s.replace",
+          "lineNumber": 1470
+        },
+        {
+          "caller": "makeDateFromStringAndArray",
+          "callee": "copyConfig",
+          "lineNumber": 1490
+        },
+        {
+          "caller": "makeDateFromStringAndArray",
+          "callee": "defaultParsingFlags",
+          "lineNumber": 1491
+        },
+        {
+          "caller": "makeDateFromStringAndArray",
+          "callee": "makeDateFromStringAndFormat",
+          "lineNumber": 1493
+        },
+        {
+          "caller": "makeDateFromStringAndArray",
+          "callee": "isValid",
+          "lineNumber": 1495
+        },
+        {
+          "caller": "makeDateFromStringAndArray",
+          "callee": "extend",
+          "lineNumber": 1513
+        },
+        {
+          "caller": "parseISO",
+          "callee": "isoRegex.exec",
+          "lineNumber": 1520
+        },
+        {
+          "caller": "parseISO",
+          "callee": "isoDates[i][1].exec",
+          "lineNumber": 1525
+        },
+        {
+          "caller": "parseISO",
+          "callee": "isoTimes[i][1].exec",
+          "lineNumber": 1532
+        },
+        {
+          "caller": "parseISO",
+          "callee": "string.match",
+          "lineNumber": 1537
+        },
+        {
+          "caller": "parseISO",
+          "callee": "makeDateFromStringAndFormat",
+          "lineNumber": 1540
+        },
+        {
+          "caller": "makeDateFromString",
+          "callee": "parseISO",
+          "lineNumber": 1548
+        },
+        {
+          "caller": "makeDateFromString",
+          "callee": "moment.createFromInputFallback",
+          "lineNumber": 1551
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "isDate",
+          "lineNumber": 1559
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "aspNetJsonRegex.exec",
+          "lineNumber": 1561
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "makeDateFromString",
+          "lineNumber": 1564
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "isArray",
+          "lineNumber": 1565
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "input.slice",
+          "lineNumber": 1566
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "dateFromConfig",
+          "lineNumber": 1567
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "dateFromObject",
+          "lineNumber": 1569
+        },
+        {
+          "caller": "makeDateFromInput",
+          "callee": "moment.createFromInputFallback",
+          "lineNumber": 1574
+        },
+        {
+          "caller": "makeDate",
+          "callee": "date.setFullYear",
+          "lineNumber": 1585
+        },
+        {
+          "caller": "makeUTCDate",
+          "callee": "Date.UTC.apply",
+          "lineNumber": 1591
+        },
+        {
+          "caller": "makeUTCDate",
+          "callee": "date.setUTCFullYear",
+          "lineNumber": 1593
+        },
+        {
+          "caller": "parseWeekday",
+          "callee": "isNaN",
+          "lineNumber": 1600
+        },
+        {
+          "caller": "parseWeekday",
+          "callee": "parseInt",
+          "lineNumber": 1601
+        },
+        {
+          "caller": "parseWeekday",
+          "callee": "locale.weekdaysParse",
+          "lineNumber": 1604
+        },
+        {
+          "caller": "substituteTimeAgo",
+          "callee": "locale.relativeTime",
+          "lineNumber": 1620
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "moment.duration(posNegDuration).abs",
+          "lineNumber": 1624
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "moment.duration",
+          "lineNumber": 1624
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1625
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1625
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1626
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1626
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1627
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1627
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1628
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1628
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1629
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1629
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "round",
+          "lineNumber": 1630
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "duration.as",
+          "lineNumber": 1630
+        },
+        {
+          "caller": "relativeTime",
+          "callee": "substituteTimeAgo.apply",
+          "lineNumber": 1646
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "mom.day",
+          "lineNumber": 1664
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "moment(mom).add",
+          "lineNumber": 1676
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "moment",
+          "lineNumber": 1676
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "Math.ceil",
+          "lineNumber": 1678
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "adjustedMoment.dayOfYear",
+          "lineNumber": 1678
+        },
+        {
+          "caller": "weekOfYear",
+          "callee": "adjustedMoment.year",
+          "lineNumber": 1679
+        },
+        {
+          "caller": "dayOfYearFromWeeks",
+          "callee": "makeUTCDate(year, 0, 1).getUTCDay",
+          "lineNumber": 1685
+        },
+        {
+          "caller": "dayOfYearFromWeeks",
+          "callee": "makeUTCDate",
+          "lineNumber": 1685
+        },
+        {
+          "caller": "dayOfYearFromWeeks",
+          "callee": "daysInYear",
+          "lineNumber": 1694
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "moment.localeData",
+          "lineNumber": 1706
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "moment.invalid",
+          "lineNumber": 1709
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "config._locale.preparse",
+          "lineNumber": 1713
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "moment.isMoment",
+          "lineNumber": 1716
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "isArray",
+          "lineNumber": 1719
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "makeDateFromStringAndArray",
+          "lineNumber": 1720
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "makeDateFromStringAndFormat",
+          "lineNumber": 1722
+        },
+        {
+          "caller": "makeMoment",
+          "callee": "makeDateFromInput",
+          "lineNumber": 1725
+        },
+        {
+          "caller": "pickBy",
+          "callee": "isArray",
+          "lineNumber": 1771
+        },
+        {
+          "caller": "pickBy",
+          "callee": "moment",
+          "lineNumber": 1775
+        },
+        {
+          "caller": "pickBy",
+          "callee": "moments[i][fn]",
+          "lineNumber": 1779
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "mom.localeData().monthsParse",
+          "lineNumber": 2466
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "mom.localeData",
+          "lineNumber": 2466
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "Math.min",
+          "lineNumber": 2473
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "mom.date",
+          "lineNumber": 2473
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "daysInMonth",
+          "lineNumber": 2474
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "mom.year",
+          "lineNumber": 2474
+        },
+        {
+          "caller": "rawMonthSetter",
+          "callee": "mom._d['set' + (mom._isUTC ? 'UTC' : '') + 'Month']",
+          "lineNumber": 2475
+        },
+        {
+          "caller": "rawGetter",
+          "callee": "mom._d['get' + (mom._isUTC ? 'UTC' : '') + unit]",
+          "lineNumber": 2480
+        },
+        {
+          "caller": "rawSetter",
+          "callee": "rawMonthSetter",
+          "lineNumber": 2485
+        },
+        {
+          "caller": "rawSetter",
+          "callee": "mom._d['set' + (mom._isUTC ? 'UTC' : '') + unit]",
+          "lineNumber": 2487
+        },
+        {
+          "caller": "makeAccessor",
+          "callee": "rawSetter",
+          "lineNumber": 2494
+        },
+        {
+          "caller": "makeAccessor",
+          "callee": "moment.updateOffset",
+          "lineNumber": 2495
+        },
+        {
+          "caller": "makeAccessor",
+          "callee": "rawGetter",
+          "lineNumber": 2498
+        },
+        {
+          "caller": "makeGlobal",
+          "callee": "deprecate",
+          "lineNumber": 2782
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-file-input/bootstrap-file-input.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 129,
+      "nonEmptyLines": 102,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/css/bootstrap-select.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 260,
+      "nonEmptyLines": 259,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/bootstrap-select.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1215,
+      "nonEmptyLines": 1059,
+      "callGraph": [
+        {
+          "caller": "icontains",
+          "callee": "haystack.toUpperCase().indexOf",
+          "lineNumber": 28
+        },
+        {
+          "caller": "icontains",
+          "callee": "haystack.toUpperCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "icontains",
+          "callee": "needle.toUpperCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "normalizeToBase",
+          "callee": "$.each",
+          "lineNumber": 53
+        },
+        {
+          "caller": "normalizeToBase",
+          "callee": "text.replace",
+          "lineNumber": 54
+        },
+        {
+          "caller": "htmlEscape",
+          "callee": "Object.keys(escapeMap).join",
+          "lineNumber": 69
+        },
+        {
+          "caller": "htmlEscape",
+          "callee": "Object.keys",
+          "lineNumber": 69
+        },
+        {
+          "caller": "htmlEscape",
+          "callee": "testRegexp.test",
+          "lineNumber": 73
+        },
+        {
+          "caller": "htmlEscape",
+          "callee": "string.replace",
+          "lineNumber": 73
+        },
+        {
+          "caller": "Selectpicker",
+          "callee": "e.stopPropagation",
+          "lineNumber": 80
+        },
+        {
+          "caller": "Selectpicker",
+          "callee": "e.preventDefault",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Selectpicker",
+          "callee": "$",
+          "lineNumber": 84
+        },
+        {
+          "caller": "Selectpicker",
+          "callee": "this.$element.attr",
+          "lineNumber": 94
+        },
+        {
+          "caller": "Selectpicker",
+          "callee": "this.init",
+          "lineNumber": 109
+        },
+        {
+          "caller": "generateA",
+          "callee": "normalizeToBase",
+          "lineNumber": 280
+        },
+        {
+          "caller": "generateA",
+          "callee": "htmlEscape",
+          "lineNumber": 280
+        },
+        {
+          "caller": "posVert",
+          "callee": "that.$newElement.offset",
+          "lineNumber": 483
+        },
+        {
+          "caller": "posVert",
+          "callee": "$window.scrollTop",
+          "lineNumber": 483
+        },
+        {
+          "caller": "posVert",
+          "callee": "$window.height",
+          "lineNumber": 484
+        },
+        {
+          "caller": "getSize",
+          "callee": "that.$lis.not",
+          "lineNumber": 492
+        },
+        {
+          "caller": "getSize",
+          "callee": "posVert",
+          "lineNumber": 494
+        },
+        {
+          "caller": "getSize",
+          "callee": "that.$newElement.toggleClass",
+          "lineNumber": 498
+        },
+        {
+          "caller": "getSize",
+          "callee": "menu.height",
+          "lineNumber": 498
+        },
+        {
+          "caller": "getSize",
+          "callee": "that.$newElement.hasClass",
+          "lineNumber": 500
+        },
+        {
+          "caller": "getSize",
+          "callee": "lisVis.filter",
+          "lineNumber": 504
+        },
+        {
+          "caller": "getSize",
+          "callee": "menu.css",
+          "lineNumber": 510
+        },
+        {
+          "caller": "getSize",
+          "callee": "menuInner.css",
+          "lineNumber": 515
+        },
+        {
+          "caller": "getSize",
+          "callee": "Math.max",
+          "lineNumber": 518
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$drop.addClass($element.attr('class').replace(/form-control/gi, '')).toggleClass",
+          "lineNumber": 576
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$drop.addClass",
+          "lineNumber": 576
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$element.attr('class').replace",
+          "lineNumber": 576
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$element.attr",
+          "lineNumber": 576
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$element.hasClass",
+          "lineNumber": 576
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$element.offset",
+          "lineNumber": 577
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$element.hasClass",
+          "lineNumber": 578
+        },
+        {
+          "caller": "getPlacement",
+          "callee": "$drop.css",
+          "lineNumber": 579
+        },
+        {
+          "caller": "Plugin",
+          "callee": "[].shift.apply",
+          "lineNumber": 1146
+        },
+        {
+          "caller": "Plugin",
+          "callee": "this.each",
+          "lineNumber": 1154
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$",
+          "lineNumber": 1155
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$this.is",
+          "lineNumber": 1156
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$this.data",
+          "lineNumber": 1157
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$.extend",
+          "lineNumber": 1161
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$this.data",
+          "lineNumber": 1161
+        },
+        {
+          "caller": "Plugin",
+          "callee": "$this.data",
+          "lineNumber": 1162
+        },
+        {
+          "caller": "Plugin",
+          "callee": "options.hasOwnProperty",
+          "lineNumber": 1165
+        },
+        {
+          "caller": "Plugin",
+          "callee": "data[option].apply",
+          "lineNumber": 1173
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-cs_CZ.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-de_DE.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-en_US.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 24,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-es_CL.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-eu.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-fr_FR.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-it_IT.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-nl_NL.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-pl_PL.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-pt_BR.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-ro_RO.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-ru_RU.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-ua_UA.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/bootstrap-select/js/i18n/defaults-zh_CN.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

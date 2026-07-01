@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/table/dialogs/table.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/table/dialogs/table.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/table/dialogs/table.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/LICENSE.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/LICENSE.md",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/LICENSE.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/README.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/README.md",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/README.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/assets/outputxhtml/outputxhtml.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/assets/outputxhtml/outputxhtml.css",
+      "summary": "public/assets/plugins/ckeditor/samples/assets/outputxhtml/outputxhtml.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/assets/posteddata.php",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/assets/posteddata.php",
+      "summary": "public/assets/plugins/ckeditor/samples/assets/posteddata.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/assets/uilanguages/languages.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/assets/uilanguages/languages.js",
+      "summary": "public/assets/plugins/ckeditor/samples/assets/uilanguages/languages.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/dialog/assets/my_dialog.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/dialog/assets/my_dialog.js",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/dialog/assets/my_dialog.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/dialog/dialog.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/dialog/dialog.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/dialog/dialog.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/enterkey/enterkey.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/enterkey/enterkey.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/enterkey/enterkey.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputforflash.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputforflash.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputforflash.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputhtml.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputhtml.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputhtml.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/magicline/magicline.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/magicline/magicline.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/magicline/magicline.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/toolbar/toolbar.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/toolbar/toolbar.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/toolbar/toolbar.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

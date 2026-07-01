@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ionicons/less/_ionicons-font.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 27,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ionicons/less/_ionicons-icons.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1473,
+      "nonEmptyLines": 1472,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ionicons/less/_ionicons-variables.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 747,
+      "nonEmptyLines": 745,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ionicons/less/ionicons.less",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    }
+  ]
+}

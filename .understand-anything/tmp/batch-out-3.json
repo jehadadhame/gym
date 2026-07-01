@@ -1,0 +1,1321 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Http/Controllers/AclController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 292,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "userIndex",
+          "startLine": 24,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "createUser",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "storeUser",
+          "startLine": 36,
+          "endLine": 60,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "editUser",
+          "startLine": 62,
+          "endLine": 67,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "updateUser",
+          "startLine": 69,
+          "endLine": 99,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "startLine": 101,
+          "endLine": 121,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "roleIndex",
+          "startLine": 126,
+          "endLine": 131,
+          "params": []
+        },
+        {
+          "name": "createRole",
+          "startLine": 133,
+          "endLine": 138,
+          "params": []
+        },
+        {
+          "name": "storeRole",
+          "startLine": 140,
+          "endLine": 163,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "editRole",
+          "startLine": 165,
+          "endLine": 172,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "updateRole",
+          "startLine": 174,
+          "endLine": 213,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "deleteRole",
+          "startLine": 215,
+          "endLine": 232,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "permissionIndex",
+          "startLine": 237,
+          "endLine": 242,
+          "params": []
+        },
+        {
+          "name": "createPermission",
+          "startLine": 244,
+          "endLine": 247,
+          "params": []
+        },
+        {
+          "name": "storePermission",
+          "startLine": 249,
+          "endLine": 260,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "editPermission",
+          "startLine": 262,
+          "endLine": 267,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "updatePermission",
+          "startLine": 269,
+          "endLine": 282,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "deletePermission",
+          "startLine": 284,
+          "endLine": 291,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AclController",
+          "startLine": 14,
+          "endLine": 292,
+          "methods": [
+            "__construct",
+            "userIndex",
+            "createUser",
+            "storeUser",
+            "editUser",
+            "updateUser",
+            "deleteUser",
+            "roleIndex",
+            "createRole",
+            "storeRole",
+            "editRole",
+            "updateRole",
+            "deleteRole",
+            "permissionIndex",
+            "createPermission",
+            "storePermission",
+            "editPermission",
+            "updatePermission",
+            "deletePermission"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AclController",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 18
+        },
+        {
+          "caller": "userIndex",
+          "callee": "User::excludeArchive()->paginate",
+          "lineNumber": 26
+        },
+        {
+          "caller": "userIndex",
+          "callee": "User::excludeArchive",
+          "lineNumber": 26
+        },
+        {
+          "caller": "userIndex",
+          "callee": "view",
+          "lineNumber": 28
+        },
+        {
+          "caller": "userIndex",
+          "callee": "compact",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createUser",
+          "callee": "view",
+          "lineNumber": 33
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$this->validate",
+          "lineNumber": 38
+        },
+        {
+          "caller": "storeUser",
+          "callee": "User::create",
+          "lineNumber": 42
+        },
+        {
+          "caller": "storeUser",
+          "callee": "bcrypt",
+          "lineNumber": 44
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->save",
+          "lineNumber": 47
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$request->hasFile",
+          "lineNumber": 50
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.$request->photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 51
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->addMedia($request->file('photo'))->usingFileName",
+          "lineNumber": 51
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->addMedia",
+          "lineNumber": 51
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$request->file",
+          "lineNumber": 51
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$request->photo->getClientOriginalExtension",
+          "lineNumber": 51
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->save",
+          "lineNumber": 53
+        },
+        {
+          "caller": "storeUser",
+          "callee": "$user->attachRole",
+          "lineNumber": 55
+        },
+        {
+          "caller": "storeUser",
+          "callee": "flash()->success",
+          "lineNumber": 57
+        },
+        {
+          "caller": "storeUser",
+          "callee": "flash",
+          "lineNumber": 57
+        },
+        {
+          "caller": "storeUser",
+          "callee": "redirect",
+          "lineNumber": 59
+        },
+        {
+          "caller": "editUser",
+          "callee": "User::findOrFail",
+          "lineNumber": 64
+        },
+        {
+          "caller": "editUser",
+          "callee": "view",
+          "lineNumber": 66
+        },
+        {
+          "caller": "editUser",
+          "callee": "compact",
+          "lineNumber": 66
+        },
+        {
+          "caller": "updateUser",
+          "callee": "User::findOrFail",
+          "lineNumber": 71
+        },
+        {
+          "caller": "updateUser",
+          "callee": "empty",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$this->validate",
+          "lineNumber": 77
+        },
+        {
+          "caller": "updateUser",
+          "callee": "bcrypt",
+          "lineNumber": 78
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->update",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$request->hasFile",
+          "lineNumber": 85
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->clearMediaCollection",
+          "lineNumber": 86
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->addMedia($request->file('photo'))->usingFileName('staff_'.$user->id.$request->photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->addMedia($request->file('photo'))->usingFileName",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->addMedia",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$request->file",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$request->photo->getClientOriginalExtension",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->save",
+          "lineNumber": 89
+        },
+        {
+          "caller": "updateUser",
+          "callee": "RoleUser::where('user_id', $user->id)->where('role_id', $user->roleUser->role_id)->delete",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateUser",
+          "callee": "RoleUser::where('user_id', $user->id)->where",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateUser",
+          "callee": "RoleUser::where",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateUser",
+          "callee": "$user->attachRole",
+          "lineNumber": 93
+        },
+        {
+          "caller": "updateUser",
+          "callee": "flash()->success",
+          "lineNumber": 96
+        },
+        {
+          "caller": "updateUser",
+          "callee": "flash",
+          "lineNumber": 96
+        },
+        {
+          "caller": "updateUser",
+          "callee": "redirect",
+          "lineNumber": 98
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 103
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "RoleUser::where('user_id', $id)->delete",
+          "lineNumber": 105
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "RoleUser::where",
+          "lineNumber": 105
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "User::findOrFail",
+          "lineNumber": 106
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "$user->clearMediaCollection",
+          "lineNumber": 107
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "$user->save",
+          "lineNumber": 109
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "DB::commit",
+          "lineNumber": 111
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "flash()->success",
+          "lineNumber": 112
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "flash",
+          "lineNumber": 112
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "redirect",
+          "lineNumber": 114
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "DB::rollback",
+          "lineNumber": 116
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "flash()->error",
+          "lineNumber": 117
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "flash",
+          "lineNumber": 117
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "redirect",
+          "lineNumber": 119
+        },
+        {
+          "caller": "roleIndex",
+          "callee": "Role::excludeGymie()->get",
+          "lineNumber": 128
+        },
+        {
+          "caller": "roleIndex",
+          "callee": "Role::excludeGymie",
+          "lineNumber": 128
+        },
+        {
+          "caller": "roleIndex",
+          "callee": "view",
+          "lineNumber": 130
+        },
+        {
+          "caller": "roleIndex",
+          "callee": "compact",
+          "lineNumber": 130
+        },
+        {
+          "caller": "createRole",
+          "callee": "Permission::all",
+          "lineNumber": 135
+        },
+        {
+          "caller": "createRole",
+          "callee": "view",
+          "lineNumber": 137
+        },
+        {
+          "caller": "createRole",
+          "callee": "compact",
+          "lineNumber": 137
+        },
+        {
+          "caller": "storeRole",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 142
+        },
+        {
+          "caller": "storeRole",
+          "callee": "Role::create",
+          "lineNumber": 144
+        },
+        {
+          "caller": "storeRole",
+          "callee": "$request->has",
+          "lineNumber": 149
+        },
+        {
+          "caller": "storeRole",
+          "callee": "$role->attachPermissions",
+          "lineNumber": 150
+        },
+        {
+          "caller": "storeRole",
+          "callee": "DB::commit",
+          "lineNumber": 153
+        },
+        {
+          "caller": "storeRole",
+          "callee": "flash()->success",
+          "lineNumber": 154
+        },
+        {
+          "caller": "storeRole",
+          "callee": "flash",
+          "lineNumber": 154
+        },
+        {
+          "caller": "storeRole",
+          "callee": "redirect",
+          "lineNumber": 156
+        },
+        {
+          "caller": "storeRole",
+          "callee": "DB::rollback",
+          "lineNumber": 158
+        },
+        {
+          "caller": "storeRole",
+          "callee": "flash()->error",
+          "lineNumber": 159
+        },
+        {
+          "caller": "storeRole",
+          "callee": "flash",
+          "lineNumber": 159
+        },
+        {
+          "caller": "storeRole",
+          "callee": "redirect",
+          "lineNumber": 161
+        },
+        {
+          "caller": "editRole",
+          "callee": "Role::findOrFail",
+          "lineNumber": 167
+        },
+        {
+          "caller": "editRole",
+          "callee": "Permission::all",
+          "lineNumber": 168
+        },
+        {
+          "caller": "editRole",
+          "callee": "PermissionRole::where('role_id', $id)->get",
+          "lineNumber": 169
+        },
+        {
+          "caller": "editRole",
+          "callee": "PermissionRole::where",
+          "lineNumber": 169
+        },
+        {
+          "caller": "editRole",
+          "callee": "view",
+          "lineNumber": 171
+        },
+        {
+          "caller": "editRole",
+          "callee": "compact",
+          "lineNumber": 171
+        },
+        {
+          "caller": "updateRole",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 176
+        },
+        {
+          "caller": "updateRole",
+          "callee": "Role::findOrFail",
+          "lineNumber": 179
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$role->update",
+          "lineNumber": 181
+        },
+        {
+          "caller": "updateRole",
+          "callee": "PermissionRole::where('role_id', $id)->select('permission_id')->lists",
+          "lineNumber": 187
+        },
+        {
+          "caller": "updateRole",
+          "callee": "PermissionRole::where('role_id', $id)->select",
+          "lineNumber": 187
+        },
+        {
+          "caller": "updateRole",
+          "callee": "PermissionRole::where",
+          "lineNumber": 187
+        },
+        {
+          "caller": "updateRole",
+          "callee": "collect",
+          "lineNumber": 188
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$ClientPermissions->diff",
+          "lineNumber": 190
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$DBpermissions->diff",
+          "lineNumber": 191
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$addPermissions->count",
+          "lineNumber": 193
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$role->attachPermissions",
+          "lineNumber": 194
+        },
+        {
+          "caller": "updateRole",
+          "callee": "$deletePermissions->count",
+          "lineNumber": 197
+        },
+        {
+          "caller": "updateRole",
+          "callee": "Permission_role::where('role_id', $id)->where('permission_id', $deletePermission)->delete",
+          "lineNumber": 199
+        },
+        {
+          "caller": "updateRole",
+          "callee": "Permission_role::where('role_id', $id)->where",
+          "lineNumber": 199
+        },
+        {
+          "caller": "updateRole",
+          "callee": "Permission_role::where",
+          "lineNumber": 199
+        },
+        {
+          "caller": "updateRole",
+          "callee": "DB::commit",
+          "lineNumber": 203
+        },
+        {
+          "caller": "updateRole",
+          "callee": "flash()->success",
+          "lineNumber": 204
+        },
+        {
+          "caller": "updateRole",
+          "callee": "flash",
+          "lineNumber": 204
+        },
+        {
+          "caller": "updateRole",
+          "callee": "redirect",
+          "lineNumber": 206
+        },
+        {
+          "caller": "updateRole",
+          "callee": "DB::rollback",
+          "lineNumber": 208
+        },
+        {
+          "caller": "updateRole",
+          "callee": "flash()->error",
+          "lineNumber": 209
+        },
+        {
+          "caller": "updateRole",
+          "callee": "flash",
+          "lineNumber": 209
+        },
+        {
+          "caller": "updateRole",
+          "callee": "redirect",
+          "lineNumber": 211
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 217
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "Permission_role::where('role_id', $id)->delete",
+          "lineNumber": 219
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "Permission_role::where",
+          "lineNumber": 219
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "Role::where('id', $id)->delete",
+          "lineNumber": 220
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "Role::where",
+          "lineNumber": 220
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "DB::commit",
+          "lineNumber": 222
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "flash()->success",
+          "lineNumber": 223
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "flash",
+          "lineNumber": 223
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "redirect",
+          "lineNumber": 225
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "DB::rollback",
+          "lineNumber": 227
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "flash()->error",
+          "lineNumber": 228
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "flash",
+          "lineNumber": 228
+        },
+        {
+          "caller": "deleteRole",
+          "callee": "redirect",
+          "lineNumber": 230
+        },
+        {
+          "caller": "permissionIndex",
+          "callee": "Permission::all",
+          "lineNumber": 239
+        },
+        {
+          "caller": "permissionIndex",
+          "callee": "view",
+          "lineNumber": 241
+        },
+        {
+          "caller": "permissionIndex",
+          "callee": "compact",
+          "lineNumber": 241
+        },
+        {
+          "caller": "createPermission",
+          "callee": "view",
+          "lineNumber": 246
+        },
+        {
+          "caller": "storePermission",
+          "callee": "Permission::create",
+          "lineNumber": 251
+        },
+        {
+          "caller": "storePermission",
+          "callee": "flash()->success",
+          "lineNumber": 257
+        },
+        {
+          "caller": "storePermission",
+          "callee": "flash",
+          "lineNumber": 257
+        },
+        {
+          "caller": "storePermission",
+          "callee": "redirect",
+          "lineNumber": 259
+        },
+        {
+          "caller": "editPermission",
+          "callee": "Permission::findOrFail",
+          "lineNumber": 264
+        },
+        {
+          "caller": "editPermission",
+          "callee": "view",
+          "lineNumber": 266
+        },
+        {
+          "caller": "editPermission",
+          "callee": "compact",
+          "lineNumber": 266
+        },
+        {
+          "caller": "updatePermission",
+          "callee": "Permission::findOrFail",
+          "lineNumber": 271
+        },
+        {
+          "caller": "updatePermission",
+          "callee": "$permission->update",
+          "lineNumber": 273
+        },
+        {
+          "caller": "updatePermission",
+          "callee": "flash()->success",
+          "lineNumber": 279
+        },
+        {
+          "caller": "updatePermission",
+          "callee": "flash",
+          "lineNumber": 279
+        },
+        {
+          "caller": "updatePermission",
+          "callee": "redirect",
+          "lineNumber": 281
+        },
+        {
+          "caller": "deletePermission",
+          "callee": "Permission::findOrFail($id)->delete",
+          "lineNumber": 286
+        },
+        {
+          "caller": "deletePermission",
+          "callee": "Permission::findOrFail",
+          "lineNumber": 286
+        },
+        {
+          "caller": "deletePermission",
+          "callee": "flash()->success",
+          "lineNumber": 288
+        },
+        {
+          "caller": "deletePermission",
+          "callee": "flash",
+          "lineNumber": 288
+        },
+        {
+          "caller": "deletePermission",
+          "callee": "redirect",
+          "lineNumber": 290
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Permission.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "roles",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Permission",
+          "startLine": 7,
+          "endLine": 22,
+          "methods": [
+            "roles"
+          ],
+          "properties": [
+            "table",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Permission",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "roles",
+          "callee": "$this->belongsToMany",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/PermissionRole.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "PermissionRole",
+          "startLine": 7,
+          "endLine": 17,
+          "methods": [],
+          "properties": [
+            "table",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PermissionRole",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Role.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "users",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "permissions",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "roleUsers",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "scopeExcludeGymie",
+          "startLine": 33,
+          "endLine": 40,
+          "params": [
+            "$query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Role",
+          "startLine": 8,
+          "endLine": 41,
+          "methods": [
+            "users",
+            "permissions",
+            "roleUsers",
+            "scopeExcludeGymie"
+          ],
+          "properties": [
+            "table",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Role",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "users",
+          "callee": "$this->belongsToMany",
+          "lineNumber": 20
+        },
+        {
+          "caller": "permissions",
+          "callee": "$this->hasMany",
+          "lineNumber": 25
+        },
+        {
+          "caller": "roleUsers",
+          "callee": "$this->belongsToMany",
+          "lineNumber": 30
+        },
+        {
+          "caller": "scopeExcludeGymie",
+          "callee": "Auth::User",
+          "lineNumber": 35
+        },
+        {
+          "caller": "scopeExcludeGymie",
+          "callee": "$query->where",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/RoleUser.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "user",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "role",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleUser",
+          "startLine": 7,
+          "endLine": 27,
+          "methods": [
+            "user",
+            "role"
+          ],
+          "properties": [
+            "table",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleUser",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "user",
+          "callee": "$this->belongsTo",
+          "lineNumber": 20
+        },
+        {
+          "caller": "role",
+          "callee": "$this->belongsTo",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/PermissionsRoleTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 88,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 90,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PermissionsRoleTableSeeder",
+          "startLine": 6,
+          "endLine": 91,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PermissionsRoleTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "PermissionRole::create",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/PermissionsTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 357,
+      "nonEmptyLines": 350,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 356,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PermissionsTableSeeder",
+          "startLine": 6,
+          "endLine": 357,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PermissionsTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "Permission::create",
+          "lineNumber": 354
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/RoleUserTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleUserTableSeeder",
+          "startLine": 6,
+          "endLine": 21,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleUserTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "RoleUser::create",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/RolesTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RolesTableSeeder",
+          "startLine": 6,
+          "endLine": 32,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RolesTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "Role::create",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

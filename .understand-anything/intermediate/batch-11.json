@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css",
+      "summary": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

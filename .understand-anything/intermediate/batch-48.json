@@ -1,0 +1,278 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/subscriptions/_payment.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/_payment.blade.php",
+      "summary": "resources/views/subscriptions/_payment.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/change.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/change.blade.php",
+      "summary": "resources/views/subscriptions/change.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/create.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/create.blade.php",
+      "summary": "resources/views/subscriptions/create.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/edit.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/edit.blade.php",
+      "summary": "resources/views/subscriptions/edit.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/expired_gallery.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/expired_gallery.blade.php",
+      "summary": "resources/views/subscriptions/expired_gallery.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/expired.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/expired.blade.php",
+      "summary": "resources/views/subscriptions/expired.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/expiring.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/expiring.blade.php",
+      "summary": "resources/views/subscriptions/expiring.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/form.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/form.blade.php",
+      "summary": "resources/views/subscriptions/form.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/index.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/index.blade.php",
+      "summary": "resources/views/subscriptions/index.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/subscriptions/renew.blade.php",
+      "type": "file",
+      "filePath": "resources/views/subscriptions/renew.blade.php",
+      "summary": "resources/views/subscriptions/renew.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/createPermission.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/createPermission.blade.php",
+      "summary": "resources/views/user/createPermission.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/createRole.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/createRole.blade.php",
+      "summary": "resources/views/user/createRole.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/createUser.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/createUser.blade.php",
+      "summary": "resources/views/user/createUser.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/editPermission.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/editPermission.blade.php",
+      "summary": "resources/views/user/editPermission.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/editRole.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/editRole.blade.php",
+      "summary": "resources/views/user/editRole.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/editUser.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/editUser.blade.php",
+      "summary": "resources/views/user/editUser.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/permissionIndex.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/permissionIndex.blade.php",
+      "summary": "resources/views/user/permissionIndex.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/roleIndex.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/roleIndex.blade.php",
+      "summary": "resources/views/user/roleIndex.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:resources/views/user/userIndex.blade.php",
+      "type": "file",
+      "filePath": "resources/views/user/userIndex.blade.php",
+      "summary": "resources/views/user/userIndex.blade.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:server.php",
+      "type": "file",
+      "filePath": "server.php",
+      "summary": "server.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:tests/ExampleTest.php",
+      "type": "file",
+      "filePath": "tests/ExampleTest.php",
+      "summary": "tests/ExampleTest.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:tests/ExampleTest.php:testBasicExample",
+      "type": "function",
+      "filePath": "tests/ExampleTest.php",
+      "symbolName": "testBasicExample"
+    },
+    {
+      "id": "class:tests/ExampleTest.php:ExampleTest",
+      "type": "class",
+      "filePath": "tests/ExampleTest.php",
+      "symbolName": "ExampleTest"
+    },
+    {
+      "id": "file:tests/TestCase.php",
+      "type": "file",
+      "filePath": "tests/TestCase.php",
+      "summary": "tests/TestCase.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:tests/TestCase.php:createApplication",
+      "type": "function",
+      "filePath": "tests/TestCase.php",
+      "symbolName": "createApplication"
+    },
+    {
+      "id": "class:tests/TestCase.php:TestCase",
+      "type": "class",
+      "filePath": "tests/TestCase.php",
+      "symbolName": "TestCase"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:tests/ExampleTest.php",
+      "target": "function:tests/ExampleTest.php:testBasicExample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/ExampleTest.php",
+      "target": "class:tests/ExampleTest.php:ExampleTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/TestCase.php",
+      "target": "function:tests/TestCase.php:createApplication",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/TestCase.php",
+      "target": "class:tests/TestCase.php:TestCase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

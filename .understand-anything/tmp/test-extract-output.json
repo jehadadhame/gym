@@ -1,0 +1,5998 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 15,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/ChequeDetail.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "createdBy",
+          "startLine": 29,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "payment",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChequeDetail",
+          "startLine": 8,
+          "endLine": 38,
+          "methods": [
+            "createdBy",
+            "payment"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChequeDetail",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createdBy",
+          "callee": "$this->belongsTo",
+          "lineNumber": 31
+        },
+        {
+          "caller": "payment",
+          "callee": "$this->belongsTo",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/DataMigrationController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "migrate",
+          "startLine": 18,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "migrateMedia",
+          "startLine": 53,
+          "endLine": 77,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DataMigrationController",
+          "startLine": 11,
+          "endLine": 78,
+          "methods": [
+            "__construct",
+            "migrate",
+            "migrateMedia"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DataMigrationController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 15
+        },
+        {
+          "caller": "migrate",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 20
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where('item_name', '=', 'Taxes')->get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 23
+        },
+        {
+          "caller": "migrate",
+          "callee": "Invoice::where('id', $taxDetail->invoice_id)->update",
+          "lineNumber": 26
+        },
+        {
+          "caller": "migrate",
+          "callee": "Invoice::where",
+          "lineNumber": 26
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where('item_name', '=', 'Admission')->get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 30
+        },
+        {
+          "caller": "migrate",
+          "callee": "Invoice::where('id', $admissionDetail->invoice_id)->update",
+          "lineNumber": 33
+        },
+        {
+          "caller": "migrate",
+          "callee": "Invoice::where",
+          "lineNumber": 33
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where('item_name', '=', 'Admission')->delete",
+          "lineNumber": 37
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where('item_name', '=', 'Taxes')->delete",
+          "lineNumber": 38
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 38
+        },
+        {
+          "caller": "migrate",
+          "callee": "Invoice::all",
+          "lineNumber": 41
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where('invoice_id', $invoice->id)->update",
+          "lineNumber": 44
+        },
+        {
+          "caller": "migrate",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 44
+        },
+        {
+          "caller": "migrate",
+          "callee": "DB::commit",
+          "lineNumber": 47
+        },
+        {
+          "caller": "migrate",
+          "callee": "DB::rollback",
+          "lineNumber": 49
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 55
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "Member::all",
+          "lineNumber": 58
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "base_path",
+          "lineNumber": 61
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "base_path",
+          "lineNumber": 62
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "file_exists",
+          "lineNumber": 64
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia($profileImage)->usingFileName('profile_'.$member->id.'.jpg')->toCollection",
+          "lineNumber": 65
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia($profileImage)->usingFileName",
+          "lineNumber": 65
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia",
+          "lineNumber": 65
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "file_exists",
+          "lineNumber": 68
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia($proofImage)->usingFileName('proof_'.$member->id.'.jpg')->toCollection",
+          "lineNumber": 69
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia($proofImage)->usingFileName",
+          "lineNumber": 69
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "$member->addMedia",
+          "lineNumber": 69
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "DB::commit",
+          "lineNumber": 72
+        },
+        {
+          "caller": "migrateMedia",
+          "callee": "DB::rollback",
+          "lineNumber": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/InvoicesController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 269,
+      "nonEmptyLines": 218,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 19,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 24,
+          "endLine": 45,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "unpaid",
+          "startLine": 47,
+          "endLine": 78,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "paid",
+          "startLine": 80,
+          "endLine": 102,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "partial",
+          "startLine": 104,
+          "endLine": 135,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "overpaid",
+          "startLine": 137,
+          "endLine": 167,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 169,
+          "endLine": 183,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "createPayment",
+          "startLine": 185,
+          "endLine": 190,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 192,
+          "endLine": 216,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "discount",
+          "startLine": 218,
+          "endLine": 229,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "applyDiscount",
+          "startLine": 231,
+          "endLine": 268,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InvoicesController",
+          "startLine": 17,
+          "endLine": 269,
+          "methods": [
+            "__construct",
+            "index",
+            "unpaid",
+            "paid",
+            "partial",
+            "overpaid",
+            "show",
+            "createPayment",
+            "delete",
+            "discount",
+            "applyDiscount"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "InvoicesController",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "$invoices->total",
+          "lineNumber": 34
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 36
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 36
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 44
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 44
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 0)->paginate",
+          "lineNumber": 49
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 49
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$request->input",
+          "lineNumber": 54
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 0)->get",
+          "lineNumber": 58
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 58
+        },
+        {
+          "caller": "unpaid",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 58
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$request->input",
+          "lineNumber": 63
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$invoicesTotal->count",
+          "lineNumber": 67
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$request->has",
+          "lineNumber": 69
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$request->has",
+          "lineNumber": 69
+        },
+        {
+          "caller": "unpaid",
+          "callee": "$request->flash",
+          "lineNumber": 75
+        },
+        {
+          "caller": "unpaid",
+          "callee": "view",
+          "lineNumber": 77
+        },
+        {
+          "caller": "unpaid",
+          "callee": "compact",
+          "lineNumber": 77
+        },
+        {
+          "caller": "paid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 1)->paginate",
+          "lineNumber": 82
+        },
+        {
+          "caller": "paid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 82
+        },
+        {
+          "caller": "paid",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 82
+        },
+        {
+          "caller": "paid",
+          "callee": "$request->input",
+          "lineNumber": 87
+        },
+        {
+          "caller": "paid",
+          "callee": "$invoices->total",
+          "lineNumber": 91
+        },
+        {
+          "caller": "paid",
+          "callee": "$request->has",
+          "lineNumber": 93
+        },
+        {
+          "caller": "paid",
+          "callee": "$request->has",
+          "lineNumber": 93
+        },
+        {
+          "caller": "paid",
+          "callee": "$request->flash",
+          "lineNumber": 99
+        },
+        {
+          "caller": "paid",
+          "callee": "view",
+          "lineNumber": 101
+        },
+        {
+          "caller": "paid",
+          "callee": "compact",
+          "lineNumber": 101
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 2)->paginate",
+          "lineNumber": 106
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 106
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 106
+        },
+        {
+          "caller": "partial",
+          "callee": "$request->input",
+          "lineNumber": 111
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 2)->get",
+          "lineNumber": 115
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 115
+        },
+        {
+          "caller": "partial",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 115
+        },
+        {
+          "caller": "partial",
+          "callee": "$request->input",
+          "lineNumber": 120
+        },
+        {
+          "caller": "partial",
+          "callee": "$invoicesTotal->count",
+          "lineNumber": 124
+        },
+        {
+          "caller": "partial",
+          "callee": "$request->has",
+          "lineNumber": 126
+        },
+        {
+          "caller": "partial",
+          "callee": "$request->has",
+          "lineNumber": 126
+        },
+        {
+          "caller": "partial",
+          "callee": "$request->flash",
+          "lineNumber": 132
+        },
+        {
+          "caller": "partial",
+          "callee": "view",
+          "lineNumber": 134
+        },
+        {
+          "caller": "partial",
+          "callee": "compact",
+          "lineNumber": 134
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 3)->paginate",
+          "lineNumber": 139
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 139
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 139
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$request->input",
+          "lineNumber": 144
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where('trn_invoice.status', 3)->get",
+          "lineNumber": 148
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery(\r\n            null,\r\n            null,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->where",
+          "lineNumber": 148
+        },
+        {
+          "caller": "overpaid",
+          "callee": "Invoice::indexQuery",
+          "lineNumber": 148
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$request->input",
+          "lineNumber": 153
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$invoicesTotal->count",
+          "lineNumber": 157
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$request->has",
+          "lineNumber": 158
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$request->has",
+          "lineNumber": 158
+        },
+        {
+          "caller": "overpaid",
+          "callee": "$request->flash",
+          "lineNumber": 164
+        },
+        {
+          "caller": "overpaid",
+          "callee": "view",
+          "lineNumber": 166
+        },
+        {
+          "caller": "overpaid",
+          "callee": "compact",
+          "lineNumber": 166
+        },
+        {
+          "caller": "show",
+          "callee": "Invoice::findOrFail",
+          "lineNumber": 171
+        },
+        {
+          "caller": "show",
+          "callee": "\\Utilities::getSettings",
+          "lineNumber": 172
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 174
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 174
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 176
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 176
+        },
+        {
+          "caller": "show",
+          "callee": "dd",
+          "lineNumber": 178
+        },
+        {
+          "caller": "createPayment",
+          "callee": "Invoice::findOrFail",
+          "lineNumber": 187
+        },
+        {
+          "caller": "createPayment",
+          "callee": "view",
+          "lineNumber": 189
+        },
+        {
+          "caller": "createPayment",
+          "callee": "compact",
+          "lineNumber": 189
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 194
+        },
+        {
+          "caller": "delete",
+          "callee": "InvoiceDetail::where('invoice_id', $id)->delete",
+          "lineNumber": 197
+        },
+        {
+          "caller": "delete",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 197
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where('invoice_id', $id)->get",
+          "lineNumber": 198
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 198
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where('payment_id', $payment_detail->id)->delete",
+          "lineNumber": 201
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 201
+        },
+        {
+          "caller": "delete",
+          "callee": "$payment_detail->delete",
+          "lineNumber": 202
+        },
+        {
+          "caller": "delete",
+          "callee": "Subscription::where('invoice_id', $id)->delete",
+          "lineNumber": 205
+        },
+        {
+          "caller": "delete",
+          "callee": "Subscription::where",
+          "lineNumber": 205
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::destroy",
+          "lineNumber": 206
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::commit",
+          "lineNumber": 208
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 210
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::rollback",
+          "lineNumber": 212
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 214
+        },
+        {
+          "caller": "discount",
+          "callee": "Invoice::findOrFail",
+          "lineNumber": 220
+        },
+        {
+          "caller": "discount",
+          "callee": "JavaScript::put",
+          "lineNumber": 222
+        },
+        {
+          "caller": "discount",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 223
+        },
+        {
+          "caller": "discount",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 224
+        },
+        {
+          "caller": "discount",
+          "callee": "Carbon::today",
+          "lineNumber": 224
+        },
+        {
+          "caller": "discount",
+          "callee": "Service::count",
+          "lineNumber": 225
+        },
+        {
+          "caller": "discount",
+          "callee": "view",
+          "lineNumber": 228
+        },
+        {
+          "caller": "discount",
+          "callee": "compact",
+          "lineNumber": 228
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 233
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')\r\n                ->whereRaw(\"trn_payment_details.invoice_id = $id AND (trn_cheque_details.`status` = 2 or trn_cheque_details.`status` IS NULL)\")->sum",
+          "lineNumber": 237
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')->whereRaw",
+          "lineNumber": 237
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "PaymentDetail::leftJoin",
+          "lineNumber": 237
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "\\Utilities::setInvoiceStatus",
+          "lineNumber": 243
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "Invoice::where('id', $id)->update",
+          "lineNumber": 245
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "Invoice::where",
+          "lineNumber": 245
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "DB::commit",
+          "lineNumber": 258
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "flash()->success",
+          "lineNumber": 259
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "flash",
+          "lineNumber": 259
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "redirect",
+          "lineNumber": 261
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "action",
+          "lineNumber": 261
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "DB::rollback",
+          "lineNumber": 263
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "flash()->error",
+          "lineNumber": 264
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "flash",
+          "lineNumber": 264
+        },
+        {
+          "caller": "applyDiscount",
+          "callee": "back",
+          "lineNumber": 266
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/MembersController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 523,
+      "nonEmptyLines": 441,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 33,
+          "endLine": 50,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "active",
+          "startLine": 52,
+          "endLine": 69,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "inactive",
+          "startLine": 71,
+          "endLine": 87,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 95,
+          "endLine": 104,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "showbyPhoneNumber",
+          "startLine": 112,
+          "endLine": 121,
+          "params": [
+            "$phoneNumber"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 128,
+          "endLine": 162,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 169,
+          "endLine": 393,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 404,
+          "endLine": 411,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 418,
+          "endLine": 439,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "archive",
+          "startLine": 446,
+          "endLine": 471,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "transfer",
+          "startLine": 473,
+          "endLine": 509,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "drpPlaceholder",
+          "startLine": 515,
+          "endLine": 522,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MembersController",
+          "startLine": 21,
+          "endLine": 523,
+          "methods": [
+            "__construct",
+            "index",
+            "active",
+            "inactive",
+            "show",
+            "showbyPhoneNumber",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "archive",
+            "transfer",
+            "drpPlaceholder"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MembersController",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "Member::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "Member::indexQuery",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 40
+        },
+        {
+          "caller": "index",
+          "callee": "$members->total",
+          "lineNumber": 43
+        },
+        {
+          "caller": "index",
+          "callee": "$this->drpPlaceholder",
+          "lineNumber": 45
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 49
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 49
+        },
+        {
+          "caller": "active",
+          "callee": "Member::active(\r\n            isset($request->sort_field) ? $request->sort_field : 'created_at',\r\n            isset($request->sort_direction) ? $request->sort_direction : 'desc',\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 54
+        },
+        {
+          "caller": "active",
+          "callee": "Member::active",
+          "lineNumber": 54
+        },
+        {
+          "caller": "active",
+          "callee": "isset",
+          "lineNumber": 55
+        },
+        {
+          "caller": "active",
+          "callee": "isset",
+          "lineNumber": 56
+        },
+        {
+          "caller": "active",
+          "callee": "$request->input",
+          "lineNumber": 59
+        },
+        {
+          "caller": "active",
+          "callee": "$members->total",
+          "lineNumber": 62
+        },
+        {
+          "caller": "active",
+          "callee": "$this->drpPlaceholder",
+          "lineNumber": 64
+        },
+        {
+          "caller": "active",
+          "callee": "$request->flash",
+          "lineNumber": 66
+        },
+        {
+          "caller": "active",
+          "callee": "view",
+          "lineNumber": 68
+        },
+        {
+          "caller": "active",
+          "callee": "compact",
+          "lineNumber": 68
+        },
+        {
+          "caller": "inactive",
+          "callee": "Member::inactive(\r\n            isset($request->sort_field) ? $request->sort_field : 'created_at',\r\n            isset($request->sort_direction) ? $request->sort_direction : 'desc',\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 73
+        },
+        {
+          "caller": "inactive",
+          "callee": "Member::inactive",
+          "lineNumber": 73
+        },
+        {
+          "caller": "inactive",
+          "callee": "isset",
+          "lineNumber": 74
+        },
+        {
+          "caller": "inactive",
+          "callee": "isset",
+          "lineNumber": 75
+        },
+        {
+          "caller": "inactive",
+          "callee": "$request->input",
+          "lineNumber": 78
+        },
+        {
+          "caller": "inactive",
+          "callee": "$members->total",
+          "lineNumber": 81
+        },
+        {
+          "caller": "inactive",
+          "callee": "$this->drpPlaceholder",
+          "lineNumber": 82
+        },
+        {
+          "caller": "inactive",
+          "callee": "$request->flash",
+          "lineNumber": 84
+        },
+        {
+          "caller": "inactive",
+          "callee": "view",
+          "lineNumber": 86
+        },
+        {
+          "caller": "inactive",
+          "callee": "compact",
+          "lineNumber": 86
+        },
+        {
+          "caller": "show",
+          "callee": "Member::findOrFail",
+          "lineNumber": 97
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 103
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 103
+        },
+        {
+          "caller": "showbyPhoneNumber",
+          "callee": "Member::where",
+          "lineNumber": 114
+        },
+        {
+          "caller": "showbyPhoneNumber",
+          "callee": "view",
+          "lineNumber": 120
+        },
+        {
+          "caller": "showbyPhoneNumber",
+          "callee": "compact",
+          "lineNumber": 120
+        },
+        {
+          "caller": "create",
+          "callee": "JavaScript::put",
+          "lineNumber": 131
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 132
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 133
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today",
+          "lineNumber": 133
+        },
+        {
+          "caller": "create",
+          "callee": "Service::count",
+          "lineNumber": 134
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 138
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 143
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 144
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 153
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 154
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 161
+        },
+        {
+          "caller": "create",
+          "callee": "compact",
+          "lineNumber": 161
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 172
+        },
+        {
+          "caller": "store",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 179
+        },
+        {
+          "caller": "store",
+          "callee": "$member->createdBy()->associate",
+          "lineNumber": 204
+        },
+        {
+          "caller": "store",
+          "callee": "$member->createdBy",
+          "lineNumber": 204
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 204
+        },
+        {
+          "caller": "store",
+          "callee": "$member->updatedBy()->associate",
+          "lineNumber": 205
+        },
+        {
+          "caller": "store",
+          "callee": "$member->updatedBy",
+          "lineNumber": 205
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 205
+        },
+        {
+          "caller": "store",
+          "callee": "$member->save",
+          "lineNumber": 206
+        },
+        {
+          "caller": "store",
+          "callee": "$request->hasFile",
+          "lineNumber": 209
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia($request->file('photo'))->usingFileName('profile_' . $member->id . '.' . $request->photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia($request->file('photo'))->usingFileName",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$request->file",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$request->photo->getClientOriginalExtension",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$request->hasFile",
+          "lineNumber": 213
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia($request->file('proof_photo'))->usingFileName('proof_' . $member->id . '.' . $request->proof_photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 214
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia($request->file('proof_photo'))->usingFileName",
+          "lineNumber": 214
+        },
+        {
+          "caller": "store",
+          "callee": "$member->addMedia",
+          "lineNumber": 214
+        },
+        {
+          "caller": "store",
+          "callee": "$request->file",
+          "lineNumber": 214
+        },
+        {
+          "caller": "store",
+          "callee": "$request->proof_photo->getClientOriginalExtension",
+          "lineNumber": 214
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy()->associate",
+          "lineNumber": 250
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy",
+          "lineNumber": 250
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 250
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy()->associate",
+          "lineNumber": 251
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy",
+          "lineNumber": 251
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 251
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->save",
+          "lineNumber": 252
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->createdBy()->associate",
+          "lineNumber": 267
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->createdBy",
+          "lineNumber": 267
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 267
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->updatedBy()->associate",
+          "lineNumber": 268
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->updatedBy",
+          "lineNumber": 268
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 268
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->save",
+          "lineNumber": 269
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetails->createdBy()->associate",
+          "lineNumber": 279
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetails->createdBy",
+          "lineNumber": 279
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 279
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetails->updatedBy()->associate",
+          "lineNumber": 280
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetails->updatedBy",
+          "lineNumber": 280
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 280
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetails->save",
+          "lineNumber": 281
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->createdBy()->associate",
+          "lineNumber": 293
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->createdBy",
+          "lineNumber": 293
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 293
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->updatedBy()->associate",
+          "lineNumber": 294
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->updatedBy",
+          "lineNumber": 294
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 294
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->save",
+          "lineNumber": 295
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy()->associate",
+          "lineNumber": 307
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy",
+          "lineNumber": 307
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 307
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy()->associate",
+          "lineNumber": 308
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy",
+          "lineNumber": 308
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 308
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->save",
+          "lineNumber": 309
+        },
+        {
+          "caller": "store",
+          "callee": "$request->has",
+          "lineNumber": 313
+        },
+        {
+          "caller": "store",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 314
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->updatedBy()->associate",
+          "lineNumber": 316
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->updatedBy",
+          "lineNumber": 316
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 316
+        },
+        {
+          "caller": "store",
+          "callee": "$enquiry->save",
+          "lineNumber": 317
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where('key', '=', 'invoice_last_number')->update",
+          "lineNumber": 321
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where",
+          "lineNumber": 321
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where('key', '=', 'member_last_number')->update",
+          "lineNumber": 322
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where",
+          "lineNumber": 322
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 323
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 324
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'member_admission_with_paid_invoice')->first",
+          "lineNumber": 328
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 328
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 330
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 333
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'member_admission_with_partial_invoice')->first",
+          "lineNumber": 335
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 335
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 337
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 340
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_with_cheque')->first",
+          "lineNumber": 343
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 343
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 345
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 348
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'member_admission_with_unpaid_invoice')->first",
+          "lineNumber": 350
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 350
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 352
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 355
+        },
+        {
+          "caller": "store",
+          "callee": "$member->save",
+          "lineNumber": 362
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->save",
+          "lineNumber": 366
+        },
+        {
+          "caller": "store",
+          "callee": "$invoiceDetail->save",
+          "lineNumber": 371
+        },
+        {
+          "caller": "store",
+          "callee": "$paymentDetails->save",
+          "lineNumber": 376
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->save",
+          "lineNumber": 380
+        },
+        {
+          "caller": "store",
+          "callee": "DB::commit",
+          "lineNumber": 383
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 384
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 384
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 386
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 386
+        },
+        {
+          "caller": "store",
+          "callee": "DB::rollback",
+          "lineNumber": 388
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 389
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 389
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 391
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 391
+        },
+        {
+          "caller": "edit",
+          "callee": "Member::findOrFail",
+          "lineNumber": 406
+        },
+        {
+          "caller": "edit",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 407
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 410
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 410
+        },
+        {
+          "caller": "update",
+          "callee": "Member::findOrFail",
+          "lineNumber": 420
+        },
+        {
+          "caller": "update",
+          "callee": "$member->update",
+          "lineNumber": 421
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 421
+        },
+        {
+          "caller": "update",
+          "callee": "$request->hasFile",
+          "lineNumber": 423
+        },
+        {
+          "caller": "update",
+          "callee": "$member->clearMediaCollection",
+          "lineNumber": 424
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia($request->file('photo'))->usingFileName('profile_' . $member->id . '.' . $request->photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 425
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia($request->file('photo'))->usingFileName",
+          "lineNumber": 425
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia",
+          "lineNumber": 425
+        },
+        {
+          "caller": "update",
+          "callee": "$request->file",
+          "lineNumber": 425
+        },
+        {
+          "caller": "update",
+          "callee": "$request->photo->getClientOriginalExtension",
+          "lineNumber": 425
+        },
+        {
+          "caller": "update",
+          "callee": "$request->hasFile",
+          "lineNumber": 428
+        },
+        {
+          "caller": "update",
+          "callee": "$member->clearMediaCollection",
+          "lineNumber": 429
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia($request->file('proof_photo'))->usingFileName('proof_' . $member->id . '.' . $request->proof_photo->getClientOriginalExtension())->toCollection",
+          "lineNumber": 430
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia($request->file('proof_photo'))->usingFileName",
+          "lineNumber": 430
+        },
+        {
+          "caller": "update",
+          "callee": "$member->addMedia",
+          "lineNumber": 430
+        },
+        {
+          "caller": "update",
+          "callee": "$request->file",
+          "lineNumber": 430
+        },
+        {
+          "caller": "update",
+          "callee": "$request->proof_photo->getClientOriginalExtension",
+          "lineNumber": 430
+        },
+        {
+          "caller": "update",
+          "callee": "$member->updatedBy()->associate",
+          "lineNumber": 433
+        },
+        {
+          "caller": "update",
+          "callee": "$member->updatedBy",
+          "lineNumber": 433
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 433
+        },
+        {
+          "caller": "update",
+          "callee": "$member->save",
+          "lineNumber": 434
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 436
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 436
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 438
+        },
+        {
+          "caller": "update",
+          "callee": "action",
+          "lineNumber": 438
+        },
+        {
+          "caller": "archive",
+          "callee": "Subscription::where('member_id', $id)->delete",
+          "lineNumber": 448
+        },
+        {
+          "caller": "archive",
+          "callee": "Subscription::where",
+          "lineNumber": 448
+        },
+        {
+          "caller": "archive",
+          "callee": "Invoice::where('member_id', $id)->get",
+          "lineNumber": 450
+        },
+        {
+          "caller": "archive",
+          "callee": "Invoice::where",
+          "lineNumber": 450
+        },
+        {
+          "caller": "archive",
+          "callee": "InvoiceDetail::where('invoice_id', $invoice->id)->delete",
+          "lineNumber": 453
+        },
+        {
+          "caller": "archive",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 453
+        },
+        {
+          "caller": "archive",
+          "callee": "PaymentDetail::where('invoice_id', $invoice->id)->get",
+          "lineNumber": 454
+        },
+        {
+          "caller": "archive",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 454
+        },
+        {
+          "caller": "archive",
+          "callee": "ChequeDetail::where('payment_id', $paymentDetail->id)->delete",
+          "lineNumber": 457
+        },
+        {
+          "caller": "archive",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 457
+        },
+        {
+          "caller": "archive",
+          "callee": "$paymentDetail->delete",
+          "lineNumber": 458
+        },
+        {
+          "caller": "archive",
+          "callee": "$invoice->delete",
+          "lineNumber": 461
+        },
+        {
+          "caller": "archive",
+          "callee": "Member::findOrFail",
+          "lineNumber": 464
+        },
+        {
+          "caller": "archive",
+          "callee": "$member->clearMediaCollection",
+          "lineNumber": 465
+        },
+        {
+          "caller": "archive",
+          "callee": "$member->clearMediaCollection",
+          "lineNumber": 466
+        },
+        {
+          "caller": "archive",
+          "callee": "$member->delete",
+          "lineNumber": 468
+        },
+        {
+          "caller": "archive",
+          "callee": "back",
+          "lineNumber": 470
+        },
+        {
+          "caller": "transfer",
+          "callee": "JavaScript::put",
+          "lineNumber": 476
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 477
+        },
+        {
+          "caller": "transfer",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 478
+        },
+        {
+          "caller": "transfer",
+          "callee": "Carbon::today",
+          "lineNumber": 478
+        },
+        {
+          "caller": "transfer",
+          "callee": "Service::count",
+          "lineNumber": 479
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 483
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 484
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 488
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 489
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 498
+        },
+        {
+          "caller": "transfer",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 499
+        },
+        {
+          "caller": "transfer",
+          "callee": "Enquiry::findOrFail",
+          "lineNumber": 506
+        },
+        {
+          "caller": "transfer",
+          "callee": "view",
+          "lineNumber": 508
+        },
+        {
+          "caller": "transfer",
+          "callee": "compact",
+          "lineNumber": 508
+        },
+        {
+          "caller": "drpPlaceholder",
+          "callee": "$request->has",
+          "lineNumber": 517
+        },
+        {
+          "caller": "drpPlaceholder",
+          "callee": "$request->has",
+          "lineNumber": 517
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 1,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/PaymentsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 265,
+      "nonEmptyLines": 210,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 20,
+          "endLine": 34,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 36,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 41,
+          "endLine": 113,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 115,
+          "endLine": 121,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 123,
+          "endLine": 165,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 167,
+          "endLine": 202,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "depositCheque",
+          "startLine": 204,
+          "endLine": 211,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "clearCheque",
+          "startLine": 213,
+          "endLine": 248,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "chequeBounce",
+          "startLine": 250,
+          "endLine": 257,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "chequeReissue",
+          "startLine": 259,
+          "endLine": 264,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PaymentsController",
+          "startLine": 13,
+          "endLine": 265,
+          "methods": [
+            "__construct",
+            "index",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "delete",
+            "depositCheque",
+            "clearCheque",
+            "chequeBounce",
+            "chequeReissue"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PaymentsController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 17
+        },
+        {
+          "caller": "index",
+          "callee": "PaymentDetail::indexQuery($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end , $request->input('search'))->where('payment_amount', '>', 0)->paginate",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "PaymentDetail::indexQuery($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end , $request->input('search'))->where",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "PaymentDetail::indexQuery",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 22
+        },
+        {
+          "caller": "index",
+          "callee": "PaymentDetail::indexQuery($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end,$request->input('search'))->get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "PaymentDetail::indexQuery",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$paymentTotal->sum",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 33
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 33
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 38
+        },
+        {
+          "caller": "store",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 43
+        },
+        {
+          "caller": "store",
+          "callee": "$request->all",
+          "lineNumber": 46
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->createdBy()->associate",
+          "lineNumber": 47
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->createdBy",
+          "lineNumber": 47
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 47
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->updatedBy()->associate",
+          "lineNumber": 48
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->updatedBy",
+          "lineNumber": 48
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 48
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->save",
+          "lineNumber": 49
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy()->associate",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 61
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy()->associate",
+          "lineNumber": 62
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy",
+          "lineNumber": 62
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 62
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->save",
+          "lineNumber": 63
+        },
+        {
+          "caller": "store",
+          "callee": "PaymentDetail::where('invoice_id', $payment_detail->invoice_id)->sum",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::setInvoiceStatus",
+          "lineNumber": 71
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_detail->invoice->save",
+          "lineNumber": 72
+        },
+        {
+          "caller": "store",
+          "callee": "$request->has",
+          "lineNumber": 76
+        },
+        {
+          "caller": "store",
+          "callee": "ChequeDetail::where('payment_id', $request->previousPayment)->first",
+          "lineNumber": 77
+        },
+        {
+          "caller": "store",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 77
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_detail->save",
+          "lineNumber": 79
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 83
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 84
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_recieved')->first",
+          "lineNumber": 87
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 87
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 91
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 93
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_with_cheque')->first",
+          "lineNumber": 95
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 95
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 97
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 100
+        },
+        {
+          "caller": "store",
+          "callee": "DB::commit",
+          "lineNumber": 103
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 104
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 104
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 106
+        },
+        {
+          "caller": "store",
+          "callee": "DB::rollback",
+          "lineNumber": 108
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 109
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 109
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 111
+        },
+        {
+          "caller": "edit",
+          "callee": "PaymentDetail::findOrFail",
+          "lineNumber": 117
+        },
+        {
+          "caller": "edit",
+          "callee": "ChequeDetail::where('payment_id', $id)->first",
+          "lineNumber": 118
+        },
+        {
+          "caller": "edit",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 118
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 120
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 120
+        },
+        {
+          "caller": "update",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 125
+        },
+        {
+          "caller": "update",
+          "callee": "PaymentDetail::findOrFail",
+          "lineNumber": 129
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->update",
+          "lineNumber": 130
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 130
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->updatedBy()->associate",
+          "lineNumber": 131
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->updatedBy",
+          "lineNumber": 131
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 131
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->save",
+          "lineNumber": 132
+        },
+        {
+          "caller": "update",
+          "callee": "ChequeDetail::where('payment_id', $id)->first",
+          "lineNumber": 136
+        },
+        {
+          "caller": "update",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 136
+        },
+        {
+          "caller": "update",
+          "callee": "$cheque_detail->update",
+          "lineNumber": 137
+        },
+        {
+          "caller": "update",
+          "callee": "$cheque_detail->updatedBy()->associate",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "$cheque_detail->updatedBy",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 141
+        },
+        {
+          "caller": "update",
+          "callee": "$cheque_detail->save",
+          "lineNumber": 142
+        },
+        {
+          "caller": "update",
+          "callee": "PaymentDetail::where('invoice_id', $payment_detail->invoice_id)->sum",
+          "lineNumber": 146
+        },
+        {
+          "caller": "update",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 146
+        },
+        {
+          "caller": "update",
+          "callee": "\\Utilities::setInvoiceStatus",
+          "lineNumber": 150
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->invoice->updatedBy()->associate",
+          "lineNumber": 151
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->invoice->updatedBy",
+          "lineNumber": 151
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 151
+        },
+        {
+          "caller": "update",
+          "callee": "$payment_detail->invoice->save",
+          "lineNumber": 152
+        },
+        {
+          "caller": "update",
+          "callee": "DB::commit",
+          "lineNumber": 155
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 156
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 156
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "action",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "DB::rollback",
+          "lineNumber": 160
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->error",
+          "lineNumber": 161
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 161
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 163
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 169
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::findOrFail",
+          "lineNumber": 172
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where('id', $payment_detail->invoice_id)->first",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where('payment_id', $payment_detail->id)->get",
+          "lineNumber": 174
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 174
+        },
+        {
+          "caller": "delete",
+          "callee": "$cheque_detail->delete",
+          "lineNumber": 177
+        },
+        {
+          "caller": "delete",
+          "callee": "$payment_detail->delete",
+          "lineNumber": 180
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')\r\n                ->whereRaw(\"trn_payment_details.invoice_id = $invoice->id AND (trn_cheque_details.`status` = 2 or trn_cheque_details.`status` IS NULL)\")->sum",
+          "lineNumber": 183
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')->whereRaw",
+          "lineNumber": 183
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::leftJoin",
+          "lineNumber": 183
+        },
+        {
+          "caller": "delete",
+          "callee": "\\Utilities::setInvoiceStatus",
+          "lineNumber": 190
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice->updatedBy()->associate",
+          "lineNumber": 191
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice->updatedBy",
+          "lineNumber": 191
+        },
+        {
+          "caller": "delete",
+          "callee": "Auth::user",
+          "lineNumber": 191
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice->save",
+          "lineNumber": 192
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::commit",
+          "lineNumber": 194
+        },
+        {
+          "caller": "delete",
+          "callee": "redirect",
+          "lineNumber": 196
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::rollback",
+          "lineNumber": 198
+        },
+        {
+          "caller": "delete",
+          "callee": "redirect",
+          "lineNumber": 200
+        },
+        {
+          "caller": "depositCheque",
+          "callee": "ChequeDetail::where('payment_id', $id)->update",
+          "lineNumber": 206
+        },
+        {
+          "caller": "depositCheque",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 206
+        },
+        {
+          "caller": "depositCheque",
+          "callee": "flash()->success",
+          "lineNumber": 208
+        },
+        {
+          "caller": "depositCheque",
+          "callee": "flash",
+          "lineNumber": 208
+        },
+        {
+          "caller": "depositCheque",
+          "callee": "back",
+          "lineNumber": 210
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 215
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "PaymentDetail::findOrFail",
+          "lineNumber": 217
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "ChequeDetail::where('payment_id', $id)->first",
+          "lineNumber": 220
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 220
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "$cheque_detail->updatedBy()->associate",
+          "lineNumber": 222
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "$cheque_detail->updatedBy",
+          "lineNumber": 222
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "Auth::user",
+          "lineNumber": 222
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "$cheque_detail->save",
+          "lineNumber": 223
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')\r\n                ->whereRaw(\"trn_payment_details.invoice_id = $payment_detail->invoice_id AND (trn_cheque_details.`status` = 2 or trn_cheque_details.`status` IS NULL)\")->sum",
+          "lineNumber": 228
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')->whereRaw",
+          "lineNumber": 228
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "PaymentDetail::leftJoin",
+          "lineNumber": 228
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "\\Utilities::setInvoiceStatus",
+          "lineNumber": 235
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "$payment_detail->invoice->save",
+          "lineNumber": 236
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "DB::commit",
+          "lineNumber": 238
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "flash()->success",
+          "lineNumber": 239
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "flash",
+          "lineNumber": 239
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "back",
+          "lineNumber": 241
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "DB::rollback",
+          "lineNumber": 243
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "flash()->error",
+          "lineNumber": 244
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "flash",
+          "lineNumber": 244
+        },
+        {
+          "caller": "clearCheque",
+          "callee": "back",
+          "lineNumber": 246
+        },
+        {
+          "caller": "chequeBounce",
+          "callee": "ChequeDetail::where('payment_id', $id)->update",
+          "lineNumber": 252
+        },
+        {
+          "caller": "chequeBounce",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 252
+        },
+        {
+          "caller": "chequeBounce",
+          "callee": "flash()->success",
+          "lineNumber": 254
+        },
+        {
+          "caller": "chequeBounce",
+          "callee": "flash",
+          "lineNumber": 254
+        },
+        {
+          "caller": "chequeBounce",
+          "callee": "back",
+          "lineNumber": 256
+        },
+        {
+          "caller": "chequeReissue",
+          "callee": "PaymentDetail::findOrFail",
+          "lineNumber": 261
+        },
+        {
+          "caller": "chequeReissue",
+          "callee": "view",
+          "lineNumber": 263
+        },
+        {
+          "caller": "chequeReissue",
+          "callee": "compact",
+          "lineNumber": 263
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/PurchaseController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 316,
+      "nonEmptyLines": 271,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 31,
+          "endLine": 67,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "belt",
+          "startLine": 68,
+          "endLine": 89,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 96,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 114,
+          "endLine": 211,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 219,
+          "endLine": 223,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 231,
+          "endLine": 235,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 244,
+          "endLine": 254,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "change",
+          "startLine": 263,
+          "endLine": 266,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 273,
+          "endLine": 298,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "generateInvoiceNumber",
+          "startLine": 300,
+          "endLine": 315,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PurchaseController",
+          "startLine": 20,
+          "endLine": 316,
+          "methods": [
+            "__construct",
+            "index",
+            "belt",
+            "create",
+            "store",
+            "show",
+            "edit",
+            "update",
+            "change",
+            "delete",
+            "generateInvoiceNumber"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PurchaseController",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "Purchase::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->product_id,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 34
+        },
+        {
+          "caller": "index",
+          "callee": "Purchase::indexQuery",
+          "lineNumber": 34
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 40
+        },
+        {
+          "caller": "index",
+          "callee": "Purchase::indexQuery(\r\n            null,\r\n            null,\r\n            $request->product_id,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "index",
+          "callee": "Purchase::indexQuery",
+          "lineNumber": 43
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 49
+        },
+        {
+          "caller": "index",
+          "callee": "$purchaseTotal->count",
+          "lineNumber": 56
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 58
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 58
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 64
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 66
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 66
+        },
+        {
+          "caller": "belt",
+          "callee": "Purchase::indexQuery($request->sort_field, $request->sort_direction, [13, 14, 15, 16, 18], $request->drp_start, $request->drp_end, $request->product_name)->search",
+          "lineNumber": 71
+        },
+        {
+          "caller": "belt",
+          "callee": "Purchase::indexQuery",
+          "lineNumber": 71
+        },
+        {
+          "caller": "belt",
+          "callee": "$request->input",
+          "lineNumber": 71
+        },
+        {
+          "caller": "belt",
+          "callee": "$purchases_query->paginate",
+          "lineNumber": 72
+        },
+        {
+          "caller": "belt",
+          "callee": "$purchases_query->get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "belt",
+          "callee": "$purchaseTotal->count",
+          "lineNumber": 78
+        },
+        {
+          "caller": "belt",
+          "callee": "$request->has",
+          "lineNumber": 80
+        },
+        {
+          "caller": "belt",
+          "callee": "$request->has",
+          "lineNumber": 80
+        },
+        {
+          "caller": "belt",
+          "callee": "$request->flash",
+          "lineNumber": 86
+        },
+        {
+          "caller": "belt",
+          "callee": "view",
+          "lineNumber": 88
+        },
+        {
+          "caller": "belt",
+          "callee": "compact",
+          "lineNumber": 88
+        },
+        {
+          "caller": "create",
+          "callee": "JavaScript::put",
+          "lineNumber": 98
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 99
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 100
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today",
+          "lineNumber": 100
+        },
+        {
+          "caller": "create",
+          "callee": "Service::count",
+          "lineNumber": 101
+        },
+        {
+          "caller": "create",
+          "callee": "$this->generateInvoiceNumber",
+          "lineNumber": 103
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "compact",
+          "lineNumber": 105
+        },
+        {
+          "caller": "store",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 116
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy()->associate",
+          "lineNumber": 151
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy",
+          "lineNumber": 151
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 151
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy()->associate",
+          "lineNumber": 152
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy",
+          "lineNumber": 152
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 152
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->save",
+          "lineNumber": 153
+        },
+        {
+          "caller": "store",
+          "callee": "$purchases->createdBy()->associate",
+          "lineNumber": 164
+        },
+        {
+          "caller": "store",
+          "callee": "$purchases->createdBy",
+          "lineNumber": 164
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 164
+        },
+        {
+          "caller": "store",
+          "callee": "$purchases->updatedBy()->associate",
+          "lineNumber": 165
+        },
+        {
+          "caller": "store",
+          "callee": "$purchases->updatedBy",
+          "lineNumber": 165
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 165
+        },
+        {
+          "caller": "store",
+          "callee": "$purchases->save",
+          "lineNumber": 166
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->createdBy()->associate",
+          "lineNumber": 178
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->createdBy",
+          "lineNumber": 178
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 178
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->updatedBy()->associate",
+          "lineNumber": 179
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->updatedBy",
+          "lineNumber": 179
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 179
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->save",
+          "lineNumber": 180
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy()->associate",
+          "lineNumber": 192
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy",
+          "lineNumber": 192
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 192
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy()->associate",
+          "lineNumber": 193
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy",
+          "lineNumber": 193
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 193
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->save",
+          "lineNumber": 194
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where('key', '=', 'invoice_last_number')->update",
+          "lineNumber": 199
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where",
+          "lineNumber": 199
+        },
+        {
+          "caller": "store",
+          "callee": "DB::commit",
+          "lineNumber": 201
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 202
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 202
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 204
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 204
+        },
+        {
+          "caller": "store",
+          "callee": "DB::rollback",
+          "lineNumber": 206
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 207
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 207
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 209
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 209
+        },
+        {
+          "caller": "show",
+          "callee": "Purchase::findOrFail",
+          "lineNumber": 221
+        },
+        {
+          "caller": "show",
+          "callee": "dd",
+          "lineNumber": 222
+        },
+        {
+          "caller": "edit",
+          "callee": "Purchase::findOrFail",
+          "lineNumber": 233
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 234
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 234
+        },
+        {
+          "caller": "update",
+          "callee": "Purchase::findOrFail",
+          "lineNumber": 246
+        },
+        {
+          "caller": "update",
+          "callee": "$purchase->update",
+          "lineNumber": 248
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 248
+        },
+        {
+          "caller": "update",
+          "callee": "$purchase->updatedBy()->associate",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "$purchase->updatedBy",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "$purchase->save",
+          "lineNumber": 250
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 251
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 251
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 253
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 275
+        },
+        {
+          "caller": "delete",
+          "callee": "Purchase::findOrFail",
+          "lineNumber": 278
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where('id', $purchase->invoice_id)->first",
+          "lineNumber": 279
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where",
+          "lineNumber": 279
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where('invoice_id', $invoice->id)->get",
+          "lineNumber": 280
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 280
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where('payment_id', $payment_detail->id)->delete",
+          "lineNumber": 283
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 283
+        },
+        {
+          "caller": "delete",
+          "callee": "$payment_detail->delete",
+          "lineNumber": 284
+        },
+        {
+          "caller": "delete",
+          "callee": "$purchase->delete",
+          "lineNumber": 287
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice->delete",
+          "lineNumber": 288
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::commit",
+          "lineNumber": 290
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 292
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::rollback",
+          "lineNumber": 294
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 296
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 303
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 307
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 308
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/ServicesController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 35,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "create",
+          "startLine": 47,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 57,
+          "endLine": 72,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 74,
+          "endLine": 79,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 81,
+          "endLine": 91,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 93,
+          "endLine": 98,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ServicesController",
+          "startLine": 9,
+          "endLine": 99,
+          "methods": [
+            "__construct",
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "delete"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ServicesController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 13
+        },
+        {
+          "caller": "index",
+          "callee": "Service::search($request->input('search'))->paginate",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "Service::search",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$services->count",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 26
+        },
+        {
+          "caller": "show",
+          "callee": "Service::findOrFail",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 39
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 39
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 49
+        },
+        {
+          "caller": "store",
+          "callee": "$this->validate",
+          "lineNumber": 60
+        },
+        {
+          "caller": "store",
+          "callee": "$request->all",
+          "lineNumber": 62
+        },
+        {
+          "caller": "store",
+          "callee": "$service->createdBy()->associate",
+          "lineNumber": 64
+        },
+        {
+          "caller": "store",
+          "callee": "$service->createdBy",
+          "lineNumber": 64
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 64
+        },
+        {
+          "caller": "store",
+          "callee": "$service->updatedBy()->associate",
+          "lineNumber": 65
+        },
+        {
+          "caller": "store",
+          "callee": "$service->updatedBy",
+          "lineNumber": 65
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 65
+        },
+        {
+          "caller": "store",
+          "callee": "$service->save",
+          "lineNumber": 67
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 69
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 69
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 71
+        },
+        {
+          "caller": "edit",
+          "callee": "Service::findOrFail",
+          "lineNumber": 76
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 78
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 78
+        },
+        {
+          "caller": "update",
+          "callee": "Service::findOrFail",
+          "lineNumber": 83
+        },
+        {
+          "caller": "update",
+          "callee": "$service->update",
+          "lineNumber": 85
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 85
+        },
+        {
+          "caller": "update",
+          "callee": "$service->updatedBy()->associate",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "$service->updatedBy",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "$service->save",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 88
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 88
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 90
+        },
+        {
+          "caller": "delete",
+          "callee": "Service::destroy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "delete",
+          "callee": "redirect",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/SettingsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 10,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "show",
+          "startLine": 15,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "edit",
+          "startLine": 22,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "save",
+          "startLine": 29,
+          "endLine": 47,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SettingsController",
+          "startLine": 8,
+          "endLine": 48,
+          "methods": [
+            "__construct",
+            "show",
+            "edit",
+            "save"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 12
+        },
+        {
+          "caller": "show",
+          "callee": "\\Utilities::getSettings",
+          "lineNumber": 17
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 19
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 19
+        },
+        {
+          "caller": "edit",
+          "callee": "\\Utilities::getSettings",
+          "lineNumber": 24
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 26
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 26
+        },
+        {
+          "caller": "save",
+          "callee": "$request->except",
+          "lineNumber": 32
+        },
+        {
+          "caller": "save",
+          "callee": "\\Utilities::uploadFile",
+          "lineNumber": 37
+        },
+        {
+          "caller": "save",
+          "callee": "Setting::where('key', '=', $key)->update",
+          "lineNumber": 41
+        },
+        {
+          "caller": "save",
+          "callee": "Setting::where",
+          "lineNumber": 41
+        },
+        {
+          "caller": "save",
+          "callee": "flash()->success",
+          "lineNumber": 44
+        },
+        {
+          "caller": "save",
+          "callee": "flash",
+          "lineNumber": 44
+        },
+        {
+          "caller": "save",
+          "callee": "redirect",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/SubscriptionsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 545,
+      "nonEmptyLines": 448,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 21,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 26,
+          "endLine": 52,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "expiring",
+          "startLine": 54,
+          "endLine": 75,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "expired",
+          "startLine": 77,
+          "endLine": 98,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "expired_gallary",
+          "startLine": 101,
+          "endLine": 115,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 117,
+          "endLine": 128,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 130,
+          "endLine": 307,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 311,
+          "endLine": 327,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 329,
+          "endLine": 339,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "renew",
+          "startLine": 341,
+          "endLine": 359,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "cancelSubscription",
+          "startLine": 361,
+          "endLine": 381,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 383,
+          "endLine": 413,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "change",
+          "startLine": 415,
+          "endLine": 430,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "modify",
+          "startLine": 432,
+          "endLine": 524,
+          "params": [
+            "$id",
+            "$request"
+          ]
+        },
+        {
+          "name": "generateInvoiceNumber",
+          "startLine": 529,
+          "endLine": 544,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SubscriptionsController",
+          "startLine": 19,
+          "endLine": 545,
+          "methods": [
+            "__construct",
+            "index",
+            "expiring",
+            "expired",
+            "expired_gallary",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "renew",
+            "cancelSubscription",
+            "delete",
+            "change",
+            "modify",
+            "generateInvoiceNumber"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SubscriptionsController",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->middleware",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "microtime",
+          "lineNumber": 28
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::indexQuery(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->plan_id,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 30
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::indexQuery",
+          "lineNumber": 30
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 36
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::indexQuery($request->sort_field, $request->sort_direction, $request->plan_id, $request->drp_start, $request->drp_end, $request->plan_name, $request->input('search'))->get",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "Subscription::indexQuery",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "$request->input",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "$subscriptionTotal->count",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "$request->has",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "$request->flash",
+          "lineNumber": 48
+        },
+        {
+          "caller": "index",
+          "callee": "microtime",
+          "lineNumber": 49
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 51
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 51
+        },
+        {
+          "caller": "expiring",
+          "callee": "Subscription::expiring(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 56
+        },
+        {
+          "caller": "expiring",
+          "callee": "Subscription::expiring",
+          "lineNumber": 56
+        },
+        {
+          "caller": "expiring",
+          "callee": "$request->input",
+          "lineNumber": 61
+        },
+        {
+          "caller": "expiring",
+          "callee": "$expirings->total",
+          "lineNumber": 64
+        },
+        {
+          "caller": "expiring",
+          "callee": "$request->has",
+          "lineNumber": 66
+        },
+        {
+          "caller": "expiring",
+          "callee": "$request->has",
+          "lineNumber": 66
+        },
+        {
+          "caller": "expiring",
+          "callee": "$request->flash",
+          "lineNumber": 72
+        },
+        {
+          "caller": "expiring",
+          "callee": "view",
+          "lineNumber": 74
+        },
+        {
+          "caller": "expiring",
+          "callee": "compact",
+          "lineNumber": 74
+        },
+        {
+          "caller": "expired",
+          "callee": "Subscription::expired(\r\n            $request->sort_field,\r\n            $request->sort_direction,\r\n            $request->drp_start,\r\n            $request->drp_end,\r\n            $request->input('search')\r\n        )->paginate",
+          "lineNumber": 79
+        },
+        {
+          "caller": "expired",
+          "callee": "Subscription::expired",
+          "lineNumber": 79
+        },
+        {
+          "caller": "expired",
+          "callee": "$request->input",
+          "lineNumber": 84
+        },
+        {
+          "caller": "expired",
+          "callee": "$allExpired->total",
+          "lineNumber": 87
+        },
+        {
+          "caller": "expired",
+          "callee": "$request->has",
+          "lineNumber": 89
+        },
+        {
+          "caller": "expired",
+          "callee": "$request->has",
+          "lineNumber": 89
+        },
+        {
+          "caller": "expired",
+          "callee": "$request->flash",
+          "lineNumber": 95
+        },
+        {
+          "caller": "expired",
+          "callee": "view",
+          "lineNumber": 97
+        },
+        {
+          "caller": "expired",
+          "callee": "compact",
+          "lineNumber": 97
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "Subscription::expired($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->paginate",
+          "lineNumber": 103
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "Subscription::expired($request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search",
+          "lineNumber": 103
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "Subscription::expired",
+          "lineNumber": 103
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "$request->input",
+          "lineNumber": 103
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "$allExpired->total",
+          "lineNumber": 104
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "$request->has",
+          "lineNumber": 106
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "$request->has",
+          "lineNumber": 106
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "$request->flash",
+          "lineNumber": 112
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "view",
+          "lineNumber": 114
+        },
+        {
+          "caller": "expired_gallary",
+          "callee": "compact",
+          "lineNumber": 114
+        },
+        {
+          "caller": "create",
+          "callee": "JavaScript::put",
+          "lineNumber": 120
+        },
+        {
+          "caller": "create",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 121
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 122
+        },
+        {
+          "caller": "create",
+          "callee": "Carbon::today",
+          "lineNumber": 122
+        },
+        {
+          "caller": "create",
+          "callee": "Service::count",
+          "lineNumber": 123
+        },
+        {
+          "caller": "create",
+          "callee": "$this->generateInvoiceNumber",
+          "lineNumber": 125
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 127
+        },
+        {
+          "caller": "create",
+          "callee": "compact",
+          "lineNumber": 127
+        },
+        {
+          "caller": "store",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 132
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy()->associate",
+          "lineNumber": 167
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->createdBy",
+          "lineNumber": 167
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 167
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy()->associate",
+          "lineNumber": 168
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->updatedBy",
+          "lineNumber": 168
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 168
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice->save",
+          "lineNumber": 169
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->createdBy()->associate",
+          "lineNumber": 184
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->createdBy",
+          "lineNumber": 184
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 184
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->updatedBy()->associate",
+          "lineNumber": 185
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->updatedBy",
+          "lineNumber": 185
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 185
+        },
+        {
+          "caller": "store",
+          "callee": "$subscription->save",
+          "lineNumber": 186
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice_details->createdBy()->associate",
+          "lineNumber": 196
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice_details->createdBy",
+          "lineNumber": 196
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 196
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice_details->updatedBy()->associate",
+          "lineNumber": 197
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice_details->updatedBy",
+          "lineNumber": 197
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 197
+        },
+        {
+          "caller": "store",
+          "callee": "$invoice_details->save",
+          "lineNumber": 198
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->createdBy()->associate",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->createdBy",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 210
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->updatedBy()->associate",
+          "lineNumber": 211
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->updatedBy",
+          "lineNumber": 211
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 211
+        },
+        {
+          "caller": "store",
+          "callee": "$payment_details->save",
+          "lineNumber": 212
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy()->associate",
+          "lineNumber": 224
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->createdBy",
+          "lineNumber": 224
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 224
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy()->associate",
+          "lineNumber": 225
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->updatedBy",
+          "lineNumber": 225
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 225
+        },
+        {
+          "caller": "store",
+          "callee": "$cheque_details->save",
+          "lineNumber": 226
+        },
+        {
+          "caller": "store",
+          "callee": "$request->has",
+          "lineNumber": 230
+        },
+        {
+          "caller": "store",
+          "callee": "Subscription::where('invoice_id', $invoice->id)->update",
+          "lineNumber": 231
+        },
+        {
+          "caller": "store",
+          "callee": "Subscription::where",
+          "lineNumber": 231
+        },
+        {
+          "caller": "store",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 234
+        },
+        {
+          "caller": "store",
+          "callee": "$oldSubscription->updatedBy()->associate",
+          "lineNumber": 236
+        },
+        {
+          "caller": "store",
+          "callee": "$oldSubscription->updatedBy",
+          "lineNumber": 236
+        },
+        {
+          "caller": "store",
+          "callee": "Auth::user",
+          "lineNumber": 236
+        },
+        {
+          "caller": "store",
+          "callee": "$oldSubscription->save",
+          "lineNumber": 237
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where('key', '=', 'invoice_last_number')->update",
+          "lineNumber": 242
+        },
+        {
+          "caller": "store",
+          "callee": "Setting::where",
+          "lineNumber": 242
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 243
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 244
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_with_cheque')->first",
+          "lineNumber": 249
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 249
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 251
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 254
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'subscription_renewal_with_paid_invoice')->first",
+          "lineNumber": 256
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 256
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 258
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 261
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_with_cheque')->first",
+          "lineNumber": 265
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 265
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 267
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 270
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'subscription_renewal_with_partial_invoice')->first",
+          "lineNumber": 272
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 272
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 274
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 277
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'payment_with_cheque')->first",
+          "lineNumber": 281
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 281
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 283
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 286
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where('alias', '=', 'subscription_renewal_with_unpaid_invoice')->first",
+          "lineNumber": 288
+        },
+        {
+          "caller": "store",
+          "callee": "SmsTrigger::where",
+          "lineNumber": 288
+        },
+        {
+          "caller": "store",
+          "callee": "sprintf",
+          "lineNumber": 290
+        },
+        {
+          "caller": "store",
+          "callee": "\\Utilities::Sms",
+          "lineNumber": 293
+        },
+        {
+          "caller": "store",
+          "callee": "DB::commit",
+          "lineNumber": 297
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->success",
+          "lineNumber": 298
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 298
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 300
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 300
+        },
+        {
+          "caller": "store",
+          "callee": "DB::rollback",
+          "lineNumber": 302
+        },
+        {
+          "caller": "store",
+          "callee": "flash()->error",
+          "lineNumber": 303
+        },
+        {
+          "caller": "store",
+          "callee": "flash",
+          "lineNumber": 303
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 305
+        },
+        {
+          "caller": "store",
+          "callee": "action",
+          "lineNumber": 305
+        },
+        {
+          "caller": "edit",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 313
+        },
+        {
+          "caller": "edit",
+          "callee": "Carbon::today()->diffInDays",
+          "lineNumber": 316
+        },
+        {
+          "caller": "edit",
+          "callee": "Carbon::today",
+          "lineNumber": 316
+        },
+        {
+          "caller": "edit",
+          "callee": "$subscription->end_date->addDays",
+          "lineNumber": 318
+        },
+        {
+          "caller": "edit",
+          "callee": "JavaScript::put",
+          "lineNumber": 320
+        },
+        {
+          "caller": "edit",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 321
+        },
+        {
+          "caller": "edit",
+          "callee": "Carbon::today",
+          "lineNumber": 321
+        },
+        {
+          "caller": "edit",
+          "callee": "$subscription->end_date->format",
+          "lineNumber": 322
+        },
+        {
+          "caller": "edit",
+          "callee": "$gymieDiff->format",
+          "lineNumber": 323
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 326
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 326
+        },
+        {
+          "caller": "update",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 331
+        },
+        {
+          "caller": "update",
+          "callee": "$subscription->update",
+          "lineNumber": 333
+        },
+        {
+          "caller": "update",
+          "callee": "$request->all",
+          "lineNumber": 333
+        },
+        {
+          "caller": "update",
+          "callee": "$subscription->updatedBy()->associate",
+          "lineNumber": 334
+        },
+        {
+          "caller": "update",
+          "callee": "$subscription->updatedBy",
+          "lineNumber": 334
+        },
+        {
+          "caller": "update",
+          "callee": "Auth::user",
+          "lineNumber": 334
+        },
+        {
+          "caller": "update",
+          "callee": "$subscription->save",
+          "lineNumber": 335
+        },
+        {
+          "caller": "update",
+          "callee": "flash()->success",
+          "lineNumber": 336
+        },
+        {
+          "caller": "update",
+          "callee": "flash",
+          "lineNumber": 336
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 338
+        },
+        {
+          "caller": "renew",
+          "callee": "$this->generateInvoiceNumber",
+          "lineNumber": 345
+        },
+        {
+          "caller": "renew",
+          "callee": "Subscription::where('invoice_id', $id)->get",
+          "lineNumber": 347
+        },
+        {
+          "caller": "renew",
+          "callee": "Subscription::where",
+          "lineNumber": 347
+        },
+        {
+          "caller": "renew",
+          "callee": "$subscriptions->pluck('member_id')->first",
+          "lineNumber": 348
+        },
+        {
+          "caller": "renew",
+          "callee": "$subscriptions->pluck",
+          "lineNumber": 348
+        },
+        {
+          "caller": "renew",
+          "callee": "JavaScript::put",
+          "lineNumber": 351
+        },
+        {
+          "caller": "renew",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 352
+        },
+        {
+          "caller": "renew",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 353
+        },
+        {
+          "caller": "renew",
+          "callee": "Carbon::today",
+          "lineNumber": 353
+        },
+        {
+          "caller": "renew",
+          "callee": "Service::count",
+          "lineNumber": 354
+        },
+        {
+          "caller": "renew",
+          "callee": "$subscriptions->count",
+          "lineNumber": 355
+        },
+        {
+          "caller": "renew",
+          "callee": "view",
+          "lineNumber": 358
+        },
+        {
+          "caller": "renew",
+          "callee": "compact",
+          "lineNumber": 358
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 363
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 365
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "$subscription->update",
+          "lineNumber": 367
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "$subscription->member->update",
+          "lineNumber": 369
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "DB::commit",
+          "lineNumber": 371
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "flash()->success",
+          "lineNumber": 372
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "flash",
+          "lineNumber": 372
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "redirect",
+          "lineNumber": 374
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "DB::rollback",
+          "lineNumber": 376
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "flash()->error",
+          "lineNumber": 377
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "flash",
+          "lineNumber": 377
+        },
+        {
+          "caller": "cancelSubscription",
+          "callee": "redirect",
+          "lineNumber": 379
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 385
+        },
+        {
+          "caller": "delete",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 388
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where('id', $subscription->invoice_id)->first",
+          "lineNumber": 389
+        },
+        {
+          "caller": "delete",
+          "callee": "Invoice::where",
+          "lineNumber": 389
+        },
+        {
+          "caller": "delete",
+          "callee": "InvoiceDetail::where('invoice_id', $invoice->id)->get",
+          "lineNumber": 390
+        },
+        {
+          "caller": "delete",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 390
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where('invoice_id', $invoice->id)->get",
+          "lineNumber": 391
+        },
+        {
+          "caller": "delete",
+          "callee": "PaymentDetail::where",
+          "lineNumber": 391
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice_detail->delete",
+          "lineNumber": 394
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where('payment_id', $payment_detail->id)->delete",
+          "lineNumber": 398
+        },
+        {
+          "caller": "delete",
+          "callee": "ChequeDetail::where",
+          "lineNumber": 398
+        },
+        {
+          "caller": "delete",
+          "callee": "$payment_detail->delete",
+          "lineNumber": 399
+        },
+        {
+          "caller": "delete",
+          "callee": "$subscription->delete",
+          "lineNumber": 402
+        },
+        {
+          "caller": "delete",
+          "callee": "$invoice->delete",
+          "lineNumber": 403
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::commit",
+          "lineNumber": 405
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 407
+        },
+        {
+          "caller": "delete",
+          "callee": "DB::rollback",
+          "lineNumber": 409
+        },
+        {
+          "caller": "delete",
+          "callee": "back",
+          "lineNumber": 411
+        },
+        {
+          "caller": "change",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 417
+        },
+        {
+          "caller": "change",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')\r\n            ->whereRaw(\"trn_payment_details.invoice_id = $subscription->invoice_id AND (trn_cheque_details.`status` = 2 or trn_cheque_details.`status` IS NULL)\")->sum",
+          "lineNumber": 419
+        },
+        {
+          "caller": "change",
+          "callee": "PaymentDetail::leftJoin('trn_cheque_details', 'trn_payment_details.id', '=', 'trn_cheque_details.payment_id')->whereRaw",
+          "lineNumber": 419
+        },
+        {
+          "caller": "change",
+          "callee": "PaymentDetail::leftJoin",
+          "lineNumber": 419
+        },
+        {
+          "caller": "change",
+          "callee": "JavaScript::put",
+          "lineNumber": 423
+        },
+        {
+          "caller": "change",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 424
+        },
+        {
+          "caller": "change",
+          "callee": "Carbon::today()->format",
+          "lineNumber": 425
+        },
+        {
+          "caller": "change",
+          "callee": "Carbon::today",
+          "lineNumber": 425
+        },
+        {
+          "caller": "change",
+          "callee": "Service::count",
+          "lineNumber": 426
+        },
+        {
+          "caller": "change",
+          "callee": "view",
+          "lineNumber": 429
+        },
+        {
+          "caller": "change",
+          "callee": "compact",
+          "lineNumber": 429
+        },
+        {
+          "caller": "modify",
+          "callee": "Subscription::findOrFail",
+          "lineNumber": 434
+        },
+        {
+          "caller": "modify",
+          "callee": "DB::beginTransaction",
+          "lineNumber": 437
+        },
+        {
+          "caller": "modify",
+          "callee": "Invoice::where('id', $subscription->invoice_id)->update",
+          "lineNumber": 456
+        },
+        {
+          "caller": "modify",
+          "callee": "Invoice::where",
+          "lineNumber": 456
+        },
+        {
+          "caller": "modify",
+          "callee": "$subscription->update",
+          "lineNumber": 470
+        },
+        {
+          "caller": "modify",
+          "callee": "InvoiceDetail::where('invoice_id', $subscription->invoice_id)->update",
+          "lineNumber": 480
+        },
+        {
+          "caller": "modify",
+          "callee": "InvoiceDetail::where",
+          "lineNumber": 480
+        },
+        {
+          "caller": "modify",
+          "callee": "$payment_details->createdBy()->associate",
+          "lineNumber": 495
+        },
+        {
+          "caller": "modify",
+          "callee": "$payment_details->createdBy",
+          "lineNumber": 495
+        },
+        {
+          "caller": "modify",
+          "callee": "Auth::user",
+          "lineNumber": 495
+        },
+        {
+          "caller": "modify",
+          "callee": "$payment_details->updatedBy()->associate",
+          "lineNumber": 496
+        },
+        {
+          "caller": "modify",
+          "callee": "$payment_details->updatedBy",
+          "lineNumber": 496
+        },
+        {
+          "caller": "modify",
+          "callee": "Auth::user",
+          "lineNumber": 496
+        },
+        {
+          "caller": "modify",
+          "callee": "$payment_details->save",
+          "lineNumber": 497
+        },
+        {
+          "caller": "modify",
+          "callee": "$cheque_details->createdBy()->associate",
+          "lineNumber": 509
+        },
+        {
+          "caller": "modify",
+          "callee": "$cheque_details->createdBy",
+          "lineNumber": 509
+        },
+        {
+          "caller": "modify",
+          "callee": "Auth::user",
+          "lineNumber": 509
+        },
+        {
+          "caller": "modify",
+          "callee": "$cheque_details->updatedBy()->associate",
+          "lineNumber": 510
+        },
+        {
+          "caller": "modify",
+          "callee": "$cheque_details->updatedBy",
+          "lineNumber": 510
+        },
+        {
+          "caller": "modify",
+          "callee": "Auth::user",
+          "lineNumber": 510
+        },
+        {
+          "caller": "modify",
+          "callee": "$cheque_details->save",
+          "lineNumber": 511
+        },
+        {
+          "caller": "modify",
+          "callee": "DB::commit",
+          "lineNumber": 514
+        },
+        {
+          "caller": "modify",
+          "callee": "flash()->success",
+          "lineNumber": 515
+        },
+        {
+          "caller": "modify",
+          "callee": "flash",
+          "lineNumber": 515
+        },
+        {
+          "caller": "modify",
+          "callee": "redirect",
+          "lineNumber": 517
+        },
+        {
+          "caller": "modify",
+          "callee": "action",
+          "lineNumber": 517
+        },
+        {
+          "caller": "modify",
+          "callee": "DB::rollback",
+          "lineNumber": 519
+        },
+        {
+          "caller": "modify",
+          "callee": "flash()->error",
+          "lineNumber": 520
+        },
+        {
+          "caller": "modify",
+          "callee": "flash",
+          "lineNumber": 520
+        },
+        {
+          "caller": "modify",
+          "callee": "back",
+          "lineNumber": 522
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 532
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 536
+        },
+        {
+          "caller": "generateInvoiceNumber",
+          "callee": "\\Utilities::getSetting",
+          "lineNumber": 537
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Invoice.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 44,
+          "endLine": 77,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "member",
+          "startLine": 78,
+          "endLine": 81,
+          "params": []
+        },
+        {
+          "name": "paymentDetails",
+          "startLine": 83,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "invoiceDetails",
+          "startLine": 88,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "subscription",
+          "startLine": 93,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "purchase",
+          "startLine": 98,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Invoice",
+          "startLine": 8,
+          "endLine": 102,
+          "methods": [
+            "scopeIndexQuery",
+            "member",
+            "paymentDetails",
+            "invoiceDetails",
+            "subscription",
+            "purchase"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Invoice",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('mst_members', 'trn_invoice.member_id', '=', 'mst_members.id')->select",
+          "lineNumber": 49
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 49
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 58
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 59
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('trn_invoice.invoice_number', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 60
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('trn_invoice.invoice_number', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 60
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 60
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 73
+        },
+        {
+          "caller": "member",
+          "callee": "$this->belongsTo",
+          "lineNumber": 80
+        },
+        {
+          "caller": "paymentDetails",
+          "callee": "$this->hasMany",
+          "lineNumber": 85
+        },
+        {
+          "caller": "invoiceDetails",
+          "callee": "$this->hasMany",
+          "lineNumber": 90
+        },
+        {
+          "caller": "subscription",
+          "callee": "$this->hasOne",
+          "lineNumber": 95
+        },
+        {
+          "caller": "purchase",
+          "callee": "$this->hasOne",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/InvoiceDetail.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "invoice",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "plan",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "InvoiceDetail",
+          "startLine": 7,
+          "endLine": 32,
+          "methods": [
+            "invoice",
+            "plan"
+          ],
+          "properties": [
+            "table",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InvoiceDetail",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "invoice",
+          "callee": "$this->belongsTo",
+          "lineNumber": 25
+        },
+        {
+          "caller": "plan",
+          "callee": "$this->belongsTo",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/PaymentDetail.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 32,
+          "endLine": 70,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "invoice",
+          "startLine": 71,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "cheque",
+          "startLine": 76,
+          "endLine": 79,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PaymentDetail",
+          "startLine": 8,
+          "endLine": 80,
+          "methods": [
+            "scopeIndexQuery",
+            "invoice",
+            "cheque"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PaymentDetail",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('trn_invoice', 'trn_payment_details.invoice_id', '=', 'trn_invoice.id')\r\n            ->leftJoin('mst_members', 'trn_invoice.member_id', '=', 'mst_members.id')->select",
+          "lineNumber": 38
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('trn_invoice', 'trn_payment_details.invoice_id', '=', 'trn_invoice.id')->leftJoin",
+          "lineNumber": 38
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 38
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 53
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 54
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('trn_invoice.invoice_number', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 55
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 55
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 55
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 63
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 67
+        },
+        {
+          "caller": "invoice",
+          "callee": "$this->belongsTo",
+          "lineNumber": 73
+        },
+        {
+          "caller": "cheque",
+          "callee": "$this->hasOne",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Service.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "plans",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Service",
+          "startLine": 8,
+          "endLine": 32,
+          "methods": [
+            "plans"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Service",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "plans",
+          "callee": "$this->hasMany",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Setting.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "scopeValue",
+          "startLine": 19,
+          "endLine": 22,
+          "params": [
+            "$query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Setting",
+          "startLine": 7,
+          "endLine": 23,
+          "methods": [
+            "scopeValue"
+          ],
+          "properties": [
+            "table",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Setting",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeValue",
+          "callee": "$query->where('value', '=', 'xyz')->pluck",
+          "lineNumber": 21
+        },
+        {
+          "caller": "scopeValue",
+          "callee": "$query->where",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeds/SettingsTableSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 13,
+          "endLine": 118,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SettingsTableSeeder",
+          "startLine": 6,
+          "endLine": 119,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsTableSeeder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "Setting::create",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

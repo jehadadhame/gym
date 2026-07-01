@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/plugins/wysiwygarea/fullpage.html",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/plugins/wysiwygarea/fullpage.html",
+      "summary": "public/assets/plugins/ckeditor/samples/plugins/wysiwygarea/fullpage.html",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/sample_posteddata.php",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/sample_posteddata.php",
+      "summary": "public/assets/plugins/ckeditor/samples/sample_posteddata.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/samples/sample.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/samples/sample.js",
+      "summary": "public/assets/plugins/ckeditor/samples/sample.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/styles.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/styles.js",
+      "summary": "public/assets/plugins/ckeditor/styles.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datatables/dataTables.bootstrap.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/datatables/dataTables.bootstrap.css",
+      "summary": "public/assets/plugins/datatables/dataTables.bootstrap.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datatables/dataTables.bootstrap.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/datatables/dataTables.bootstrap.js",
+      "summary": "public/assets/plugins/datatables/dataTables.bootstrap.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datatables/jquery.dataTables.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/datatables/jquery.dataTables.js",
+      "summary": "public/assets/plugins/datatables/jquery.dataTables.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datepicker/js/bootstrap-datepicker.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/datepicker/js/bootstrap-datepicker.js",
+      "summary": "public/assets/plugins/datepicker/js/bootstrap-datepicker.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/dropzone/dropzone-amd-module.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/dropzone/dropzone-amd-module.js",
+      "summary": "public/assets/plugins/dropzone/dropzone-amd-module.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/dropzone/dropzone.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/dropzone/dropzone.css",
+      "summary": "public/assets/plugins/dropzone/dropzone.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/dropzone/dropzone.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/dropzone/dropzone.js",
+      "summary": "public/assets/plugins/dropzone/dropzone.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/dropzone/images/spritemap@2x.psd",
+      "type": "file",
+      "filePath": "public/assets/plugins/dropzone/images/spritemap@2x.psd",
+      "summary": "public/assets/plugins/dropzone/images/spritemap@2x.psd",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/excanvas.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/excanvas.js",
+      "summary": "public/assets/plugins/flot/excanvas.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.colorhelpers.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.colorhelpers.js",
+      "summary": "public/assets/plugins/flot/jquery.colorhelpers.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.canvas.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.canvas.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.canvas.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.categories.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.categories.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.categories.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.crosshair.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.crosshair.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.crosshair.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.errorbars.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.errorbars.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.errorbars.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.fillbetween.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.fillbetween.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.fillbetween.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.grow.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.grow.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.grow.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.image.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.image.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.image.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.navigate.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.navigate.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.navigate.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.pie.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.pie.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.pie.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/flot/jquery.flot.resize.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/flot/jquery.flot.resize.js",
+      "summary": "public/assets/plugins/flot/jquery.flot.resize.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js",
+      "summary": "public/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

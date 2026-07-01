@@ -1,0 +1,63 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 146,
+      "nonEmptyLines": 132,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 106,
+      "nonEmptyLines": 95,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinHTML5.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 124,
+      "nonEmptyLines": 112,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinModern.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 116,
+      "nonEmptyLines": 103,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinNice.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 102,
+      "nonEmptyLines": 92,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/ion.rangeSlider.skinSimple.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 102,
+      "nonEmptyLines": 92,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ion-rangeSlider/css/normalize.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 427,
+      "nonEmptyLines": 342,
+      "metrics": {}
+    }
+  ]
+}

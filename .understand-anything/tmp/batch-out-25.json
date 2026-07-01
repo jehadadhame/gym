@@ -1,0 +1,756 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Lubus/ImageFilters/Image64x64.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "applyFilter",
+          "startLine": 10,
+          "endLine": 13,
+          "params": [
+            "$image"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Image64x64",
+          "startLine": 8,
+          "endLine": 14,
+          "methods": [
+            "applyFilter"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Image64x64",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applyFilter",
+          "callee": "$image->fit(64, 64)->encode",
+          "lineNumber": 12
+        },
+        {
+          "caller": "applyFilter",
+          "callee": "$image->fit",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Lubus/ImageFilters/Image70x70.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "applyFilter",
+          "startLine": 10,
+          "endLine": 13,
+          "params": [
+            "$image"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Image70x70",
+          "startLine": 8,
+          "endLine": 14,
+          "methods": [
+            "applyFilter"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Image70x70",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applyFilter",
+          "callee": "$image->fit(70, 70)->encode",
+          "lineNumber": 12
+        },
+        {
+          "caller": "applyFilter",
+          "callee": "$image->fit",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Lubus/ImageFilters/Invoice.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "applyFilter",
+          "startLine": 10,
+          "endLine": 15,
+          "params": [
+            "$image"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Invoice",
+          "startLine": 8,
+          "endLine": 16,
+          "methods": [
+            "applyFilter"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Invoice",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applyFilter",
+          "callee": "$image->resize(150, null, function ($constraint) {\r\n            $constraint->aspectRatio();\r\n        })->encode",
+          "lineNumber": 12
+        },
+        {
+          "caller": "applyFilter",
+          "callee": "$image->resize",
+          "lineNumber": 12
+        },
+        {
+          "caller": "applyFilter",
+          "callee": "$constraint->aspectRatio",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Luser.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "classes": [
+        {
+          "name": "Luser",
+          "startLine": 7,
+          "endLine": 18,
+          "methods": [],
+          "properties": [
+            "table",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Luser",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "boot",
+          "startLine": 14,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "register",
+          "startLine": 24,
+          "endLine": 27,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppServiceProvider",
+          "startLine": 7,
+          "endLine": 28,
+          "methods": [
+            "boot",
+            "register"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AppServiceProvider",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Providers/EventServiceProvider.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "boot",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "$events"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EventServiceProvider",
+          "startLine": 8,
+          "endLine": 33,
+          "methods": [
+            "boot"
+          ],
+          "properties": [
+            "listen"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventServiceProvider",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "boot",
+          "callee": "parent::boot",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Providers/RouteServiceProvider.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "boot",
+          "startLine": 25,
+          "endLine": 30,
+          "params": [
+            "$router"
+          ]
+        },
+        {
+          "name": "map",
+          "startLine": 38,
+          "endLine": 43,
+          "params": [
+            "$router"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RouteServiceProvider",
+          "startLine": 8,
+          "endLine": 44,
+          "methods": [
+            "boot",
+            "map"
+          ],
+          "properties": [
+            "namespace"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RouteServiceProvider",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "boot",
+          "callee": "parent::boot",
+          "lineNumber": 29
+        },
+        {
+          "caller": "map",
+          "callee": "$router->group",
+          "lineNumber": 40
+        },
+        {
+          "caller": "map",
+          "callee": "app_path",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Purchase.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "scopeIndexQuery",
+          "startLine": 31,
+          "endLine": 69,
+          "params": [
+            "$query",
+            "$sorting_field",
+            "$sorting_direction",
+            "$product_ids",
+            "$drp_start",
+            "$drp_end",
+            "$search"
+          ]
+        },
+        {
+          "name": "member",
+          "startLine": 71,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "product",
+          "startLine": 76,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "invoice",
+          "startLine": 81,
+          "endLine": 84,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Purchase",
+          "startLine": 8,
+          "endLine": 86,
+          "methods": [
+            "scopeIndexQuery",
+            "member",
+            "product",
+            "invoice"
+          ],
+          "properties": [
+            "table",
+            "fillable",
+            "dates",
+            "searchableColumns"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Purchase",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('products', 'purchases.product_id', '=', 'products.id')\r\n            ->leftJoin('mst_members', 'purchases.member_id', '=', 'mst_members.id')\r\n            ->leftJoin('trn_invoice', 'purchases.invoice_id', '=', 'trn_invoice.id')->select",
+          "lineNumber": 36
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('products', 'purchases.product_id', '=', 'products.id')\r\n            ->leftJoin('mst_members', 'purchases.member_id', '=', 'mst_members.id')->leftJoin",
+          "lineNumber": 36
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin('products', 'purchases.product_id', '=', 'products.id')->leftJoin",
+          "lineNumber": 36
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->leftJoin",
+          "lineNumber": 36
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 47
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "is_array",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereIn",
+          "lineNumber": 49
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 51
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "empty",
+          "lineNumber": 55
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->where",
+          "lineNumber": 56
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('products.product_name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 57
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")\r\n                    ->orWhere('mst_members.member_code', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 57
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where('mst_members.name', 'LIKE', \"%{$search}%\")->orWhere",
+          "lineNumber": 57
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$q->where",
+          "lineNumber": 57
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->whereBetween",
+          "lineNumber": 65
+        },
+        {
+          "caller": "scopeIndexQuery",
+          "callee": "$query->orderBy",
+          "lineNumber": 68
+        },
+        {
+          "caller": "member",
+          "callee": "$this->belongsTo",
+          "lineNumber": 73
+        },
+        {
+          "caller": "product",
+          "callee": "$this->belongsTo",
+          "lineNumber": 78
+        },
+        {
+          "caller": "invoice",
+          "callee": "$this->belongsTo",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/todo.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "app/updatedByUser.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "callGraph": [
+        {
+          "caller": "updatedBy",
+          "callee": "$this->belongsTo",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "artisan",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 42,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 47,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/autoload.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 222,
+      "nonEmptyLines": 194,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/auth.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 57,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/broadcasting.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/cache.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 64,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/compile.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 106,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/debugbar.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 151,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/entrust.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 68,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/filesystems.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 71,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/image.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/imagecache.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 69,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/javascript.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

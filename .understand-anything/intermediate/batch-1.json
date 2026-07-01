@@ -1,0 +1,1834 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/ChequeDetail.php",
+      "type": "file",
+      "filePath": "app/ChequeDetail.php",
+      "summary": "app/ChequeDetail.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/ChequeDetail.php:createdBy",
+      "type": "function",
+      "filePath": "app/ChequeDetail.php",
+      "symbolName": "createdBy"
+    },
+    {
+      "id": "function:app/ChequeDetail.php:payment",
+      "type": "function",
+      "filePath": "app/ChequeDetail.php",
+      "symbolName": "payment"
+    },
+    {
+      "id": "class:app/ChequeDetail.php:ChequeDetail",
+      "type": "class",
+      "filePath": "app/ChequeDetail.php",
+      "symbolName": "ChequeDetail"
+    },
+    {
+      "id": "file:app/Http/Controllers/DataMigrationController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/DataMigrationController.php",
+      "summary": "app/Http/Controllers/DataMigrationController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/DataMigrationController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DataMigrationController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/DataMigrationController.php:migrate",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DataMigrationController.php",
+      "symbolName": "migrate"
+    },
+    {
+      "id": "function:app/Http/Controllers/DataMigrationController.php:migrateMedia",
+      "type": "function",
+      "filePath": "app/Http/Controllers/DataMigrationController.php",
+      "symbolName": "migrateMedia"
+    },
+    {
+      "id": "class:app/Http/Controllers/DataMigrationController.php:DataMigrationController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/DataMigrationController.php",
+      "symbolName": "DataMigrationController"
+    },
+    {
+      "id": "file:app/Http/Controllers/InvoicesController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "summary": "app/Http/Controllers/InvoicesController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:unpaid",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "unpaid"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:paid",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "paid"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:partial",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "partial"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:overpaid",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "overpaid"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:createPayment",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "createPayment"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:discount",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "discount"
+    },
+    {
+      "id": "function:app/Http/Controllers/InvoicesController.php:applyDiscount",
+      "type": "function",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "applyDiscount"
+    },
+    {
+      "id": "class:app/Http/Controllers/InvoicesController.php:InvoicesController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/InvoicesController.php",
+      "symbolName": "InvoicesController"
+    },
+    {
+      "id": "file:app/Http/Controllers/MembersController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "summary": "app/Http/Controllers/MembersController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:active",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "active"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:inactive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "inactive"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:showbyPhoneNumber",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "showbyPhoneNumber"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:archive",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "archive"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:transfer",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "transfer"
+    },
+    {
+      "id": "function:app/Http/Controllers/MembersController.php:drpPlaceholder",
+      "type": "function",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "drpPlaceholder"
+    },
+    {
+      "id": "class:app/Http/Controllers/MembersController.php:MembersController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/MembersController.php",
+      "symbolName": "MembersController"
+    },
+    {
+      "id": "file:app/Http/Controllers/PaymentsController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "summary": "app/Http/Controllers/PaymentsController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:depositCheque",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "depositCheque"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:clearCheque",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "clearCheque"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:chequeBounce",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "chequeBounce"
+    },
+    {
+      "id": "function:app/Http/Controllers/PaymentsController.php:chequeReissue",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "chequeReissue"
+    },
+    {
+      "id": "class:app/Http/Controllers/PaymentsController.php:PaymentsController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/PaymentsController.php",
+      "symbolName": "PaymentsController"
+    },
+    {
+      "id": "file:app/Http/Controllers/PurchaseController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "summary": "app/Http/Controllers/PurchaseController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:belt",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "belt"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:change",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "change"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "function:app/Http/Controllers/PurchaseController.php:generateInvoiceNumber",
+      "type": "function",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "generateInvoiceNumber"
+    },
+    {
+      "id": "class:app/Http/Controllers/PurchaseController.php:PurchaseController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/PurchaseController.php",
+      "symbolName": "PurchaseController"
+    },
+    {
+      "id": "file:app/Http/Controllers/ServicesController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "summary": "app/Http/Controllers/ServicesController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/ServicesController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "class:app/Http/Controllers/ServicesController.php:ServicesController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/ServicesController.php",
+      "symbolName": "ServicesController"
+    },
+    {
+      "id": "file:app/Http/Controllers/SettingsController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "summary": "app/Http/Controllers/SettingsController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/SettingsController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/SettingsController.php:show",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "symbolName": "show"
+    },
+    {
+      "id": "function:app/Http/Controllers/SettingsController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/SettingsController.php:save",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "symbolName": "save"
+    },
+    {
+      "id": "class:app/Http/Controllers/SettingsController.php:SettingsController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/SettingsController.php",
+      "symbolName": "SettingsController"
+    },
+    {
+      "id": "file:app/Http/Controllers/SubscriptionsController.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "summary": "app/Http/Controllers/SubscriptionsController.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:__construct",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "__construct"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:index",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "index"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:expiring",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "expiring"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:expired",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "expired"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:expired_gallary",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "expired_gallary"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:create",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "create"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:store",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "store"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:edit",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "edit"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:update",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "update"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:renew",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "renew"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:cancelSubscription",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "cancelSubscription"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:delete",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "delete"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:change",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "change"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:modify",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "modify"
+    },
+    {
+      "id": "function:app/Http/Controllers/SubscriptionsController.php:generateInvoiceNumber",
+      "type": "function",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "generateInvoiceNumber"
+    },
+    {
+      "id": "class:app/Http/Controllers/SubscriptionsController.php:SubscriptionsController",
+      "type": "class",
+      "filePath": "app/Http/Controllers/SubscriptionsController.php",
+      "symbolName": "SubscriptionsController"
+    },
+    {
+      "id": "file:app/Invoice.php",
+      "type": "file",
+      "filePath": "app/Invoice.php",
+      "summary": "app/Invoice.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Invoice.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "function:app/Invoice.php:member",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "member"
+    },
+    {
+      "id": "function:app/Invoice.php:paymentDetails",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "paymentDetails"
+    },
+    {
+      "id": "function:app/Invoice.php:invoiceDetails",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "invoiceDetails"
+    },
+    {
+      "id": "function:app/Invoice.php:subscription",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "subscription"
+    },
+    {
+      "id": "function:app/Invoice.php:purchase",
+      "type": "function",
+      "filePath": "app/Invoice.php",
+      "symbolName": "purchase"
+    },
+    {
+      "id": "class:app/Invoice.php:Invoice",
+      "type": "class",
+      "filePath": "app/Invoice.php",
+      "symbolName": "Invoice"
+    },
+    {
+      "id": "file:app/InvoiceDetail.php",
+      "type": "file",
+      "filePath": "app/InvoiceDetail.php",
+      "summary": "app/InvoiceDetail.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/InvoiceDetail.php:invoice",
+      "type": "function",
+      "filePath": "app/InvoiceDetail.php",
+      "symbolName": "invoice"
+    },
+    {
+      "id": "function:app/InvoiceDetail.php:plan",
+      "type": "function",
+      "filePath": "app/InvoiceDetail.php",
+      "symbolName": "plan"
+    },
+    {
+      "id": "class:app/InvoiceDetail.php:InvoiceDetail",
+      "type": "class",
+      "filePath": "app/InvoiceDetail.php",
+      "symbolName": "InvoiceDetail"
+    },
+    {
+      "id": "file:app/PaymentDetail.php",
+      "type": "file",
+      "filePath": "app/PaymentDetail.php",
+      "summary": "app/PaymentDetail.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/PaymentDetail.php:scopeIndexQuery",
+      "type": "function",
+      "filePath": "app/PaymentDetail.php",
+      "symbolName": "scopeIndexQuery"
+    },
+    {
+      "id": "function:app/PaymentDetail.php:invoice",
+      "type": "function",
+      "filePath": "app/PaymentDetail.php",
+      "symbolName": "invoice"
+    },
+    {
+      "id": "function:app/PaymentDetail.php:cheque",
+      "type": "function",
+      "filePath": "app/PaymentDetail.php",
+      "symbolName": "cheque"
+    },
+    {
+      "id": "class:app/PaymentDetail.php:PaymentDetail",
+      "type": "class",
+      "filePath": "app/PaymentDetail.php",
+      "symbolName": "PaymentDetail"
+    },
+    {
+      "id": "file:app/Service.php",
+      "type": "file",
+      "filePath": "app/Service.php",
+      "summary": "app/Service.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Service.php:plans",
+      "type": "function",
+      "filePath": "app/Service.php",
+      "symbolName": "plans"
+    },
+    {
+      "id": "class:app/Service.php:Service",
+      "type": "class",
+      "filePath": "app/Service.php",
+      "symbolName": "Service"
+    },
+    {
+      "id": "file:app/Setting.php",
+      "type": "file",
+      "filePath": "app/Setting.php",
+      "summary": "app/Setting.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Setting.php:scopeValue",
+      "type": "function",
+      "filePath": "app/Setting.php",
+      "symbolName": "scopeValue"
+    },
+    {
+      "id": "class:app/Setting.php:Setting",
+      "type": "class",
+      "filePath": "app/Setting.php",
+      "symbolName": "Setting"
+    },
+    {
+      "id": "file:database/seeds/SettingsTableSeeder.php",
+      "type": "file",
+      "filePath": "database/seeds/SettingsTableSeeder.php",
+      "summary": "database/seeds/SettingsTableSeeder.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:database/seeds/SettingsTableSeeder.php:run",
+      "type": "function",
+      "filePath": "database/seeds/SettingsTableSeeder.php",
+      "symbolName": "run"
+    },
+    {
+      "id": "class:database/seeds/SettingsTableSeeder.php:SettingsTableSeeder",
+      "type": "class",
+      "filePath": "database/seeds/SettingsTableSeeder.php",
+      "symbolName": "SettingsTableSeeder"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/ChequeDetail.php",
+      "target": "function:app/ChequeDetail.php:createdBy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/ChequeDetail.php",
+      "target": "function:app/ChequeDetail.php:payment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/ChequeDetail.php",
+      "target": "class:app/ChequeDetail.php:ChequeDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "function:app/Http/Controllers/DataMigrationController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "function:app/Http/Controllers/DataMigrationController.php:migrate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "function:app/Http/Controllers/DataMigrationController.php:migrateMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "class:app/Http/Controllers/DataMigrationController.php:DataMigrationController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "file:app/InvoiceDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/DataMigrationController.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:unpaid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:paid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:partial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:overpaid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:createPayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:discount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "function:app/Http/Controllers/InvoicesController.php:applyDiscount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "class:app/Http/Controllers/InvoicesController.php:InvoicesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/InvoiceDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/PaymentDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/Service.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/InvoicesController.php",
+      "target": "file:app/Subscription.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:active",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:inactive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:showbyPhoneNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:archive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:transfer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "function:app/Http/Controllers/MembersController.php:drpPlaceholder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "class:app/Http/Controllers/MembersController.php:MembersController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Enquiry.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/InvoiceDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Member.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/PaymentDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Service.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/MembersController.php",
+      "target": "file:app/Subscription.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:depositCheque",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:clearCheque",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:chequeBounce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "function:app/Http/Controllers/PaymentsController.php:chequeReissue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "class:app/Http/Controllers/PaymentsController.php:PaymentsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "file:app/PaymentDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PaymentsController.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:belt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:change",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "function:app/Http/Controllers/PurchaseController.php:generateInvoiceNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "class:app/Http/Controllers/PurchaseController.php:PurchaseController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/PaymentDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/Purchase.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/Service.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/PurchaseController.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "function:app/Http/Controllers/ServicesController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "class:app/Http/Controllers/ServicesController.php:ServicesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/ServicesController.php",
+      "target": "file:app/Service.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "function:app/Http/Controllers/SettingsController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "function:app/Http/Controllers/SettingsController.php:show",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "function:app/Http/Controllers/SettingsController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "function:app/Http/Controllers/SettingsController.php:save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "class:app/Http/Controllers/SettingsController.php:SettingsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SettingsController.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:__construct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:expiring",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:expired",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:expired_gallary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:edit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:renew",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:cancelSubscription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:change",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:modify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "function:app/Http/Controllers/SubscriptionsController.php:generateInvoiceNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "class:app/Http/Controllers/SubscriptionsController.php:SubscriptionsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/ChequeDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/Invoice.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/InvoiceDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/PaymentDetail.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/Service.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/SmsTrigger.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/SubscriptionsController.php",
+      "target": "file:app/Subscription.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:paymentDetails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:invoiceDetails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:subscription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "function:app/Invoice.php:purchase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Invoice.php",
+      "target": "class:app/Invoice.php:Invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/InvoiceDetail.php",
+      "target": "function:app/InvoiceDetail.php:invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/InvoiceDetail.php",
+      "target": "function:app/InvoiceDetail.php:plan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/InvoiceDetail.php",
+      "target": "class:app/InvoiceDetail.php:InvoiceDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/PaymentDetail.php",
+      "target": "function:app/PaymentDetail.php:scopeIndexQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/PaymentDetail.php",
+      "target": "function:app/PaymentDetail.php:invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/PaymentDetail.php",
+      "target": "function:app/PaymentDetail.php:cheque",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/PaymentDetail.php",
+      "target": "class:app/PaymentDetail.php:PaymentDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Service.php",
+      "target": "function:app/Service.php:plans",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Service.php",
+      "target": "class:app/Service.php:Service",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Setting.php",
+      "target": "function:app/Setting.php:scopeValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Setting.php",
+      "target": "class:app/Setting.php:Setting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/SettingsTableSeeder.php",
+      "target": "function:database/seeds/SettingsTableSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/SettingsTableSeeder.php",
+      "target": "class:database/seeds/SettingsTableSeeder.php:SettingsTableSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:database/seeds/SettingsTableSeeder.php",
+      "target": "file:app/Setting.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

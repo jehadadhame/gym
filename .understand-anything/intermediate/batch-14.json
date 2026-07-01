@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/datepicker/css/bootstrap-datepicker.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/datepicker/css/bootstrap-datepicker.css",
+      "summary": "public/assets/plugins/datepicker/css/bootstrap-datepicker.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datepicker/css/bootstrap-datepicker.standalone.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/datepicker/css/bootstrap-datepicker.standalone.css",
+      "summary": "public/assets/plugins/datepicker/css/bootstrap-datepicker.standalone.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datepicker/css/bootstrap-datepicker3.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.css",
+      "summary": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/datepicker/css/bootstrap-datepicker3.standalone.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.standalone.css",
+      "summary": "public/assets/plugins/datepicker/css/bootstrap-datepicker3.standalone.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

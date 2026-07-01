@@ -1,0 +1,6 @@
+todo : 
+make the date formate : dd/mm/yyyy
+make the search work in Subscription
+make the invoice detail accept to add it to purchases (invoicable)
+Add freez subscription feature
+make the purchase allow u to by several product togher

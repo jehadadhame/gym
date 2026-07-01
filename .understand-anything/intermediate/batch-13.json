@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/dialog.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/dialog.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/dialog.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/dialog_ie.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/dialog_ie.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/dialog_ie.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/dialog_ie7.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/dialog_ie7.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/dialog_ie7.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/dialog_ie8.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/dialog_ie8.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/dialog_ie8.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/dialog_iequirks.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/dialog_iequirks.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/dialog_iequirks.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor_gecko.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor_gecko.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor_gecko.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor_ie.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor_ie.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor_ie.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor_ie7.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor_ie7.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor_ie7.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor_ie8.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor_ie8.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor_ie8.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/editor_iequirks.css",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/editor_iequirks.css",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/editor_iequirks.css",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/ckeditor/skins/moono/readme.md",
+      "type": "file",
+      "filePath": "public/assets/plugins/ckeditor/skins/moono/readme.md",
+      "summary": "public/assets/plugins/ckeditor/skins/moono/readme.md",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

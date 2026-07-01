@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/assets/plugins/input-mask/phone-codes/phone-be.json",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/phone-codes/phone-be.json",
+      "summary": "public/assets/plugins/input-mask/phone-codes/phone-be.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/phone-codes/phone-codes.json",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/phone-codes/phone-codes.json",
+      "summary": "public/assets/plugins/input-mask/phone-codes/phone-codes.json",
+      "tags": [
+        "config"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "file:public/assets/plugins/input-mask/phone-codes/readme.txt",
+      "type": "file",
+      "filePath": "public/assets/plugins/input-mask/phone-codes/readme.txt",
+      "summary": "public/assets/plugins/input-mask/phone-codes/readme.txt",
+      "tags": [
+        "docs"
+      ],
+      "complexity": "small"
+    }
+  ],
+  "edges": []
+}

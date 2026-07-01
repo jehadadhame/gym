@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Auth/LoginRequest.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/Auth/LoginRequest.php",
+      "summary": "app/Http/Controllers/Auth/LoginRequest.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/LoginRequest.php:rules",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/LoginRequest.php",
+      "symbolName": "rules"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/LoginRequest.php:authorize",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/LoginRequest.php",
+      "symbolName": "authorize"
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/LoginRequest.php:LoginRequest",
+      "type": "class",
+      "filePath": "app/Http/Controllers/Auth/LoginRequest.php",
+      "symbolName": "LoginRequest"
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/RegisterRequest.php",
+      "type": "file",
+      "filePath": "app/Http/Controllers/Auth/RegisterRequest.php",
+      "summary": "app/Http/Controllers/Auth/RegisterRequest.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/RegisterRequest.php:rules",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/RegisterRequest.php",
+      "symbolName": "rules"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/RegisterRequest.php:authorize",
+      "type": "function",
+      "filePath": "app/Http/Controllers/Auth/RegisterRequest.php",
+      "symbolName": "authorize"
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/RegisterRequest.php:RegisterRequest",
+      "type": "class",
+      "filePath": "app/Http/Controllers/Auth/RegisterRequest.php",
+      "symbolName": "RegisterRequest"
+    },
+    {
+      "id": "file:app/Http/Requests/Request.php",
+      "type": "file",
+      "filePath": "app/Http/Requests/Request.php",
+      "summary": "app/Http/Requests/Request.php",
+      "tags": [
+        "code"
+      ],
+      "complexity": "small"
+    },
+    {
+      "id": "class:app/Http/Requests/Request.php:Request",
+      "type": "class",
+      "filePath": "app/Http/Requests/Request.php",
+      "symbolName": "Request"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/Auth/LoginRequest.php",
+      "target": "function:app/Http/Controllers/Auth/LoginRequest.php:rules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/LoginRequest.php",
+      "target": "function:app/Http/Controllers/Auth/LoginRequest.php:authorize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/LoginRequest.php",
+      "target": "class:app/Http/Controllers/Auth/LoginRequest.php:LoginRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/LoginRequest.php",
+      "target": "file:app/Http/Requests/Request.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisterRequest.php",
+      "target": "function:app/Http/Controllers/Auth/RegisterRequest.php:rules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisterRequest.php",
+      "target": "function:app/Http/Controllers/Auth/RegisterRequest.php:authorize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisterRequest.php",
+      "target": "class:app/Http/Controllers/Auth/RegisterRequest.php:RegisterRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisterRequest.php",
+      "target": "file:app/Http/Requests/Request.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/Http/Requests/Request.php",
+      "target": "class:app/Http/Requests/Request.php:Request",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

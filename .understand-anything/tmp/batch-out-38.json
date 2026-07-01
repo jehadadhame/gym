@@ -1,0 +1,2876 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "callGraph": [
+        {
+          "caller": "k",
+          "callee": "c.data.getTarget",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.getName",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.getChild(0).getHtml",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.getChild",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.removeClass",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "e.hide",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "i.document.createElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.setHtml",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "i.insertText",
+          "lineNumber": 5
+        },
+        {
+          "caller": "k",
+          "callee": "c.getText",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "c.data.getTarget",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "b.getName",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "b.getParent",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "b.getName",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "b.getChild(0).getHtml",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "b.getChild",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "d",
+          "lineNumber": 5
+        },
+        {
+          "caller": "g",
+          "callee": "e.getContentElement(\"info\",\"htmlPreview\").getElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "e.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "e.getContentElement(\"info\",\"charPreview\").getElement().setHtml",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "e.getContentElement(\"info\",\"charPreview\").getElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "e.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "f.setHtml",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "CKEDITOR.tools.htmlEncode",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "b.getParent().addClass",
+          "lineNumber": 6
+        },
+        {
+          "caller": "g",
+          "callee": "b.getParent",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "c.data.getTarget",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "b.getName",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "b.getParent",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "b.getName",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement(\"info\",\"charPreview\").getElement().setHtml",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement(\"info\",\"charPreview\").getElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement(\"info\",\"htmlPreview\").getElement().setHtml",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement(\"info\",\"htmlPreview\").getElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "e.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "b.getParent().removeClass",
+          "lineNumber": 6
+        },
+        {
+          "caller": "d",
+          "callee": "b.getParent",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/table/dialogs/table.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "callGraph": [
+        {
+          "caller": "o",
+          "callee": "this.getValue",
+          "lineNumber": 5
+        },
+        {
+          "caller": "o",
+          "callee": "CKEDITOR.dialog.validate.integer()",
+          "lineNumber": 5
+        },
+        {
+          "caller": "o",
+          "callee": "CKEDITOR.dialog.validate.integer",
+          "lineNumber": 5
+        },
+        {
+          "caller": "o",
+          "callee": "alert",
+          "lineNumber": 5
+        },
+        {
+          "caller": "o",
+          "callee": "this.select",
+          "lineNumber": 5
+        },
+        {
+          "caller": "n",
+          "callee": "a.editable",
+          "lineNumber": 5
+        },
+        {
+          "caller": "n",
+          "callee": "g.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "a.on",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getStyle",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "g.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "b.setValue",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getStyle",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "g.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "b.setValue",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "a.getSelection",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "g.getRanges",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "this.getContentElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "n",
+          "callee": "g.getSelectedElement",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "g.is",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "d[0].shrink",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "a.elementPath(d[0].getCommonAncestor(!0)).contains",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "a.elementPath",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "d[0].getCommonAncestor",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "this.setupContent",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "b.disable",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "h.disable",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "b.enable",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "h.enable",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "p.onChange",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "f.onChange",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "a.getSelection",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "g.createBookmarks",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "l",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "this.commitContent",
+          "lineNumber": 7
+        },
+        {
+          "caller": "n",
+          "callee": "c.append",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "l",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "parseInt",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "parseInt",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "h.append",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "l",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "j.append(l(\"td\")).appendBogus",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "j.append",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "l",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "c.$.createTHead",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "c.getElementsByTag(\"tbody\").getItem",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "c.getElementsByTag",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "h.getElementsByTag(\"tr\").getItem",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "h.getElementsByTag",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "h.getChildCount",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "h.getChild",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "f.data",
+          "lineNumber": 8
+        },
+        {
+          "caller": "n",
+          "callee": "f.renameNode",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "f.setAttribute",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "j.append",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "h.remove",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "c.getElementsByTag(\"tbody\").getItem",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "c.getElementsByTag",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "h.getFirst",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "j.getChildCount",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "j.getFirst",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "h.getChildCount",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "h.getChild",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "f.renameNode",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "f.removeAttribute",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "h.insertBefore",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "j.remove",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "f.renameNode",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "f.setAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "j.getParent().getName",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "j.getParent",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "f.renameNode",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "f.removeAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.setStyle",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.removeStyle",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.setStyle",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.removeStyle",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.getAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "c.removeAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "g.selectBookmarks",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "a.insertElement",
+          "lineNumber": 10
+        },
+        {
+          "caller": "n",
+          "callee": "setTimeout",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "a.createRange",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "b.moveToPosition",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "b.select",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "o",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 11
+        },
+        {
+          "caller": "n",
+          "callee": "o",
+          "lineNumber": 12
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 12
+        },
+        {
+          "caller": "n",
+          "callee": "r",
+          "lineNumber": 12
+        },
+        {
+          "caller": "n",
+          "callee": "this.getDialog",
+          "lineNumber": 12
+        },
+        {
+          "caller": "n",
+          "callee": "b.nodeName.toLowerCase",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "a.filter.check",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dialog.validate.number",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "a.getAttribute",
+          "lineNumber": 13
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "d.setAttribute",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "d.removeAttribute",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "a.getAttribute",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "d.setAttribute",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "d.removeAttribute",
+          "lineNumber": 14
+        },
+        {
+          "caller": "n",
+          "callee": "a.filter.check",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "n.getSize",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dialog.validate.cssLength",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "a.lang.common.invalidCssLength.replace",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "this.getDialog().getContentElement",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "this.getDialog",
+          "lineNumber": 15
+        },
+        {
+          "caller": "n",
+          "callee": "a.updateStyle",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "a.getStyle",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dialog.validate.cssLength",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "a.lang.common.invalidCssLength.replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "this.getDialog().getContentElement",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "this.getDialog",
+          "lineNumber": 16
+        },
+        {
+          "caller": "n",
+          "callee": "a.updateStyle",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "a.getStyle",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "a.filter.check",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dialog.validate.number",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "a.getAttribute",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "d.setAttribute",
+          "lineNumber": 17
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "d.removeAttribute",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "a.filter.check",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dialog.validate.number",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "a.getAttribute",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "d.setAttribute",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "d.removeAttribute",
+          "lineNumber": 18
+        },
+        {
+          "caller": "n",
+          "callee": "this.enable",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getElementsByTag",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.count",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getItem",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getFirst",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.dom.walker.nodeType",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "d.equals",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getBogus",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "this.disable",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getText",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "CKEDITOR.tools.trim",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.getText",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "this.isEnabled",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "d.getElementsByTag",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "b.count",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.getItem",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.setHtml",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "d.getChildCount",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.insertBefore",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "d.getFirst",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.appendTo",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.append",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.count",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.count",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.getItem(c).remove",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "b.getItem",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "this.setValue",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "a.getAttribute",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "d.setAttribute",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "this.getValue",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "d.removeAttribute",
+          "lineNumber": 21
+        },
+        {
+          "caller": "n",
+          "callee": "m.createAdvancedTab",
+          "lineNumber": 21
+        },
+        {
+          "caller": "k",
+          "callee": "this.getValue",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 17,
+      "callGraph": [
+        {
+          "caller": "d",
+          "callee": "a",
+          "lineNumber": 5
+        },
+        {
+          "caller": "d",
+          "callee": "a",
+          "lineNumber": 5
+        },
+        {
+          "caller": "d",
+          "callee": "this.setValue",
+          "lineNumber": 5
+        },
+        {
+          "caller": "d",
+          "callee": "this.getInputElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "l.exec",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "a.getStyle",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "a.getAttribute",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "callGraph": [
+        {
+          "caller": "c",
+          "callee": "window.clearInterval",
+          "lineNumber": 5
+        },
+        {
+          "caller": "c",
+          "callee": "j",
+          "lineNumber": 5
+        },
+        {
+          "caller": "c",
+          "callee": "window._cancelOnError",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "CKEDITOR.getUrl",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "f.setDefaulLangCode",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "window.doSpell",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "f.getSPLangCode",
+          "lineNumber": 5
+        },
+        {
+          "caller": "j",
+          "callee": "f.getSPLangCode",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "c.hide",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "a.focus",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "c.getParentEditor().setData",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "c.getParentEditor",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "c.hide",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "a.config.wsc_customDictionaryIds.split",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "CKEDITOR.document.getById(h).setStyle",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "CKEDITOR.document.getById",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "CKEDITOR.document.getById(d).setStyle",
+          "lineNumber": 6
+        },
+        {
+          "caller": "j",
+          "callee": "CKEDITOR.document.getById",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 74,
+      "callGraph": [
+        {
+          "caller": "q",
+          "callee": "a.getInputElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "q",
+          "callee": "a.getInputElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "c.push",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "c.sort",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "c.unshift",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "f.toUpperCase",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "c.toUpperCase",
+          "lineNumber": 5
+        },
+        {
+          "caller": "z",
+          "callee": "function(){var c={},d;for(d in a)for(var f in a[d])c[a[d][f]]=\r\nf;return c}",
+          "lineNumber": 5
+        },
+        {
+          "caller": "a",
+          "callee": "h.setTime",
+          "lineNumber": 6
+        },
+        {
+          "caller": "a",
+          "callee": "h.getTime",
+          "lineNumber": 6
+        },
+        {
+          "caller": "a",
+          "callee": "g.toUTCString",
+          "lineNumber": 6
+        },
+        {
+          "caller": "a",
+          "callee": "encodeURIComponent",
+          "lineNumber": 6
+        },
+        {
+          "caller": "A",
+          "callee": "b[d].instance.getElement().getFirst",
+          "lineNumber": 11
+        },
+        {
+          "caller": "A",
+          "callee": "b[d].instance.getElement",
+          "lineNumber": 11
+        },
+        {
+          "caller": "A",
+          "callee": "b[d].instance.getElement",
+          "lineNumber": 11
+        },
+        {
+          "caller": "A",
+          "callee": "c.setText",
+          "lineNumber": 11
+        },
+        {
+          "caller": "B",
+          "callee": "b[c].instance.setLabel",
+          "lineNumber": 11
+        },
+        {
+          "caller": "e",
+          "callee": "e.data.getTarget().is",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "e.data.getTarget",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "a.div_overlay.setEnable",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "d.getElement().getChildCount",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "d.getElement",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "v",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "a.setIframe",
+          "lineNumber": 14
+        },
+        {
+          "caller": "e",
+          "callee": "document.getElementById",
+          "lineNumber": 14
+        },
+        {
+          "caller": "s",
+          "callee": "c.getElementById",
+          "lineNumber": 17
+        },
+        {
+          "caller": "s",
+          "callee": "c.createElement",
+          "lineNumber": 17
+        },
+        {
+          "caller": "s",
+          "callee": "d.appendChild",
+          "lineNumber": 18
+        },
+        {
+          "caller": "C",
+          "callee": "f.addClass",
+          "lineNumber": 18
+        },
+        {
+          "caller": "C",
+          "callee": "f.setAttribute",
+          "lineNumber": 18
+        },
+        {
+          "caller": "C",
+          "callee": "f.setStyles",
+          "lineNumber": 18
+        },
+        {
+          "caller": "C",
+          "callee": "e.setAttributes",
+          "lineNumber": 18
+        },
+        {
+          "caller": "C",
+          "callee": "e.setStyles",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "e.on",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "a.textNode.GrammTab.setValue",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "b.sender.getValue",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "e.setAttribute",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "e.addClass",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "h.appendText",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "h.setAttribute",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "h.setStyles",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "f.append",
+          "lineNumber": 19
+        },
+        {
+          "caller": "C",
+          "callee": "f.append",
+          "lineNumber": 19
+        },
+        {
+          "caller": "w",
+          "callee": "m",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.dialog.getParentEditor",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "document.getElementById",
+          "lineNumber": 19
+        },
+        {
+          "caller": "n",
+          "callee": "a.buildOptionLang",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "a.dialog.getParentEditor",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "x[c.getCurrentLangGroup(a.selectingLang)]",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "c.getCurrentLangGroup",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "w",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "x[c.getCurrentLangGroup(this.value)]",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "c.getCurrentLangGroup",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "w",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "a.div_overlay.setEnable",
+          "lineNumber": 20
+        },
+        {
+          "caller": "n",
+          "callee": "e.postMessage.send",
+          "lineNumber": 20
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeTo.instance.disable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeAll.instance.disable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "c",
+          "callee": "b.getElement().hasClass",
+          "lineNumber": 21
+        },
+        {
+          "caller": "c",
+          "callee": "b.getElement",
+          "lineNumber": 21
+        },
+        {
+          "caller": "c",
+          "callee": "b.getElement().setStyle",
+          "lineNumber": 21
+        },
+        {
+          "caller": "c",
+          "callee": "b.getElement",
+          "lineNumber": 21
+        },
+        {
+          "caller": "c",
+          "callee": "b.disable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "c",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "c",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeTo.instance.enable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeAll.instance.enable",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeTo.instance.getElement().setStyle",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeTo.instance.getElement",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeAll.instance.getElement().setStyle",
+          "lineNumber": 21
+        },
+        {
+          "caller": "D",
+          "callee": "a.LocalizationButton.ChangeAll.instance.getElement",
+          "lineNumber": 21
+        },
+        {
+          "caller": "y",
+          "callee": "window.JSON.parse",
+          "lineNumber": 29
+        },
+        {
+          "caller": "y",
+          "callee": "F[a.id]",
+          "lineNumber": 29
+        },
+        {
+          "caller": "v",
+          "callee": "e.postMessage.send",
+          "lineNumber": 29
+        },
+        {
+          "caller": "v",
+          "callee": "a.div_overlay.setEnable",
+          "lineNumber": 30
+        },
+        {
+          "caller": "G",
+          "callee": "b.selectPage",
+          "lineNumber": 30
+        },
+        {
+          "caller": "G",
+          "callee": "c.getCmdByTab",
+          "lineNumber": 30
+        },
+        {
+          "caller": "G",
+          "callee": "a.sendData",
+          "lineNumber": 30
+        },
+        {
+          "caller": "u",
+          "callee": "a.dialog.hidePage",
+          "lineNumber": 30
+        },
+        {
+          "caller": "m",
+          "callee": "a.dialog.hidePage",
+          "lineNumber": 30
+        },
+        {
+          "caller": "o",
+          "callee": "a.dialog.showPage",
+          "lineNumber": 30
+        },
+        {
+          "caller": "l",
+          "callee": "a.dialog.getContentElement(a.dialog._.currentTabId,\"bottomGroup\").getElement",
+          "lineNumber": 31
+        },
+        {
+          "caller": "l",
+          "callee": "a.dialog.getContentElement",
+          "lineNumber": 31
+        },
+        {
+          "caller": "l",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "l",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "l",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "l",
+          "callee": "b.show",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "a.dialog.getContentElement(a.dialog._.currentTabId,\"bottomGroup\").getElement",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "a.dialog.getContentElement",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "b.setStyles",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "setTimeout",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "b.removeStyle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "b.hide",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "a.dialog._.editor.focusManager.currentActive.focusNext",
+          "lineNumber": 31
+        },
+        {
+          "caller": "E",
+          "callee": "e.misc.findFocusable",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "e.misc.hasClass",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "e.misc.hasClass",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "e.misc.isVisible",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "c.focus",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "d.count",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "d.getItem",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "e.misc.isVisible",
+          "lineNumber": 32
+        },
+        {
+          "caller": "E",
+          "callee": "h.$.focus",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "a.dialog.getContentElement(a.dialog._.currentTabId,\"BlockFinishChecking\").getElement",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "a.dialog.getContentElement",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "b.setStyles",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "setTimeout",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "b.removeStyle",
+          "lineNumber": 32
+        },
+        {
+          "caller": "t",
+          "callee": "b.removeStyle",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "b.removeStyle",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "b.hide",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "a.dialog._.editor.focusManager.currentActive.focusNext",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "e.misc.findFocusable",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "e.misc.hasClass",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "e.misc.hasClass",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "e.misc.isVisible",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "c.focus",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "d.count",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "d.getItem",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "e.misc.isVisible",
+          "lineNumber": 33
+        },
+        {
+          "caller": "t",
+          "callee": "h.$.focus",
+          "lineNumber": 33
+        },
+        {
+          "caller": "c",
+          "callee": "this.getElement().focus",
+          "lineNumber": 33
+        },
+        {
+          "caller": "c",
+          "callee": "this.getElement",
+          "lineNumber": 33
+        },
+        {
+          "caller": "c",
+          "callee": "a.div_overlay.setEnable",
+          "lineNumber": 33
+        },
+        {
+          "caller": "c",
+          "callee": "a.textNode[c].getValue",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "this.getElement().getAttribute",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "this.getElement",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "e.postMessage.send",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "b.fire",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "b.config.wsc_onFinish.call",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "CKEDITOR.document.getWindow().getFrame",
+          "lineNumber": 34
+        },
+        {
+          "caller": "c",
+          "callee": "CKEDITOR.document.getWindow",
+          "lineNumber": 34
+        },
+        {
+          "caller": "h",
+          "callee": "this.getElement().getAttribute",
+          "lineNumber": 60
+        },
+        {
+          "caller": "h",
+          "callee": "this.getElement",
+          "lineNumber": 60
+        },
+        {
+          "caller": "h",
+          "callee": "a.toString().replace",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "a.toString",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "e.cookie.set",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "e.cookie.set",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "j.getValue",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "j.getValue",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "e.cookie.set",
+          "lineNumber": 61
+        },
+        {
+          "caller": "h",
+          "callee": "e.postMessage.send",
+          "lineNumber": 61
+        },
+        {
+          "caller": "i",
+          "callee": "f.getElement().setHtml",
+          "lineNumber": 61
+        },
+        {
+          "caller": "i",
+          "callee": "f.getElement",
+          "lineNumber": 61
+        },
+        {
+          "caller": "i",
+          "callee": "f.getElement().show",
+          "lineNumber": 61
+        },
+        {
+          "caller": "i",
+          "callee": "f.getElement",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/LICENSE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 28,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/assets/outputxhtml/outputxhtml.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 204,
+      "nonEmptyLines": 167,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/assets/posteddata.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 56,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/assets/uilanguages/languages.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/dialog/assets/my_dialog.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 46,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/dialog/dialog.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 187,
+      "nonEmptyLines": 166,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/enterkey/enterkey.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 103,
+      "nonEmptyLines": 98,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
+      "language": "fla",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 146,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf",
+      "language": "swf",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 63,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "callGraph": [
+        {
+          "caller": "u",
+          "callee": "d.getElementsByTagName(\"body\")[0].appendChild",
+          "lineNumber": 1
+        },
+        {
+          "caller": "u",
+          "callee": "d.getElementsByTagName",
+          "lineNumber": 1
+        },
+        {
+          "caller": "u",
+          "callee": "d.createElement",
+          "lineNumber": 1
+        },
+        {
+          "caller": "u",
+          "callee": "a.parentNode.removeChild",
+          "lineNumber": 1
+        },
+        {
+          "caller": "u",
+          "callee": "x[c]",
+          "lineNumber": 1
+        },
+        {
+          "caller": "L",
+          "callee": "a",
+          "lineNumber": 1
+        },
+        {
+          "caller": "M",
+          "callee": "m.addEventListener",
+          "lineNumber": 1
+        },
+        {
+          "caller": "M",
+          "callee": "d.addEventListener",
+          "lineNumber": 1
+        },
+        {
+          "caller": "M",
+          "callee": "U",
+          "lineNumber": 1
+        },
+        {
+          "caller": "M",
+          "callee": "b",
+          "lineNumber": 2
+        },
+        {
+          "caller": "M",
+          "callee": "a",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "d.getElementsByTagName",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "d.createElement",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "b.setAttribute",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "a.appendChild",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "(function(){if(typeof c.GetVariable!=i){var g=c.GetVariable(\"$version\");g&&(g=g.split(\" \")[1].split(\",\"),e.pv=[parseInt(g[0],10),parseInt(g[1],10),parseInt(g[2],10)])}else if(10>f){f++;setTimeout(arguments.callee,10);return}a.removeChild(b);c=null;D()})",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "c.GetVariable",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "g.split(\" \")[1].split",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "g.split",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "parseInt",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "parseInt",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "parseInt",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "setTimeout",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "a.removeChild",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "D",
+          "lineNumber": 2
+        },
+        {
+          "caller": "V",
+          "callee": "D",
+          "lineNumber": 2
+        },
+        {
+          "caller": "D",
+          "callee": "n",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "z",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "t",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "E",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "f",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "F",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d.getElementsByTagName",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d[k].getAttribute(\"name\").toLowerCase",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d[k].getAttribute",
+          "lineNumber": 3
+        },
+        {
+          "caller": "D",
+          "callee": "d[k].getAttribute",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "d[k].getAttribute",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "G",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "W",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "f",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "t",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "E",
+          "lineNumber": 4
+        },
+        {
+          "caller": "D",
+          "callee": "f",
+          "lineNumber": 4
+        },
+        {
+          "caller": "E",
+          "callee": "n",
+          "lineNumber": 4
+        },
+        {
+          "caller": "E",
+          "callee": "a.getElementsByTagName",
+          "lineNumber": 4
+        },
+        {
+          "caller": "F",
+          "callee": "z",
+          "lineNumber": 4
+        },
+        {
+          "caller": "G",
+          "callee": "n",
+          "lineNumber": 4
+        },
+        {
+          "caller": "G",
+          "callee": "I",
+          "lineNumber": 4
+        },
+        {
+          "caller": "G",
+          "callee": "/%$/.test",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "parseInt",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "/%$/.test",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "parseInt",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "d.title.slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "m.location.toString().replace",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "m.location.toString",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "d.createElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "f.setAttribute",
+          "lineNumber": 5
+        },
+        {
+          "caller": "G",
+          "callee": "g.parentNode.insertBefore",
+          "lineNumber": 6
+        },
+        {
+          "caller": "G",
+          "callee": "function(){g.readyState==4?g.parentNode.removeChild(g):setTimeout(arguments.callee,10)}",
+          "lineNumber": 6
+        },
+        {
+          "caller": "G",
+          "callee": "g.parentNode.removeChild",
+          "lineNumber": 6
+        },
+        {
+          "caller": "G",
+          "callee": "setTimeout",
+          "lineNumber": 6
+        },
+        {
+          "caller": "G",
+          "callee": "J",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "d.createElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "a.parentNode.insertBefore",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "b.parentNode.replaceChild",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "I",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "(function(){4==a.readyState?a.parentNode.removeChild(a):setTimeout(arguments.callee,10)})",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "a.parentNode.removeChild",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "setTimeout",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "a.parentNode.replaceChild",
+          "lineNumber": 6
+        },
+        {
+          "caller": "W",
+          "callee": "I",
+          "lineNumber": 6
+        },
+        {
+          "caller": "I",
+          "callee": "d.createElement",
+          "lineNumber": 6
+        },
+        {
+          "caller": "I",
+          "callee": "a.getElementsByTagName",
+          "lineNumber": 7
+        },
+        {
+          "caller": "I",
+          "callee": "b.appendChild",
+          "lineNumber": 7
+        },
+        {
+          "caller": "I",
+          "callee": "a[f].cloneNode",
+          "lineNumber": 7
+        },
+        {
+          "caller": "J",
+          "callee": "n",
+          "lineNumber": 7
+        },
+        {
+          "caller": "J",
+          "callee": "h.toLowerCase",
+          "lineNumber": 7
+        },
+        {
+          "caller": "J",
+          "callee": "h.toLowerCase",
+          "lineNumber": 7
+        },
+        {
+          "caller": "J",
+          "callee": "h.toLowerCase",
+          "lineNumber": 7
+        },
+        {
+          "caller": "J",
+          "callee": "n",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "d.createElement",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "j.setAttribute",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "k.toLowerCase",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "j.setAttribute",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "k.toLowerCase",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "j.setAttribute",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "o.toLowerCase",
+          "lineNumber": 8
+        },
+        {
+          "caller": "J",
+          "callee": "d.createElement",
+          "lineNumber": 9
+        },
+        {
+          "caller": "J",
+          "callee": "c.setAttribute",
+          "lineNumber": 9
+        },
+        {
+          "caller": "J",
+          "callee": "c.setAttribute",
+          "lineNumber": 9
+        },
+        {
+          "caller": "J",
+          "callee": "a.appendChild",
+          "lineNumber": 9
+        },
+        {
+          "caller": "J",
+          "callee": "g.parentNode.replaceChild",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "n",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "function(){if(4==b.readyState){var c=n(a);if(c){for(var f in c)\"function\"==typeof c[f]&&(c[f]=null);c.parentNode.removeChild(c)}}else setTimeout(arguments.callee,10)}",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "n",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "c.parentNode.removeChild",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "setTimeout",
+          "lineNumber": 9
+        },
+        {
+          "caller": "P",
+          "callee": "b.parentNode.removeChild",
+          "lineNumber": 9
+        },
+        {
+          "caller": "n",
+          "callee": "d.getElementById",
+          "lineNumber": 9
+        },
+        {
+          "caller": "U",
+          "callee": "a.attachEvent",
+          "lineNumber": 10
+        },
+        {
+          "caller": "z",
+          "callee": "a.split",
+          "lineNumber": 10
+        },
+        {
+          "caller": "z",
+          "callee": "parseInt",
+          "lineNumber": 10
+        },
+        {
+          "caller": "z",
+          "callee": "parseInt",
+          "lineNumber": 10
+        },
+        {
+          "caller": "z",
+          "callee": "parseInt",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "d.getElementsByTagName",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "d.createElement",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "f.setAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "f.setAttribute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "g.appendChild",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Q",
+          "callee": "l.addRule",
+          "lineNumber": 11
+        },
+        {
+          "caller": "Q",
+          "callee": "l.appendChild",
+          "lineNumber": 11
+        },
+        {
+          "caller": "Q",
+          "callee": "d.createTextNode",
+          "lineNumber": 11
+        },
+        {
+          "caller": "t",
+          "callee": "n",
+          "lineNumber": 11
+        },
+        {
+          "caller": "t",
+          "callee": "n",
+          "lineNumber": 11
+        },
+        {
+          "caller": "t",
+          "callee": "Q",
+          "lineNumber": 11
+        },
+        {
+          "caller": "S",
+          "callee": "/[\\\\\\\"<>\\.;]/.exec",
+          "lineNumber": 11
+        },
+        {
+          "caller": "S",
+          "callee": "encodeURIComponent",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputforflash.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 280,
+      "nonEmptyLines": 244,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputhtml.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 221,
+      "nonEmptyLines": 199,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/magicline/magicline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 206,
+      "nonEmptyLines": 186,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/samples/plugins/toolbar/toolbar.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 232,
+      "nonEmptyLines": 192,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 66,
+      "nonEmptyLines": 58,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 52,
+      "nonEmptyLines": 43,
+      "metrics": {}
+    },
+    {
+      "path": "public/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 82,
+      "nonEmptyLines": 71,
+      "metrics": {}
+    }
+  ]
+}
