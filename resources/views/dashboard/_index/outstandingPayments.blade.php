@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $sum = App\Invoice::sum('pending_amount');
 ?>
 
@@ -16,8 +16,13 @@ $sum = App\Invoice::sum('pending_amount');
             <div class="clearfix"></div>
 
             <div class="pull-left">
-                <div class="display-block color-red-50 font-weight-600">Pending Payments</div>
+                <div class="display-block color-red-50 font-weight-600">المدفوعات المعلقة</div>
             </div>
         </div>
     </div>
 </div><!-- /.panel -->
+
+
+
+
+

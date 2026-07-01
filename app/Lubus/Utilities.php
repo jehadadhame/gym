@@ -258,15 +258,15 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Inactive';
+            return 'غير نشط';
             break;
 
         case '2':
-            return 'Archived';
+            return 'مؤرشف';
             break;
 
         default:
-            return 'Active';
+            return 'نشط';
             break;
     }
     }
@@ -477,16 +477,16 @@ class Utilities
         $time = Carbon::now()->hour;
         /* If the time is less than 1200 hours, show good morning */
         if ($time < '12') {
-            echo 'Good morning';
+            echo 'صباح الخير';
         } elseif /* If the time is grater than or equal to 1200 hours, but less than 1700 hours, so good afternoon */
     ($time >= '12' && $time < '17') {
-            echo 'Good afternoon';
+            echo 'مساء الخير';
         } elseif /* Should the time be between or equal to 1700 and 1900 hours, show good evening */
     ($time >= '17' && $time < '22') {
-            echo 'Good evening';
+            echo 'مساء الخير';
         } elseif /* Finally, show good night if the time is greater than or equal to 2200 hours */
     ($time >= '22') {
-            echo 'Good night';
+            echo 'مساء الخير';
         }
     }
 

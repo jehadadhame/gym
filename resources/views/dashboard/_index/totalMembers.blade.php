@@ -1,4 +1,4 @@
-<div class="panel bg-light-blue-400">
+﻿<div class="panel bg-light-blue-400">
     <div class="panel-body padding-15-20">
         <div class="clearfix">
             <div class="pull-left">
@@ -13,8 +13,13 @@
             <div class="clearfix"></div>
 
             <div class="pull-left">
-                <div class="display-block color-light-blue-50 font-weight-600">Total Members</div>
+                <div class="display-block color-light-blue-50 font-weight-600">إجمالي الأعضاء</div>
             </div>
         </div>
     </div>
 </div><!-- /.panel -->
+
+
+
+
+

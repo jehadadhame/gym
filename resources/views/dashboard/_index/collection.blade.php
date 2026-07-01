@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     use Carbon\Carbon;
    $sum = App\PaymentDetail::whereMonth('created_at','=',Carbon::today()->month)->sum('payment_amount');
 ?>
@@ -17,8 +17,12 @@
             <div class="clearfix"></div>
 
             <div class="pull-left">
-                <div class="display-block color-green-50 font-weight-600">Monthly Collection</div>
+                <div class="display-block color-green-50 font-weight-600">تحصيلات هذا الشهر</div>
             </div>
         </div>
     </div>
 </div><!-- /.panel -->
+
+
+
+

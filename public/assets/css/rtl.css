@@ -1,0 +1,158 @@
+/* RTL Custom Overrides for GymPhp Theme */
+
+body {
+    font-family: 'Cairo', sans-serif !important;
+}
+
+/* Sidebar and Main Content adjustments */
+.fixed-leftside .rightside {
+    margin-left: 0 !important;
+    margin-right: 240px !important;
+}
+
+.fixed-leftside .leftside {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.sidebar-sm .rightside {
+    margin-right: 80px !important;
+    margin-left: 0 !important;
+}
+
+.sidebar-sm .leftside .nav-sidebar ul {
+    margin-right: 80px !important;
+    margin-left: 0 !important;
+}
+
+.sidebar-sm .leftside .nav-sidebar ul:after {
+    left: 100% !important;
+    right: auto !important;
+    border-right-color: transparent !important;
+    border-left-color: #fff !important;
+}
+
+/* Header and Logo */
+header .logo {
+    float: right !important;
+    border-right: none !important;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+header .navbar {
+    margin-left: 0 !important;
+    margin-right: 240px !important;
+    padding: 0 20px 0 0 !important;
+}
+
+.sidebar-sm header .navbar {
+    margin-left: 0 !important;
+    margin-right: 80px !important;
+}
+
+header .navbar .sidebar-toggle {
+    float: right !important;
+    margin-right: 15px !important;
+    margin-left: 0 !important;
+}
+
+.navbar-btn.sidebar-toggle {
+    float: right;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+/* Sidebar Profile */
+.leftside .nav-profile .thumb {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.leftside .nav-profile .info {
+    text-align: right;
+}
+
+.leftside .nav-profile .button {
+    left: 20px;
+    right: auto;
+}
+
+/* Sidebar Navigation */
+.leftside .nav-sidebar > li > a {
+    padding: 12px 20px 12px 15px !important;
+    text-align: right;
+}
+
+.leftside .nav-sidebar > li > a > i:first-child {
+    margin-right: 0;
+    margin-left: 10px;
+    float: right;
+    line-height: inherit;
+}
+
+/* Dropdown arrows in sidebar */
+.leftside .nav-sidebar > li > a > i.pull-right,
+.leftside .nav-sidebar > li > a > i.ion-ios-arrow-down {
+    float: left !important;
+}
+
+.leftside .nav-sidebar ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.leftside .nav-sidebar ul > li > a {
+    padding-right: 45px !important;
+    padding-left: 15px !important;
+    text-align: right;
+}
+
+/* Dashboard specific alignment */
+.widget {
+    text-align: right;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.float-left {
+    float: right !important;
+}
+
+/* Adjust inputs and forms */
+.form-control {
+    text-align: right;
+}
+
+/* Global Float Reversals for RTL */
+.pull-left {
+    float: right !important;
+}
+
+.pull-right {
+    float: left !important;
+}
+
+/* Margin fixes for icons */
+.panel-head > i, .btn > i {
+    margin-right: 0 !important;
+    margin-left: 5px !important;
+}
+
+/* Panel Header RTL */
+.panel-head {
+    float: right !important;
+}
+
+/* Fix Total Count Alignment */
+.total-count {
+    text-align: left !important;
+}
+
+/* Fix Input Padding */
+.padding-right-35 {
+    padding-right: 12px !important; /* default form-control padding */
+    padding-left: 35px !important;
+}

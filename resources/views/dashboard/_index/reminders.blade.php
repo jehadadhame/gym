@@ -1,4 +1,4 @@
-<div class="table-responsive {!! (! $reminders->isEmpty() ? 'panel-scroll' : '')  !!}">
+﻿<div class="table-responsive {!! (! $reminders->isEmpty() ? 'panel-scroll' : '')  !!}">
     <table class="table table-hover">
         @forelse($reminders as $reminder)
             <tr>
@@ -17,9 +17,12 @@
             </tr>
         @empty
             <div class="tab-empty-panel font-size-24 color-grey-300">
-                No Data
+                لا توجد بيانات
             </div>
         @endforelse
     </table>
 </div>
                                 
+
+
+

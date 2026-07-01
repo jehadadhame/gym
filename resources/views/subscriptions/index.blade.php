@@ -1,4 +1,4 @@
-@extends('app')
+﻿@extends('app')
 
 @section('content')
 
@@ -7,11 +7,11 @@
     <!-- BEGIN PAGE HEADING -->
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
         @include('flash::message')
-        <h1 class="page-title no-line-height">Subscriptions
+        <h1 class="page-title no-line-height">الاشتراكات
             @permission(['manage-gymie', 'manage-subscriptions', 'add-subscription'])
             <a href="{{ action('SubscriptionsController@create') }}" class="page-head-btn btn-sm btn-primary active"
-                role="button">Add New</a>
-            <small>Details of all gym subscriptions</small>
+                role="button">إضافة جديد</a>
+            <small>Details من all gym subscriptions</small>
         </h1>
         @permission(['manage-gymie', 'pagehead-stats'])
         <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span
@@ -53,7 +53,7 @@
 
                                     <div class="col-sm-2">
                                         {!! Form::label('sort_field', 'Sort By') !!}
-                                        {!! Form::select('sort_field', array('created_at' => 'Date', 'plan_name' => 'Plan name'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
+                                        {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'plan_name' => 'Plan name'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
                                     </div>
 
                                     <div class="col-sm-2">
@@ -96,17 +96,17 @@
 
                     <div class="panel-body bg-white">
                         @if($subscriptions->count() == 0)
-                            <h4 class="text-center padding-top-15">Sorry! No records found</h4>
+                            <h4 class="text-center padding-top-15">عذراً! لا توجد سجلات</h4>
                         @else
                                 <table id="subscriptions" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Member Code</th>
-                                            <th>Member Name</th>
-                                            <th>Plan Name</th>
-                                            <th>Start Date</th>
-                                            <th>End Date</th>
-                                            <th>Status</th>
+                                            <th>كود العضو</th>
+                                            <th>اسم العضو</th>
+                                            <th>اسم الخطة</th>
+                                            <th>تاريخ البدء</th>
+                                            <th>تاريخ الانتهاء</th>
+                                            <th>الحالة</th>
                                             <th class="text-center">Actions</th>
                                         </tr>
                                     </thead>
@@ -135,18 +135,13 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-info">Actions</button>
-                                                            <button type="button" class="btn btn-info dropdown-toggle"
-                                                                data-toggle="dropdown" aria-expanded="false">
-                                                                <span class="caret"></span>
-                                                                <span class="sr-only">Toggle Dropdown</span>
-                                                            </button>
+                                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">الإجراءات <span class="caret"></span></button>
                                                             <ul class="dropdown-menu" role="menu">
                                                                 <li>
                                                                     @permission(['manage-gymie', 'manage-subscriptions', 'edit-subscription'])
                                                                     <a
                                                                         href="{{ action('SubscriptionsController@edit',['id' => $subscription->id]) }}">
-                                                                        Edit details
+                                                                        تعديل التفاصيل
                                                                     </a>
                                                                     @endpermission
                                                                 </li>
@@ -162,7 +157,7 @@
                                                                     <a href="#" class="delete-record"
                                                                         data-delete-url="{{ url('subscriptions/' . $subscription->id . '/delete') }}"
                                                                         data-record-id="{{$subscription->id}}">
-                                                                        Delete subscription
+                                                                        حذف الاشتراك
                                                                     </a>
                                                                     @endpermission
                                                                 </li>
@@ -183,7 +178,7 @@
                                     <div class="col-xs-6">
                                         <div class="gymie_paging_info">
                                             <!-- TO DO -->
-                                            Showing page {{ $subscriptions->currentPage() }} of {{ $subscriptions->lastPage() }}
+                                            عرض الصفحة {{ $subscriptions->currentPage() }} من {{ $subscriptions->lastPage() }}
                                         </div>
                                     </div>
 

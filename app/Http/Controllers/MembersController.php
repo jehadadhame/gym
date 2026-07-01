@@ -518,6 +518,6 @@ class MembersController extends Controller
             return $request->drp_start . ' - ' . $request->drp_end;
         }
 
-        return 'Select daterange filter';
+        return 'اختر نطاق التاريخ';
     }
 }

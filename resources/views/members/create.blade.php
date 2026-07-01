@@ -1,4 +1,4 @@
-@extends('app')
+﻿@extends('app')
 
 @section('content')
 
@@ -20,7 +20,7 @@
 
             {!! Form::Open(['url' => 'members','id'=>'membersform','files'=>'true']) !!}
 
-        <!-- Member Details -->
+        <!-- تفاصيل العضو -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel no-border">
@@ -76,3 +76,4 @@
         });
     </script>
 @stop        
+

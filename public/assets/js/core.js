@@ -52,14 +52,16 @@
 	$(".panel-scroll").slimscroll({
 		alwaysVisible: false,
 		size: "5px",
-		height: "320px"
+		height: "320px",
+		position: "left"
 	}).css("width", "100%");
 
 	//Panel Scroll 2 for sms log tab
 	$(".panel-scroll-2").slimscroll({
 		alwaysVisible: false,
 		size: "5px",
-		height: "196px"
+		height: "196px",
+		position: "left"
 	}).css("width", "100%");
 		
 	/* 

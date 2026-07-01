@@ -1,4 +1,4 @@
-@extends('app')
+﻿@extends('app')
 
 @section('content')
     <?php use Carbon\Carbon; ?>
@@ -18,20 +18,20 @@
                             <div class="row">
                                 <div class="col-sm-3">
 
-                                    {!! Form::label('member_id','Member Code') !!}
+                                    {!! Form::label('member_id','كود العضو') !!}
 
                                 </div>
 
                                 <div class="col-sm-3">
-                                    {!! Form::label('plan_0','Plan') !!}
+                                    {!! Form::label('plan_0','الخطة') !!}
                                 </div>
 
                                 <div class="col-sm-3">
-                                    {!! Form::label('start_date_0','Start Date') !!}
+                                    {!! Form::label('start_date_0','تاريخ البدء') !!}
                                 </div>
 
                                 <div class="col-sm-3">
-                                    {!! Form::label('end_date_0','End Date') !!}
+                                    {!! Form::label('end_date_0','تاريخ الانتهاء') !!}
                                 </div>
 
 
@@ -260,3 +260,4 @@
         });
     </script>
 @stop
+

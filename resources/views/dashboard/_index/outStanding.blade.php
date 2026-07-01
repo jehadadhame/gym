@@ -1,4 +1,4 @@
-
+﻿
 <div class="table-responsive {!! (! $outstandings->isEmpty() ? 'panel-scroll' : '')  !!}">
     <table class="table table-hover">
         @forelse($outstandings as $outstanding)
@@ -17,9 +17,12 @@
             </tr>
         @empty
             <div class="tab-empty-panel font-size-24 color-grey-300">
-                No Data
+                لا توجد بيانات
             </div>
         @endforelse
     </table>
 </div>
                                 
+
+
+

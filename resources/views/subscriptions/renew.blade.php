@@ -1,4 +1,4 @@
-@extends('app')
+﻿@extends('app')
 
 @section('content')
     <?php use Carbon\Carbon; ?>
@@ -34,22 +34,22 @@
                                 <div class="col-sm-5">
                                     <div class="form-group">
                                         <?php $member_code = App\Member::where('status', '=', '1')->lists('member_code', 'id'); ?>
-                                        {!! Form::label('member_id','Member Code') !!}
+                                        {!! Form::label('member_id','كود العضو') !!}
                                         {!! Form::select('member_id',$member_code,$member_id,['class'=>'form-control selectpicker show-tick show-menu-arrow','id'=>'member_id','data-live-search' => 'true']) !!}
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-5">
-                                    {!! Form::label('plan_0','Plan') !!}
+                                    {!! Form::label('plan_0','الخطة') !!}
                                 </div>
 
                                 <div class="col-sm-3">
-                                    {!! Form::label('start_date_0','Start Date') !!}
+                                    {!! Form::label('start_date_0','تاريخ البدء') !!}
                                 </div>
 
                                 <div class="col-sm-3">
-                                    {!! Form::label('end_date_0','End Date') !!}
+                                    {!! Form::label('end_date_0','تاريخ الانتهاء') !!}
                                 </div>
 
                                 <div class="col-sm-1">

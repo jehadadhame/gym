@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 use Carbon\Carbon;
 ?>
 
@@ -13,22 +13,22 @@ use Carbon\Carbon;
                 $memberArray[$member['id']] = $member['member_code'].' - '.$member['name'];
             }
             ?>
-            {!! Form::label('member_id','Member Code') !!}
+            {!! Form::label('member_id','كود العضو') !!}
             {!! Form::select('member_id',$memberArray,null,['class'=>'form-control selectpicker show-tick show-menu-arrow','id'=>'member_id','data-live-search' => 'true']) !!}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-5">
-        {!! Form::label('plan_0','Plan') !!}
+        {!! Form::label('plan_0','الخطة') !!}
     </div>
 
     <div class="col-sm-3">
-        {!! Form::label('start_date_0','Start Date') !!}
+        {!! Form::label('start_date_0','تاريخ البدء') !!}
     </div>
 
     <div class="col-sm-3">
-        {!! Form::label('end_date_0','End Date') !!}
+        {!! Form::label('end_date_0','تاريخ الانتهاء') !!}
     </div>
 
     <div class="col-sm-1">
@@ -83,3 +83,4 @@ use Carbon\Carbon;
         </div>
     </div>
 </div>
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <!-- BEGIN HEAD -->
 
 <head>
@@ -11,8 +11,11 @@
 
     <title>TargetOne</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- BEGIN CORE FRAMEWORK -->
     <link href="{{ URL::asset('assets/plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.min.css" rel="stylesheet" />
     <link href="{{ URL::asset('assets/plugins/ionicons/css/ionicons.min.css') }}" rel="stylesheet" />
     <link href="{{ URL::asset('assets/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
     <!-- END CORE FRAMEWORK -->
@@ -41,6 +44,7 @@
     <link href="{{ URL::asset('assets/css/responsive.css') }}" rel="stylesheet" />
     <link href="{{ URL::asset('assets/css/mystyle.css') }}" rel="stylesheet" />
     <link href="{{ URL::asset('assets/css/print.css') }}" media="print" rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/rtl.css') }}" rel="stylesheet" />
     <!-- END THEME STYLES -->
     @include('_jsVariables')
     @yield('header_scripts')
@@ -83,11 +87,11 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                 </div>
                 <!-- END RPOFILE -->
                 <!-- BEGIN NAV -->
-                <div class="title">Navigation</div>
+                <div class="title">القائمة الرئيسية</div>
                 <ul class="nav-sidebar">
                     <li class="{{ Utilities::setActiveMenu('dashboard*') }}">
                         <a href="{{ action('DashboardController@index') }}">
-                            <i class="ion-home"></i> <span>Dashboard</span>
+                            <i class="ion-home"></i> <span>لوحة التحكم</span>
                         </a>
                     </li>
 
@@ -109,23 +113,23 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
 
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('members*', true) }}">
                         <a href="#">
-                            <i class="ion-person-add"></i> <span>Members</span>
+                            <i class="ion-person-add"></i> <span>الأعضاء</span>
                         </a>
                         <ul>
                             @permission(['manage-gymie', 'manage-members', 'view-member'])
                             <li class="{{ Utilities::setActiveMenu('members/all') }}"><a
-                                    href="{{ action('MembersController@index') }}">All Members</a></li>
+                                    href="{{ action('MembersController@index') }}">كل الأعضاء</a></li>
                             @endpermission
 
                             @permission(['manage-gymie', 'manage-members', 'add-member'])
                             <li class="{{ Utilities::setActiveMenu('members/create') }}"><a
-                                    href="{{ action('MembersController@create') }}">Add Member</a></li>
+                                    href="{{ action('MembersController@create') }}">إضافة عضو</a></li>
                             @endpermission
                             @permission(['manage-gymie', 'manage-members', 'view-member'])
                             <li class="{{ Utilities::setActiveMenu('members/active') }}"><a
-                                    href="{{ action('MembersController@active') }}">Active Members</a></li>
+                                    href="{{ action('MembersController@active') }}">الأعضاء النشطون</a></li>
                             <li class="{{ Utilities::setActiveMenu('members/inactive') }}"><a
-                                    href="{{ action('MembersController@inactive') }}">Inactive Members</a>
+                                    href="{{ action('MembersController@inactive') }}">الأعضاء غير النشطين</a>
                                 @endpermission
                             </li>
                         </ul>
@@ -134,14 +138,14 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-payments', 'view-payment'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('payments*', true) }}">
                         <a href="#">
-                            <i class="ion-cash"></i> <span>Payments</span>
+                            <i class="ion-cash"></i> <span>المدفوعات</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('payments/all') }}"><a
-                                    href="{{ action('PaymentsController@index') }}">All Payments</a></li>
+                                    href="{{ action('PaymentsController@index') }}">كل المدفوعات</a></li>
                             @permission(['manage-gymie', 'manage-payments', 'add-payment'])
                             <li class="{{ Utilities::setActiveMenu('payments/create') }}"><a
-                                    href="{{ action('PaymentsController@create') }}">Add Payment</a></li>
+                                    href="{{ action('PaymentsController@create') }}">إضافة دفعة</a></li>
                             @endpermission
                         </ul>
                     </li>
@@ -150,23 +154,19 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-subscriptions', 'view-subscription'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('subscriptions*', true) }}">
                         <a href="#">
-                            <i class="ion-android-checkbox-outline"></i> <span>Subscriptions</span>
+                            <i class="ion-android-checkbox-outline"></i> <span>الاشتراكات</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('subscriptions/all') }}"><a
-                                    href="{{ action('SubscriptionsController@index') }}">All
-                                    Subscriptions</a></li>
+                                    href="{{ action('SubscriptionsController@index') }}">كل الاشتراكات</a></li>
                             @permission(['manage-gymie', 'manage-subscriptions', 'add-subscription'])
                             <li class="{{ Utilities::setActiveMenu('subscriptions/create') }}"><a
-                                    href="{{ action('SubscriptionsController@create') }}">Add
-                                    Subscription</a></li>
+                                    href="{{ action('SubscriptionsController@create') }}">إضافة اشتراك</a></li>
                             @endpermission
                             <li class="{{ Utilities::setActiveMenu('subscriptions/expiring') }}"><a
-                                    href="{{ action('SubscriptionsController@expiring') }}">Expiring
-                                    Subscriptions</a></li>
+                                    href="{{ action('SubscriptionsController@expiring') }}">الاشتراكات التي ستنتهي قريباً</a></li>
                             <li class="{{ Utilities::setActiveMenu('subscriptions/expired') }}"><a
-                                    href="{{ action('SubscriptionsController@expired') }}">Expired
-                                    Subscriptions</a></li>
+                                    href="{{ action('SubscriptionsController@expired') }}">الاشتراكات المنتهية</a></li>
                         </ul>
                     </li>
                     @endpermission
@@ -206,22 +206,21 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-invoices', 'view-invoice'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('invoices*', true) }}">
                         <a href="#">
-                            <i class="ion-ios-paper"></i> <span>Invoices</span>
+                            <i class="ion-ios-paper"></i> <span>الفواتير</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('invoices/all') }}"><a
-                                    href="{{ action('InvoicesController@index') }}">All Invoices</a></li>
+                                    href="{{ action('InvoicesController@index') }}">كل الفواتير</a></li>
                             <li class="{{ Utilities::setActiveMenu('invoices/paid') }}"><a
-                                    href="{{ action('InvoicesController@paid') }}">Paid Invoices</a></li>
+                                    href="{{ action('InvoicesController@paid') }}">الفواتير المدفوعة</a></li>
                             <li class="{{ Utilities::setActiveMenu('invoices/unpaid') }}"><a
-                                    href="{{ action('InvoicesController@unpaid') }}">Unpaid Invoices</a>
+                                    href="{{ action('InvoicesController@unpaid') }}">الفواتير غير المدفوعة</a>
                             </li>
                             <li class="{{ Utilities::setActiveMenu('invoices/partial') }}"><a
-                                    href="{{ action('InvoicesController@partial') }}">Partial Invoices</a>
+                                    href="{{ action('InvoicesController@partial') }}">فواتير مدفوعة جزئياً</a>
                             </li>
                             <li class="{{ Utilities::setActiveMenu('invoices/overpaid') }}"><a
-                                    href="{{ action('InvoicesController@overpaid') }}">Overpaid
-                                    Invoices</a></li>
+                                    href="{{ action('InvoicesController@overpaid') }}">فواتير زائدة الدفع</a></li>
                         </ul>
                     </li>
                     @endpermission
@@ -229,24 +228,22 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-expenses', 'view-expense'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('expenses*', true) }}">
                         <a href="#">
-                            <i class="fa fa-inr"></i> <span>Expenses</span>
+                            <i class="fa fa-inr"></i> <span>المصروفات</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('expenses/all') }}"><a
-                                    href="{{ action('ExpensesController@index') }}">All Expenses</a></li>
+                                    href="{{ action('ExpensesController@index') }}">كل المصروفات</a></li>
                             @permission(['manage-gymie', 'manage-expenses', 'add-expense'])
                             <li class="{{ Utilities::setActiveMenu('expenses/create') }}"><a
-                                    href="{{ action('ExpensesController@create') }}">Add Expense</a></li>
+                                    href="{{ action('ExpensesController@create') }}">إضافة مصروف</a></li>
                             @endpermission
                             @permission(['manage-gymie', 'manage-expenseCategories', 'view-expenseCategory'])
                             <li class="{{ Utilities::setActiveMenu('expenses/categories/all') }}"><a
-                                    href="{{ action('ExpenseCategoriesController@index') }}">Expense
-                                    Categories</a></li>
+                                    href="{{ action('ExpenseCategoriesController@index') }}">فئات المصروفات</a></li>
                             @endpermission
                             @permission(['manage-gymie', 'manage-expenseCategories', 'add-expenseCategory'])
                             <li class="{{ Utilities::setActiveMenu('expenses/categories/create') }}"><a
-                                    href="{{ action('ExpenseCategoriesController@create') }}">Add
-                                    Category</a></li>
+                                    href="{{ action('ExpenseCategoriesController@create') }}">إضافة فئة</a></li>
                             @endpermission
                         </ul>
                     </li>
@@ -255,23 +252,23 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-plans', 'view-plan'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('plans*', true) }}">
                         <a href="#">
-                            <i class="ion-compose"></i> <span>Plans</span>
+                            <i class="ion-compose"></i> <span>الخطط</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('plans/all') }}"><a
-                                    href="{{ action('PlansController@index') }}">All Plans</a></li>
+                                    href="{{ action('PlansController@index') }}">كل الخطط</a></li>
                             @permission(['manage-gymie', 'manage-plans', 'add-plan'])
                             <li class="{{ Utilities::setActiveMenu('plans/create') }}"><a
-                                    href="{{ action('PlansController@create') }}">Add Plan</a></li>
+                                    href="{{ action('PlansController@create') }}">إضافة خطة</a></li>
                             @endpermission
                             @permission(['manage-gymie', 'manage-services', 'view-service'])
                             <li class="{{ Utilities::setActiveMenu('plans/services/all') }}"><a
-                                    href="{{ action('ServicesController@index') }}">Gym Services</a>
+                                    href="{{ action('ServicesController@index') }}">خدمات الصالة</a>
                             </li>
                             @endpermission
                             @permission(['manage-gymie', 'manage-services', 'add-service'])
                             <li class="{{ Utilities::setActiveMenu('plans/services/create') }}"><a
-                                    href="{{ action('ServicesController@create') }}">Add Service</a>
+                                    href="{{ action('ServicesController@create') }}">إضافة خدمة</a>
                             </li>
                             @endpermission
                         </ul>
@@ -281,21 +278,21 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-products', 'view-product'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('products*', true) }}">
                         <a href="#">
-                            <i class="ion-bag"></i> <span>Shop</span>
+                            <i class="ion-bag"></i> <span>المتجر</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('purchase/all') }}"><a
-                                    href="{{ action('PurchaseController@index') }}">All Purchase</a></li>
+                                    href="{{ action('PurchaseController@index') }}">كل المشتريات</a></li>
                             @permission(['manage-gymie', 'manage-purchase', 'add-purchase'])
                             <li class="{{ Utilities::setActiveMenu('purchase/create') }}"><a
-                                    href="{{ action('PurchaseController@create') }}">Add Purchase</a></li>
+                                    href="{{ action('PurchaseController@create') }}">إضافة مشتريات</a></li>
                             @endpermission
 
                             <li class="{{ Utilities::setActiveMenu('products/all') }}"><a
-                                    href="{{ action('ProductController@index') }}">All Products</a></li>
+                                    href="{{ action('ProductController@index') }}">كل المنتجات</a></li>
                             @permission(['manage-gymie', 'manage-products', 'add-product'])
                             <li class="{{ Utilities::setActiveMenu('products/create') }}"><a
-                                    href="{{ action('ProductController@create') }}">Add Product</a></li>
+                                    href="{{ action('ProductController@create') }}">إضافة منتج</a></li>
                             @endpermission
                         </ul>
                     </li>
@@ -304,22 +301,21 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-users'])
                     <li class="nav-dropdown {{ Utilities::setActiveMenu('user*', true) }}">
                         <a href="#">
-                            <i class="fa fa-users"></i> <span>Users</span>
+                            <i class="fa fa-users"></i> <span>المستخدمين</span>
                         </a>
                         <ul>
                             <li class="{{ Utilities::setActiveMenu('user') }}"><a
-                                    href="{{ action('AclController@userIndex') }}"><i class="fa fa-upload"></i> All
-                                    Users</a></li>
+                                    href="{{ action('AclController@userIndex') }}"><i class="fa fa-upload"></i> كل المستخدمين</a></li>
                             <li class="{{ Utilities::setActiveMenu('user/create') }}"><a
                                     href="{{ action('AclController@createUser') }}"><i class="fa fa-list"></i>
-                                    Add new user</a></li>
+                                    إضافة مستخدم جديد</a></li>
                             <li class="{{ Utilities::setActiveMenu('user/role') }}"><a
                                     href="{{ action('AclController@roleIndex') }}"><i class="fa fa-list"></i>
-                                    Roles</a></li>
+                                    الأدوار</a></li>
                             @role('Gymie')
                             <li class="{{ Utilities::setActiveMenu('user/permission') }}"><a
                                     href="{{ action('AclController@permissionIndex') }}"><i class="fa fa-list"></i>
-                                    Permissions</a></li>
+                                    الصلاحيات</a></li>
                             @endrole
                         </ul>
                     </li>
@@ -328,7 +324,7 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     @permission(['manage-gymie', 'manage-settings'])
                     <li class="{{ Utilities::setActiveMenu('settings*') }}">
                         <a href="{{ action('SettingsController@edit') }}">
-                            <i class="fa fa-cogs fa-2x"></i> <span>Settings</span>
+                            <i class="fa fa-cogs fa-2x"></i> <span>الإعدادات</span>
                         </a>
                     </li>
                     @endpermission

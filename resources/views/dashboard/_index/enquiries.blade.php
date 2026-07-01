@@ -1,4 +1,4 @@
-<div class="table-responsive {!! (! $enquiries->isEmpty() ? 'panel-scroll' : '')  !!}">
+﻿<div class="table-responsive {!! (! $enquiries->isEmpty() ? 'panel-scroll' : '')  !!}">
     <table class="table table-hover table-condensed">
         @forelse($enquiries as $enquiry)
             <tr>
@@ -10,7 +10,7 @@
             </tr>
         @empty
             <div class="tab-empty-panel font-size-24 color-grey-300">
-                No Data
+                لا توجد بيانات
             </div>
         @endforelse
     </table>
@@ -18,5 +18,9 @@
 
 @if(!$enquiries->isEmpty())
     <a class="btn btn-color btn-xs palette-concrete pull-right margin-right-10 margin-top-10"
-       href="{{ action('EnquiriesController@index') }}">View All</a>
+       href="{{ action('EnquiriesController@index') }}">عرض الكل</a>
 @endif
+
+
+
+

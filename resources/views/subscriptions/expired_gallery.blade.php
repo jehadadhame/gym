@@ -1,4 +1,4 @@
-@extends('app')
+﻿@extends('app')
 
 @section('content')
 
@@ -34,13 +34,13 @@
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
         @include('flash::message')
         <h1 class="page-title no-line-height">Expired subscriptions
-            <small>Details of all expired subscriptions</small>
+            <small>Details من all expired subscriptions</small>
         </h1>
         @permission(['manage-gymie', 'pagehead-stats'])
         <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right">
             <span data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600"
                 data-refresh-interval="10"></span>
-            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Expired Subscriptions</small>
+            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">الاشتراكات المنتهية</small>
         </h1>
         @endpermission
     </div><!-- / PageHead -->
@@ -72,7 +72,7 @@
 
                                     <div class="col-sm-2">
                                         {!! Form::label('sort_field', 'Sort By') !!}
-                                        {!! Form::select('sort_field', array('created_at' => 'Date', 'plan_name' => 'Plan name', 'DOB' => 'Member age'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
+                                        {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'plan_name' => 'Plan name', 'DOB' => 'Member age'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
                                     </div>
 
                                     <div class="col-sm-2">
@@ -100,7 +100,7 @@
 
                     <div class="panel-body no-padding-top bg-white">
                         @if($allExpired->count() == 0)
-                            <h4 class="text-center padding-top-15">Sorry! No records found</h4>
+                            <h4 class="text-center padding-top-15">عذراً! لا توجد سجلات</h4>
                         @else
                             <div class="row">
                                 @foreach ($allExpired as $expired)
@@ -153,7 +153,7 @@
                             <div class="row">
                                 <div class="col-xs-6">
                                     <div class="gymie_paging_info">
-                                        Showing page {{ $allExpired->currentPage() }} of {{ $allExpired->lastPage() }}
+                                        عرض الصفحة {{ $allExpired->currentPage() }} من {{ $allExpired->lastPage() }}
                                     </div>
                                 </div>
 

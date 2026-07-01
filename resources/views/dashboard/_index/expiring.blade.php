@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use Carbon\Carbon; ?>
 
@@ -40,7 +40,7 @@ use Carbon\Carbon; ?>
                     <span class="table-sub-data">{{ $member->name }}</span>
                 </a>
                 @else
-                <span class="table-sub-data text-muted">No Member</span>
+                <span class="table-sub-data text-muted">لا يوجد عضو</span>
                 @endif
             </td>
 
@@ -63,7 +63,7 @@ use Carbon\Carbon; ?>
 
         @empty
         <div class="tab-empty-panel font-size-24 color-grey-300">
-            No Data
+            لا توجد بيانات
         </div>
         @endforelse
 
@@ -73,6 +73,9 @@ use Carbon\Carbon; ?>
 @if(!$expirings->isEmpty())
 <a class="btn btn-color btn-xs palette-concrete pull-right margin-right-10 margin-top-10"
     href="{{ action('SubscriptionsController@expiring') }}">
-    View All
+    عرض الكل
 </a>
 @endif
+
+
+

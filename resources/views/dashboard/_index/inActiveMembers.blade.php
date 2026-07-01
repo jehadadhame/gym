@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $count = App\Member::where('status',0)->count();
 ?>
 <div class="panel bg-amber-300">
@@ -15,9 +15,13 @@ $count = App\Member::where('status',0)->count();
             <div class="clearfix"></div>
 
             <div class="pull-left">
-                <div class="display-block color-amber-50 font-weight-600">Inactive Members</div>
+                <div class="display-block color-amber-50 font-weight-600">الأعضاء غير النشطين</div>
             </div>
         </div>
     </div>
 </div><!-- /.panel -->
                 
+
+
+
+

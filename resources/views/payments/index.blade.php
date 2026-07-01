@@ -6,17 +6,17 @@
     <!-- BEGIN PAGE HEADING -->
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
         @include('flash::message')
-        <h1 class="page-title no-line-height">Payments
+        <h1 class="page-title no-line-height">المدفوعات
             @permission(['manage-gymie', 'manage-payments', 'add-payment'])
             <a href="{{ action('PaymentsController@create') }}" class="page-head-btn btn-sm btn-primary active"
-                role="button">Add New</a>
-            <small>Details of all gym payments</small>
+                role="button">إضافة جديد</a>
+            <small>تفاصيل جميع مدفوعات الصالة</small>
         </h1>
         @permission(['manage-gymie', 'pagehead-stats'])
         <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span
                 data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600"
                 data-refresh-interval="10"></span>
-            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Total payment</small>
+            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">إجمالي المدفوعات</small>
         </h1>
         @endpermission
         @endpermission
@@ -37,7 +37,7 @@
 
                                     <div class="col-sm-3">
 
-                                        {!! Form::label('member-daterangepicker', 'Date range') !!}
+                                        {!! Form::label('member-daterangepicker', 'نطاق التاريخ') !!}
 
                                         <div id="member-daterangepicker"
                                             class="gymie-daterangepicker btn bg-grey-50 daterange-padding no-border color-grey-600 hidden-xs no-shadow">
@@ -51,24 +51,24 @@
                                     </div>
 
                                     <div class="col-sm-2">
-                                        {!! Form::label('sort_field', 'Sort By') !!}
-                                        {!! Form::select('sort_field', array('created_at' => 'Date', 'payment_amount' => 'Amount', 'mode' => 'Mode', 'member_name' => 'Member Name', 'member_code' => 'Member Code', 'invoice_number' => 'Invoice Number'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
+                                        {!! Form::label('sort_field', 'ترتيب حسب') !!}
+                                        {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'payment_amount' => 'المبلغ', 'mode' => 'النوع', 'member_name' => 'اسم العضو', 'member_code' => 'كود العضو', 'invoice_number' => 'رقم الفاتورة'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
                                     </div>
 
                                     <div class="col-sm-2">
-                                        {!! Form::label('sort_direction', 'Order') !!}
-                                        {!! Form::select('sort_direction', array('desc' => 'Descending', 'asc' => 'Ascending'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
+                                        {!! Form::label('sort_direction', 'الترتيب') !!}
+                                        {!! Form::select('sort_direction', array('desc' => 'تنازلي', 'asc' => 'تصاعدي'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
                                     </div>
 
                                     <div class="col-xs-3">
-                                        {!! Form::label('search', 'Keyword') !!}
+                                        {!! Form::label('search', 'كلمة البحث') !!}
                                         <input value="{{ old('search') }}" name="search" id="search" type="text"
-                                            class="form-control padding-right-35" placeholder="Search...">
+                                            class="form-control padding-right-35" placeholder="بحث...">
                                     </div>
 
                                     <div class="col-xs-2">
                                         {!! Form::label('&nbsp;') !!} <br />
-                                        <button type="submit" class="btn btn-primary active no-border">GO</button>
+                                        <button type="submit" class="btn btn-primary active no-border">تطبيق</button>
                                     </div>
 
                                     {!! Form::Close() !!}
@@ -80,23 +80,23 @@
 
                     <div class="panel-body bg-white">
                         @if($payment_details->count() == 0)
-                            <h4 class="text-center padding-top-15">Sorry! No records found</h4>
+                            <h4 class="text-center padding-top-15">عذراً! لم يتم العثور على سجلات</h4>
                         @else
                                 <div class="text-right mb-3">
                                     <button class="btn btn-success no-border" onclick="window.print()">
-                                        <i class="fa fa-print"></i> Print Payments
+                                        <i class="fa fa-print"></i> طباعة المدفوعات
                                     </button>
                                 </div>
 
                                 <table id="payments" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Invoice Number</th>
-                                            <th>Member Name</th>
-                                            <th>Amount</th>
-                                            <th>Mode</th>
-                                            <th>On</th>
-                                            <th class="text-center">Actions</th>
+                                            <th>رقم الفاتورة</th>
+                                            <th>اسم العضو</th>
+                                            <th>المبلغ</th>
+                                            <th>النوع</th>
+                                            <th>التاريخ</th>
+                                            <th class="text-center">الإجراءات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -113,7 +113,7 @@
                                                     </td>
                                                     <td>
                                                         <i class="fa fa-inr"></i>
-                                                        {{ ($payment_detail->payment_amount >= 0 ? $payment_detail->payment_amount : str_replace("-", "", $payment_detail->payment_amount) . " (Paid)") }}
+                                                        {{ ($payment_detail->payment_amount >= 0 ? $payment_detail->payment_amount : str_replace("-", "", $payment_detail->payment_amount) . " (مدفوع)") }}
                                                     </td>
                                                     @if($payment_detail->mode == 1)
                                                         <td>{{ Utilities::getPaymentMode($payment_detail->mode)}}</td>
@@ -126,7 +126,7 @@
 
                                                     <td class="text-center">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-info">Actions</button>
+                                                            <button type="button" class="btn btn-info">إجراءات</button>
                                                             <button type="button" class="btn btn-info dropdown-toggle"
                                                                 data-toggle="dropdown" aria-expanded="false">
                                                                 <span class="caret"></span>
@@ -137,7 +137,7 @@
                                                                     @permission(['manage-gymie', 'manage-payments', 'edit-payment'])
                                                                     <a
                                                                         href="{{ action('PaymentsController@edit',['id' => $payment_detail->id]) }}">
-                                                                        Edit details
+                                                                        تعديل التفاصيل
                                                                     </a>
                                                                     @endpermission
                                                                 </li>
@@ -155,27 +155,27 @@
                                                                                                                 <li>
                                                                                                                     <a
                                                                                                                         href="{{ action('PaymentsController@depositCheque',['id' => $payment_detail->id]) }}">
-                                                                                                                        Mark as deposited
+                                                                                                                        تحديد كمودع
                                                                                                                     </a>
                                                                                                                 </li>
                                                                                                             @elseif($cheque->status == 1)
                                                                                                                 <li>
                                                                                                                     <a
                                                                                                                         href="{{ action('PaymentsController@clearCheque',['id' => $payment_detail->id]) }}">
-                                                                                                                        Mark as cleared
+                                                                                                                        تحديد كمسدد
                                                                                                                     </a>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <a
                                                                                                                         href="{{ action('PaymentsController@chequeBounce',['id' => $payment_detail->id]) }}">
-                                                                                                                        Mark as bounced
+                                                                                                                        تحديد كمرتجع
                                                                                                                     </a>
                                                                                                                 </li>
                                                                                                             @elseif($cheque->status == 3)
                                                                                                                 <li>
                                                                                                                     <a
                                                                                                                         href="{{ action('PaymentsController@chequeReissue',['id' => $payment_detail->id]) }}">
-                                                                                                                        Reissued
+                                                                                                                        أعيد إصداره
                                                                                                                     </a>
                                                                                                                 </li>
 
@@ -187,7 +187,7 @@
                                                                     <a href="#" class="delete-record"
                                                                         data-delete-url="{{ url('payments/' . $payment_detail->id . '/delete') }}"
                                                                         data-record-id="{{$payment_detail->id}}">
-                                                                        Delete transaction
+                                                                        حذف المعاملة
                                                                     </a>
                                                                     @endpermission
                                                                 </li>
@@ -205,7 +205,7 @@
                                     <div class="col-xs-6">
                                         <div class="gymie_paging_info">
                                             <!-- TO DO -->
-                                            Showing page {{ $payment_details->currentPage() }} of
+                                            عرض الصفحة {{ $payment_details->currentPage() }} من
                                             {{ $payment_details->lastPage() }}
                                         </div>
                                     </div>

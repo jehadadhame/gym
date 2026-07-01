@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     use Carbon\Carbon;
 ?>
 <div class="table-responsive {!! (! $recents->isEmpty() ? 'panel-scroll' : '')  !!}">
@@ -30,12 +30,15 @@
             </tr>
         @empty
             <div class="tab-empty-panel font-size-24 color-grey-300">
-                No Data
+                لا توجد بيانات
             </div>
         @endforelse
     </table>
 </div>
 @if(!$recents->isEmpty())
     <a class="btn btn-color btn-xs palette-concrete pull-right margin-right-10 margin-top-10"
-       href="{{ action('MembersController@index') }}">View All</a>
+       href="{{ action('MembersController@index') }}">عرض الكل</a>
 @endif
+
+
+
