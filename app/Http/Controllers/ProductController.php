@@ -23,7 +23,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::excludeArchive()->search('"' . $request->input("search") . '"')->paginate(10);
+        $products = Product::excludeArchive()->search('"' . $request->input("search") . '"')->paginate(30);
         $count = $products->total();
         return view("products.index", compact('products', 'count'));
     }
