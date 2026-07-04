@@ -12,6 +12,7 @@ use App\Setting;
 use App\Followup;
 use App\ChequeDetail;
 use App\Subscription;
+use App\PaymentDetail;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -48,9 +49,50 @@ class DashboardController extends Controller
         $depositedChequesCount = $depositedCheques->count();
         $bouncedCheques = ChequeDetail::where('status', \constChequeStatus::Bounced)->get();
         $bouncedChequesCount = $bouncedCheques->count();
+
+        // New Financial Metrics
+        $currentMonth = date('m');
+        $currentYear = date('Y');
+        
+        $monthlyRevenue = PaymentDetail::whereMonth('created_at', '=', $currentMonth)
+                                       ->whereYear('created_at', '=', $currentYear)
+                                       ->sum('payment_amount');
+                                       
+        $monthlyExpenses = Expense::whereMonth('created_at', '=', $currentMonth)
+                                  ->whereYear('created_at', '=', $currentYear)
+                                  ->sum('amount');
+                                  
+        $activeSubscriptions = Subscription::where('status', \constSubscription::onGoing)->count();
+        $totalMembers = Member::where('status', \constStatus::Active)->count();
         $membersPerPlan = json_decode(\Utilities::membersPerPlan());
 
-        return view('dashboard.index', compact('expirings', 'allExpired', 'birthdays', 'recents', 'enquiries', 'reminders', 'dues', 'outstandings', 'smsRequestSetting', 'smslogs', 'expiringCount', 'expiredCount', 'birthdayCount', 'reminderCount', 'recievedCheques', 'recievedChequesCount', 'depositedCheques', 'depositedChequesCount', 'bouncedCheques', 'bouncedChequesCount', 'membersPerPlan'));
+        return view('dashboard.index', compact(
+            'expirings',
+            'expiringCount',
+            'allExpired',
+            'expiredCount',
+            'birthdays',
+            'birthdayCount',
+            'recents',
+            'enquiries',
+            'reminders',
+            'reminderCount',
+            'dues',
+            'outstandings',
+            'smsRequestSetting',
+            'smslogs',
+            'recievedCheques',
+            'recievedChequesCount',
+            'depositedCheques',
+            'depositedChequesCount',
+            'bouncedCheques',
+            'bouncedChequesCount',
+            'monthlyRevenue',
+            'monthlyExpenses',
+            'activeSubscriptions',
+            'totalMembers',
+            'membersPerPlan'
+        ));
     }
 
     public function smsRequest(Request $request)

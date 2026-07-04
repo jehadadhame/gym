@@ -1,8 +1,6 @@
-﻿@extends('app')
+@extends('app')
 
 @section('content')
-
-
 <div class="rightside bg-grey-100">
     <!-- BEGIN PAGE HEADING -->
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
@@ -11,15 +9,15 @@
             @permission(['manage-gymie', 'manage-subscriptions', 'add-subscription'])
             <a href="{{ action('SubscriptionsController@create') }}" class="page-head-btn btn-sm btn-primary active"
                 role="button">إضافة جديد</a>
-            <small>Details من all gym subscriptions</small>
+            @endpermission
+            <small>تفاصيل جميع اشتراكات الصالة</small>
         </h1>
         @permission(['manage-gymie', 'pagehead-stats'])
-        <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span
+        <h1 class="font-size-30 text-right color-primary-500 animated fadeInDown total-count pull-right"><span
                 data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600"
                 data-refresh-interval="10"></span>
-            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Total Subscriptions</small>
+            <small class="color-text-secondary display-block margin-top-5 font-size-14">إجمالي الاشتراكات</small>
         </h1>
-        @endpermission
         @endpermission
     </div><!-- / PageHead -->
 
@@ -27,227 +25,152 @@
         <!-- Main row -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="panel no-border ">
+                <div class="panel bg-white">
 
-                    <div class="panel-title bg-blue-grey-50">
-                        <div class="panel-head font-size-15">
-
-                            <div class="row">
-                                <div class="col-sm-12 no-padding">
-                                    {!! Form::Open(['method' => 'GET']) !!}
-
-                                    <div class="col-sm-3">
-
-                                        {!! Form::label('subscription-daterangepicker', 'Date range') !!}
-
-                                        <div id="subscription-daterangepicker"
-                                            class="gymie-daterangepicker btn bg-grey-50 daterange-padding no-border color-grey-600 hidden-xs no-shadow">
-                                            <i class="ion-calendar margin-right-10"></i>
-                                            <span>{{$drp_placeholder}}</span>
-                                            <i class="ion-ios-arrow-down margin-left-5"></i>
-                                        </div>
-
-                                        {!! Form::text('drp_start', null, ['class' => 'hidden', 'id' => 'drp_start']) !!}
-                                        {!! Form::text('drp_end', null, ['class' => 'hidden', 'id' => 'drp_end']) !!}
-                                    </div>
-
-                                    <div class="col-sm-2">
-                                        {!! Form::label('sort_field', 'Sort By') !!}
-                                        {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'plan_name' => 'Plan name'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
-                                    </div>
-
-                                    <div class="col-sm-2">
-                                        {!! Form::label('sort_direction', 'Order') !!}
-                                        {!! Form::select('sort_direction', array('desc' => 'Descending', 'asc' => 'Ascending'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
-                                    </div>
-
-                                    <div class="col-xs-2">
-                                        {!! Form::label('plan_name', 'Plan name') !!}
-
-                                        <?php $plans = App\Plan::all(); ?>
-
-                                        <select id="plan_id" name="plan_id" class="form-control selectpicker show-tick">
-
-                                            <option value="0" {{ (old('plan_id') == "" ? "selected" : "") }}>All</option>
-                                            @foreach($plans as $plan)
-                                                <option value="{{ $plan->id }}" {{ (old('plan_id') == $plan->id ? "selected" : "") }}>{{ $plan->plan_name }}</option>
-                                            @endforeach
-
-                                        </select>
-                                    </div>
-
-                                    <div class="col-xs-2">
-                                        {!! Form::label('search', 'Keyword') !!}
-                                        <input value="{{ old('search') }}" name="search" id="search" type="text"
-                                            class="form-control padding-right-35" placeholder="Search...">
-                                    </div>
-
-                                    <div class="col-xs-1">
-                                        {!! Form::label('&nbsp;') !!} <br />
-                                        <button type="submit" class="btn btn-primary active no-border">GO</button>
-                                    </div>
-
-                                    {!! Form::Close() !!}
+                    <!-- Filter Bar -->
+                    <div class="panel-heading bg-white" style="border-bottom: 1px solid var(--color-border-light); padding: 15px 20px;">
+                        {!! Form::Open(['method' => 'GET', 'class' => 'form-inline']) !!}
+                        <div class="row" dir="rtl">
+                            
+                            <div class="col-md-3 col-sm-6 margin-bottom-10">
+                                {!! Form::label('subscription-daterangepicker', 'نطاق التاريخ', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                <div id="subscription-daterangepicker" class="form-control gymie-daterangepicker" style="cursor: pointer; width: 100%;">
+                                    <i class="ion-calendar margin-right-10 color-primary-500"></i>
+                                    <span>{{$drp_placeholder}}</span>
+                                    <i class="ion-ios-arrow-down margin-left-5 pull-left"></i>
                                 </div>
+                                {!! Form::text('drp_start', null, ['class' => 'hidden', 'id' => 'drp_start']) !!}
+                                {!! Form::text('drp_end', null, ['class' => 'hidden', 'id' => 'drp_end']) !!}
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 margin-bottom-10">
+                                {!! Form::label('sort_field', 'ترتيب حسب', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'plan_name' => 'اسم الخطة'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field', 'style' => 'width: 100%;']) !!}
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 margin-bottom-10">
+                                {!! Form::label('sort_direction', 'الترتيب', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                {!! Form::select('sort_direction', array('desc' => 'تنازلي', 'asc' => 'تصاعدي'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction', 'style' => 'width: 100%;']) !!}
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 margin-bottom-10">
+                                {!! Form::label('plan_name', 'اسم الخطة', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                <?php $plans = App\Plan::all(); ?>
+                                <select id="plan_id" name="plan_id" class="form-control selectpicker show-tick" style="width: 100%;">
+                                    <option value="0" {{ (old('plan_id') == "" ? "selected" : "") }}>الكل</option>
+                                    @foreach($plans as $plan)
+                                        <option value="{{ $plan->id }}" {{ (old('plan_id') == $plan->id ? "selected" : "") }}>{{ $plan->plan_name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 margin-bottom-10">
+                                {!! Form::label('search', 'كلمة البحث', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control" placeholder="بحث..." style="width: 100%;">
+                            </div>
+
+                            <div class="col-md-1 col-sm-12 margin-bottom-10 text-left" style="margin-top: 25px;">
+                                <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i></button>
                             </div>
 
                         </div>
+                        {!! Form::Close() !!}
                     </div>
 
-                    <div class="panel-body bg-white">
+                    <div class="panel-body padding-20">
                         @if($subscriptions->count() == 0)
-                            <h4 class="text-center padding-top-15">عذراً! لا توجد سجلات</h4>
+                            <h4 class="text-center padding-top-15 color-text-secondary">عذراً! لا توجد سجلات</h4>
                         @else
-                                <table id="subscriptions" class="table table-bordered table-striped">
+                            <div class="table-responsive">
+                                <table id="subscriptions" class="table table-bordered table-striped" dir="rtl">
                                     <thead>
                                         <tr>
-                                            <th>كود العضو</th>
-                                            <th>اسم العضو</th>
-                                            <th>اسم الخطة</th>
-                                            <th>تاريخ البدء</th>
-                                            <th>تاريخ الانتهاء</th>
-                                            <th>الحالة</th>
-                                            <th class="text-center">Actions</th>
+                                            <th class="text-right">كود العضو</th>
+                                            <th class="text-right">اسم العضو</th>
+                                            <th class="text-right">اسم الخطة</th>
+                                            <th class="text-right">تاريخ البدء</th>
+                                            <th class="text-right">تاريخ الانتهاء</th>
+                                            <th class="text-right">الحالة</th>
+                                            <th class="text-center">الإجراءات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
-                                        <tr>
-
-                                            @foreach ($subscriptions as $subscription)
-
-                                                    <td>
-                                                        <a
-                                                            href="{{ action('MembersController@show',['id' => $subscription->member->id]) }}">{{ $subscription->member->member_code}}</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="{{ action('MembersController@show',['id' => $subscription->member->id]) }}"
-                                                            tabindex="0">{{ $subscription->member->name}}
-
-                                                        </a>
-                                                    </td>
-                                                    <td>{{ $subscription->plan_name}}</td>
-                                                    <td>{{ $subscription->start_date->format('Y-m-d')}}</td>
-                                                    <td>{{ $subscription->end_date->format('Y-m-d')}}</td>
-                                                    <td>
-                                                        <span
-                                                            class="{{ Utilities::getSubscriptionLabel($subscription->status) }}">{{ Utilities::getSubscriptionStatus($subscription->status) }}</span>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">الإجراءات <span class="caret"></span></button>
-                                                            <ul class="dropdown-menu" role="menu">
-                                                                <li>
-                                                                    @permission(['manage-gymie', 'manage-subscriptions', 'edit-subscription'])
-                                                                    <a
-                                                                        href="{{ action('SubscriptionsController@edit',['id' => $subscription->id]) }}">
-                                                                        تعديل التفاصيل
-                                                                    </a>
-                                                                    @endpermission
-                                                                </li>
-                                                                @permission(['manage-gymie', 'manage-subscriptions', 'change-subscription'])
-                                                                <li>
-                                                                    <a
-                                                                        href="{{ action('SubscriptionsController@change',['id' => $subscription->id]) }}">
-                                                                        Upgrade/Downgrade
-                                                                    </a>
-                                                                <li>
-                                                                    @endpermission
-                                                                    @permission(['manage-gymie', 'manage-subscriptions', 'delete-subscription'])
-                                                                    <a href="#" class="delete-record"
-                                                                        data-delete-url="{{ url('subscriptions/' . $subscription->id . '/delete') }}"
-                                                                        data-record-id="{{$subscription->id}}">
-                                                                        حذف الاشتراك
-                                                                    </a>
-                                                                    @endpermission
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </td>
-
-                                                    </td>
-                                                </tr>
-
-                                            @endforeach
-
+                                        @foreach ($subscriptions as $subscription)
+                                            <tr>
+                                                <td>
+                                                    <a href="{{ action('MembersController@show',['id' => $subscription->member->id]) }}" class="font-weight-600 color-primary-500">{{ $subscription->member->member_code}}</a>
+                                                </td>
+                                                <td>
+                                                    <a href="{{ action('MembersController@show',['id' => $subscription->member->id]) }}" class="font-weight-600 color-text-primary">{{ $subscription->member->name}}</a>
+                                                </td>
+                                                <td>{{ $subscription->plan_name}}</td>
+                                                <td dir="ltr" class="text-right">{{ $subscription->start_date->format('Y-m-d')}}</td>
+                                                <td dir="ltr" class="text-right">{{ $subscription->end_date->format('Y-m-d')}}</td>
+                                                <td>
+                                                    <span class="{{ Utilities::getSubscriptionLabel($subscription->status) }}">{{ Utilities::getSubscriptionStatus($subscription->status) }}</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                            الإجراءات <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            <li>
+                                                                @permission(['manage-gymie', 'manage-subscriptions', 'edit-subscription'])
+                                                                <a href="{{ action('SubscriptionsController@edit',['id' => $subscription->id]) }}">
+                                                                    <i class="fa fa-pencil"></i> تعديل التفاصيل
+                                                                </a>
+                                                                @endpermission
+                                                            </li>
+                                                            @permission(['manage-gymie', 'manage-subscriptions', 'change-subscription'])
+                                                            <li>
+                                                                <a href="{{ action('SubscriptionsController@change',['id' => $subscription->id]) }}">
+                                                                    <i class="fa fa-exchange"></i> ترقية/تخفيض الخطة
+                                                                </a>
+                                                            </li>
+                                                            @endpermission
+                                                            <li class="divider"></li>
+                                                            @permission(['manage-gymie', 'manage-subscriptions', 'delete-subscription'])
+                                                            <li>
+                                                                <a href="#" class="delete-record color-error-text" data-delete-url="{{ url('subscriptions/' . $subscription->id . '/delete') }}" data-record-id="{{$subscription->id}}">
+                                                                    <i class="fa fa-trash"></i> حذف الاشتراك
+                                                                </a>
+                                                            </li>
+                                                            @endpermission
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="gymie_paging_info">
-                                            <!-- TO DO -->
-                                            عرض الصفحة {{ $subscriptions->currentPage() }} من {{ $subscriptions->lastPage() }}
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6">
-                                        <div class="gymie_paging pull-right">
-
-                                            {!! str_replace('/?', '?', $subscriptions->appends(Input::all())->render()) !!}
-                                        </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6">
+                                    <div class="gymie_paging_info color-text-secondary">
+                                        عرض الصفحة {{ $subscriptions->currentPage() }} من {{ $subscriptions->lastPage() }}
                                     </div>
                                 </div>
-
+                                <div class="col-xs-6">
+                                    <div class="gymie_paging pull-left">
+                                        {!! str_replace('/?', '?', $subscriptions->appends(Input::all())->render()) !!}
+                                    </div>
+                                </div>
                             </div>
                         @endif
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @stop
 @section('footer_script_init')
 <script type="text/javascript">
     $(document).ready(function () {
         gymie.deleterecord();
-    });
-    let currentIndex = -1;
-
-    $(document).on('keydown', function (e) {
-
-        const $search = $('#search');
-        const $results = $('.member-link');
-
-        // Only when search is focused
-        if ($search.is(':focus')) {
-
-            // TAB → go forward
-            if (e.key === 'Tab' && !e.shiftKey) {
-                e.preventDefault();
-
-                if ($results.length === 0) return;
-
-                currentIndex++;
-                if (currentIndex >= $results.length) currentIndex = 0;
-
-                $results.eq(currentIndex).focus();
-            }
-
-            // SHIFT + TAB → go backward
-            if (e.key === 'Tab' && e.shiftKey) {
-                e.preventDefault();
-
-                if ($results.length === 0) return;
-
-                currentIndex--;
-                if (currentIndex < 0) currentIndex = $results.length - 1;
-
-                $results.eq(currentIndex).focus();
-            }
-        }
-
-        // ENTER → open selected member
-        if (e.key === 'Enter' && $('.member-link:focus').length) {
-            window.location.href = $('.member-link:focus').attr('href');
-        }
-
-        // ESC → go back to search
-        if (e.key === 'Escape' && $('.member-link:focus').length) {
-            $('#search').focus();
-            currentIndex = -1;
-        }
     });
 </script>
 @stop

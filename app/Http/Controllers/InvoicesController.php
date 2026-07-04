@@ -29,7 +29,7 @@ class InvoicesController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(30);
 
         $count = $invoices->total();
 
@@ -53,7 +53,7 @@ class InvoicesController extends Controller
             $request->drp_end,
             $request->input('search')
         )->where('trn_invoice.status', 0)
-            ->paginate(10);
+            ->paginate(30);
 
         $invoicesTotal = Invoice::indexQuery(
             null,
@@ -86,7 +86,7 @@ class InvoicesController extends Controller
             $request->drp_end,
             $request->input('search')
         )->where('trn_invoice.status', 1)
-            ->paginate(10);
+            ->paginate(30);
 
         $count = $invoices->total();
 
@@ -110,7 +110,7 @@ class InvoicesController extends Controller
             $request->drp_end,
             $request->input('search')
         )->where('trn_invoice.status', 2)
-            ->paginate(10);
+            ->paginate(30);
 
         $invoicesTotal = Invoice::indexQuery(
             null,
@@ -143,7 +143,7 @@ class InvoicesController extends Controller
             $request->drp_end,
             $request->input('search')
         )->where('trn_invoice.status', 3)
-            ->paginate(10);
+            ->paginate(30);
 
         $invoicesTotal = Invoice::indexQuery(
             null,

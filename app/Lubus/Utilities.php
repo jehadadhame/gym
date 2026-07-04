@@ -104,27 +104,27 @@ class Utilities
     {
         switch ($aim) {
         case '1':
-            return 'Networking';
+            return 'تعارف';
             break;
 
         case '2':
-            return 'Body Building';
+            return 'كمال أجسام';
             break;
 
         case '3':
-            return 'Fatloss';
+            return 'تخسيس';
             break;
 
         case '4':
-            return 'Weightgain';
+            return 'زيادة وزن';
             break;
 
         case '5':
-            return 'Others';
+            return 'أخرى';
             break;
 
         default:
-            return 'Fitness';
+            return 'لياقة بدنية';
             break;
     }
     }
@@ -328,19 +328,19 @@ class Utilities
     {
         switch ($status) {
         case '1':
-            return 'Paid';
+            return 'مدفوعة';
             break;
 
         case '2':
-            return 'Partial';
+            return 'جزئي';
             break;
 
         case '3':
-            return 'Overpaid';
+            return 'دفع زائد';
             break;
 
         default:
-            return 'Unpaid';
+            return 'غير مدفوعة';
             break;
     }
     }
@@ -350,19 +350,19 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Expired';
+            return 'منتهي';
             break;
 
         case '2':
-            return 'Renewed';
+            return 'مجدد';
             break;
 
         case '3':
-            return 'Cancelled';
+            return 'ملغى';
             break;
 
         default:
-            return 'OnGoing';
+            return 'نشط';
             break;
     }
     }
@@ -394,11 +394,11 @@ class Utilities
     {
         switch ($status) {
         case '0':
-            return 'Cheque';
+            return 'شيك';
             break;
 
         default:
-            return 'Cash';
+            return 'نقدي';
             break;
     }
     }
@@ -408,23 +408,23 @@ class Utilities
     {
         switch ($status) {
         case '1':
-            return 'Deposited';
+            return 'مودع';
             break;
 
         case '2':
-            return 'Cleared';
+            return 'محصل';
             break;
 
         case '3':
-            return 'Bounced';
+            return 'مرتجع';
             break;
 
         case '4':
-            return 'Reissued';
+            return 'معاد إصداره';
             break;
 
         default:
-            return 'Recieved';
+            return 'مستلم';
             break;
     }
     }
@@ -434,11 +434,11 @@ class Utilities
     {
         switch ($gender) {
         case 'm':
-            return 'Male';
+            return 'ذكر';
             break;
 
         case 'f':
-            return 'Female';
+            return 'أنثى';
             break;
     }
     }

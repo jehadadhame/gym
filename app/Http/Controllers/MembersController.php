@@ -38,7 +38,7 @@ class MembersController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(20);
 
         $count = $members->total();
         // dd($members);
@@ -57,7 +57,7 @@ class MembersController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(20);
 
         $count = $members->total();
 
@@ -76,7 +76,7 @@ class MembersController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(20);
 
         $count = $members->total();
         $drp_placeholder = $this->drpPlaceholder($request);

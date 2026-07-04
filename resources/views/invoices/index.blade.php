@@ -1,156 +1,136 @@
 @extends('app')
 
 @section('content')
-
 <div class="rightside bg-grey-100">
     <!-- BEGIN PAGE HEADING -->
     <div class="page-head bg-grey-100 padding-top-15 no-padding-bottom">
         @include('flash::message')
-        <h1 class="page-title no-line-height">Invoices
-            <small>Details of all gym invoices</small>
+        <h1 class="page-title no-line-height">الفواتير
+            <small>تفاصيل جميع فواتير الصالة</small>
         </h1>
         @permission(['manage-gymie', 'pagehead-stats'])
-        <h1 class="font-size-30 text-right color-blue-grey-600 animated fadeInDown total-count pull-right"><span
+        <h1 class="font-size-30 text-right color-primary-500 animated fadeInDown total-count pull-right"><span
                 data-toggle="counter" data-start="0" data-from="0" data-to="{{ $count }}" data-speed="600"
                 data-refresh-interval="10"></span>
-            <small class="color-blue-grey-600 display-block margin-top-5 font-size-14">Total Invoices</small>
+            <small class="color-text-secondary display-block margin-top-5 font-size-14">إجمالي الفواتير</small>
         </h1>
         @endpermission
     </div><!-- / PageHead -->
 
     <div class="container-fluid">
-        <div class="row"><!-- Main row -->
-            <div class="col-lg-12"><!-- Main Col -->
-                <div class="panel no-border ">
-                    <div class="panel-title bg-blue-grey-50">
-                        <div class="panel-head font-size-15">
+        <!-- Main row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel bg-white">
 
-                            <div class="row">
-                                <div class="col-sm-12 no-padding">
-                                    {!! Form::Open(['method' => 'GET']) !!}
-
-                                    <div class="col-sm-3">
-
-                                        {!! Form::label('invoice-daterangepicker', 'Date range') !!}
-
-                                        <div id="invoice-daterangepicker"
-                                            class="gymie-daterangepicker btn bg-grey-50 daterange-padding no-border color-grey-600 hidden-xs no-shadow">
-                                            <i class="ion-calendar margin-right-10"></i>
-                                            <span>{{$drp_placeholder}}</span>
-                                            <i class="ion-ios-arrow-down margin-left-5"></i>
-                                        </div>
-
-                                        {!! Form::text('drp_start', null, ['class' => 'hidden', 'id' => 'drp_start']) !!}
-                                        {!! Form::text('drp_end', null, ['class' => 'hidden', 'id' => 'drp_end']) !!}
-                                    </div>
-
-                                    <div class="col-sm-2">
-                                        {!! Form::label('sort_field', 'Sort By') !!}
-                                        {!! Form::select('sort_field', array('created_at' => 'Date', 'invoice_number' => 'Invoice number', 'member_name' => 'Member name', 'total' => 'Total amount', 'pending_amount' => 'Pending amount'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field']) !!}
-                                    </div>
-
-                                    <div class="col-sm-2">
-                                        {!! Form::label('sort_direction', 'Order') !!}
-                                        {!! Form::select('sort_direction', array('desc' => 'Descending', 'asc' => 'Ascending'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction']) !!}</span>
-                                    </div>
-
-                                    <div class="col-xs-3">
-                                        {!! Form::label('search', 'Keyword') !!}
-                                        <input value="{{ old('search') }}" name="search" id="search" type="text"
-                                            class="form-control padding-right-35" placeholder="Search...">
-                                    </div>
-
-                                    <div class="col-xs-2">
-                                        {!! Form::label('&nbsp;') !!} <br />
-                                        <button type="submit" class="btn btn-primary active no-border">GO</button>
-                                    </div>
-
-                                    {!! Form::Close() !!}
+                    <!-- Filter Bar -->
+                    <div class="panel-heading bg-white" style="border-bottom: 1px solid var(--color-border-light); padding: 15px 20px;">
+                        {!! Form::Open(['method' => 'GET', 'class' => 'form-inline']) !!}
+                        <div class="row" dir="rtl">
+                            
+                            <div class="col-md-3 col-sm-6 margin-bottom-10">
+                                {!! Form::label('invoice-daterangepicker', 'نطاق التاريخ', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                <div id="invoice-daterangepicker" class="form-control gymie-daterangepicker" style="cursor: pointer; width: 100%;">
+                                    <i class="ion-calendar margin-right-10 color-primary-500"></i>
+                                    <span>{{$drp_placeholder}}</span>
+                                    <i class="ion-ios-arrow-down margin-left-5 pull-left"></i>
                                 </div>
+                                {!! Form::text('drp_start', null, ['class' => 'hidden', 'id' => 'drp_start']) !!}
+                                {!! Form::text('drp_end', null, ['class' => 'hidden', 'id' => 'drp_end']) !!}
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 margin-bottom-10">
+                                {!! Form::label('sort_field', 'ترتيب حسب', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                {!! Form::select('sort_field', array('created_at' => 'التاريخ', 'invoice_number' => 'رقم الفاتورة', 'member_name' => 'اسم العضو', 'total' => 'المبلغ الإجمالي', 'pending_amount' => 'المبلغ المتبقي'), old('sort_field'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_field', 'style' => 'width: 100%;']) !!}
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 margin-bottom-10">
+                                {!! Form::label('sort_direction', 'الترتيب', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                {!! Form::select('sort_direction', array('desc' => 'تنازلي', 'asc' => 'تصاعدي'), old('sort_direction'), ['class' => 'form-control selectpicker show-tick show-menu-arrow', 'id' => 'sort_direction', 'style' => 'width: 100%;']) !!}
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 margin-bottom-10">
+                                {!! Form::label('search', 'كلمة البحث', ['class' => 'color-text-secondary font-weight-600 display-block margin-bottom-5']) !!}
+                                <input value="{{ old('search') }}" name="search" id="search" type="text" class="form-control" placeholder="بحث..." style="width: 100%;">
+                            </div>
+
+                            <div class="col-md-1 col-sm-12 margin-bottom-10 text-left" style="margin-top: 25px;">
+                                <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i></button>
                             </div>
 
                         </div>
+                        {!! Form::Close() !!}
                     </div>
-                    <div class="panel-body bg-white">
+
+                    <div class="panel-body padding-20">
                         @if($invoices->count() == 0)
-                            <h4 class="text-center">Sorry! No records found</h4>
+                            <h4 class="text-center padding-top-15 color-text-secondary">عذراً! لا توجد سجلات</h4>
                         @else
-                                <table id="invoices" class="table table-bordered table-striped">
+                            <div class="table-responsive">
+                                <table id="invoices" class="table table-bordered table-striped" dir="rtl">
                                     <thead>
                                         <tr>
-                                            <th>Invoice No</th>
-                                            <th>Member Name</th>
-                                            <th>Total Amount</th>
-                                            <th>Pending</th>
-                                            <th>Discount</th>
-                                            <th>Status</th>
-                                            <th>Created On</th>
-                                            <th>Actions</th>
+                                            <th class="text-right">رقم الفاتورة</th>
+                                            <th class="text-right">اسم العضو</th>
+                                            <th class="text-right">المبلغ الإجمالي</th>
+                                            <th class="text-right">المبلغ المتبقي</th>
+                                            <th class="text-right">الخصم</th>
+                                            <th class="text-right">الحالة</th>
+                                            <th class="text-right">تاريخ الإنشاء</th>
+                                            <th class="text-center">الإجراءات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($invoices as $invoice)
                                             <tr>
-                                                <td><a
-                                                        href="{{ action('InvoicesController@show',['id' => $invoice->id]) }}">{{ $invoice->invoice_number}}</a>
-                                                </td>
-                                                <td><a
-                                                        href="{{ action('MembersController@show',['id' => $invoice->member->id]) }}">{{ $invoice->member_name}}</a>
-                                                </td>
-                                                <td>{{ $invoice->total}}</td>
-                                                <td>{{ $invoice->pending_amount}}</td>
-                                                <td>{{ $invoice->discount_amount}}</td>
                                                 <td>
-                                                    <span
-                                                        class="{{ Utilities::getInvoiceLabel($invoice->status) }}">{{ Utilities::getInvoiceStatus($invoice->status) }}</span>
+                                                    <a href="{{ action('InvoicesController@show',['id' => $invoice->id]) }}" class="font-weight-600 color-primary-500">{{ $invoice->invoice_number}}</a>
                                                 </td>
-                                                <td>{{ $invoice->created_at->toDayDateTimeString()}}</td>
                                                 <td>
+                                                    <a href="{{ action('MembersController@show',['id' => $invoice->member->id]) }}" class="font-weight-600 color-text-primary">{{ $invoice->member_name}}</a>
+                                                </td>
+                                                <td class="font-weight-700">₪ {{ $invoice->total}}</td>
+                                                <td class="font-weight-700 color-error-text">₪ {{ $invoice->pending_amount}}</td>
+                                                <td>₪ {{ $invoice->discount_amount}}</td>
+                                                <td>
+                                                    <span class="{{ Utilities::getInvoiceLabel($invoice->status) }}">{{ Utilities::getInvoiceStatus($invoice->status) }}</span>
+                                                </td>
+                                                <td dir="ltr" class="text-right">{{ $invoice->created_at->format('Y-m-d H:i')}}</td>
+                                                <td class="text-center">
                                                     <div class="btn-group">
-                                                        <button type="button" class="btn btn-info">Actions</button>
-                                                        <button type="button" class="btn btn-info dropdown-toggle"
-                                                            data-toggle="dropdown" aria-expanded="false">
-                                                            <span class="caret"></span>
-                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                            الإجراءات <span class="caret"></span>
                                                         </button>
-                                                        <ul class="dropdown-menu" role="menu">
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
                                                             <li>
                                                                 @permission(['manage-gymie', 'manage-invoices', 'view-invoice'])
-                                                                <a
-                                                                    href="{{ action('InvoicesController@show',['id' => $invoice->id]) }}">
-                                                                    View invoice
+                                                                <a href="{{ action('InvoicesController@show',['id' => $invoice->id]) }}">
+                                                                    <i class="fa fa-file-text-o"></i> عرض الفاتورة
                                                                 </a>
                                                                 @endpermission
                                                             </li>
                                                             @if($invoice->discount_amount > 0)
-
                                                                 @permission(['manage-gymie', 'manage-invoices', 'add-discount'])
                                                                 <li>
-                                                                    <a
-                                                                        href="{{ action('InvoicesController@discount',['id' => $invoice->id]) }}">
-                                                                        Edit Discount
+                                                                    <a href="{{ action('InvoicesController@discount',['id' => $invoice->id]) }}">
+                                                                        <i class="fa fa-tag"></i> تعديل الخصم
                                                                     </a>
                                                                 </li>
                                                                 @endpermission
-
                                                             @elseif($invoice->discount_amount == 0)
-
                                                                 @permission(['manage-gymie', 'manage-invoices', 'add-discount'])
                                                                 <li>
-                                                                    <a
-                                                                        href="{{ action('InvoicesController@discount',['id' => $invoice->id]) }}">
-                                                                        Add Discount
+                                                                    <a href="{{ action('InvoicesController@discount',['id' => $invoice->id]) }}">
+                                                                        <i class="fa fa-tag"></i> إضافة خصم
                                                                     </a>
                                                                 </li>
                                                                 @endpermission
-
                                                             @endif
+                                                            <li class="divider"></li>
                                                             <li>
                                                                 @permission(['manage-gymie', 'manage-invoices', 'delete-invoice'])
-                                                                <a href="#" class="delete-record"
-                                                                    data-delete-url="{{ url('invoices/' . $invoice->id . '/delete') }}"
-                                                                    data-record-id="{{$invoice->id}}">
-                                                                    Delete invoice
+                                                                <a href="#" class="delete-record color-error-text" data-delete-url="{{ url('invoices/' . $invoice->id . '/delete') }}" data-record-id="{{$invoice->id}}">
+                                                                    <i class="fa fa-trash"></i> حذف الفاتورة
                                                                 </a>
                                                                 @endpermission
                                                             </li>
@@ -159,37 +139,36 @@
                                                 </td>
                                             </tr>
                                         @endforeach
-
                                     </tbody>
                                 </table>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="gymie_paging_info">
-                                            Showing page {{ $invoices->currentPage() }} of {{ $invoices->lastPage() }}
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6">
-                                        <div class="gymie_paging pull-right">
-                                            {!! str_replace('/?', '?', $invoices->appends(Input::Only('search'))->render()) !!}
-                                        </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6">
+                                    <div class="gymie_paging_info color-text-secondary">
+                                        عرض الصفحة {{ $invoices->currentPage() }} من {{ $invoices->lastPage() }}
                                     </div>
                                 </div>
+                                <div class="col-xs-6">
+                                    <div class="gymie_paging pull-left">
+                                        {!! str_replace('/?', '?', $invoices->appends(Input::Only('search'))->render()) !!}
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div><!-- / Panel-Body -->
                         @endif
-                </div><!-- / Panel-no-Border -->
-            </div><!-- / Main-Col -->
-        </div><!-- / Main-Row -->
-    </div><!-- / Container -->
-</div><!-- / RightSide -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @stop
+
 @section('footer_script_init')
 <script type="text/javascript">
     $(document).ready(function () {
         gymie.deleterecord();
-
+    });
 </script>
-
 @stop

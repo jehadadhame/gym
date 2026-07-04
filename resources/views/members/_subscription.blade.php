@@ -3,23 +3,18 @@ use Carbon\Carbon;
 ?>
 <div class="row" id="optionBox">
     <div class="col-md-12">
-        <div class="panel no-border">
-            <div class="panel-title">
-                <div class="panel-head font-size-20">Enter details of the subscription</div>
-            </div>
-
-            <div class="panel-body">
+        <h4 class="form-section-title margin-top-40">تفاصيل الاشتراك</h4>
                 <div class="row">
                     <div class="col-sm-5">
-                        {!! Form::label('plan_0','Plan') !!}
+                        {!! Form::label('plan_0','الخطة') !!}
                     </div>
 
                     <div class="col-sm-3">
-                        {!! Form::label('start_date_0','Start Date') !!}
+                        {!! Form::label('start_date_0','تاريخ البدء') !!}
                     </div>
 
                     <div class="col-sm-3">
-                        {!! Form::label('end_date_0','End Date') !!}
+                        {!! Form::label('end_date_0','تاريخ الانتهاء') !!}
                     </div>
 
                     <div class="col-sm-1">
@@ -69,12 +64,9 @@ use Carbon\Carbon;
                 <div class="row">
                     <div class="col-sm-2 pull-right">
                         <div class="form-group">
-                            <span class="btn btn-sm btn-primary pull-right" id="addSubscription">Add</span>
+                            <span class="btn btn-sm btn-primary pull-right" id="addSubscription">إضافة</span>
                         </div>
                     </div>
                 </div>
-            </div> <!-- / Panel Body -->
-
-        </div> <!-- /Panel-no-border -->
     </div> <!-- /Main Column -->
 </div> <!-- /Main Row -->

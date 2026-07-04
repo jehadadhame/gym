@@ -6,25 +6,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="panel no-border">
-                        <div class="panel-title">
-                            <div class="panel-head font-size-20">Enter details of the product</div>
+                    <div class="panel bg-white">
+                        <div class="panel-heading bg-white" style="border-bottom: 1px solid var(--color-border-light); padding: 15px 20px;">
+                            <div class="panel-title font-size-20 color-text-primary font-weight-700">تفاصيل المنتج</div>
                         </div>
+                        <div class="panel-body padding-20" dir="rtl">
+                            {!! Form::model($product, ['method' => 'POST','action' => ['ProductController@update',$product->id],'id'=>'productsform']) !!}
 
-                        {!! Form::model($product, ['method' => 'POST','action' => ['ProductController@update',$product->id],'id'=>'productsform']) !!}
+                            @include('products.form',['submitButtonText' => 'تحديث'])
 
-                        @include('products.form',['submitButtonText' => 'Update'])
-
-                        {!! Form::Close() !!}
-
-                        </form>
-
+                            {!! Form::Close() !!}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        @stop
-        @section('footer_scripts')
-            <script src="{{ URL::asset('assets/js/product.js') }}" type="text/javascript"></script>
+@stop
+@section('footer_scripts')
+    <script src="{{ URL::asset('assets/js/product.js') }}" type="text/javascript"></script>
 @stop

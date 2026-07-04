@@ -20,7 +20,7 @@ class ExpenseCategoriesController extends Controller
      */
     public function index()
     {
-        $expenseCategories = ExpenseCategory::paginate(10);
+        $expenseCategories = ExpenseCategory::paginate(30);
         $count = $expenseCategories->total();
 
         return view('expenseCategories.index', compact('expenseCategories', 'count'));

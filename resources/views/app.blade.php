@@ -11,7 +11,7 @@
 
     <title>TargetOne</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- BEGIN CORE FRAMEWORK -->
     <link href="{{ URL::asset('assets/plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
@@ -45,6 +45,7 @@
     <link href="{{ URL::asset('assets/css/mystyle.css') }}" rel="stylesheet" />
     <link href="{{ URL::asset('assets/css/print.css') }}" media="print" rel="stylesheet" />
     <link href="{{ URL::asset('assets/css/rtl.css') }}" rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/rihab-theme.css') }}" rel="stylesheet" />
     <!-- END THEME STYLES -->
     @include('_jsVariables')
     @yield('header_scripts')
@@ -55,21 +56,23 @@
 <body class="fixed-leftside fixed-header">
     <!-- BEGIN HEADER -->
     <header class="hidden-print">
-        <span class="logo">TargetOne</span>
-        <nav class="navbar navbar-static-top">
-            <a href="#" class="navbar-btn sidebar-toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-        </nav>
+        <a href="{{ action('DashboardController@index') }}" class="logo">
+            <span>TargetOne</span>
+        </a>
     </header>
     <!-- END HEADER -->
-
     <div class="wrapper">
         <!-- BEGIN LEFTSIDE -->
         <div class="leftside hidden-print">
             <div class="sidebar">
+                <!-- Sidebar Header (Toggle) -->
+                <div class="sidebar-header" style="display: flex; align-items: center; justify-content: flex-end; padding: 15px 20px; background: transparent; border-bottom: 1px solid var(--color-sidebar-border);">
+                    <a href="#" class="sidebar-toggle" style="text-decoration: none; display: flex; flex-direction: column; gap: 4px;">
+                        <span class="icon-bar" style="display: block; width: 22px; height: 2px; background-color: var(--color-sidebar-text); border-radius: 1px;"></span>
+                        <span class="icon-bar" style="display: block; width: 22px; height: 2px; background-color: var(--color-sidebar-text); border-radius: 1px;"></span>
+                        <span class="icon-bar" style="display: block; width: 22px; height: 2px; background-color: var(--color-sidebar-text); border-radius: 1px;"></span>
+                    </a>
+                </div>
                 <!-- BEGIN RPOFILE -->
                 <div class="nav-profile">
                     <div class="thumb">
@@ -80,7 +83,7 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                         <img src="{{ $image }}" class="img-circle" alt="" />
                     </div>
                     <div class="info">
-                        <span class="color-grey-400">{{Utilities::getGreeting()}},</span><br />
+                        <span class="color-grey-400">مرحباً،</span><br />
                         <a>{{Auth::user()->name}}</a>
                     </div>
                     <a href="{{url('auth/logout')}}" class="button"><i class="ion-log-out"></i></a>
@@ -92,6 +95,12 @@ $image = ($media->isEmpty() ? 'https://placeholdit.imgix.net/~text?txtsize=18&tx
                     <li class="{{ Utilities::setActiveMenu('dashboard*') }}">
                         <a href="{{ action('DashboardController@index') }}">
                             <i class="ion-home"></i> <span>لوحة التحكم</span>
+                        </a>
+                    </li>
+
+                    <li class="{{ Utilities::setActiveMenu('activity*') }}">
+                        <a href="{{ action('ActivityTrackerController@index') }}">
+                            <i class="ion-ios-list"></i> <span>سجل النشاطات</span>
                         </a>
                     </li>
 

@@ -242,6 +242,11 @@ Route::group(['prefix' => 'settings', 'middleware' => ['permission:manage-gymie|
     Route::post('save', 'SettingsController@save');
 });
 
+//Activity Tracker
+Route::group(['prefix' => 'activity', 'middleware' => ['auth']], function () {
+    Route::get('/', 'ActivityTrackerController@index');
+});
+
 //User Module with roles & permissions
 //User
 Route::group(['prefix' => 'user', 'middleware' => ['permission:manage-gymie|manage-users', 'auth']], function () {

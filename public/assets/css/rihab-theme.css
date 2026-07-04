@@ -1,0 +1,367 @@
+:root {
+  /* Primary Colors (TargetOne Red) */
+  --color-primary-50: #FEF2F2;
+  --color-primary-500: #DC2626;
+  --color-primary-600: #B91C1C;
+  --color-primary-700: #991B1B;
+
+  /* Neutrals (TargetOne Dark & Clean) */
+  --color-sidebar-bg: #111827; /* Dark sleek background for sidebar */
+  --color-sidebar-text: #F9FAFB;
+  --color-sidebar-muted: #9CA3AF;
+  --color-sidebar-border: #1F2937;
+  
+  --color-background: #F3F4F6; /* Light gray for main content area */
+  --color-surface: #FFFFFF;
+  --color-surface-warm: #F9FAFB;
+  --color-border-light: #E5E7EB;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
+
+  /* Semantic Soft */
+  --color-success-soft: #ECFDF3;
+  --color-success-text: #067647;
+  --color-error-soft: #FEF2F2;
+  --color-error-text: #B42318;
+  --color-warning-soft: #FFFAEB;
+  --color-warning-text: #B54708;
+
+  /* Spacing */
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 32px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 2px 6px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 8px 24px rgba(16, 24, 40, 0.08);
+
+  /* Fonts */
+  --font-family-ar: 'IBM Plex Sans Arabic', sans-serif;
+  --font-family-en: 'Inter', sans-serif;
+}
+
+/* ==================================================
+   GLOBAL RESETS & TYPOGRAPHY
+   ================================================== */
+body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-family-ar) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .panel-head, .panel-title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-family-ar) !important;
+  font-weight: 600;
+}
+
+p, span, div, td, th {
+  font-family: var(--font-family-ar);
+}
+
+/* ==================================================
+   LAYOUT (SIDEBAR & HEADER TARGETONE OVERRIDES)
+   ================================================== */
+.leftside, .sidebar {
+  background-color: var(--color-sidebar-bg) !important;
+  border-left: 1px solid var(--color-sidebar-border);
+}
+
+.sidebar ul.nav-sidebar li a,
+.sidebar ul.nav-sidebar li span {
+  color: var(--color-sidebar-text) !important;
+  font-weight: 500;
+}
+
+.sidebar ul.nav-sidebar li a:hover,
+.sidebar ul.nav-sidebar li.active > a {
+  background-color: var(--color-sidebar-border) !important;
+  color: var(--color-primary-500) !important;
+  border-radius: var(--radius-sm);
+  margin: 0 var(--space-2);
+}
+
+.sidebar ul.nav-sidebar li a i {
+  color: var(--color-sidebar-muted) !important;
+  margin-left: var(--space-3) !important;
+  margin-right: 0 !important;
+}
+
+.sidebar ul.nav-sidebar li.active > a i {
+  color: var(--color-primary-500) !important;
+}
+
+.sidebar .title {
+  color: var(--color-sidebar-muted) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: var(--space-4) var(--space-3) var(--space-2) var(--space-3) !important;
+  text-transform: uppercase !important;
+}
+
+/* Nav Profile */
+.nav-profile {
+  background-color: var(--color-sidebar-bg) !important;
+  border-bottom: 1px solid var(--color-sidebar-border) !important;
+}
+.nav-profile .info a, .nav-profile .info span {
+  color: var(--color-sidebar-text) !important;
+}
+.nav-profile .button i {
+  color: var(--color-sidebar-muted) !important;
+}
+.nav-profile .button:hover i {
+  color: var(--color-primary-500) !important;
+}
+
+/* Header */
+.page-header {
+  background-color: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border-light) !important;
+  box-shadow: none !important;
+}
+
+header .logo {
+  background-color: var(--color-sidebar-bg) !important;
+  border-bottom: 1px solid var(--color-sidebar-border) !important;
+  color: var(--color-surface) !important;
+  font-family: var(--font-family-en) !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+header .logo img {
+  filter: brightness(0);
+}
+
+/* Sidebar Toggle (Hamburger) */
+.page-header .sidebar-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  margin-top: 14px !important;
+}
+
+.page-header .sidebar-toggle .icon-bar {
+  background-color: var(--color-text-secondary) !important;
+  border-radius: var(--radius-sm) !important;
+  height: 2px !important;
+}
+
+.page-header .sidebar-toggle:hover .icon-bar {
+  background-color: var(--color-primary-500) !important;
+}
+
+.page-header .nav.navbar-nav > li > a {
+  color: var(--color-text-primary) !important;
+}
+
+/* ==================================================
+   COMPONENTS OVERRIDES (PANELS, CARDS)
+   ================================================== */
+.panel {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border-light) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+  margin-bottom: var(--space-6) !important;
+}
+
+.panel-heading, .panel-head, .panel-title {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--color-border-light) !important;
+  border-top-left-radius: var(--radius-lg) !important;
+  border-top-right-radius: var(--radius-lg) !important;
+  padding-bottom: var(--space-3) !important;
+  margin-bottom: var(--space-3) !important;
+}
+
+.form-section-title {
+  color: var(--color-primary-500) !important;
+  font-family: var(--font-family-ar) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid var(--color-border-light) !important;
+  padding-bottom: var(--space-3) !important;
+  margin-bottom: var(--space-5) !important;
+}
+
+.widget {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border-light) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.widget .widget-icon i {
+  color: var(--color-primary-500) !important;
+}
+
+/* ==================================================
+   FORMS (TARGETONE)
+   ================================================== */
+.form-group label {
+  text-align: right !important;
+  display: block !important;
+  color: var(--color-text-secondary) !important;
+  font-weight: 600 !important;
+  margin-bottom: var(--space-2) !important;
+}
+
+.form-control {
+  border-radius: var(--radius-sm) !important;
+  border: 1px solid var(--color-border-light) !important;
+  background-color: var(--color-surface-warm) !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary-500) !important;
+}
+
+/* Force dark text inside panels that used legacy light utilities */
+.panel [class*="color-white"],
+.panel [class*="color-light-"],
+.panel [class*="color-green-50"],
+.panel [class*="color-red-50"],
+.panel [class*="color-yellow-50"],
+.panel [class*="color-grey-50"] {
+  color: var(--color-text-primary) !important;
+}
+
+.panel .pull-left div.display-block {
+  color: var(--color-text-secondary) !important;
+}
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+.btn {
+  border-radius: var(--radius-md) !important;
+  font-family: var(--font-family-ar) !important;
+  font-weight: 500 !important;
+  transition: all 150ms ease-in-out !important;
+  box-shadow: none !important;
+  padding: 8px 16px !important;
+  border: none;
+}
+
+/* Primary Button (Blue) */
+.btn-primary, .btn-info {
+  background-color: var(--color-primary-500) !important;
+  color: #FFFFFF !important;
+}
+
+.btn-primary:hover, .btn-info:hover {
+  background-color: var(--color-primary-600) !important;
+}
+
+/* Danger Button */
+.btn-danger {
+  background-color: var(--color-error-text) !important;
+  color: #FFFFFF !important;
+}
+
+/* Secondary/Ghost */
+.btn-default {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border-light) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.btn-default:hover {
+  background-color: var(--color-primary-50) !important;
+}
+
+/* ==================================================
+   INPUT FIELDS & SELECTS
+   ================================================== */
+.form-control, .selectpicker {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border-light) !important;
+  border-radius: var(--radius-md) !important;
+  color: var(--color-text-primary) !important;
+  height: 44px !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus, .bootstrap-select.open .dropdown-toggle {
+  border-color: var(--color-primary-500) !important;
+  box-shadow: 0 0 0 4px var(--color-primary-50) !important;
+}
+
+label {
+  color: var(--color-text-primary) !important;
+  font-weight: 500 !important;
+  margin-bottom: var(--space-2) !important;
+}
+
+/* ==================================================
+   BADGES & STATUS (Semantic Soft)
+   ================================================== */
+.label {
+  border-radius: var(--radius-full) !important;
+  padding: 4px 10px !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+
+/* Active / Success */
+.label-success {
+  background-color: var(--color-success-soft) !important;
+  color: var(--color-success-text) !important;
+  border: 1px solid var(--color-success-text) !important;
+}
+
+/* Inactive / Danger */
+.label-danger {
+  background-color: var(--color-error-soft) !important;
+  color: var(--color-error-text) !important;
+  border: 1px solid var(--color-error-text) !important;
+}
+
+/* Warning */
+.label-warning {
+  background-color: var(--color-warning-soft) !important;
+  color: var(--color-warning-text) !important;
+  border: 1px solid var(--color-warning-text) !important;
+}
+
+/* ==================================================
+   TABLES
+   ================================================== */
+.table > thead > tr > th {
+  background-color: var(--color-surface-warm) !important;
+  color: var(--color-text-secondary) !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid var(--color-border-light) !important;
+}
+
+.table > tbody > tr > td {
+  border-top: 1px solid var(--color-border-light) !important;
+  vertical-align: middle !important;
+}
+
+/* DataTables pagination */
+.pagination > li > a {
+  border-radius: var(--radius-sm) !important;
+  margin: 0 2px !important;
+  color: var(--color-text-secondary) !important;
+}
+.pagination > .active > a {
+  background-color: var(--color-primary-500) !important;
+  border-color: var(--color-primary-500) !important;
+  color: #fff !important;
+}

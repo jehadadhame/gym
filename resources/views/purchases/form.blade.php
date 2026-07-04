@@ -1,6 +1,4 @@
-<?php
-use Carbon\Carbon;
-?>
+<?php use Carbon\Carbon; ?>
 
 <div class="row">
     <div class="col-sm-5">
@@ -13,14 +11,14 @@ use Carbon\Carbon;
                 $memberArray[$member['id']] = $member['member_code'].' - '.$member['name'];
             }
             ?>
-            {!! Form::label('member_id','Member Code') !!}
+            {!! Form::label('member_id','كود / اسم العضو') !!}
             {!! Form::select('member_id',$memberArray,null,['class'=>'form-control selectpicker show-tick show-menu-arrow','id'=>'member_id','data-live-search' => 'true']) !!}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-5">
-        {!! Form::label('product_0','Product') !!}
+        {!! Form::label('product_0','المنتج') !!}
     </div>
 
 
@@ -49,7 +47,7 @@ use Carbon\Carbon;
 
         <div class="col-sm-1">
             <div class="form-group">
-                    <span class="btn btn-sm btn-danger pull-right hide remove-service">
+                    <span class="btn btn-sm btn-danger pull-left hide remove-service">
                       <i class="fa fa-times"></i>
                     </span>
             </div>
@@ -58,9 +56,9 @@ use Carbon\Carbon;
     </div> <!-- / Row -->
 </div>
 <div class="row">
-    <div class="col-sm-2 pull-right">
+    <div class="col-sm-2 pull-left">
         <div class="form-group">
-            <span class="btn btn-sm btn-primary pull-right" id="addPurchase">Add</span>
+            <span class="btn btn-sm btn-primary pull-left" id="addPurchase">إضافة منتج آخر</span>
         </div>
     </div>
 </div>

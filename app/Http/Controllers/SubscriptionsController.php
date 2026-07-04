@@ -34,7 +34,7 @@ class SubscriptionsController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(30);
 
         $subscriptionTotal = Subscription::indexQuery($request->sort_field, $request->sort_direction, $request->plan_id, $request->drp_start, $request->drp_end, $request->plan_name, $request->input('search'))->get();
 
@@ -59,7 +59,7 @@ class SubscriptionsController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(10);
+        )->paginate(30);
 
         $count = $expirings->total();
 
@@ -82,7 +82,7 @@ class SubscriptionsController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(10);
+        )->paginate(30);
 
         $count = $allExpired->total();
 

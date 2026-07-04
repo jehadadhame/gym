@@ -4,39 +4,24 @@
 
     <div class="rightside bg-grey-100">
         <div class="container-fluid">
-
-            <!-- Error Log -->
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-
             <div class="row">
                 <div class="col-md-12">
-                    <div class="panel no-border">
-                        <div class="panel-title">
-                            <div class="panel-head font-size-20">Enter details of the product</div>
+                    <div class="panel bg-white">
+                        <div class="panel-heading bg-white" style="border-bottom: 1px solid var(--color-border-light); padding: 15px 20px;">
+                            <div class="panel-title font-size-20 color-text-primary font-weight-700">تفاصيل المنتج</div>
                         </div>
+                        <div class="panel-body padding-20" dir="rtl">
+                            {!! Form::Open(['url' => 'products','id'=>'productsform']) !!}
 
-                        {!! Form::Open(['url' => 'products','id'=>'productsform']) !!}
+                            @include('products.form',['submitButtonText' => 'إضافة'])
 
-                        @include('products.form',['submitButtonText' => 'Add'])
-
-                        {!! Form::Close() !!}
-
+                            {!! Form::Close() !!}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 @stop
 @section('footer_scripts')

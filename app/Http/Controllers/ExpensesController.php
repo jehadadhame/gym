@@ -20,7 +20,7 @@ class ExpensesController extends Controller
     */
     public function index(Request $request)
     {
-        $expenses = Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->paginate(50);
+        $expenses = Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->paginate(30);
         $expenseTotal = Expense::indexQuery($request->category_id, $request->sort_field, $request->sort_direction, $request->drp_start, $request->drp_end)->search($request->input('search'))->get();
         $count = $expenseTotal->sum('amount');
 

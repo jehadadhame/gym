@@ -38,7 +38,7 @@ class PurchaseController extends Controller
             $request->drp_start,
             $request->drp_end,
             $request->input('search')
-        )->paginate(100);
+        )->paginate(30);
 
         $purchaseTotal = Purchase::indexQuery(
             null,
