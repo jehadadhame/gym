@@ -11,6 +11,12 @@ class PaymentDetail extends Model
     use Eloquence;
     use createdByUser, updatedByUser;
 
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new \App\Scopes\GenderScope);
+    }
+
     protected $table = 'trn_payment_details';
 
     protected $fillable = [

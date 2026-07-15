@@ -1,4 +1,4 @@
-﻿<?php use Carbon\Carbon; ?>
+<?php use Carbon\Carbon; ?>
 
 <!-- Hidden Fields -->
 @if(Request::is('members/create'))
@@ -27,7 +27,7 @@
     <div class="col-sm-6">
         <div class="form-group">
             {!! Form::label('DOB','تاريخ الميلاد') !!}
-            {!! Form::text('DOB',null,['class'=>'form-control datepicker-default', 'id' => 'DOB']) !!}
+            {!! Form::text('DOB',null,['class'=>'form-control datepicker-dob', 'id' => 'DOB']) !!}
         </div>
     </div>
 

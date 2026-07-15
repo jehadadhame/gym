@@ -10,6 +10,8 @@ class ActivityTracker extends Model
 
     protected $fillable = [
         'user_id',
+        'action_type',
+        'affected_member_name',
         'story'
     ];
 

@@ -14,6 +14,12 @@ class Member extends Model implements HasMediaConversions
     use HasMediaTrait, Eloquence;
     use createdByUser, updatedByUser;
 
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new \App\Scopes\GenderScope);
+    }
+
     protected $table = 'mst_members';
 
     protected $fillable = [

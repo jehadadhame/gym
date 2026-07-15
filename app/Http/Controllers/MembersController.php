@@ -175,6 +175,18 @@ class MembersController extends Controller
             'member_code' => 'unique:mst_members,member_code',
         ]);
 
+        if (Auth::user()->hasRole('Manager') && !Auth::user()->hasRole('Admin')) {
+            $canManageFemale = Auth::user()->can('manage-female-shift');
+            $canManageMale = Auth::user()->can('manage-male-shift');
+
+            if ($request->gender == 'f' && !$canManageFemale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage female members.']);
+            }
+            if ($request->gender == 'm' && !$canManageMale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage male members.']);
+            }
+        }
+
         // Start Transaction
         DB::beginTransaction();
 
@@ -418,6 +430,19 @@ class MembersController extends Controller
     public function update($id, Request $request)
     {
         $member = Member::findOrFail($id);
+
+        if (Auth::user()->hasRole('Manager') && !Auth::user()->hasRole('Admin')) {
+            $canManageFemale = Auth::user()->can('manage-female-shift');
+            $canManageMale = Auth::user()->can('manage-male-shift');
+
+            if ($request->gender == 'f' && !$canManageFemale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage female members.']);
+            }
+            if ($request->gender == 'm' && !$canManageMale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage male members.']);
+            }
+        }
+
         $member->update($request->all());
 
         if ($request->hasFile('photo')) {

@@ -80,23 +80,25 @@ var gymie = (function ($) {
 				format: "yyyy-mm-dd",
 				autoclose: true,
 				todayHighlight: true,
+				rtl: true
+			});
+
+			// Date of Birth
+			$(".datepicker-dob").datepicker({
+				format: "yyyy-mm-dd",
+				autoclose: true,
+				todayHighlight: true,
+				startView: 2, // Opens in decade view (years)
+				rtl: true
 			});
 		},
 
 		loaddatepickerstart: function () {
-			// Subscriptions Start Date
-			/*$(".datepicker-startdate").datepicker({
-					format:"yyyy-mm-dd",
-					autoclose: true,
-					todayHighlight: true,
-					startDate: gymieToday,
-				});*/
-
-
 			$(".datepicker-startdate").datepicker({
 				format: "yyyy-mm-dd",
 				autoclose: true,
 				todayHighlight: true,
+				rtl: true
 			});
 		},
 
@@ -106,14 +108,21 @@ var gymie = (function ($) {
 			var subscription_end_date = $("#end_date").val();
 			var endDatelimit = moment(subscription_end_date, "YYYY-MM-DD").add(subscription_days, 'days').format("YYYY-MM-DD");
 
-
-			$(".datepicker-enddate").datepicker({
+			var options = {
 				format: "yyyy-mm-dd",
 				autoclose: true,
 				todayHighlight: true,
-				startDate: gymieEndDate,
-				endDate: gymieDiff,
-			});
+				rtl: true
+			};
+			
+			if (typeof gymieEndDate !== 'undefined') {
+				options.startDate = gymieEndDate;
+			}
+			if (typeof gymieDiff !== 'undefined') {
+				options.endDate = gymieDiff;
+			}
+
+			$(".datepicker-enddate").datepicker(options);
 		},
 
 		/* --------------------------------- */

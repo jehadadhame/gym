@@ -32,6 +32,12 @@ class Invoice extends Model
     use Eloquence;
     use createdByUser, updatedByUser;
 
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new \App\Scopes\GenderScope);
+    }
+
     protected $searchableColumns = [
         'invoice_number' => 20,
         'total' => 20,

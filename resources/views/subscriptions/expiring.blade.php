@@ -100,6 +100,13 @@
                                                             الإجراءات <span class="caret"></span>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            @permission(['manage-gymie', 'manage-subscriptions', 'renew-subscription'])
+                                                            <li>
+                                                                <a href="{{ action('SubscriptionsController@renew',['id' => $subscription->invoice_id]) }}">
+                                                                    <i class="fa fa-refresh"></i> تجديد الاشتراك
+                                                                </a>
+                                                            </li>
+                                                            @endpermission
                                                             <li>
                                                                 @permission(['manage-gymie', 'manage-subscriptions', 'edit-subscription'])
                                                                 <a href="{{ action('SubscriptionsController@edit',['id' => $subscription->id]) }}">

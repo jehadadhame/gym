@@ -305,7 +305,6 @@
 .colorpicker.dropdown-menu:before {
 	display: none;
 }
-.datepicker,
 .colorpicker {
 	padding: 6px 12px !important;
 }

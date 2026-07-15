@@ -53,6 +53,18 @@ class EnquiriesController extends Controller
         $this->validate($request, ['email' => 'unique:mst_enquiries,email',
                                 'contact' => 'unique:mst_enquiries,contact', ]);
 
+        if (Auth::user()->hasRole('Manager') && !Auth::user()->hasRole('Admin')) {
+            $canManageFemale = Auth::user()->can('manage-female-shift');
+            $canManageMale = Auth::user()->can('manage-male-shift');
+
+            if ($request->gender == 'f' && !$canManageFemale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage female enquiries.']);
+            }
+            if ($request->gender == 'm' && !$canManageMale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage male enquiries.']);
+            }
+        }
+
         // Start Transaction
         DB::beginTransaction();
 
@@ -124,6 +136,18 @@ class EnquiriesController extends Controller
     public function update($id, Request $request)
     {
         $enquiry = Enquiry::findOrFail($id);
+
+        if (Auth::user()->hasRole('Manager') && !Auth::user()->hasRole('Admin')) {
+            $canManageFemale = Auth::user()->can('manage-female-shift');
+            $canManageMale = Auth::user()->can('manage-male-shift');
+
+            if ($request->gender == 'f' && !$canManageFemale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage female enquiries.']);
+            }
+            if ($request->gender == 'm' && !$canManageMale) {
+                return redirect()->back()->withInput()->withErrors(['gender' => 'You do not have permission to manage male enquiries.']);
+            }
+        }
 
         $enquiry->name = $request->name;
         $enquiry->DOB = $request->DOB;
